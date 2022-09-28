@@ -35,3 +35,28 @@ def pair_sum_sorted_array(numbers, target):
             dd[v] = i
     # indexes not found
     return [-1, -1]
+
+
+
+# this alternate soln not ideal but it works
+def pair_sum_sorted_array(numbers, target):
+    # Write your code here.
+    a = numbers
+    n = len(numbers)
+    i, j = 0, n - 1
+    while i <= j:
+        tot = a[i]+a[j]
+        print(f"{i}+{j} :{a[i]}+{a[j]} cmp {target}")
+        if tot > target and j > 1:
+            j-=1
+            print(f"<{j} --j")
+        elif tot < target and i < n -2 :
+            i+=1
+            print(f"{i}> ++i")
+        elif tot == target and i != j:
+            print(f"ret [{i},{j}]")
+            return [i,j]
+        else:
+            break
+    print("no soln")
+    return [-1,-1]
