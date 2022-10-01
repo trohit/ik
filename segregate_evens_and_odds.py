@@ -35,3 +35,66 @@ def segregate_evens_and_odds(numbers):
         else:
             even.append(v)
     return even + odd
+
+
+# try - 2
+def is_even(num):
+    return False if num %2 else True
+    
+def segregate_evens_and_odds(numbers):
+    """
+    Args:
+     numbers(list_int32)
+    Returns:
+     list_int32
+    """
+    # Write your code here.
+    even, odd = [], []
+    a = numbers
+    n = len(a)
+    l, r = 0, n - 1 
+    while l<r:
+        # print(f"{a} l:{l} r:{r} {a[l]}<>{a[r]}")
+        if is_even(numbers[l]): l += 1
+        if not is_even(numbers[r]): r -= 1
+        if l < r and not is_even(a[l]) and is_even(a[r]):
+            # print(f"{a} swap l:{l} r:{r} {a[l]}<>{a[r]}")
+            a[l], a[r] = a[r], a[l] # swap l and r nums
+    return a
+
+
+
+# try - 3
+def segregate_evens_and_odds(A):
+    """
+    Args:
+     numbers(list_int32)
+    Returns:
+     list_int32
+    """
+    # Write your code here.
+    n = len(A)
+    j = 0
+    # both i and j start at 0
+    # i ptr moves right unconditionally
+    # j slower ptr, only incremented when 
+    #     i is even elm
+    #     then i and j swap
+    #     j incremented
+    
+    # looks for even elm
+    # works faster due to cache coherence
+    # 
+    # and gets swapped
+    n = len(A)
+    j = 0
+    for i in range(n):
+        print(f"i:{i} j:{j} a:{A}")
+        if A[i] % 2 == 0:
+            # print(f"    {A[i]}<>{A[j]}")
+            A[i], A[j] = A[j], A[i]
+            j += 1
+    return A
+    
+    return []
+
