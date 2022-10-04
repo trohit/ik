@@ -76,27 +76,18 @@ def find_top_k_frequent_elements(arr, k):
 
 
 
-# alternate heap sort approach
+# alternate heap sort approach 
+# T:O(klogn)
+# S:O(n) hash + O(k) heap = O(n+k) 
 import heapq
 def find_top_k_frequent_elements(arr, k):
-    """
-    Args:
-     arr(list_int32)
-     k(int32)
-    Returns:
-     list_int32
-    """
-    # Write your code here.
-    
-    if len(arr) <= 1 or k == len(arr): 
-        return arr
+    n = len(arr)
+    if n <= 1 or n == k: return arr # base case, if k == n all elms are uniq and equal freq
+    hmap = {}
+    for i in arr: # O(n) to create a hashmap 
+        hmap[i] = hmap.get(i, 0) + 1
+    print(f"hmap:{hmap}")
+    top_k_elms = heapq.nlargest(k, hmap.keys(), hmap.get) # O(klogn) : k elms * extracted from heap logn
+    print(f"top_{k}_elms:{top_k_elms}")
+    return top_k_elms
         
-    hashmap = {}
-    
-    for i in arr:
-        if i in hashmap:
-            hashmap[i] = hashmap[i] + 1
-        else:
-            hashmap[i] = 1
-    
-    return heapq.nlargest(k, hashmap.keys(), hashmap.get)
