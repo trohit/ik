@@ -90,4 +90,22 @@ def find_top_k_frequent_elements(arr, k):
     top_k_elms = heapq.nlargest(k, hmap.keys(), hmap.get) # O(klogn) : k elms * extracted from heap logn
     print(f"top_{k}_elms:{top_k_elms}")
     return top_k_elms
-        
+
+
+# alternate counter counting sort approach
+"""
+T: O(k) + O((n - k) log k) + O(k log k) algorithm = approx O(n log k) , 
+S: O(n) for counter + O(n) heap 
+which is very good for a small constant k, since it's essentialy linear. 
+The O(k) part comes from heapifying the initial k counts, 
+the second part from n - k calls to heappushpop method and 
+the third part from sorting the final heap of k elements.
+https://stackoverflow.com/questions/29240807/python-collections-counter-most-common-complexity
+"""
+from collections import Counter
+def find_top_k_frequent_elements(arr, k):
+    n = len(arr)
+    ctr = Counter(arr)
+    top_k_elms = [elm for elm,count in ctr.most_common(k)]
+    return top_k_elms
+    
