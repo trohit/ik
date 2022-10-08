@@ -24,6 +24,7 @@ The stream can contain duplicates.
 """
 """
 Approach
+https://www.youtube.com/watch?v=itmhHWaHupI
 Brute Force: 
 Sort arr in nlogn using Merge / Heap / Quick Sort. 
 Use insertion sort to insert each elm into sorted arr. - O(n)
