@@ -46,9 +46,9 @@ k <= n
 
 """
 
-A. BruteForce: compute n distances, then sort n elms, then display first k elms. 
-B. Sub-optimal: keep max heap of 3 elms. for each dist computed, if dist_list < k, push into heap else push n pop. 
-C. Optimal: compute all dists. Ten use qsel until k-1th elm is found 
+A. BruteForce: compute n distances, then sort n elms(heap/merge/quick), then display first k elms. T: O(nlogn) S:O(n+k)
+B. Sub-optimal: keep max heap of 3 elms. for each dist computed, if dist_list < k, push into heap else push n pop. T: O(n.logk) S:O(n+k) 
+C. Optimal: compute all dists. Then use qsel to successively partition randomly until k-1th elm is found. T:O(n)...O(n^2)  S:O(n+k) 
 
 Time Complexity: O(n.logk)
 Space Complexity: O(k)
