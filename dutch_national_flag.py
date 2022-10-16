@@ -21,6 +21,36 @@ Constraints:
 Do this in ONE pass over the array, NOT TWO passes
 Solution is only allowed to use constant extra memory
 """
+"""
+0..i: <mid
+i..j: ==mid
+j..k: unsorted
+k..n: >mid
+
+0 .....i... j.......... k ...n
+ <mid   mid   unsorted   >mid
+
+1. initially i and j start at the same place from the left, k starts from r..l.
+2. loop j from 0..n-1
+3. whenever elm<mid is seen: swap(a[j], a[i]); i++,j++
+4. whenever elm>mid is seen: swap(a[j], a[k]); k--
+5. else elm == mid: j++ 
+
+procedure three-way-partition(A : array of values, mid : value):
+    i ← 0
+    j ← 0
+    k ← size of A - 1
+    while j <= k:
+        if A[j] < mid:
+            swap A[i] and A[j]
+            i ← i + 1
+            j ← j + 1
+        else if A[j] > mid:
+            swap A[j] and A[k]
+            k ← k - 1
+        else:
+            j ← j + 1
+"""
 def dutch_flag_sort(balls):
     """
     Args:
