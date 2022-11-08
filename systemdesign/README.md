@@ -37,3 +37,15 @@ O(2^n) = exponential
 
 # How many ns in a sec
 1 sec = 10^3ms = 10^9 ns (a bill. ns)
+
+# how many bits to represent ..
+- Num # of bits needed to represent 'n' states =  [log2(n) + 1]
+  -  1 bit to store 2 states
+  -  2 bits to store 4 states
+  -  4 bits to store 16 states
+  -  8 bits to store 256 states
+  - 15 bits to store 32768 states
+  - 16 bits to store 65536 states
+  - 30 bits to store 1 bill states
+  - 32 bits to store 4 bill states
+ 
