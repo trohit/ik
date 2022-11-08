@@ -48,4 +48,9 @@ O(2^n) = exponential
   - 16 bits to store 65536 states
   - 30 bits to store 1 bill states
   - 32 bits to store 4 bill states
- 
+
+```
+def gets_bits_to_store_states(states):
+    return ceil( log2(states) )
+```
+![image](https://user-images.githubusercontent.com/466385/200450017-c506abd2-f619-4eb0-b286-1d9d7126231f.png)
