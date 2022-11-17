@@ -1,0 +1,8 @@
+- https://cs.stackexchange.com/questions/65348/general-method-behind-converting-recursive-inorder-preorder-and-postorder-trave
+- https://mathsanew.com/articles/traversing_binary_trees_iteratively.pdf
+- https://stackoverflow.com/questions/54635756/iterative-postorder-traversal-of-a-binary-tree-with-a-single-stack-how-to-appro
+- https://stackoverflow.com/questions/49409193/understanding-the-logic-in-iterative-postorder-traversal-implementation-on-a-bin
+- techiedelight
+  - https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/
+  - https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+  - https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/
