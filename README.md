@@ -10,3 +10,4 @@ all ik programs
 - Guvi, Coding Ninjas, 10xAcademy, and Masai School
 - https://placewit.com/
 - https://aircampus.in/faq.html
+- https://geekster.in/
