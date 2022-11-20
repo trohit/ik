@@ -115,7 +115,8 @@ Eg. Oracle, PostGres, MySQL
 - Data can be stored in many ways (document-oriented, column-oriented, graph-based or KeyValue based), follows CAP Properties
 - Terminology: Mongo : Collection|documnet|field| embedded docs
 Egs. 
-Key-value: Redis, Cassandra CouchDB
+Key-value: Redis, Cassandra CouchDB, 
+Col Oriented: Hadoop HBase
 JSON BSON: Mongo
 Columnar DBs:
 #### +ves
