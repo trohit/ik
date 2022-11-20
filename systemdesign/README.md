@@ -3,16 +3,16 @@
 
 ## How many bytes make a ..?
 2^..
-20 Mill megs : 10^6
-30 Bill gigs : 10^9
-40 Trillion tubs : 10^12
-50 Quadrillion (1000 trill) pubs : 10^15
+- 20 Mill megs : 10^6
+- 30 Bill gigs : 10^9
+- 40 Trillion tubs : 10^12
+- 50 Quadrillion (1000 trill) pubs : 10^15
 
 ## alternate mnemonic to remember pow(2)
-millionaire by 20
-billionaire by 30
-trillionaire by 40
-quadrillionaire by 50
+- millionaire by 20
+- billionaire by 30
+- trillionaire by 40
+- quadrillionaire by 50
 
 ```
 Number unit.       Mem unit.     Sci notation   Binary / logn base2
@@ -90,6 +90,84 @@ What you need to remember
 | 99.99%("four nines")  | 52.6 minutes      | 12.96 minutes        | 4.32 minutes       | 60.5 seconds      | 8.64 seconds     | 0.36 seconds      |
 | 99.999%("five nines") | 5.26 minutes      | 1.30 minutes         | 25.9 seconds       | 6.05 seconds      | 0.87 seconds     | 0.04 seconds      |
 
+# Databases
+## Choosing sql versus No-SQL databases
 
-# Further Reading
+### What is SQL DB?
+- data has predefined schema
+- Terminology: Tables|rows|columns|Joins
+
+Eg. Oracle, PostGres, MySQL 
+#### +ves
+- when DB schema is known
+- low latency compared to nosql
+- Compliant with complex SQL DB queries and follows ACID properties and has Entity Relationshop model
+- Has existed for ages; Great for accounting / legacy applications
+- Scalability: Great for Vertical scaling / Scale-up Just add CPU/RAM/Disk 
+
+
+#### -ves
+- difficult to add a field
+- difficult to shard
+
+### What is NoSQL DB?
+- Great for unstructured data and dynamic schema
+- Data can be stored in many ways (document-oriented, column-oriented, graph-based or KeyValue based), follows CAP Properties
+- Terminology: Mongo : Collection|documnet|field| embedded docs
+Egs. 
+Key-value: Redis, Cassandra CouchDB
+JSON BSON: Mongo
+Columnar DBs:
+#### +ves
+- great for semi-structured data like JSON/XML/CSV/Blobs
+- Each doc can have its own structure
+- can scale massively and can be sharded across nodes
+- Scalability: Great for Horizontal scaling: Handle more traffic by sharding / adding more server nodes  
+#### -ves
+- difficult to do join operations across tables
+- may result in duplication of data
+- can result in inconsistency as NOSL does not support ACID transactions 
+
+# Further Reading on system design articles
 - https://gist.github.com/dastergon/dc9e3b89c4f251a047f617a9baadb5d8
+
+# ACID Versus CAP
+## ACID
+### Atomicity
+A transaction is an atomic unit of processing; it should
+either be performed in its entirety or not performed at
+all.
+### Consistency preservation
+A transaction should be consistency preserving, meaning
+that if it is completely executed from beginning to end
+without interference from other transactions, it should
+take the database from one consistent state to another.
+### Isolation
+A transaction should appear as though it is being executed in iso- lation from other transactions, even though
+many transactions are execut- ing concurrently. That is,
+the execution of a transaction should not be interfered
+with by any other transactions executing concurrently.
+### Durability or permanency
+The changes applied to the database by a com- mitted
+transaction must persist in the database. These changes
+must not be lost because of any failure
+
+## CAP Theorem
+For a distributed database, the CAP theorem states that it’s
+impossible to simultaneously provide more than two out of
+the following three guarantees:
+### Consistency
+Every read receives the most recent write or an error
+### Availability
+Every request receives a (non-error) response – without
+guarantee that it contains the most recent write
+### Partition tolerance
+The system continues to operate despite an arbitrary
+number of messages being dropped (or delayed) by the
+network between nodes
+
+## Summary
+Based on CAP theorem, different database picks different
+combination of consistency, avalability, and partition tolerence:
+- CA: Relational Database
+- CP, AP: Non-Relational Database
