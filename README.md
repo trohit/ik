@@ -7,3 +7,4 @@ all ik programs
 - https://acciojob.com/
 - https://www.sharpener.tech/
 - https://www.newtonschool.co/full-stack-development-pay-after-placement
+- Guvi, Coding Ninjas, 10xAcademy, and Masai School
