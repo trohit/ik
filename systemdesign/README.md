@@ -92,10 +92,12 @@ What you need to remember
 
 # Databases
 ## Choosing sql versus No-SQL databases
+![image](https://user-images.githubusercontent.com/466385/202913528-7afdafc7-811e-43ea-af06-5b5d8f9c27e8.png)
 
 ### What is SQL DB?
 - data has predefined schema
 - Terminology: Tables|rows|columns|Joins
+- Consistency has hipri vs Avalability | Perf
 
 Eg. Oracle, PostGres, MySQL 
 #### +ves
@@ -113,11 +115,12 @@ Eg. Oracle, PostGres, MySQL
 ### What is NoSQL DB?
 - Great for unstructured data and dynamic schema
 - Data can be stored in many ways (document-oriented, column-oriented, graph-based or KeyValue based), follows CAP Properties
+- Can tweak to prioritize Consistency | Availability | Perf
 - Terminology: Mongo : Collection|documnet|field| embedded docs
 Egs. 
-Key-value: Redis, Cassandra CouchDB, 
+Key-value: BerkleyDB, LevelDB, Redis, Cassandra, CouchDB, 
 Col Oriented: Hadoop HBase
-JSON BSON: Mongo
+Doc Store:  Mongo (JSON BSON) YAMLDB (YAML)
 Columnar DBs:
 #### +ves
 - great for semi-structured data like JSON/XML/CSV/Blobs
@@ -131,6 +134,7 @@ Columnar DBs:
 
 # Further Reading on system design articles
 - https://gist.github.com/dastergon/dc9e3b89c4f251a047f617a9baadb5d8
+- https://www.cs.rochester.edu/courses/261/fall2017/termpaper/submissions/06/Paper.pdf
 
 # ACID Versus CAP
 ## ACID
