@@ -16,11 +16,11 @@
 
 ```
 Number unit.       Mem unit.     Sci notation   Binary / logn base2
-Thousand (K).      KB.                 10^3                      2^10
-Million (M).           MB.                10^6                        2^20
-Billion (B).             GB.                 10^9                       2^30
-Trillion (T).            TB.                  10^12                    2^40
-Quadrillion.           PB.                  10^15                   2^50  (1000 trillion)
+Thousand (K).      KB.                 10^3            2^10
+Million (M).       MB.                 10^6            2^20
+Billion (B).       GB.                 10^9            2^30
+Trillion (T).      TB.                 10^12           2^40
+Quadrillion.       PB.                 10^15           2^50  (1000 trillion)
 ```
 
 
