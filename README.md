@@ -8,3 +8,5 @@ all ik programs
 - https://www.sharpener.tech/
 - https://www.newtonschool.co/full-stack-development-pay-after-placement
 - Guvi, Coding Ninjas, 10xAcademy, and Masai School
+- https://placewit.com/
+- https://aircampus.in/faq.html
