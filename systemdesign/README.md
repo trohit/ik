@@ -171,3 +171,14 @@ Based on CAP theorem, different database picks different
 combination of consistency, avalability, and partition tolerence:
 - CA: Relational Database
 - CP, AP: Non-Relational Database
+
+### Further Reading
+- https://www.cs.rochester.edu/courses/261/fall2017/termpaper/submissions/06/Paper.pdf
+
+
+# interesting stats to know
+- Current active internet users : 5 Bill out of .91 bill ppl viz. 5x10^9 or 62% of world pop, adotion rate grows 4% annually.
+- 65% of world pop has net access, more than 6 out of 10 ppl 
+- 25% or1/4th of all net users in E.Asia, 17% in S.Asia and 10% in S.E Asia while Adrica has worlds fastest growing pop (126%)
+- 4.3 bill mobile users with net | 54% of world pop, 50% world traffic comes through mobile
+- avg person spends 7 mins daily on net 
