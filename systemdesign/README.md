@@ -1,5 +1,27 @@
-# Tables
+# PEDALS
+- Process requirement
+  - Define goalpost, cust experience and acceptance tests
+  - Whats Must-Have(key features), nice-to-have and out-of-scope
+  - Non func requirements
+- Estimate
+  - Back of the envelope calculation abt servers, storage, mem and network bandwdith/latency
+- Design the service
+  - Key boxes : Servers, DB, 
+- Articulate Data Model
+  - DB schema, fields, 
+- List Archi. Components
+  - loadbalancer, read replicas, CDN, cache, backups, DR, HA, Upgrade
+  - big picture, apis, happy path, non-happy path, s12y, security
+  - tradeoffs in choices
+  - Misc :Smoke/ Sanity / Jenkins
+- Scale
+  - Vertical (scale-up) / Horizontal (scale-out)
+  - how to test scale
 
+![image](https://user-images.githubusercontent.com/466385/203221706-85f48595-71c5-4ffa-810a-05e8f5162d84.png)
+Ref: https://www.lewis-lin.com/blog/pedals-method
+
+# Tables
 
 ## How many bytes make a ..?
 2^..
