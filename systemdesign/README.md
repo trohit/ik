@@ -2,6 +2,8 @@
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
 - assume 400 days / year
 - assume 100k secs / day
+- sharding
+  - propose consistent hashing for all probs
 
 # PEDALS
 - Process requirement
