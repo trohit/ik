@@ -225,3 +225,15 @@ combination of consistency, avalability, and partition tolerence:
 - ~42k per hour
 - ~700 per minute
 - ~12 per second
+
+## One Million in Capacity
+
+
+# Know your bottlenecks.
+Just because you've determined your bandwidth can support 120/sec doesn't mean your entire system can. Parts of the system that might not be able to keep up:
+
+- Database connections or throughput
+- Hard disk reading/writing
+- Utility that encrypts/decrypts data at high volumes
+- Loadbalancer
+- API call to 3rd party service that's rate throttled
