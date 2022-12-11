@@ -1,3 +1,5 @@
+Tips
+
 # PEDALS
 - Process requirement
   - Define goalpost, cust experience and acceptance tests
@@ -98,6 +100,11 @@ What you need to remember
 | 99.95%                | 4.38 hours        |
 | 99.99%("four nines")  | 52.6 minutes      |
 | 99.999%("five nines") | 5.26 minutes      |
+| 99.9999%("six nines") | 31.5 secs         |
+| 99.99999%("7 nines")  | 3.16 secs         |
+| 99.999999%("8 9s")    |  315 ms           |
+| 99.9999999%("9 9s")   |  31.5 ms          |
+
 
 - https://gist.githubusercontent.com/dastergon/07751e9d3117ae0ead808cd39d4f92d1/raw/4515c0db813d45abf0ba2770123c26c311393ef7/availability-cheatsheet.md
 
@@ -210,3 +217,11 @@ combination of consistency, avalability, and partition tolerence:
 - 25% or1/4th of all net users in E.Asia, 17% in S.Asia and 10% in S.E Asia while Adrica has worlds fastest growing pop (126%)
 - 4.3 bill mobile users with net | 54% of world pop, 50% world traffic comes through mobile
 - avg person spends 7 mins daily on net 
+
+
+# Sizing
+- https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
+## One Million in Scale
+- ~42k per hour
+- ~700 per minute
+- ~12 per second
