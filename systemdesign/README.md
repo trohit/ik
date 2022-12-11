@@ -1,4 +1,5 @@
-Tips
+# Tips
+- each server can handle 30k reqs/sec at 30% operating capacity.
 
 # PEDALS
 - Process requirement
