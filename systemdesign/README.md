@@ -1,5 +1,7 @@
 # Tips
-- each server can handle 30k reqs/sec at 30% operating capacity.
+- assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
+- assume 400 days / year
+- assume 100k secs / day
 
 # PEDALS
 - Process requirement
