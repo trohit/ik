@@ -3,7 +3,9 @@
 - algo that solves the prob
   - consider CAP
   - consider DB 
-  - consider interfaces - REST, pull/push, msg broker, websockets... 
+  - consider communication protocols  - REST, pull/push, msg broker, websockets... 
+  - consider APIs - inputs and outputs
+  - consider acceptance tests / test plan 
 - implement algo as pgm
 - convert pgm -> service
 - scale the service for
