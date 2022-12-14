@@ -1,10 +1,13 @@
 # Framework
 - Identify core prob
+  - define user's view of the prob / end-user exp
+  - formulate functional requirement + optional func req
+  - to design MVP 
 - algo that solves the prob
+  - consider APIs - inputs and outputs
   - consider CAP
   - consider DB 
   - consider communication protocols  - REST, pull/push, msg broker, websockets... 
-  - consider APIs - inputs and outputs
   - consider acceptance tests / test plan 
 - implement algo as pgm
 - convert pgm -> service
