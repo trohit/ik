@@ -1,11 +1,21 @@
-# Tips
+# Framework
+- Identify core prob
+- algo that solves the prob
+- implement algo as pgm
+- convert pgm -> service
+- scale the service for
+  - increase in user traffic
+  - capacity needs
+  - computational needs
+  - layer with srlc - sharding / replication / load balancing / caching 
+
+# Simplification
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
 - assume 400 days / year
 - assume 100k secs / day
-- when users grow
-- srlc - sharding / replication / load balancing / caching 
-- sharding
-  - propose consistent hashing for all probs
+- when users grow use srlc - sharding / replication / load balancing / caching 
+  - for sharding, propose consistent hashing for almost all probs
+
 
 # PEDALS
 - Process requirement
