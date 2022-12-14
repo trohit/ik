@@ -1,6 +1,9 @@
 # Framework
 - Identify core prob
 - algo that solves the prob
+  - consider CAP
+  - consider DB 
+  - consider interfaces - REST, pull/push, msg broker, websockets... 
 - implement algo as pgm
 - convert pgm -> service
 - scale the service for
@@ -15,6 +18,7 @@
 - assume 100k secs / day
 - when users grow use srlc - sharding / replication / load balancing / caching 
   - for sharding, propose consistent hashing for almost all probs
+  - for replication, consider workload nature and read-write replicas
 
 
 # PEDALS
