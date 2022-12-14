@@ -4,6 +4,8 @@
   - formulate functional requirement + optional func req
     - cluster func reqs into collection of microservices
     - draw arch diagram connecting the micro-services
+    - if prob has only few microservices, dive into each and code
+    - else decide which micro-service/s to touch upon by priority
   - to design MVP 
 - algo that solves the prob
   - consider APIs - inputs and outputs
