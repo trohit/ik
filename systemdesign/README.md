@@ -2,6 +2,8 @@
 - Identify core prob
   - define user's view of the prob / end-user exp: may have multiple user personas
   - formulate functional requirement + optional func req
+    - cluster func reqs into collection of microservices
+    - draw arch diagram connecting the micro-services
   - to design MVP 
 - algo that solves the prob
   - consider APIs - inputs and outputs
@@ -11,11 +13,11 @@
   - consider acceptance tests / test plan 
 - implement algo as pgm
 - convert pgm -> service
-- scale the service for
+- build, then scale; scale the service for
   - increase in user traffic
   - capacity needs
   - computational needs
-  - layer with srlc - sharding / replication / load balancing / caching 
+  - layer with SRLC - sharding / replication / load balancing / caching 
 
 # Simplification
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
