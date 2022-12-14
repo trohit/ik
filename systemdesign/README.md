@@ -1,6 +1,6 @@
 # Framework
 - Identify core prob
-  - define user's view of the prob / end-user exp
+  - define user's view of the prob / end-user exp: may have multiple user personas
   - formulate functional requirement + optional func req
   - to design MVP 
 - algo that solves the prob
