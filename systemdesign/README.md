@@ -20,6 +20,23 @@
   - capacity needs
   - computational needs
   - layer with SRLC - sharding / replication / load balancing / caching 
+- wrap up
+  - loadbalancer: RR|WRR|LeastConnections|Random
+    - nginx|ELB|Citrix ADC|haproxy|Traefik|Seesaw
+  - server
+    - httpd|nginx
+  - presentation layer : UI
+    - angular|react|html
+  - biz layer: application server logic + web service framework
+    - python: flask|django|FastAPI
+    - javascript: nodejs
+    - java: tomcat|jetty
+  - storage layer : DB
+    - Relational: MySQL|PostGres|sqlite
+    - NoSQL: Non relational DB
+      - Obj Store:S3
+      - Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
+      - Key-value: Redis|AWSDynamoDB
 
 # Simplification
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
