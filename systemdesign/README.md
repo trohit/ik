@@ -10,6 +10,8 @@
   - if need to scale DB | cache reqs dont fit in a single system
   - if high parallelization is needed i.e. large num of reqs / sec 
   - if latency is a factor due to geo factors 
+  - for better SLA availability |reliability
+  - for better tuning of hostpots
   
 # Framework
 - Identify core prob
