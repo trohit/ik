@@ -284,3 +284,8 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 - Utility that encrypts/decrypts data at high volumes
 - Loadbalancer
 - API call to 3rd party service that's rate throttled
+
+
+# Sample Probs
+- URL Shortner
+  - In-mem Hash Index + shared log file(append only seq of records)
