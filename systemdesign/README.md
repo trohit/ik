@@ -282,11 +282,14 @@ combination of consistency, avalability, and partition tolerence:
 - 25% or1/4th of all net users in E.Asia, 17% in S.Asia and 10% in S.E Asia while Adrica has worlds fastest growing pop (126%)
 - 4.3 bill mobile users with net | 54% of world pop, 50% world traffic comes through mobile
 - avg person spends 7 mins daily on net 
+- bit.ly
+  - 2.3 bill links created / yr => 200mill shortlinks created/mo =>  200/30=6mill shortlinks/day => 72qps
+  - 20 bill clicks/mo => (20x1000mill)/30 = 600 mill, shortlinks decoded/day => ~72*100links decaoded/sec   
 
 
 # Sizing
 - https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
-## One Million in Scale
+## One Million tx a day means
 - ~42k per hour
 - ~700 per minute
 - ~12 per second
