@@ -61,6 +61,12 @@
 - assume 400 days / year
 - assume 100k secs / day
 - assume designing app for at least 3 yrs => 365*3 = ~1000 days
+- assume each commodity server can have upto 12 cores, 128GB RAM and 2TB disk space
+- Caching: 
+  - assume caching 10% DB resuls in 90% cache hit rate
+  - assume caching 20-30% DB resuls in 98-99% cache hit rate
+  - app ...98-99% reads..> cache 20% 2Bill kvpairs
+  - app ..........1-2% reads.....> DB (20TB | 10Bill kv pairs)
 - For server CPU calculations
   - assume each server has about 8-12 cores, each core has 8 threads, so total 12*8 = ~100 threads pers commodity system
   - assume that each server is utilized 30-40%, so each system can spare 30 threads
