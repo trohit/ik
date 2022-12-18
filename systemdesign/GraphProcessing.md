@@ -3,12 +3,13 @@
   - given few connections, determine if 1st degree | 2nd degree...
   - social grpah : determine degree of connection viz. 1st|2nd|3rd.. degree connection
   - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
+    - Hotspots
+  - API
+    - Api algo
+    - time complexity in 1st|2nd|3rd degree
     - LinkedIn: 600 mill
     - fast : 100ms
     - API calls : QPS: 40000
-  - API
-    -     - Api algo
-      - time complexity in 1st|2nd|3rd degree
   - Microservices
     - Processing vs View uservice
   - 3 tier appl
