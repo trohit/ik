@@ -61,9 +61,19 @@
 - assume 400 days / year
 - assume 100k secs / day
 - assume designing app for at least 3 yrs => 365*3 = ~1000 days
-- when users grow use srlc - sharding / replication / load balancing / caching 
+- For server CPU calculations
+  - assume each server has about 8-12 cores, each core has 8 threads, so total 12*8 = ~100 threads pers commodity system
+  - assume that each server is utilized 30-40%, so each system can spare 30 threads
+  - assume each request takes x secs, so each thread can process 1000/x rps. 
+  - 30/100 (cpu util) * 100(total_threads_in_a_commodity_server) * 1000/x(rps on a single thread) = 30000/x rps (req per sec).
+    - app....>cache..........> DB 
+      - app  :(x=1ms) : 30000rps
+      - cache:(x=2ms) : 15000rps
+      - DB   :(x=10ms):  3000rps
+- when users grow use (SRLC) - sharding / replication / load balancing / caching 
   - for sharding, propose consistent hashing for almost all probs
   - for replication, consider workload nature and read-write replicas
+  - 
 
 
 # PEDALS
@@ -285,7 +295,8 @@ combination of consistency, avalability, and partition tolerence:
 - avg person spends 7 mins daily on net 
 - bit.ly
   - 2.3 bill links created / yr => 200mill shortlinks created/mo =>  200/30=6mill shortlinks/day => 72qps
-  - 20 bill clicks/mo => (20x1000mill)/30 = 600 mill, shortlinks decoded/day => ~72*100links decaoded/sec   
+  - 20 bill clicks/mo => (20x1000mill)/30 = 600 mill, shortlinks decoded/day => ~72*100links decoded/sec   
+  - 
 
 
 # Sizing
