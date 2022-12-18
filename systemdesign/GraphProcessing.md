@@ -1,0 +1,10 @@
+- Graph Processing
+  - for mapping relationships between entities
+  - given few connections, determine if 1st degree | 2nd degree...
+  - social grpah : determine degree of connection viz. 1st|2nd|3rd.. degree connection
+  - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
+    - LinkedIn: 600 mill
+    - fast : 100ms
+    - API calls : QPS: 40000
+  - API
+    - 
