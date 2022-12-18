@@ -60,6 +60,7 @@
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
 - assume 400 days / year
 - assume 100k secs / day
+- assume designing app for at least 3 yrs => 365*3 = ~1000 days
 - when users grow use srlc - sharding / replication / load balancing / caching 
   - for sharding, propose consistent hashing for almost all probs
   - for replication, consider workload nature and read-write replicas
