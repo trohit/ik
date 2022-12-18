@@ -4,6 +4,8 @@
   - Collection of microservices
   - Arch diag joining the dots
   - Deep dive into each microservice
+- Non Func Requirements
+  - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
   
 # Framework
 - Identify core prob
