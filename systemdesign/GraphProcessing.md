@@ -21,6 +21,7 @@
   - Algo
     - BFS vs DFS: BFS more efficient
     - or use a graph DB likw Amazon Neptune
+      -  recommendation engines, fraud detection, knowledge graphs, drug discovery, network security, and social networking
     - API(1): O(logn)
     - API(2): O(n)
     - API(3): O(n^2)
