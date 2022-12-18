@@ -14,6 +14,8 @@
   - for better tuning of hostpots
 - Vert vs Horiz Scaling | ScaleUp vs ScaleOut
   - ScaleUp : more CPU|Mem|Disks|Network
+    - simple to implement but does not always scale linearly wrt cost
+    - has a limit to which it can be scaled up
 # Framework
 - Identify core prob
   - define user's view of the prob / end-user exp: may have multiple user personas
