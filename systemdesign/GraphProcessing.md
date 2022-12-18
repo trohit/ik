@@ -25,6 +25,7 @@
     - API(1): O(logn)
     - API(2): O(n)
     - API(3): O(n^2)
+![image](https://user-images.githubusercontent.com/466385/208283382-1ac78923-c64b-41f7-b033-3bb69f1cb987.png)
 
 
 
