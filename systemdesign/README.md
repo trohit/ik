@@ -6,6 +6,10 @@
   - Deep dive into each microservice
 - Non Func Requirements
   - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
+- When to use a Distributed system
+  - if need to scale DB | cache reqs dont fit in a single system
+  - if high parallelization is needed i.e. large num of reqs / sec 
+  - if latency is a factor due to geo factors 
   
 # Framework
 - Identify core prob
