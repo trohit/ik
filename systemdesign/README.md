@@ -304,6 +304,17 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 - API call to 3rd party service that's rate throttled
 
 
+# Qs
+- Horizontal sharding vs Vertical sharding
+  - https://en.wikipedia.org/wiki/Partition_(database)#Partitioning_methods
+  - Horizontal, like cutting a layer cake side to side
+    - diff rows in diff tables
+    - north vs south, east vs west, where each zone has its own full stack
+  - Vertical, like cutting a cake at a party
+    - creating tables with fewer cols and using more tables to store remaining cols : called normalization
+    - common form of vertical partitioning is to split static data from dynamic data, since the former is faster to access than the latter
+    - where the dynamic data is not used as often as the static.
+    
 # Sample Probs
 - URL Shortner
   - search + insert ops
