@@ -6,13 +6,14 @@
   - Deep dive into each microservice
 - Non Func Requirements
   - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
-- When to use a Distributed system
+- When to use a Distributed system | also applies to sharding
   - if need to scale DB | cache reqs dont fit in a single system
   - if high parallelization is needed i.e. large num of reqs / sec 
   - if latency is a factor due to geo factors 
   - for better SLA availability |reliability
   - for better tuning of hostpots
-  
+- Vert vs Horiz Scaling | ScaleUp vs ScaleOut
+  - ScaleUp : more CPU|Mem|Disks|Network
 # Framework
 - Identify core prob
   - define user's view of the prob / end-user exp: may have multiple user personas
