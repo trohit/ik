@@ -288,4 +288,5 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 
 # Sample Probs
 - URL Shortner
+  - search + insert ops
   - In-mem Hash Index + shared log file(append only seq of records)
