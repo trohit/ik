@@ -1,3 +1,10 @@
+# Design Mantras
+- FCAD
+  - Functional requirements
+  - Collection of microservices
+  - Arch diag joining the dots
+  - Deep dive into each microservice
+  
 # Framework
 - Identify core prob
   - define user's view of the prob / end-user exp: may have multiple user personas
