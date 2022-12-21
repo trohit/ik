@@ -5,7 +5,7 @@
   - Arch diag joining the dots
   - Deep dive into each microservice
 - Non Func Requirements
-  - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
+  - CRUMPSS: Consistency Reliability Usability Maintainability Performance Security Scalability
     - Performance
       - Func req describe SLO for correctness
       - Non Func req describe SLO for availability | thoughput | response_time
