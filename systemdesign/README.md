@@ -6,6 +6,12 @@
   - Deep dive into each microservice
 - Non Func Requirements
   - RUMPSS: Reliability Usability Maintainability Performance Security Scalability
+    - Performance
+      - Func req describe SLO for correctness
+      - Non Func req describe SLO for availability | thoughput | response_time
+      - SLI (indicator) : Correctness | Availability | Throughput | Response Time (p50, p99)
+      - SLO (objective) : eg. p50 < 200ms p99 < 1s + availability >= 99.9%
+      - SLA (agreement) : 
 - When to use a Distributed system | also applies to sharding
   - if need to scale DB | cache reqs dont fit in a single system
   - if high parallelization is needed i.e. large num of reqs / sec 
