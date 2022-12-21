@@ -155,6 +155,9 @@ O(2^n) = exponential
 
 # How many ns in a sec
 1 sec = 10^3ms = 10^9 ns (a bill. ns)
+- nanosecond is time divided by 10^-9
+- microsecond is time divided by 10^-6
+- millisecond is time divided by 10^-3
 
 # how many bits to represent ..
 - Num # of bits needed to represent 'n' states =  [log2(n) + 1]
@@ -342,7 +345,31 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
     - common form of vertical partitioning is to split static data from dynamic data, since the former is faster to access than the latter
     - where the dynamic data is not used as often as the static.
     
+ 
 # Sample Probs
 - URL Shortner
   - search + insert ops
   - In-mem Hash Index + shared log file(append only seq of records)
+
+# how to time it
+- Most system design interviews last for 45-60 minutes
+- Interviewers generally want to see your high-level design within the first 20 minutes of the round.
+- Breakup
+  - First 10 mins: Ask clarifying qs
+    - Mins 0-5: Clarify the scope of the question
+    - Mins 5-8: Specify your assumptions
+  - Mins 8-20: Design high-level 
+    - 8-11: Calc metrics
+    - 11-15: Identify high-level components or services
+    - 15-20: Design the database
+  - 20-45: Draw an architecture diagram
+  - 30-35: Identify bottlenecks
+  - 35-45: Dive into a specific component 
+  - 45-60: Bring it all together
+  - 45-55: Refine the architecture
+  - 55-60: Questions for the interviewer
+
+# Reference Links
+- https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
+- https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
+- 
