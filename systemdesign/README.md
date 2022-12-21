@@ -303,7 +303,7 @@ combination of consistency, avalability, and partition tolerence:
 
 
 # interesting stats to know
-- Current active internet users : 5 Bill out of .91 bill ppl viz. 5x10^9 or 62% of world pop, adotion rate grows 4% annually.
+- Current active internet users : 5 Bill out of 8 bill ppl(Nov 2022) viz. 5x10^9 or 62% of world pop, adoption rate grows 4% annually(15 mill/mo).
 - 65% of world pop has net access, more than 6 out of 10 ppl 
 - 25% or1/4th of all net users in E.Asia, 17% in S.Asia and 10% in S.E Asia while Adrica has worlds fastest growing pop (126%)
 - 4.3 bill mobile users with net | 54% of world pop, 50% world traffic comes through mobile
