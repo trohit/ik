@@ -126,6 +126,8 @@ Ref: https://www.lewis-lin.com/blog/pedals-method
 - trillionaire by 40
 - quadrillionaire by 50
 
+![image](https://user-images.githubusercontent.com/466385/209053239-372ddb85-40d6-488d-b0ed-a161569813c3.png)
+
 ```
 Number unit.       Mem unit.     Sci notation   Binary / logn base2
 Thousand (K).      KB.                 10^3            2^10
@@ -134,7 +136,11 @@ Billion (B).       GB.                 10^9            2^30
 Trillion (T).      TB.                 10^12           2^40
 Quadrillion.       PB.                 10^15           2^50  (1000 trillion)
 ```
-
+# Further Reading on Mental math and back-of-the-envelope calculations
+- https://www.maa.org/sites/default/files/doc/pubs/books/COSM_Chapter1.pdf
+- https://ccnmtl.columbia.edu/projects/mmt/frontiers/web/ch2.html
+- https://betterexplained.com/articles/mental-math-shortcuts/
+- https://betterexplained.com/articles/how-to-develop-a-sense-of-scale/
 
 ## Time Complexity
 - 1 < logn  < n  <  nlogn  < n2  < 2^n <  n! < n^n
