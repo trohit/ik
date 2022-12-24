@@ -379,4 +379,9 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 # Reference Links
 - https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
 - https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
-- 
+- How to generate ids on the cheap
+  - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
+  - https://betterprogramming.pub/uuid-generation-snowflake-identifiers-unique-2aed8b1771bc?gi=605a222fa212
+- How to choose a DB
+  - https://blog.bytebytego.com/p/ep36-types-of-databases-and-use-cases
+  - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525?gi=0379cabc721e
