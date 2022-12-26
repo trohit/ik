@@ -5,13 +5,11 @@
 
 # Tips for Answering Behavioral Interview Questions
 - Prepare a few stories based on the job description
-- Use the STAR method
-## S.T.A.R.
-- Describe the Situation
-- Explain your Task, what you were trying to achieve
-- What was the Action you took?
-- Share the Result and the impact you had
-
+- Use the S.T.A.R. method
+  - Describe the Situation
+  - Explain your Task, what you were trying to achieve
+  - What was the Action you took?
+  - Share the Result and the impact you had
 - Wrap up your answers with a conclusion
 - Practice aloud before your real interview
 
