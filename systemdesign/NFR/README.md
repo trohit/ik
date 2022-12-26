@@ -5,8 +5,10 @@ NFRs are divided into two main categories:
 
 # Types of NFR
 'taost' as in 'the ability of a system to'...
-- (R)eliability	: taoast function and produce correct results, as intended.
-- (C)onsistency	: taoast produce the same resuts under same inputs and conditions every time.
+- (R)eliability	: taoast function and produce correct results, as intended. 
+  - viz. produce the same results under same inputs and conditions every time.
+- (C)onsistency	: taoast ensure that all subsystems show non-conflicting results.
+  - viz. a PNR that shows a complimentary meal in the system also prints the same on the ticket  
 - (A)vailability	: the %tage of time a system is up and operational.
 - (M)aintaibility	: taoast be easily maintained for bug fixes, incremental changes and new features.
 - (P)erformance	: taoast do useful work in a unit of time. usual metrics: QPS|RPS, Latency, Throughput
