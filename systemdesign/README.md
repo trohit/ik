@@ -320,15 +320,24 @@ combination of consistency, avalability, and partition tolerence:
 - Speed of light : 3.10^8m/s
 - Speed (sound) : 340m/s
 
-
-# QPS or RPS : Sizing
+# RoundingOff
+- memorize all powers of 2
+  - 2^5=32
+  - 2^6=64
+  - 2^7=128
+  - 2^9=512
+  - 2^11=2048
+  - ...   
+- try to roundoff to nearest power of 2 or 10
+- so 265 becomes 256 and 62 becomes 64
+## QPS or RPS : Sizing
 - https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
-## One Million tx a day means
+### One Million tx a day means
 - ~12 per sec
 - ~700 per min
 - ~4200 per hr
 
-## One Million in Capacity
+### One Million in Capacity
 
 
 # Know your bottlenecks.
