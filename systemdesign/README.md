@@ -321,12 +321,12 @@ combination of consistency, avalability, and partition tolerence:
 - Speed (sound) : 340m/s
 
 
-# Sizing
+# QPS or RPS : Sizing
 - https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
 ## One Million tx a day means
-- ~42k per hour
-- ~700 per minute
-- ~12 per second
+- ~12 per sec
+- ~700 per min
+- ~4200 per hr
 
 ## One Million in Capacity
 
