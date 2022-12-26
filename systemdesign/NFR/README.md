@@ -13,6 +13,7 @@ NFRs are divided into two main categories:
 - (U)sability		: taoast allow its users to use it perform tasks safely|effectively|efficiently. In other words, a good UX has sensible defaults, is consistent in its behavior across modules, forgiving and easy to learn.
 - (S)afety		: taoast to prevent, control, or mitigate unaaceptable consequences. viz. shutting down if system overheats, disallowing accidental removal of objects in-use.
 - (S)ecurity		: taoast ensure networks and resources are safe from downtime and malicious intrusion.
+  - viz. RBAC, SSO for ID server, Rate Limiting for Fair use (10 pastes/24hrs) and prevention of DDoS. 
 - (S)calability	: taoast increase/decrease perf|cost in response to application|system demands.
 - (I)teroperability:  taoast function as input or to be able to provide easily consumable output for other systems developed independently.
 - (P)ortability	:   taoast function under different environments, versions of software or OS, without needing rework.
