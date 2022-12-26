@@ -330,6 +330,7 @@ combination of consistency, avalability, and partition tolerence:
   - ...   
 - try to roundoff to nearest power of 2 or 10
 - so 265 becomes 256 and 62 becomes 64
+- https://www.youtube.com/watch?v=VBw703pjC3E
 ## QPS or RPS : Sizing
 - https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
 ### One Million tx a day means
@@ -338,7 +339,7 @@ combination of consistency, avalability, and partition tolerence:
 - ~4200 per hr
 
 ### One Million in Capacity
-
+- https://avisri.medium.com/understanding-rules-of-thumb-for-computer-storage-e69797394cca
 
 # Know your bottlenecks.
 Just because you've determined your bandwidth can support 120/sec doesn't mean your entire system can. Parts of the system that might not be able to keep up:
