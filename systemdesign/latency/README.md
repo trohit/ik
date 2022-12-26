@@ -8,6 +8,7 @@ https://gist.github.com/jboner/2841832
   
   # Did you know ?
   - In 1ms(300m) py can do 68000 iters of an empty loop.
+  - or py can do a max 100mill things in 1sec.
   
   # References
   - https://computers-are-fast.github.io/
