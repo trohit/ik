@@ -1,5 +1,11 @@
 Needed for Capacity Requirements Estimation
 
+Tips
+- k*k=m
+- k*m=g
+- k*g=t
+- k*t=p
+
 # Powers of 10
 
 - 1KB=10^3
