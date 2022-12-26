@@ -1,3 +1,5 @@
+Needed for Capacity Requirements Estimation
+
 # Powers of 10
 
 - 1KB=10^3
