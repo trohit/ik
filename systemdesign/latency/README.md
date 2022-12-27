@@ -1,5 +1,13 @@
 https://gist.github.com/jboner/2841832
 
+# Whats is latency ?
+- Latency is the time it takes for a packet to go from the sending endpoint to the receiving endpoint. 
+- Many factors may affect the latency of a service. viz. QoS|CoS, jitter, processing delay, routing states, ..
+- Latency is not explicitly equal to half of RTT, because delay may be asymmetrical between any two given endpoints.
+- Reading
+  - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
+  
+
 # How long is a nanosec ?
 - Grace Hopper explains 1 ns: https://www.youtube.com/watch?v=9eyFDBPk4Yw
   - 1ns ia billionth of a sec ...1/10^12secs or in 1ns, light travels 11.8inches in vacuum (or 0.3m)
@@ -9,6 +17,7 @@ https://gist.github.com/jboner/2841832
   # Did you know ?
   - In 1ms(300m) py can do 68000 iters of an empty loop.
   - or py can do a max 100mill things in 1sec.
+  - every 1000kms can add 10ms in network latency src:https://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/
   
   # References
   - https://computers-are-fast.github.io/
