@@ -32,6 +32,9 @@
   - How many bytes can we write to a string in memory in a second?
     - DRAM write speed : 20-40GB/s
     - will guess 10GB/s (2^40bytes or 10^9 bytes) (exact 2,000,000,000 bytes/sec)
+  - Finding files is 1000 times slower than Grepping in mem
+    - grep in mem (2GB/sec) or 2000MB/sec 
+    - find files (mill files/sec or 10^6 files/sec)
 
 # Did you know ?
 - In 1us(time it takes light to travel 300m) py can do 68000 iters of an empty loop OR.
