@@ -1,4 +1,6 @@
 # DO YOU KNOW HOW MUCH YOUR COMPUTER CAN DO IN A SECOND?
+
+# CPU
 - On a new laptop with a fast SSD and a sketchy network connection
   - a simple py empty loop can do over 50mill iters/sec => (50,000,000 iters/sec)
   - an equiv loop in C compiled with gcc -O2 will do 10x of py => thats 500mill(500,000,000) iters/sec.
@@ -24,11 +26,17 @@
     - assuming ~100 /sec each invocation of py takes 10ms ( 1000 ms / 100 py invocations )
    
 # Storage
+![image](https://user-images.githubusercontent.com/466385/209651941-891ddbad-dc99-4068-9c26-6a5b56015319.png)
+
 - SSD
   - How many bytes can we write to an output file in a second? # Note: we make sure everything is sync'd to disk before exiting :)
     - A typical SSD write speed is between 200-500MB/sec
     - Exactly 342,000,000 bytes/sec
-- Memory
+
+# Memory
+  ![image](https://user-images.githubusercontent.com/466385/209651810-f386f774-2173-465f-8520-67af81547945.png)
+
+- DRAM
   - How many bytes can we write to a string in memory in a second?
     - DRAM write speed : 20-40GB/s
     - will guess 10GB/s (2^40bytes or 10^9 bytes) (exact 2,000,000,000 bytes/sec)
