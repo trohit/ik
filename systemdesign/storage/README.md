@@ -1,10 +1,13 @@
 Needed for Capacity Requirements Estimation
 
 Tips
-- k*k=m
-- k*m=g
-- k*g=t
-- k*t=p
+- k*k=m     = a thou k's is a meg 
+- k*m=g =m*k= a mill k's is a gig
+- k*g=t =g*k= a bill k's is a ter
+- k*t=p =t*k= a quadr k's is a pet
+- Other shortcuts
+  - m*k = 
+
 
 # Powers of 10
 
