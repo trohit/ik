@@ -1,3 +1,13 @@
+# What is System design?
+- a collection of technologies to serve a set of users to meet certain reqs.
+
+# Components of system design
+- Servers
+- Applications
+- Caches
+- DBs
+- Message queues
+
 # Design Mantras
 - FCAD
   - Functional requirements
@@ -387,6 +397,7 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - 55-60: Questions for the interviewer
 
 # Reference Links
+- Intro to System Design: https://www.youtube.com/watch?v=FSR1s2b-l_I
 - https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
 - https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
 - How to generate ids on the cheap
