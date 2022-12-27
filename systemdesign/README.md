@@ -7,6 +7,7 @@
 - Caches
 - DBs
 - Message queues
+- Network Protocols
 
 # Design Mantras
 - FCAD
