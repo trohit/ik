@@ -16,8 +16,9 @@ https://gist.github.com/jboner/2841832
   
   # Did you know ?
   - In 1ms(300m) py can do 68000 iters of an empty loop.
-  - or py can do a max 100mill things in 1sec.
+  - or py can do a max 100mill iters in 1sec.
   - every 1000kms can add 10ms in network latency src:https://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/
+    - For web browsing experience, it turns out that latency, not bandwidth, is likely the constraining factor
   
   # References
   - https://computers-are-fast.github.io/
