@@ -4,6 +4,8 @@ Design
 - PasteBin
 - Yelp
 - NewsFeed
+- Uber Clone
+
 
 
 # References
