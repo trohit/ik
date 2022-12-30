@@ -407,3 +407,4 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 - How to choose a DB
   - https://blog.bytebytego.com/p/ep36-types-of-databases-and-use-cases
   - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525?gi=0379cabc721e
+- https://www.leanessays.com/
