@@ -273,6 +273,7 @@ Columnar DBs:
 - https://gist.github.com/dastergon/dc9e3b89c4f251a047f617a9baadb5d8
 - https://www.cs.rochester.edu/courses/261/fall2017/termpaper/submissions/06/Paper.pdf
 - https://github.com/donnemartin/system-design-primer
+- https://designgurus.org/blog/system-design-interview-basics-cap-vs-pacelc
 
 # ACID Versus CAP
 ## ACID
