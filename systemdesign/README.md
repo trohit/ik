@@ -309,6 +309,8 @@ The system continues to operate despite an arbitrary
 number of messages being dropped (or delayed) by the
 network between nodes
 
+![image](https://user-images.githubusercontent.com/466385/210057971-f72c8bef-8157-46b9-8187-7b250451e006.png)
+
 ## Summary
 Based on CAP theorem, different database picks different
 combination of consistency, avalability, and partition tolerence:
