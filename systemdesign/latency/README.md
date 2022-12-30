@@ -22,3 +22,5 @@ https://gist.github.com/jboner/2841832
   
   # References
   - https://computers-are-fast.github.io/
+
+![image](https://user-images.githubusercontent.com/466385/210059563-b5f7245e-9252-4809-a19f-cf4945a9836b.png)
