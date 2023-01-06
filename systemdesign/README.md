@@ -12,9 +12,11 @@
 # Design Mantras
 - FCAD
   - Functional requirements
-  - Collection of microservices
-  - Arch diag joining the dots
-  - Deep dive into each microservice
+  - Technical Reqs
+  - microservices
+    - Arch diag joining the dots
+    - Deep dive into each microservice
+    - Scale each service
 - Non Func Requirements
   - CRUMPSS: Consistency Reliability Usability Maintainability Performance Security Scalability
     - Performance
