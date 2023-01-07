@@ -3,7 +3,8 @@ NFRs are divided into two main categories:
 - Execution qualities:observable during runtime (safety|security|usability)
 - Evolution qualities:part of the system itself(Testability|Maintainability|Extensibility|Scalability)
 
-![components](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/trohit/plantuml/master/nfr.puml?token=GHSAT0AAAAAAB4ID5NSKNCWWMNRZ3ERKLTMY5JUP7A)
+![image](https://user-images.githubusercontent.com/466385/211130207-5d0bb4e9-8ae8-48c1-9f0c-a757be7e5664.png)
+
 
 # Types of NFR
 'taost' as in 'the ability of a system to'...
