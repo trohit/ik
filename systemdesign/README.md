@@ -10,13 +10,17 @@
 - Network Protocols
 
 # Design Mantras
-- FCAD
-  - Functional requirements
-  - Technical Reqs
-  - microservices
+- FT-MLD
+  - (F)unctional requirements
+  - (T)echnical Reqs
+  - (M)icroservices
     - Arch diag joining the dots
     - Deep dive into each microservice
     - Scale each service
+  - (L)ogical diagram
+    - [Use draw.io](https://draw.io/)
+    - [excalibur](https://excalidraw.com/)
+  - (D)eep Dive
 - Non Func Requirements
   - CRUMPSS: Consistency Reliability Usability Maintainability Performance Security Scalability
     - Performance
@@ -403,9 +407,9 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - 55-60: Questions for the interviewer
 
 # Reference Links
-- Intro to System Design: https://www.youtube.com/watch?v=FSR1s2b-l_I
-- https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
-- https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
+- Intro to System Design: https://www.youtube.com/watch?v=FSR1s2b-l_I 
+ - https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
+ - https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
 - How to generate ids on the cheap
   - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
   - https://betterprogramming.pub/uuid-generation-snowflake-identifiers-unique-2aed8b1771bc?gi=605a222fa212
@@ -413,3 +417,7 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - https://blog.bytebytego.com/p/ep36-types-of-databases-and-use-cases
   - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525?gi=0379cabc721e
 - https://www.leanessays.com/
+
+# Mock Interviews
+- https://interviewready.io/
+- https://www.pramp.com/dashboard/
