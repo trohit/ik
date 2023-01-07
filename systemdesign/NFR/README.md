@@ -5,6 +5,11 @@ NFRs are divided into two main categories:
 
 ![image](https://user-images.githubusercontent.com/466385/211130207-5d0bb4e9-8ae8-48c1-9f0c-a757be7e5664.png)
 
+# Difference b/w Functional and NFR
+- Functional defines what to do; NFR defines how to do it
+- Analogy: 
+  - Functional req maybe drive to Delhi, non functional req may be avoid tollways, drive defensively, keep under speed limit and don't overtake 
+  - Functional req maybe prepare biryani; non functional req maybe don't use too much spice and make it presentable
 
 # Types of NFR
 'taost' as in 'the ability of a system to'...
