@@ -20,6 +20,10 @@
   - (L)ogical diagram
     - [Use draw.io](https://draw.io/)
     - [excalibur](https://excalidraw.com/)
+    - [draw.chat](https://draw.chat/)
+    - [whimiscal](https://whimsical.com/)
+    - ![image](https://user-images.githubusercontent.com/466385/211135036-5b2e1ae5-5d52-4db7-8577-02c967b6426d.png)
+
   - (D)eep Dive
 - Non Func Requirements
   - CRUMPSS: Consistency Reliability Usability Maintainability Performance Security Scalability
