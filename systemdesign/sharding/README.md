@@ -25,7 +25,7 @@
    - (-) system still affected by hotspots 
    - Types of Partitioning
      - Horizontal : diff rows in diff tables
-       - ![image](https://user-images.githubusercontent.com/466385/211131658-582621ce-71ff-46d0-ab12-0830a040bcf1.png)
+       - ![image](https://user-images.githubusercontent.com/466385/211133315-b3473026-1b96-4c76-947f-0c2389531bc8.png)
        - Examples
          - Consistent Hashing
          - Block Range Indexes:  provide similar benefits to horizontal partitioning or sharding but without needing to explicitly declare partitions
