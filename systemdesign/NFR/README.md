@@ -24,4 +24,6 @@ NFRs are divided into two main categories:
 - (P)ortability	:   taoast function under different environments, versions of software or OS, without needing rework.
 
 Still trying to come up with a backcronym | mnemonic
+RCAMPUSS SIP
 SIP SCRAMPUS
+
