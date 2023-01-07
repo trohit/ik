@@ -59,3 +59,4 @@
 # Related
 - https://en.wikipedia.org/wiki/Shard_(database_architecture)
 - https://en.wikipedia.org/wiki/Partition_(database)
+- https://technibbana.wordpress.com/tech/sharding-vs-consistent-hashing/
