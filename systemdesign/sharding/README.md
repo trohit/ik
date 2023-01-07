@@ -1,4 +1,5 @@
 # What is sharding ?
+- is a fancy name for methods to partition data across systems 
 - store data across multiple systems instead of just one
 - reduces workload on any one single system
 - ideal for distributed data stores
@@ -8,6 +9,15 @@
 # Why sharding ?
 - modern web sites need fast access to an amount of information so large that it cannot be efficiently stored on a single computer. 
 - A good way to deal with this problem is to "shard" that information; that is, store across multiple computers instead of on just one.
+
+## When to think about sharding 
+- when all the data doesnt fit on one system
+- when the future size of the DB can become a perf bottleneck
+
+## When not to do sharding ?
+- if the DB size / scale of solution is too small to merit the sharding complexity
+- when the data easily fits in one system
+  - if you still want HA in such a system, just think of replication with read-replicas.
 
 # Types of sharding
 - Partitioning
