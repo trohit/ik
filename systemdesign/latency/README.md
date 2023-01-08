@@ -23,16 +23,17 @@ https://gist.github.com/jboner/2841832
   # References
   - https://computers-are-fast.github.io/
 
-L1 cache reference                           0.5 ns
-L2 cache reference                           7   ns                      14x L1 cache
-Main memory reference                      100   ns                      20x L2 cache, 200x L1 cache
-Compress 1K bytes with Zippy             1,000   ns        1 us
-Send 1K bytes over 1 Gbps network       10,000   ns       10 us
-Read 4K randomly from SSD*             100,000   ns      100 us          ~1GB/sec SSD
-Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/sec SSD, 4X memory
-Disk seek                           10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
-Read 1 MB sequentially from disk    20,000,000   ns   20,000 us   20 ms  80x memory, 20X SSD
-Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
+# cheatsheet
+- L1 cache reference                           0.5 ns
+- L2 cache reference                           7   ns                      14x L1 cache
+- Main memory reference                      100   ns                      20x L2 cache, 200x L1 cache
+- Compress 1K bytes with Zippy             1,000   ns        1 us
+- Send 1K bytes over 1 Gbps network       10,000   ns       10 us
+- Read 4K randomly from SSD*             100,000   ns      100 us          ~1GB/sec SSD
+- Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/sec SSD, 4X memory
+- Disk seek                           10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
+- Read 1 MB sequentially from disk    20,000,000   ns   20,000 us   20 ms  80x memory, 20X SSD
+- Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
 
 
 
