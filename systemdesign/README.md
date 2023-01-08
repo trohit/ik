@@ -293,6 +293,7 @@ Columnar DBs:
 - https://www.cs.rochester.edu/courses/261/fall2017/termpaper/submissions/06/Paper.pdf
 - https://github.com/donnemartin/system-design-primer
 - https://designgurus.org/blog/system-design-interview-basics-cap-vs-pacelc
+- https://aaronice.gitbook.io/system-design/architecture-toolbox/latency-numbers
 
 # ACID Versus CAP
 ## ACID
