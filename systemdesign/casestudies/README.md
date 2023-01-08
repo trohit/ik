@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/466385/211182371-c323c453-e27d-4cb3-93c3-25f005e91a80.png)
+
 # Case Studies
 Design
 - TinyURL
