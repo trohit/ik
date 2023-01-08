@@ -13,7 +13,14 @@ instead this data could be stored in a sigle document.
 
 they were called nosql. but now these nosql dbs (key value stores + doc stores)  	also support a query lang and are often called new query lang dbs.
 viz. cockroach db, google cloud spanner, yugabytedDB that support docs, sql + transactions.
- 
+
+storage layer : DB
+Relational: MySQL|PostGres|sqlite
+NoSQL: Non relational DB
+Obj Store:S3
+Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
+Key-value: (in-mem)Redis|AWSDynamoDB
+
 # Ref
 - https://www.codekarle.com/system-design/Database-system-design.html
 - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525
