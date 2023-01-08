@@ -431,6 +431,9 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - https://blog.bytebytego.com/p/ep36-types-of-databases-and-use-cases
   - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525?gi=0379cabc721e
 - https://www.leanessays.com/
+- [System Design Cheatsheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
+- [Interactive map] (https://colin-scott.github.io/personal_website/research/interactive_latency.html)
+- https://aaronice.gitbook.io/system-design/system-design-systematic-approach
 
 # Mock Interviews
 - https://interviewready.io/
