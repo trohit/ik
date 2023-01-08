@@ -11,6 +11,12 @@ NFRs are divided into two main categories:
   - Functional req maybe drive to Delhi, non functional req may be avoid tollways, drive defensively, keep under speed limit and don't overtake 
   - Functional req maybe prepare biryani; non functional req maybe don't use too much spice and make it presentable
 
+# imp for interview
+- scalability
+- availability
+- performance (latency) : p90
+
+
 # Types of NFR
 'taost' as in 'the ability of a system to'...
 - (R)eliability	: taoast function and produce correct results, as intended. 
