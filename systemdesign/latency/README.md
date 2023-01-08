@@ -35,7 +35,8 @@ https://gist.github.com/jboner/2841832
 - Read 1 MB sequentially from disk    20,000,000   ns   20,000 us   20 ms  80x memory, 20X SSD
 - Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
 
-
+# Refs
+- https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
 
 ![image](https://user-images.githubusercontent.com/466385/210059563-b5f7245e-9252-4809-a19f-cf4945a9836b.png)
 
