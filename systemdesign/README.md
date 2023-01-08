@@ -13,16 +13,25 @@
 - FT-MLD
   - (F)unctional requirements
   - (T)echnical Reqs
+    - design online system: is a blackbox + internally contain a collection of subsystems that may be geo	distributed + which interact with each other to expose an interface.
   - (M)icroservices
     - Arch diag joining the dots
     - Deep dive into each microservice
-    - Scale each service
+    - Scale each service : scale a.k.a. handle huge spurt in users without sacrificing response time
   - (L)ogical diagram
     - [Use draw.io](https://draw.io/)
     - [excalibur](https://excalidraw.com/)
     - [draw.chat](https://draw.chat/)
     - [whimiscal](https://whimsical.com/)
     - ![image](https://user-images.githubusercontent.com/466385/211135036-5b2e1ae5-5d52-4db7-8577-02c967b6426d.png)
+
+# Evaluation Params
+
+- Correctness
+- Performance
+  - Response Time : p99
+  - Availability : five 9s
+  - Throughput : 30k QPS
 
   - (D)eep Dive
 - Non Func Requirements
