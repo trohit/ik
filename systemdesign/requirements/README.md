@@ -1,4 +1,5 @@
 ![image](https://user-images.githubusercontent.com/466385/211181372-08fd7126-b39d-4364-aac1-20d4dc4d3a03.png)
+![image](https://user-images.githubusercontent.com/466385/211181577-85c13db3-53ca-4185-a49b-50b39e49f393.png)
 
 in a 45 min session, spend at least 5-10 mins in req gathering + unpacking prob stmt.
 
