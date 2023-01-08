@@ -38,3 +38,5 @@ Still trying to come up with a backcronym | mnemonic
 RCAMPUSS SIP
 SIP SCRAMPUS
 
+![image](https://user-images.githubusercontent.com/466385/211182787-bb7a5eed-2e82-4250-8fc0-309a13c8bc22.png)
+
