@@ -15,3 +15,6 @@
   - Celebs in NewsFeed|SocialMedia|Twitter: hybrid push-pull
   - Peak time: Uber : surcharge|freemium models
   - Viral Video - Geo Hashing | Caching | CDN
+
+# Refs 
+- https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05
