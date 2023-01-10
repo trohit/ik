@@ -294,6 +294,7 @@ Columnar DBs:
 - https://github.com/donnemartin/system-design-primer
 - https://designgurus.org/blog/system-design-interview-basics-cap-vs-pacelc
 - https://aaronice.gitbook.io/system-design/architecture-toolbox/latency-numbers
+- https://bytebyte-go.s3.amazonaws.com/ByteByteGo_LinkedIn_PDF.pdf
 
 # ACID Versus CAP
 ## ACID
