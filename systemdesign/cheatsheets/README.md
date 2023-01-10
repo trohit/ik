@@ -18,3 +18,7 @@
 
 # Refs 
 - https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05
+- https://gist.github.com/mwakaba2/8ad25dda8c71fe529855994c70743733
+- https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
+- https://itsallbinary.com/system-design-back-of-envelop-calculations-for-storage-size-bandwidth-traffic-etc-estimates/
+
