@@ -20,8 +20,10 @@ https://gist.github.com/jboner/2841832
   - every 1000kms can add 10ms in network latency src:https://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/
     - For web browsing experience, it turns out that latency, not bandwidth, is likely the constraining factor
   
-  # References
-  - https://computers-are-fast.github.io/
+# References
+- https://computers-are-fast.github.io/
+- https://www.youtube.com/watch?app=desktop&v=FqR5vESuKe0
+- https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
 
 # cheatsheet
 - L1 cache reference                           0.5 ns
@@ -34,9 +36,6 @@ https://gist.github.com/jboner/2841832
 - Disk seek                           10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
 - Read 1 MB sequentially from disk    20,000,000   ns   20,000 us   20 ms  80x memory, 20X SSD
 - Send packet CA->Netherlands->CA    150,000,000   ns  150,000 us  150 ms
-
-# Refs
-- https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
 
 ![image](https://user-images.githubusercontent.com/466385/210059563-b5f7245e-9252-4809-a19f-cf4945a9836b.png)
 
