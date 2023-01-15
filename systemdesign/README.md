@@ -435,6 +435,7 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 - [System Design Cheatsheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
 - [Interactive map] (https://colin-scott.github.io/personal_website/research/interactive_latency.html)
 - https://aaronice.gitbook.io/system-design/system-design-systematic-approach
+- https://www.educative.io/blog/complete-guide-to-system-design
 
 # Mock Interviews
 - https://interviewready.io/
