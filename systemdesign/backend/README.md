@@ -25,6 +25,9 @@
     - ~60 /sec (exact 77)
     - assuming ~100 /sec each invocation of py takes 10ms ( 1000 ms / 100 py invocations )
    
+# Throughput
+![image](https://user-images.githubusercontent.com/466385/212524279-3084359c-232f-45f2-8701-c80a3e58866c.png)
+
 # Storage
 ![image](https://user-images.githubusercontent.com/466385/209651941-891ddbad-dc99-4068-9c26-6a5b56015319.png)
 
