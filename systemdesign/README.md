@@ -23,6 +23,7 @@
     - [excalibur](https://excalidraw.com/)
     - [draw.chat](https://draw.chat/)
     - [whimiscal](https://whimsical.com/)
+    - Figma (what is suggested)
     - ![image](https://user-images.githubusercontent.com/466385/211135036-5b2e1ae5-5d52-4db7-8577-02c967b6426d.png)
 
 # Evaluation Params
