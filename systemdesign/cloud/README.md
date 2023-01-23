@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/466385/214029827-8337cc70-0f9e-417e-bd15-5be5b6d8be9f.png)
+
 ```
 Platform	Examples
 PaaS	AWS Elastic Beanstalk, Google App Engine, and Adobe Commerce
