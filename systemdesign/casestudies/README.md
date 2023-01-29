@@ -15,6 +15,8 @@ Design
   - secondDegree: O(n^2): A-B, A-C and B-C, so A-2nd-C. If any of A's friends are 1st degree friends of C, then A is 2nd degree friend of C
   - thirdDegree: O(n^3):  If any of A's friends are 2nd degree friends of C, then A is 3rd degree friend of C
 - Streaming systems
+![image](https://user-images.githubusercontent.com/466385/215305383-c6053834-e44b-44dc-b33c-583f0de20add.png)
+
 - Video streaming
   - YoutTube|NetFlix|HotStar
 
