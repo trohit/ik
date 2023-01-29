@@ -20,6 +20,13 @@ NoSQL: Non relational DB
 Obj Store:S3
 Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
 Key-value: (in-mem)Redis|AWSDynamoDB
+GraphDB
+ColumnarDB
+Row-oriented DB
+Time series DB
+
+![image](https://user-images.githubusercontent.com/466385/215309961-117777d0-14bd-4ca5-bf0e-9ddc21ff415d.png)
+
 
 # Ref
 - https://www.codekarle.com/system-design/Database-system-design.html
