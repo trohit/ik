@@ -25,6 +25,8 @@ ColumnarDB
 Row-oriented DB
 Time series DB
 
+![image](https://user-images.githubusercontent.com/466385/215392835-49e70cac-7616-462e-9a83-72fb1d24a5f3.png)
+
 ![image](https://user-images.githubusercontent.com/466385/215309961-117777d0-14bd-4ca5-bf0e-9ddc21ff415d.png)
 
 
