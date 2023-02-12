@@ -16,14 +16,15 @@ viz. cockroach db, google cloud spanner, yugabytedDB that support docs, sql + tr
 
 storage layer : DB
 Relational: MySQL|PostGres|sqlite
-NoSQL: Non relational DB
+NoSQL: Not-only relational DB
 Obj Store:S3
 Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
 Key-value: (in-mem)Redis|AWSDynamoDB
-GraphDB
-ColumnarDB
-Row-oriented DB
-Time series DB
+GraphDB : 
+ - Neo4j|Arango|Azure CosmosDB
+ColumnarDB: Amz RedShift| Apache Cassandra | Apache HBASE | Snowflake
+Row-oriented DB: any classic sql DB
+Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 
 ![image](https://user-images.githubusercontent.com/466385/215392835-49e70cac-7616-462e-9a83-72fb1d24a5f3.png)
 
