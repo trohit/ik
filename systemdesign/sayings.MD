@@ -1,5 +1,6 @@
 # Just a bunch of wise sayings realated to Comp Sci.
 - Hope is not a strategy - Traditional SRE saying
+- If it hurts, do it more often. aka Frequency reduces Difficulty - Martin Fowler and the Mantra of Continuous Delivery  
 - There are only two hard things in Computer Science: cache invalidation and naming things. - Phil Karlton
 - There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.
 - There are only two hard problems in distributed systems:  2. Exactly-once delivery 1. Guaranteed order of messages 2. Exactly-once delivery
