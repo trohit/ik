@@ -5,6 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/466385/219928968-bb4605bd-0824-43c6-bdc0-b31063adf92f.png)
 
+![image](https://user-images.githubusercontent.com/466385/219933157-dc7bbf40-3d89-4b5e-ae31-ec3886524149.png)
 
 # Tips for Answering Behavioral Interview Questions
 - Prepare a few stories based on the job description
