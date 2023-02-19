@@ -14,6 +14,10 @@
 - Practice aloud before your real interview
 
 # F.A.Q.s
+- tell me abt yourself
+  - am <name> working as <role> in <org_name>. Have created impact <x> by <y>.
+  - worked in various roles 
+  - stmt of intent: aspiring to become PdM/ VP in next few yrs and understand customer priorities.
 - Tell me about a time when you had to work closely with someone whose personality was very different from yours.
 - Give me an example of a time you faced a conflict with a coworker. How did you handle that?
 - Describe a time when you had to step up and demonstrate leadership skills.
