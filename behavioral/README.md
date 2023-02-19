@@ -55,7 +55,11 @@
 - Give me an example of a time you were able to be creative with your work. What was exciting or difficult about it?
 - Tell me about a time you were dissatisfied in your role. What could have been done to make it better?
 
-
+## Do you have any qs for me ?
+- What are the pros / cons of working here according to you ?
+- whats your tech stack like ?
+- Whats the culture at place X like ?
+- Whats the ideal skillset and profile for this role ?
 
 # References
 - Most commonly asked behavioral qs: https://www.themuse.com/advice/behavioral-interview-questions-answers-examples
