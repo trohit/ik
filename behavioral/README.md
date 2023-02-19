@@ -3,6 +3,9 @@
 - Research the company briefly and get an understanding of the main products.
 - Find the corp. website, specifically the page listing the company values; mentioning couple of them among the reasons you are interested will give a +ve impression.
 
+![image](https://user-images.githubusercontent.com/466385/219928968-bb4605bd-0824-43c6-bdc0-b31063adf92f.png)
+
+
 # Tips for Answering Behavioral Interview Questions
 - Prepare a few stories based on the job description
 - Use the S.T.A.R. method
@@ -12,6 +15,7 @@
   - Share the Result and the impact you had
 - Wrap up your answers with a conclusion
 - Practice aloud before your real interview
+- I hv not faced exact situation but hv faced similar situation
 
 # F.A.Q.s
 - tell me abt yourself
