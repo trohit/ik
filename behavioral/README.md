@@ -15,7 +15,8 @@
   - Share the Result and the impact you had
 - Wrap up your answers with a conclusion
 - Practice aloud before your real interview
-- I hv not faced exact situation but hv faced similar situation
+- I hv not faced exact situation but hv faced similar situation OR
+- be honest; I hv not faced this situation but if I face the same situation, this is wht I'd do 
 
 # F.A.Q.s
 - tell me abt yourself
