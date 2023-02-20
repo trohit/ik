@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/466385/220079388-e525fb2d-b69d-415c-8f36-165e4b73652d.png)
+
 # What is System design?
 - a collection of technologies to serve a set of users to meet certain reqs.
 
