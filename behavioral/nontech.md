@@ -25,6 +25,7 @@
 - use notion.so to build career workbook
 - reach out to mentors
 - Research role + eligibility + interview process + Leadership principles
+- keep trying periodically with cos apart from your dream co
 
 ## When applying
 - always share covering letter wih ur resume
@@ -84,3 +85,4 @@ https://www.linkedin.com/learning/expert-tips-for-answering-common-interview-que
 - share competing offers if needed
 - Things that can be tweaked
   - ctc + sign on bonus + perf bonus + shares + anticipated hike
+  	- if nothing else ask for shares cos you can say 'you know i'll have a long term incentive to stay and work for you'  	
