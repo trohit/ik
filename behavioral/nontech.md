@@ -28,7 +28,22 @@
 
 ## When applying
 - always share covering letter wih ur resume
+
+## The Call
 - tell me abt urself  2mins
+- Be Data driven but keep it concise and relevant to the role.
+	- icebreaker 2 mins
+		- eg. Hi am Rohit have 20 yrs exp
+		- Currently I am working on 
+		- Day to day I do tech scoping, helping team members stuck with problems and doing PoCs. 
+		- Prior to my curr role worked on security and network and plt lifecycle 
+		- Personal front passionate abt hobby hacking and wind out doing swimming and yoga.
+		- Share USP statement so that you remain sticky in mem of the interviewer.
+			- viz. understanding why,what,how why being most imp.
+			- viz. passionate abt building toolkits to solve repetitive procedures
+			- viz. use visual diagrams opposed to lengthy specs for big pic 
+			- big time believer of concise clearcut interfaces
+			- with an arch that knows end to end flow
 - why are you leaving 2 mins
 - tell me abt ur most challenging project
 	- keep 2-3 examples
