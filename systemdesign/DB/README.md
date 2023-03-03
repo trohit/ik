@@ -34,3 +34,4 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 # Ref
 - https://www.codekarle.com/system-design/Database-system-design.html
 - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525
+- https://stackoverflow.com/questions/14428069/sql-and-nosql-analogy-for-the-non-technical
