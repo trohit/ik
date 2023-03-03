@@ -1,6 +1,9 @@
 ![image](https://user-images.githubusercontent.com/466385/209539804-77b9a653-8caa-4595-b6a0-617b9302b3ef.png)
 
 How to choose SQL | NoSQL?
+- If you prioritize low latency|scalability|wriiting large amt of unstructured data at the cost of consitency|atomcity => NoSQL
+- If you prioritize consistency|atomicity|reading large amt of structured data => SQL
+- If you are ok with scale-up/ vert scaling (=> SQL) but if you really want scale-out / horiz. scale (NoSQL)
 - is your application schema and attrs and fields well defined (yes =>sql) ?
 - Or is your application schema build-it-along-as-you-go ? (yes=> nosql) 
 - what kind of queries would you be making? 
