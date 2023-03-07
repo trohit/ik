@@ -1,4 +1,6 @@
-# Just a bunch of wise sayings realated to Comp Sci.
+# Just a bunch of wise sayings related to Comp Sci.
+- Done is better than perfect. Start with what you know, add as you get more insights.
+- Ask your product users what their problems are, but dont expect them to define their own solutions. - https://medium.com/serious-scrum/the-3-questions-product-owner-should-never-ask-end-users-52ce956825e0 
 - Hope is not a strategy - Traditional SRE saying
 - If it hurts, do it more often. aka Frequency reduces Difficulty - Martin Fowler and the Mantra of Continuous Delivery  
 - There are only two hard things in Computer Science: cache invalidation and naming things. - Phil Karlton
