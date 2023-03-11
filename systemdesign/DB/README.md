@@ -44,7 +44,7 @@ ColumnarDB: Amz RedShift| Apache Cassandra | Apache HBASE | Snowflake
 Row-oriented DB: any classic sql DB
 Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 
-![image](https://user-images.githubusercontent.com/466385/215392835-49e70cac-7616-462e-9a83-72fb1d24a5f3.png)
+![image](https://user-images.githubusercontent.com/466385/224464870-ee1a169e-ddad-4cda-9f72-a523b77d2b35.png)
 
 ![image](https://user-images.githubusercontent.com/466385/215309961-117777d0-14bd-4ca5-bf0e-9ddc21ff415d.png)
 
