@@ -4,6 +4,7 @@
 - eg. us-east-1[a|b|c]
 
 # VPC
+![image](https://user-images.githubusercontent.com/466385/230110176-bb24d609-d711-4e3b-abe2-f285f32f03c4.png)
 
 - a logical contruct that overlays across all az's in a region
 - a vpc can have subnets in multiple AZ's
