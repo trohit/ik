@@ -16,6 +16,12 @@
   - RFC 1918 CIDR addrs preferred
     - 10.x.y.z/8 | 192.168.x.y/16 | 172.168.0.0/12
     - In each subnet we create in a VPC, AWS reserves 5 of those usable IPs.    
+      - resvd addrs
+      - +0: network address
+      - +1: gateway
+      - +2: DNS
+      - +3: future use
+      - +last: bcast not allowed
     - ![image](https://user-images.githubusercontent.com/466385/230108842-43cea789-bfbc-4f4d-ad4e-ea4771745632.png)
   - see CIDR cheatsheet at 
     - https://pbxbook.com/other/cidrcheat.html
