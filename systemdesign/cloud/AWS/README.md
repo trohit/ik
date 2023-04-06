@@ -11,6 +11,7 @@
 - not restricted to single subnet per AZ.
 - traffic between diff subnets in the same AZ is called intra-zone(not charged)
 - traffic between diff subnets across AZ's is called inter-zone traffic.(chargeable)
+- 1 VPC : m subnets : upto m x n instances
 - When creating a VPC need to specify CIDR range (/16 | /28) for that VPC to use.
   - /16 gives 2^(32 -'16' - 2 => 65534 usable IPv4 IPs
   - /28 gives 2^(32 -'28' - 2 => 2 usable IPs.
@@ -27,4 +28,19 @@
   - see CIDR cheatsheet at 
     - https://pbxbook.com/other/cidrcheat.html
     - https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/
-  -    
+  - IPv6 VPCs
+    - All IPv6 addrs in AWS VPCs are in /56 subnet
+    - No extra charge from AWS for allocation of Ipv6 addr
+    - No distinction between public and pvt IPv6 addrs as there are no pvt IPv6 addrs
+  - ENI : Elastic Network Interface
+    - Can move ENI from one EC2 VM to another dynamically
+    - An ENI needs to have one primary IP and can have multiple secondary IPs.
+  - Placement groups
+    - ![image](https://user-images.githubusercontent.com/466385/230322408-87bbee1f-271e-4665-b322-0026e49dcb1f.png)
+    - Placement groups types - Cluster|Partition|Spread
+  - Public and Pvt Subnets
+    - Route Tables: collection of tules of how to move traffic in / out of the VPC
+    - Types of route tables : Main Route table| Custom Route Table | Gateway Table | Local Gateway
+      - A Main route table is created each time you create a VPC
+      - 
+
