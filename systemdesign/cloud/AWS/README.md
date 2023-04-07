@@ -50,6 +50,9 @@
        - diff types of Targets | Next Hops:
          - Internet Gateway
          - Egress Only Internet Gateway
+           - by default each VM gets pvt IPv4 and IPv6 addr
+           - If a route exists in the VM to reach the internet, anyone knowng the VM IPv6 addr can reach it from outside
+           - So AWS created the Egress Only Internet Gateway (Egress-Only IGW) that does not allow incoming reqs from outside
          - NAT Gateway
          - Outpost Local Gateway
          - Transit Gateway
@@ -57,3 +60,12 @@
          - (NAT) Instance
          - Network Interface in the VPC : 
          - Peering Connection : to get from one VPC to another if it matches Dest CIDR range
+       - Subnet types
+         - All subnets send traffic to the dafult route which is the +1 addr. viz. a.b.c.1 or 10.x.y.1  
+         - Public Subnet : where a route exists to the internet gateway
+         - Pvt Subnet: where no route to the internet gateway exists   
+      - Internet Gateway
+        - is a highly available distributed service provided by AWS
+        - Internet Gateway simply needs to be attached to a VPC to have interet routable traffic
+        - Public IPs and Elastic IPs(public IPv4 address) actually sit out with the Internet Gateway
+        - subnet -> router -> IGW - > Internet
