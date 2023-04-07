@@ -42,5 +42,18 @@
     - Route Tables: collection of tules of how to move traffic in / out of the VPC
     - Types of route tables : Main Route table| Custom Route Table | Gateway Table | Local Gateway
       - A Main route table is created each time you create a VPC
-      - 
-
+      - Custom route table/s
+   - Routes
+     - Route = Dest + Target + IPv(4|6) + Route Priority
+       - Target is a next Hop. 0.0.0.0/0 is the most generic default route
+       - Route selection: most specific route is always chosen. eg 10.0.0.0/24 more specific than 10.0.0.0/16
+       - diff types of Targets | Next Hops:
+         - Internet Gateway
+         - Egress Only Internet Gateway
+         - NAT Gateway
+         - Outpost Local Gateway
+         - Transit Gateway
+         - Virtual Pvt Gateway
+         - (NAT) Instance
+         - Network Interface in the VPC : 
+         - Peering Connection : to get from one VPC to another if it matches Dest CIDR range
