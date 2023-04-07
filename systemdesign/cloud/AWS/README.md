@@ -69,3 +69,23 @@
         - Internet Gateway simply needs to be attached to a VPC to have interet routable traffic
         - Public IPs and Elastic IPs(public IPv4 address) actually sit out with the Internet Gateway
         - subnet -> router -> IGW - > Internet
+      - Diff bet NAT Gateway and NAT Instance
+        - NAT G/w
+          - AWS provided Service + Highly Available per AZ
+          - Bandwidth : 45Gbps per flow but not scalable
+          - Managed by AWS
+          - Charged by #gateways + duration + amt of data in transit
+          - no Port fwding support
+          - no Bastion Host support
+          - No support for security groups
+          - More commonly used option
+        - NAT Instance
+          - EC2 instance, needs user script for manual F/O 
+          - Bandwidth dependent on instance type
+          - Managed by user
+          - Charged by #instances + duration + instance type|size
+          - Can be lower cost option than NAT instance
+          - Has Port fwding support
+          - Has Bastion Host support: can connect instances on pbt subnet
+          - Can associate + has support for security groups
+
