@@ -20,6 +20,13 @@
   - each az is separate from the other in that if one fails the other should still be up.
   - eg. us-east-1[a|b|c]
 
+# IAM
+- Identity Access and Mgmt
+- Root accnt created by default, shouldnt be used or shared.
+- users can be grouped
+- Groups can only contain users, no nested groups allowed
+- A user can be part of multiple groups but its not neccessary for a user to be part of a group  
+
 - Services
   - Amazon API Gateway
   - AWS Application Auto Scaling
