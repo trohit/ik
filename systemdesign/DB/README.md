@@ -55,3 +55,6 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 - https://stackoverflow.com/questions/14428069/sql-and-nosql-analogy-for-the-non-technical
 - http://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/
 - https://stackoverflow.blog/2021/01/14/have-the-tables-turned-on-nosql/
+
+# Distributed Databases
+- https://burcuku.github.io/cse2520-bigdata/dist-databases.html
