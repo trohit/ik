@@ -9,7 +9,7 @@
 - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
 - Region
   - Each AWS Region is a separate geographic area eg, us-east-1
-  - Each region is a cluster of DCs and is composed of min. 3 AZs.
+  - Each region is a cluster of DCs and is composed of min. 3 AZs. to max AZ's
   - 
 - AZ
   - AZ is one or more discrete data centers with redundant power, networking, independent cooling and connectivity in an AWS Region. 
