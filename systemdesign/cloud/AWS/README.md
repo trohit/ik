@@ -3,6 +3,7 @@
 - PaaS: Elastic Beanstalk others: Heroku | App Engine on GCP | Win Azure on MS
 - Saas: AWS Sagemaker and other ML resources
 # AWS Location Types
+- https://infrastructure.aws/
 - AWS Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zone
 - 99 Availability Zones within 31 geographic regions: 15 more AZs and 5 more region planned
 - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
