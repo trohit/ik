@@ -10,6 +10,10 @@
 - Region
   - Each AWS Region is a separate geographic area eg, 
 - AZ
+  - AZ is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. 
+  - All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, dedicated metro fiber providing high-throughput, low-latency networking between AZs. All traffic between AZs is encrypted. The network performance is sufficient to accomplish synchronous replication between AZs.
+  - AZs make partitioning applications for high availability easy.
+  - AZs are within 100 km (60 miles) of each other.
   - one or more DCs that share power|networking|cooling, so share same failure domain
   - each az is separate from the other in that if one fails the other should still be up.
   - eg. us-east-1[a|b|c]
