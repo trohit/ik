@@ -63,6 +63,20 @@
   - AWS Trusted Advisor
   - Amazon Virtual Private Cloud (Amazon VPC)
   - AWS VPN
+
+- Local Zones
+  - LZs place compute, storage, database, and other select AWS services closer to end-users. 
+  - With AWS Local Zones, you can easily run highly-demanding applications that require single-digit millisecond latencies to your end-users
+  - such as media & entertainment content creation, real-time gaming, reservoir simulations, electronic design automation, and machine learning.
+  - Each LZ  location is an extension of an AWS Region where you can run your latency sensitive applications  
+
+- AWS Wavelength
+  - AW enables developers to build applications that deliver single-digit millisecond latencies to mobile devices and end-users.
+  - AWS developers can deploy their applications to Wavelength Zones 
+  
+- AWS Outposts
+  - AO bring native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
+  - You can use the same AWS APIs, tools, and infrastructure across on-premises and the AWS cloud to deliver a truly consistent hybrid experience.
  
   
 # AWS Pricing Fundamentals
