@@ -1,3 +1,7 @@
+# Cloud service types
+- IaaS: EC2 on AWS
+- PaaS: Elastic Beanstalk others: Heroku | App Engine on GCP | Win Azure on MS
+- Saas: AWS Sagemaker and other ML resources
 # AWS Location Types
 - AWS Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zone
 - 99 Availability Zones within 31 geographic regions: 15 more AZs and 5 more region planned
@@ -8,6 +12,9 @@
   - one or more DCs that share power|networking|cooling, so share same failure domain
   - each az is separate from the other in that if one fails the other should still be up.
   - eg. us-east-1[a|b|c]
+  
+# AWS Pricing Fundamentals
+- Pay as you go pricing for Compute | Storage | Data txfer _OUT_ of cloud (IN is FREE)
 
 # VPC
 ![image](https://user-images.githubusercontent.com/466385/230110176-bb24d609-d711-4e3b-abe2-f285f32f03c4.png)
