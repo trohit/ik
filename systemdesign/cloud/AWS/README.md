@@ -8,15 +8,62 @@
 - 99 Availability Zones within 31 geographic regions: 15 more AZs and 5 more region planned
 - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
 - Region
-  - Each AWS Region is a separate geographic area eg, 
+  - Each AWS Region is a separate geographic area eg, us-east-1
+  - Each region is a cluster of DCs and is composed of min. 3 AZs.
+  - 
 - AZ
-  - AZ is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. 
+  - AZ is one or more discrete data centers with redundant power, networking, independent cooling and connectivity in an AWS Region. 
   - All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, dedicated metro fiber providing high-throughput, low-latency networking between AZs. All traffic between AZs is encrypted. The network performance is sufficient to accomplish synchronous replication between AZs.
   - AZs make partitioning applications for high availability easy.
   - AZs are within 100 km (60 miles) of each other.
   - one or more DCs that share power|networking|cooling, so share same failure domain
   - each az is separate from the other in that if one fails the other should still be up.
   - eg. us-east-1[a|b|c]
+
+- Services
+  - Amazon API Gateway
+  - AWS Application Auto Scaling
+  - Amazon Aurora
+  - AWS Certificate Manager (ACM)
+  - AWS CloudFormation
+  - AWS CloudTrail
+  - Amazon CloudWatch
+  - AWS CodeDeploy
+  - AWS Config
+  - AWS Database Migration Service (AWS DMS)
+  - AWS Direct Connect
+  - Amazon DynamoDB
+  - Amazon EC2 Auto Scaling
+  - Amazon Elastic Block Store (Amazon EBS)
+  - Amazon Elastic Compute Cloud (Amazon EC2)
+  - Amazon Elastic Container Registry (Amazon ECR)
+  - Amazon Elastic Container Service (Amazon ECS)
+  - Elastic Load Balancing (ELB)
+  - Amazon EMR
+  - Amazon ElastiCache
+  - Amazon EventBridge
+  - AWS Identity and Access Management (IAM)
+  - AWS Key Management Service (AWS KMS)
+  - Amazon Kinesis
+  - Data Streams
+  - AWS Lambda
+  - AWS Marketplace
+  - Amazon OpenSearch Service
+  - AWS Health Dashboard
+  - Amazon Redshift
+  - Amazon Relational Database Service (Amazon RDS)
+  - Amazon Route 53
+  - Amazon Simple Notification Service (Amazon SNS)
+  - Amazon Simple Queue Service (Amazon SQS)
+  - Amazon Simple Storage Service (Amazon S3)
+  - Amazon Simple Workflow Service (Amazon SWF)
+  - AWS Step Functions
+  - AWS Support
+  - AWS Systems Manager
+  - AWS Trusted Advisor
+  - Amazon Virtual Private Cloud (Amazon VPC)
+  - AWS VPN
+ 
   
 # AWS Pricing Fundamentals
 - Pay as you go pricing for Compute | Storage | Data txfer _OUT_ of cloud (IN is FREE)
