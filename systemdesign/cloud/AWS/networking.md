@@ -101,6 +101,8 @@
      - DNS Pvt Hosted Zones
        - use AWS Route53 for their entries
        - ![image](https://user-images.githubusercontent.com/466385/230753933-7faf8343-eb21-4318-827e-ac9d6be47f9c.png)
+     - ![image](https://user-images.githubusercontent.com/466385/230754067-b5302492-7290-4602-b57a-cfabac6422e7.png)
+
 
   
   
