@@ -1,94 +1,3 @@
-# Cloud service types
-- IaaS: EC2 on AWS
-- PaaS: Elastic Beanstalk others: Heroku | App Engine on GCP | Win Azure on MS
-- Saas: AWS Sagemaker and other ML resources
-# AWS Location Types
-- https://infrastructure.aws/
-- AWS Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zone
-- 99 Availability Zones within 31 geographic regions: 15 more AZs and 5 more region planned
-- https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
-- Region
-  - Each AWS Region is a separate geographic area eg, us-east-1
-  - Each region is a cluster of DCs and is composed of min. 3 AZs. to max AZ's
-  - 
-- AZ
-  - AZ is one or more discrete data centers with redundant power, networking, independent cooling and connectivity in an AWS Region. 
-  - All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, dedicated metro fiber providing high-throughput, low-latency networking between AZs. All traffic between AZs is encrypted. The network performance is sufficient to accomplish synchronous replication between AZs.
-  - AZs make partitioning applications for high availability easy.
-  - AZs are within 100 km (60 miles) of each other.
-  - one or more DCs that share power|networking|cooling, so share same failure domain
-  - Traffic that crosses AZ zones gets *charged* 
-  - each az is separate from the other in that if one fails the other should still be up.
-  - eg. us-east-1[a|b|c]
-
-# IAM
-- Identity Access and Mgmt
-- Root accnt created by default, shouldnt be used or shared.
-- users can be grouped
-- Groups can only contain users, no nested groups allowed
-- A user can be part of multiple groups but its not neccessary for a user to be part of a group  
-
-- Services
-  - Amazon API Gateway
-  - AWS Application Auto Scaling
-  - Amazon Aurora
-  - AWS Certificate Manager (ACM)
-  - AWS CloudFormation
-  - AWS CloudTrail
-  - Amazon CloudWatch
-  - AWS CodeDeploy
-  - AWS Config
-  - AWS Database Migration Service (AWS DMS)
-  - AWS Direct Connect
-  - Amazon DynamoDB
-  - Amazon EC2 Auto Scaling
-  - Amazon Elastic Block Store (Amazon EBS)
-  - Amazon Elastic Compute Cloud (Amazon EC2)
-  - Amazon Elastic Container Registry (Amazon ECR)
-  - Amazon Elastic Container Service (Amazon ECS)
-  - Elastic Load Balancing (ELB)
-  - Amazon EMR
-  - Amazon ElastiCache
-  - Amazon EventBridge
-  - AWS Identity and Access Management (IAM)
-  - AWS Key Management Service (AWS KMS)
-  - Amazon Kinesis
-  - Data Streams
-  - AWS Lambda
-  - AWS Marketplace
-  - Amazon OpenSearch Service
-  - AWS Health Dashboard
-  - Amazon Redshift
-  - Amazon Relational Database Service (Amazon RDS)
-  - Amazon Route 53
-  - Amazon Simple Notification Service (Amazon SNS)
-  - Amazon Simple Queue Service (Amazon SQS)
-  - Amazon Simple Storage Service (Amazon S3)
-  - Amazon Simple Workflow Service (Amazon SWF)
-  - AWS Step Functions
-  - AWS Support
-  - AWS Systems Manager
-  - AWS Trusted Advisor
-  - Amazon Virtual Private Cloud (Amazon VPC)
-  - AWS VPN
-
-- Local Zones
-  - LZs place compute, storage, database, and other select AWS services closer to end-users. 
-  - With AWS Local Zones, you can easily run highly-demanding applications that require single-digit millisecond latencies to your end-users
-  - such as media & entertainment content creation, real-time gaming, reservoir simulations, electronic design automation, and machine learning.
-  - Each LZ  location is an extension of an AWS Region where you can run your latency sensitive applications  
-
-- AWS Wavelength
-  - AW enables developers to build applications that deliver single-digit millisecond latencies to mobile devices and end-users.
-  - AWS developers can deploy their applications to Wavelength Zones 
-  
-- AWS Outposts
-  - AO bring native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
-  - You can use the same AWS APIs, tools, and infrastructure across on-premises and the AWS cloud to deliver a truly consistent hybrid experience.
- 
-  
-# AWS Pricing Fundamentals
-- Pay as you go pricing for Compute | Storage | Data txfer _OUT_ of cloud (IN is FREE)
 
 # VPC
 ![image](https://user-images.githubusercontent.com/466385/230110176-bb24d609-d711-4e3b-abe2-f285f32f03c4.png)
@@ -175,4 +84,9 @@
           - Has Port fwding support
           - Has Bastion Host support: can connect instances on pbt subnet
           - Can associate + has support for security groups
+   - Amazon DNS
+     - enableDNSHostNames : DNS that gives public hostname to public IP addr
+     - enableDNSSuport : determines whether internal DNS is enabled for the VPC
+     - default VPC : both enableDNSHostNames + enableDNSSuport is True
+     - custom VPC : only enableDNSSuport True
 
