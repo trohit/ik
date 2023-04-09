@@ -98,5 +98,10 @@
          - say 8.8.8.8 is given a DNS like 
            - us-east-1    : ec2-8-8-8-8.compute-1.amazonaws.com  
            - other regions: ec2-8-8-8-8.<region>.compute.amazonaws.com
+     - DNS Pvt Hosted Zones
+       - use AWS Route53 for their entries
+       - ![image](https://user-images.githubusercontent.com/466385/230753933-7faf8343-eb21-4318-827e-ac9d6be47f9c.png)
+
+  
   
 
