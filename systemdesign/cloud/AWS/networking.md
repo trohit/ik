@@ -89,4 +89,14 @@
      - enableDNSSuport : determines whether internal DNS is enabled for the VPC
      - default VPC : both enableDNSHostNames + enableDNSSuport is True
      - custom VPC : only enableDNSSuport True
+     - DNS Naming conventions
+       - Amazon provided Pvt DNS naming conventions 
+         - FOr an IP addr like 10.0.0.15
+         - Only in us-east-1(orig region) : ip-10-0-0-15.ec2.internal.
+         - Outside of us-east-1           : ip-10-0-0-15.region.compute.internal
+       - Public DNS naming conventions
+         - say 8.8.8.8 is given a DNS like 
+           - us-east-1    : ec2-8-8-8-8.compute-1.amazonaws.com  
+           - other regions: ec2-8-8-8-8.<region>.compute.amazonaws.com
+  
 
