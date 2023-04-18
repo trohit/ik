@@ -124,6 +124,14 @@
     - Flow Logs
       - can be set on VPC | Subnet | individual ifaces
       - destination for flow logs can be Cloudwatch | S3
+- Hybrid Connectivity
+- VPC peering: connection between 2 VPC's both IpV4 + IPv6 compat + multi account (prod<>test) + multi AZ connectivity
+  - Usecases
+    - connect vpc1 <> vpc2 and vpc2 <> vpc3 but transit connectivity bet VPCs not allowed.
+    - vpc peering is 1:1 not a broadcast or mesh connection 
+  - unsupported scenarios:overlapping CIDR overlap + transitive peering + edge-edge routing
+  - peering process: request vpc connection + update route tables + update security groups(nested allowed) + enable DNS resolution 
+  
   
   
   
