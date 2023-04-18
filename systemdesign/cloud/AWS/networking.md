@@ -102,7 +102,28 @@
        - use AWS Route53 for their entries
        - ![image](https://user-images.githubusercontent.com/466385/230753933-7faf8343-eb21-4318-827e-ac9d6be47f9c.png)
      - ![image](https://user-images.githubusercontent.com/466385/230754067-b5302492-7290-4602-b57a-cfabac6422e7.png)
+- Regional and VPC endpoints
+  - provide secure access to AWS services
+  - no public IP needed and traffic stays does not traverse public n/w
+  - Types of VPC end-points
+    - Gateway VPC end-point
+      - Only for s3 and DynamoDB which are historical entities for g/w VPC endpoint
+      - Service and gateway endpoints
+      - One service per endpoint Gateway service:endpoint::1:1
+      - One policy per endpoint 
+      - One route per service
+      - Multiple endpoints per VPC
+      - Multiple endpoints per service
+      - Gateway endpoint limitations
+        - use a prefix list to determine dest for a route
+        - ![image](https://user-images.githubusercontent.com/466385/232687164-fd836b48-c35a-47ee-a6d7-1503023a038e.png)
 
+    - Interface VPC end-point
+      - AWS PrivateLink interface to link other services to a VPC
+  
+  
+  
+  
 
   
   
