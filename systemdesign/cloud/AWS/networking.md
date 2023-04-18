@@ -131,7 +131,10 @@
     - vpc peering is 1:1 not a broadcast or mesh connection 
   - unsupported scenarios:overlapping CIDR overlap + transitive peering + edge-edge routing
   - peering process: request vpc connection + update route tables + update security groups(nested allowed) + enable DNS resolution 
-  
+- AWS Site-to-Site VPN options
+  - two options: Virt Pvt Gateways vs EC2 gateway instances
+  - ![image](https://user-images.githubusercontent.com/466385/232767011-efc1a4e3-ff25-409b-8220-26588512c094.png)
+- 
   
   
   
