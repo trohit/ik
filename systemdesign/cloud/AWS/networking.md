@@ -144,6 +144,8 @@
   - Can attach transit | pvt virt ifaces to the Direct Connect
   - Can connect on the other side to either transit | Virt gateway thats attched to many VPCs
   - Support for many accounts + regions +  VPCs  
+  - ![image](https://user-images.githubusercontent.com/466385/232773557-190da2d7-6078-404b-88e0-df933659d7b8.png)
+
   
   
 
