@@ -145,6 +145,10 @@
   - Can connect on the other side to either transit | Virt gateway thats attched to many VPCs
   - Support for many accounts + regions +  VPCs  
   - ![image](https://user-images.githubusercontent.com/466385/232773557-190da2d7-6078-404b-88e0-df933659d7b8.png)
+  - Summary
+    - ![image](https://user-images.githubusercontent.com/466385/232777648-91166974-a31f-4a9a-86b3-c242dc54c77e.png)
+
+  
 
   
   
