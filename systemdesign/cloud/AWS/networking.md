@@ -134,7 +134,11 @@
 - AWS Site-to-Site VPN options
   - two options: Virt Pvt Gateways vs EC2 gateway instances
   - ![image](https://user-images.githubusercontent.com/466385/232767011-efc1a4e3-ff25-409b-8220-26588512c094.png)
-- 
+- Virtual Interface types
+  - Public: access AWS services using public addrs
+  - Pvt : access AWS services using pvt addrs
+  - Transit : connect transit gateways with Direct Connect gateways
+  - Hosted : access to other AWS accounts
   
   
   
