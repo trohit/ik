@@ -108,6 +108,7 @@
   - Types of VPC end-points
     - Gateway VPC end-point
       - Only for s3 and DynamoDB which are historical entities for g/w VPC endpoint
+      - G/w endpoints use route tables
       - Service and gateway endpoints
       - One service per endpoint Gateway service:endpoint::1:1
       - One policy per endpoint 
@@ -117,10 +118,12 @@
       - Gateway endpoint limitations
         - use a prefix list to determine dest for a route
         - ![image](https://user-images.githubusercontent.com/466385/232687164-fd836b48-c35a-47ee-a6d7-1503023a038e.png)
-
     - Interface VPC end-point
+      - adds ifaces to subnets and then uses DNS to access service on that iface
       - AWS PrivateLink interface to link other services to a VPC
-  
+    - Flow Logs
+      - can be set on VPC | Subnet | individual ifaces
+      - destination for flow logs can be Cloudwatch | S3
   
   
   
