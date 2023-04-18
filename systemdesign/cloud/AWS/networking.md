@@ -139,7 +139,11 @@
   - Pvt : access AWS services using pvt addrs
   - Transit : connect transit gateways with Direct Connect gateways
   - Hosted : access to other AWS accounts
-  
+- Direct Connect gateway
+  - Globally avlabl resource used to connect one | more VPCs
+  - Can attach transit | pvt virt ifaces to the Direct Connect
+  - Can connect on the other side to either transit | Virt gateway thats attched to many VPCs
+  - Support for many accounts + regions +  VPCs  
   
   
 
