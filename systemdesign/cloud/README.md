@@ -1,3 +1,4 @@
+# Why
 ![image](https://user-images.githubusercontent.com/466385/230715625-4bcad820-719e-4334-bd22-14ae21724c0b.png)
 
 ![image](https://user-images.githubusercontent.com/466385/214029827-8337cc70-0f9e-417e-bd15-5be5b6d8be9f.png)
@@ -51,3 +52,6 @@ IaaS	Amazon Web Services, Microsoft Azure, and Google Compute Engine
 # Limitations and disadvantages
 # Emerging trends
 # Digital forensics in the cloud
+
+# What are different services in AWS
+![image](https://user-images.githubusercontent.com/466385/232969672-7be3b2bc-f184-4742-86cf-fb8f67bf34bf.png)
