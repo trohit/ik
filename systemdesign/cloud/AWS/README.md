@@ -1,3 +1,4 @@
+https://docs.aws.amazon.com/general/latest/gr/glos-chap.html
 https://tutorialsdojo.com/links-to-all-aws-cheat-sheets/
 
 https://tutorialsdojo.com/aws-cheat-sheet-amazon-vpc/
