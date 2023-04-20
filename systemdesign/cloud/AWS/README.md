@@ -1,4 +1,10 @@
-https://docs.aws.amazon.com/general/latest/gr/glos-chap.html
+# Refs
+
+## AWS Official
+- Glossary: https://docs.aws.amazon.com/general/latest/gr/glos-chap.html
+- All services in a region(needs sign-in): https://us-east-1.console.aws.amazon.com/console/services?region=us-east-1
+
+## Others
 https://tutorialsdojo.com/links-to-all-aws-cheat-sheets/
 
 https://tutorialsdojo.com/aws-cheat-sheet-amazon-vpc/
