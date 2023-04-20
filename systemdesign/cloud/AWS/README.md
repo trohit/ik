@@ -30,3 +30,10 @@ https://tutorialsdojo.com/aws-cheat-sheet-amazon-aurora/
 - Elastic BeanStalk (PaaS)
 - AWS Lambda (FaaS)
 - Rekognition (SaaS)
+
+
+# Overview
+- 31 Regions and 99 AZs
+  - each region has 3-6 AZs
+- 400+ Edge Locations
+- https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi&loc=1
