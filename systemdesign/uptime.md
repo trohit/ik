@@ -1,4 +1,5 @@
 Mnemonic
+```
 24*30 = 750 hrs a month
 in a year = (750 * 10) + (750 * 2) hrs a year
           = 7500 + 1500
@@ -6,6 +7,9 @@ in a year = (750 * 10) + (750 * 2) hrs a year
           
 so
 99%uptime = 1% downtime = 1%(9000) = 90 hrs = 3-4 days ( 72-96 hrs)
+```
+a common year(unlike a leap year) is 365 days (8760 hours, 525600 minutes or 31536000 seconds
+
 
 Uptime
 Availability Table - Cheat sheet
