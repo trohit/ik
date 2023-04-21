@@ -10,7 +10,7 @@ so
 Uptime
 Availability Table - Cheat sheet
 What you need to remember
-
+```
 Availability level	Downtime per year
 90% ("one nine")	36.5 days
 95%	18.25 days
@@ -24,4 +24,5 @@ Availability level	Downtime per year
 99.99999%("7 nines")	3.16 secs
 99.999999%("8 9s")	315 ms
 99.9999999%("9 9s")	31.5 ms
+```
 https://gist.githubusercontent.com/dastergon/07751e9d3117ae0ead808cd39d4f92d1/raw/4515c0db813d45abf0ba2770123c26c311393ef7/availability-cheatsheet.md
