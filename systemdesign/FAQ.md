@@ -5,3 +5,4 @@
 - Some CPUs run more than one thread-per-core(think hyper-threading)
 - CPUs = #_of_sockets * #_of_CPUs * #_of_Cores
 - https://en.wikipedia.org/wiki/Simultaneous_multithreading
+- https://blogs.vmware.com/customer-experience-and-success/2021/06/sockets-cpus-cores-and-threads-the-history-of-x86-processor-terms.html
