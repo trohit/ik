@@ -1,4 +1,4 @@
-+ Diff between CPU|socket|core
++ Diff between socket|CPU|core
 - https://stackoverflow.com/questions/40163095/what-is-socket-core-threads-cpu
 - socket is the physical socket where CPU capsules are placed. A normal PC has just 1 socket.
 - A socket can have multiple CPU Cores. A normal PC usually has 2-4 cores
