@@ -4,3 +4,4 @@
 - A socket can have multiple CPU Cores. A normal PC usually has 2-4 cores
 - Some CPUs run more than one thread-per-core(think hyper-threading)
 - CPUs = #_of_sockets * #_of_CPUs * #_of_Cores
+- https://en.wikipedia.org/wiki/Simultaneous_multithreading
