@@ -31,6 +31,8 @@
   - ENI : Elastic Network Interface
     - Can move ENI from one EC2 VM to another dynamically
     - An ENI needs to have one primary IP and can have multiple secondary IPs.
+    - Read: [2011 article](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
+   
   - Placement groups
     - ![image](https://user-images.githubusercontent.com/466385/230322408-87bbee1f-271e-4665-b322-0026e49dcb1f.png)
     - Placement groups types - Cluster|Partition|Spread
