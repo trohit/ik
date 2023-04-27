@@ -1,5 +1,23 @@
-Mnemonic
+![image](https://user-images.githubusercontent.com/466385/234746032-5558a52a-0cb3-47d4-b7a8-e5921bb91b9e.png)
 ```
+three 9's: ~9hrs
+ four 9's: ~1hr
+ five 9's: ~5mins <<<<<<<<<< just remember five nines means max mins downtime
+```
+
+# What is High Availability?
+- A  measure of reliability and is the expected amount of time, measured as a percent, that a service or equipment is available to serve the user/application.
+- The 99.999 percent (5-nines) availability standard specifies 24/7 service with a maximum of five minutes of downtime in a year. 
+  - A typical desktop without 5-nines reliability may tolerate nine hours per year of unavailability,
+  - but a carrier-class switch or server would require support for 5-nines availability.
+  - Generally, service availability depends heavily on the fault tolerance of the system, including hardware redundancy.
+- 6 nines availability means upto a max of 31.5 secs downtime / yr
+- https://en.wikipedia.org/wiki/Uptime
+
+
+# Mnemonic
+```
+For derivation
 24*30 = 750 hrs a month
 in a year = (750 * 10) + (750 * 2) hrs a year
           = 7500 + 1500
