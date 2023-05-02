@@ -10,7 +10,7 @@ https://instances.vantage.sh/
 
 # Extremes
 - smallest: t2.nano 0.5GB 1VCPU
-- largest: [u-18tb1.112xlarge](https://instances.vantage.sh/aws/ec2/u-18tb1.112xlarge?region=us-east-1&os=dedicated&cost_duration=annually&reserved_term=Standard.allUpfront)
+- largest: [u-18tb1.112xlarge](https://instances.vantage.sh/aws/ec2/u-18tb1.112xlarge?region=us-east-1&os=dedicated&cost_duration=annually&reserved_term=Standard.allUpfront): 18TB RAM, 448vCPUs
 
 
 
