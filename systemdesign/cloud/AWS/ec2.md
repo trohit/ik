@@ -8,6 +8,12 @@ https://instances.vantage.sh/
 - Storage: igh (search optimised)
 - Accelerated : a
 
+# Extremes
+- smallest: t2.nano 0.5GB 1VCPU
+- largest: [u-18tb1.112xlarge](https://instances.vantage.sh/aws/ec2/u-18tb1.112xlarge?region=us-east-1&os=dedicated&cost_duration=annually&reserved_term=Standard.allUpfront)
+
+
+
 # Notable Types and uses
 ## Gen purpose Instances
 - A1 : arm-based offering of EC2 instance types – as compared to others that use either Intel or AMD processing. This type of instance is more suited for web servers and containerized microservices – along with applications that are run on open-source tools like Java or Python.
