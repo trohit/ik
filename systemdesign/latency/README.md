@@ -20,6 +20,16 @@ https://gist.github.com/jboner/2841832
   - every 1000kms can add 10ms in network latency src:https://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/
     - For web browsing experience, it turns out that latency, not bandwidth, is likely the constraining factor
   
+# Need to know
+- cross VM Latency of two VMware guests on the same host :   20usec.
+- latency between 2 EC2 instances in same AZ             :     < 100usec.
+- RTT latency between 2 EC2 instance cross AZ            :              < 10ms (AZ's are within 60 miles / 100 kms of each other)
+- Link latency between 2 sites for sync-rep              :              < 10ms  
+  -  distance between systems should be under 100kms (~60 miles), due to the sync-rep distance limitation based on latency  
+- Link latency between 2 sites across AWS regions        : [can vary widely](https://repost.aws/questions/QUl7IRSjpMQVe2mMOFojP6qA/a-question-about-inter-region-latency) [26ms(N.Virginia-Ohio) to 753ms(SPR-SaoPaolo)](https://www.concurrencylabs.com/blog/choose-your-aws-region-wisely/)
+- Ref
+  - https://www.xkyle.com/Measuring-AWS-Region-and-AZ-Latency/
+  -  
 # References
 - https://computers-are-fast.github.io/
 - https://www.youtube.com/watch?app=desktop&v=FqR5vESuKe0
