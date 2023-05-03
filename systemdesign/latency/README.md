@@ -21,6 +21,20 @@ https://gist.github.com/jboner/2841832
     - For web browsing experience, it turns out that latency, not bandwidth, is likely the constraining factor
   
 # Need to know
+
+
+- 1ns		      : access CPU registers / clock cycle of modern CPU
+- 1-10ns		  : L1/L2 cache access / few expensive CPU instructions (branch mispredict penalty)
+- 10-100ns	  : L3 cache access / DRAM access
+- 100-1000ns	: cost of sys call  / md5(64bit num) 
+- 1-10us		  : context switching between threads / 64KB copy in DRAM
+- 10-100us	  : web server like NGINX processes an HTTP request / DRAM 1MB read / read 8K SSD 
+- 100-1000us	: write 8K page to SSD / GET op from memcache / redis
+- 1-10ms	  	: intra zone / cross AZ RTT latency / HDD seek time 
+- 10-100ms	  : RTT bet USEast<>USWest / RTT from USEast<>EU / DRAM 1GB read	/ bcrypt passwd / TLS handshake 
+- 100-1000ms	: cross AZ latency / RTT USWest<>SPR / 1GB read from SSD
+- 1s+   		: 1GB txfer within same region
+`
 - cross VM Latency of two VMware guests on the same host :   20usec.
 - latency between 2 EC2 instances in same AZ             :     < 100usec.
 - RTT latency between 2 EC2 instance cross AZ            :              < 10ms (AZ's are within 60 miles / 100 kms of each other)
