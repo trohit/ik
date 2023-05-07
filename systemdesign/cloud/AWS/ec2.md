@@ -3,7 +3,7 @@ https://instances.vantage.sh/
 
 # types
 - General purpose workloads : t : apps with moderate CPU usage with temp spikes
-- Memory : m, r(ram), x,z(hi-mem)
+- Memory : m, r(ram), x, z(hi-mem)
 - Compute : c
 - Storage: igh (search optimised)
 - Accelerated : a
