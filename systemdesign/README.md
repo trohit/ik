@@ -22,7 +22,7 @@
     - Scale each service : scale a.k.a. handle huge spurt in users without sacrificing response time
   - (L)ogical diagram
     - [Use draw.io](https://draw.io/)
-    - [excalibur](https://excalidraw.com/)
+    - [excalidraw](https://excalidraw.com/)
     - [draw.chat](https://draw.chat/)
     - [whimiscal](https://whimsical.com/)
     - Figma (what is suggested)
