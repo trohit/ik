@@ -16,6 +16,12 @@
   - Peak time: Uber : surcharge|freemium models
   - Viral Video - Geo Hashing | Caching | CDN
 
+# Approaches 
+## educative.io
+- RESHADED
+  - Reqs + Esti + Stor + HLD + API + Details + Eval + Distinct feature
+  - https://www.educative.io/blog/use-reshaded-for-system-design-interviews
+
 # Refs 
 - https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05
 - https://gist.github.com/mwakaba2/8ad25dda8c71fe529855994c70743733
