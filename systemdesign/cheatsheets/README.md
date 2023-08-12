@@ -24,6 +24,7 @@
 
 # Refs 
 - https://blog.bytebytego.com/archive
+  - lots of them in https://www.linkedin.com/in/alexxubyte/recent-activity/images/ 
 - https://securityzines.com/#zines
 - https://matthewdbill.medium.com/back-of-envelope-calculations-cheat-sheet-d6758d276b05
 - https://gist.github.com/mwakaba2/8ad25dda8c71fe529855994c70743733
