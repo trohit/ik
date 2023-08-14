@@ -18,3 +18,4 @@
   # References
   - https://datatracker.ietf.org/doc/html/rfc7519
   - https://auth0.com/learn/json-web-tokens
+  - https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/
