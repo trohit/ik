@@ -1,0 +1,3 @@
+- https://www.techinterviewhandbook.org/system-design/
+- https://igotanoffer.com/blogs/tech/system-design-interviews
+- 
