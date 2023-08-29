@@ -1,7 +1,11 @@
 # Shortcuts
 - 1500 mins in a day
-  -  1 day is 24 hrs x 60 mins or 10hrs(600m) + 10hrs(600m) + 4hrs(240) = 1440m ~=  
-- 750 hrs in a month
+  -  1 day
+  -  = 24hrs x 60mins
+  -  = 10hrs(600m) + 10hrs(600m) + 4hrs(240)
+  -  = 1440m  
+- 750hrs in a month
+- ~10000hrs in a year
 
 # Table[^1]
 | # | Uptime Type | Outage in mins       |   |   |
