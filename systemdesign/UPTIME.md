@@ -8,7 +8,8 @@
 - ~10000hrs in a year
 
 # Table[^1]
-| # | Uptime Type | Outage in mins       |   |   |
+- Just remember 5 nines is 5 mins outage annually
+| # | Uptime Type | Annual Outage in mins       |   |   |
 |---|-------------|----------------------|---|---|
 | 1 | 1 nine      | 50000m or 35d        |   |   |
 | 2 | 2 nines     | 5000m or 3.5d        |   |   |
