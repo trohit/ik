@@ -46,6 +46,9 @@ def fib(n:int):
 - Two Sum: https://leetcode.com/problems/two-sum/
   - Brute Force: O(n)
   - Hashmap that uses key,val
-- Valid Parentheses: https://leetcode.com/problems/valid-parentheses/ 
+- Valid Parentheses: https://leetcode.com/problems/valid-parentheses/
+- Auto Complete : https://leetcode.com/problems/design-search-autocomplete-system/ (premium)
+  -  
 # Refs
-- https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s
+- [Youtube Pure How To Nail Your Next Technical Interview](https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s)
+- [Leetcode py solutions](https://dxmahata.gitbooks.io/leetcode-python-solutions/content/)
