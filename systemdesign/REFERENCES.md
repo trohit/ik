@@ -1,3 +1,3 @@
 - https://www.techinterviewhandbook.org/system-design/
 - https://igotanoffer.com/blogs/tech/system-design-interviews
-- 
+- https://www.educative.io/courses/system-design-interview-handbook
