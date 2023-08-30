@@ -1,10 +1,17 @@
 # Basics
 ## Soft skill qs
-- 1
+- Ask for clarification with examples and boundary conditions
+- Keep thinking aloud
+  - If I understand properly, I am supposed to..
+  - If input is X output should be Y
+  - I am not seeing how to optimize it, so will use brute firce algo first.
+  - Talk in terms of Big O notation viz. nlogn is a faster soln but needs twice as much mem 
 ### Qs to ask at end
 
 ## Basic Data structures and Algos
-- Arrays
+- Arrays 
+  - +ves: O(1) access by index
+  - -ves: Insert/ Del :O(n)* unless sorted, needs contiguous mem
 - Linked Lists
 - Hash
 - Tree
