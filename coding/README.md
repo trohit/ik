@@ -43,5 +43,8 @@ def init_vals(max: int):
 def fib(n:int):
   return seq[n] 
 ```
+- Two Sum: https://leetcode.com/problems/two-sum/
+  - Brute Force: O(n)
+  - Hashmap that uses key,val
 # Refs
 - https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s
