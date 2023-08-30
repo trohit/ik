@@ -27,10 +27,21 @@
 - Reverse Linked List
 - Implement a Cache
 - Given an int n, retutn nth elm of Fibonacci sequence
+  - Simple Soln 
 ```
 def fib(n:int)->int:
   if n < 2: return n
   return fib(n-1) + fib(n-2)
+```
+  - Dyn Pgm Soln
+```
+def init_vals(max: int):
+  seq = [0, 1]
+  for i in range(2, max):
+    seq.append(n-1) + seq.append(n-2)
+
+def fib(n:int):
+  return seq[n] 
 ```
 # Refs
 - https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s
