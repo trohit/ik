@@ -25,6 +25,7 @@
   
 ## Basic Interview qs
 - Reverse Linked List
-- 
+- Implement a Cache
+- Given an int n, retutn nth elm of Fibonacci sequence
 # Refs
 - https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s
