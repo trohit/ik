@@ -59,3 +59,4 @@ def fib(n:int):
 # Refs
 - [Youtube Pure How To Nail Your Next Technical Interview](https://www.youtube.com/watch?v=wOn5Dr2mAB4&t=893s)
 - [Leetcode py solutions](https://dxmahata.gitbooks.io/leetcode-python-solutions/content/)
+- [DS course on LC] (https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/)
