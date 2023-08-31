@@ -61,3 +61,5 @@ def fib(n:int):
 - [Leetcode py solutions](https://dxmahata.gitbooks.io/leetcode-python-solutions/content/)
 - [DS course on LC](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/)
 - [Github link Grokking Coding interview patterns](https://github.com/dipjul/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
+- [neetcode 75](bit.ly/neetcode75)
+
