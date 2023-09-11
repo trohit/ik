@@ -1,5 +1,36 @@
+
 # ik
 all ik programs
+
+# Coding
+- Leetcode
+- neetcode
+- Cracking the coding interview handbook
+
+# System Design
+- Sys design Interviews Handbook - Alex Xu, Sahn Lam
+- designguru - grokking the system design
+- Designing Data intesive application handbook
+
+# Behavioral interview
+- Tech interview handbook (github repo)
+- A life Engineered (YT)
+- STAR method (general method)
+
+# OOD Interview
+- interviewready
+- OOD by educative
+- Head First Design Patterns Handbook
+
+# Mock Interviews
+- interviewing.io
+- pramp
+- meetapro
+
+# Apply for Jobs
+- Linkedin
+- Monster
+- Indeed
 
 # Alternatives
 - https://www.acecademy.com/#courses
