@@ -1,7 +1,7 @@
 - [draw.io](https://draw.io)
 - [Google draw](https://docs.google.com/drawings/)
 - [Excalidraw](https://excalidraw.io/])
-- [https://diagrams.mingrammer.com/](Diagrams as Code)
+- [Diagrams as Code](https://diagrams.mingrammer.com/)
 - [PlatUML](https://www.plantuml.com/)
 - https://jamboard.google.com/
 - Zoom
