@@ -3,8 +3,11 @@
 # Top Links
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
-- [Blog on sys design](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
-
+- [Educative's Grokking Modern System Design For Software Engineers and Managers](
+- Blogs
+  - [Blog on sys design](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
+  - [Another blog on sys design in dev.to](https://dev.to/javinpaul/is-bytebytego-and-system-design-interview-an-insiders-guide-book-by-alex-xu-worth-it-266j)
+  
 # What is System design?
 - a collection of technologies to serve a set of users to meet certain reqs.
 
@@ -447,6 +450,11 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 - [Interactive map] (https://colin-scott.github.io/personal_website/research/interactive_latency.html)
 - https://aaronice.gitbook.io/system-design/system-design-systematic-approach
 - https://www.educative.io/blog/complete-guide-to-system-design
+- Sys design Courses
+  - [ByteByteGo](https://bytebytego.com/buy?product=SystemDesignAnnualPass)
+  - [Educative.io](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers)
+  - [Udemy](https://www.udemy.com/course/system-design-interview-prep/)
+  - [Exponent](https://www.tryexponent.com/courses/system-design-interview)  
 
 # Mock Interviews
 - https://interviewready.io/
