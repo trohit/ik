@@ -1,7 +1,8 @@
 ![image](https://user-images.githubusercontent.com/466385/220079388-e525fb2d-b69d-415c-8f36-165e4b73652d.png)
 
-[Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
-[system-design-primer](https://github.com/donnemartin/system-design-primer)
+# Top Links
+- [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
+- [system-design-primer](https://github.com/donnemartin/system-design-primer)
 
 # What is System design?
 - a collection of technologies to serve a set of users to meet certain reqs.
