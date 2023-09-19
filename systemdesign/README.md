@@ -1,5 +1,7 @@
 ![image](https://user-images.githubusercontent.com/466385/220079388-e525fb2d-b69d-415c-8f36-165e4b73652d.png)
 
+[Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
+
 # What is System design?
 - a collection of technologies to serve a set of users to meet certain reqs.
 
@@ -427,7 +429,8 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - 55-60: Questions for the interviewer
 
 # Reference Links
-- Intro to System Design: https://www.youtube.com/watch?v=FSR1s2b-l_I 
+- Intro to System Design: https://www.youtube.com/watch?v=FSR1s2b-l_I
+ - [ByteByteGo Channel](https://www.youtube.com/watch?v=o-k7h2G3Gco)
  - https://igotanoffer.com/blogs/tech/system-design-interview-questions#:~:text=Keep%20in%20mind%20that%20interviewers,to%20allocate%20your%20time%20wisely
  - https://blog.tryexponent.com/how-to-nail-the-system-design-interview/
 - How to generate ids on the cheap
