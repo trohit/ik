@@ -3,6 +3,7 @@
 # Top Links
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
+- [Blog on sys design]https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
 
 # What is System design?
 - a collection of technologies to serve a set of users to meet certain reqs.
