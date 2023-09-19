@@ -3,6 +3,7 @@
 # Top Links
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
+- [grokking-the-system-design-interview](https://www.designgurus.io/course/grokking-the-system-design-interview)
 - Blogs
   - [Blog on sys design](https://blog.pragmaticengineer.com/system-design-interview-an-insiders-guide-review/)
   - [Another blog on sys design in dev.to](https://dev.to/javinpaul/is-bytebytego-and-system-design-interview-an-insiders-guide-book-by-alex-xu-worth-it-266j)
