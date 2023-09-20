@@ -1,1 +1,3 @@
 - [Grokking sys design interview](https://github.com/Nitin96Bisht/System-Design/blob/master/Grokking%20System%20Design%20Interview.pdf)
+- System Design Big Archive download link: https://bit.ly/systemdesignpdf
+- System Design Blueprint download link: https://bit.ly/sdi-blueprint
