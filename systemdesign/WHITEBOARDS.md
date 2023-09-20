@@ -6,6 +6,8 @@
 - [Diagrams as Code](https://diagrams.mingrammer.com/)
 - [PlatUML](https://www.plantuml.com/)
 - https://jamboard.google.com/
+- https://www.tldraw.com
+- https://app.diagrams.net
 - Zoom
 - MS Visio
 - Gliffy
