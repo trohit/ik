@@ -105,10 +105,10 @@
       - Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
       - Key-value: Redis|AWSDynamoDB
 
-# Simplification
+# Calculation Simplification
 - assume each server can handle 30k reqs/sec at 30% operating capacity. peak_capacity : 100k req/s
-- assume 400 days / year
-- assume 100k secs / day
+- assume 400 days / year (40,000 x 1000 = 40x10^6 or 40 mill secs/yr or 1500minsx400d = 6000.10^2mins or 0.5 mill. mins/yr => 30mill. secs/yr)
+- assume 100k secs / day (86400secs or 24hrsx60mins = 1440 mins / day)
 - assume designing app for at least 3 yrs => 365*3 = ~1000 days
 - assume each commodity server can have upto 12 cores, 128GB RAM and 2TB disk space
 - Caching: 
@@ -184,6 +184,7 @@ Quadrillion.       PB.                 10^15           2^50  (1000 trillion)
 - https://ccnmtl.columbia.edu/projects/mmt/frontiers/web/ch2.html
 - https://betterexplained.com/articles/mental-math-shortcuts/
 - https://betterexplained.com/articles/how-to-develop-a-sense-of-scale/
+- https://systemdesign.one/back-of-the-envelope/
 
 ## Time Complexity
 - 1 < logn  < n  <  nlogn  < n2  < 2^n <  n! < n^n
