@@ -133,6 +133,8 @@
 
 
 # PEDALS
+![image](https://github.com/trohit/ik/assets/466385/8da7f34e-10b7-483a-9c87-72143a148eea)
+
 - Process requirement
   - Define goalpost, cust experience and acceptance tests
   - Whats Must-Have(key features), nice-to-have and out-of-scope
