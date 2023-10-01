@@ -2,3 +2,10 @@
 
 - Note that [GET|HEAD|PUT|DELETE should be idempodent](https://restfulapi.net/idempotent-rest-apis/)
 - POST should not be idempodent
+
+# Return Codes
+- Informational 1xx
+- Successful 2xx
+- Redirection 3xx
+- Client err 4xx
+- Server err 5xx
