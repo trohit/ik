@@ -1,5 +1,8 @@
 ![image](https://user-images.githubusercontent.com/466385/209539804-77b9a653-8caa-4595-b6a0-617b9302b3ef.png)
 
+- BaSE : Basically available + Soft State + Eventual Consistency
+- ACID : Atomicity + Consistency + Isolation + Durability 
+
 How to choose SQL | NoSQL?
 - If you prioritize low latency|scalability|wriiting large amt of unstructured data at the cost of consitency|atomcity => NoSQL
 - If you prioritize consistency|atomicity|reading large amt of structured data => SQL
