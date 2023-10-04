@@ -1,7 +1,7 @@
 
 # ik
 - all ik programs
-- the pages under this link use [github markup lang[(https://github.com/fefong/markdown_readme)
+- the pages under this link use [github markup lang](https://github.com/fefong/markdown_readme)
 
 # Coding
 - Leetcode
