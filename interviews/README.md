@@ -4,7 +4,7 @@
 - Research competitors, strengths and wekanesses (SWOT)
 - Look at:
   - about me
-  - behavioral qs
+  - [behavioral qs](https://github.com/trohit/ik/blob/main/behavioral/README.md)
   - why am i interested
   - tech qs and experiences
   - mock interview  
@@ -12,6 +12,7 @@
 # During
 - nothing much to do but to put your best foot forward
 - ask some interesting qs
+  - [great_questions_to_ask_your_interviewer](https://www.reddit.com/r/AskReddit/comments/eyrt0y/what_are_great_questions_to_ask_your_interviewer/)
   - Can you tell me about the team that I would be working with?
   - What is the culture of the team like?
   - Could you walk me through an average day/week in this position? - pretty self explanatory
