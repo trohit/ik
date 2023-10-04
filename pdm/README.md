@@ -13,6 +13,7 @@
   - Go through [Cole Mercer: List of PM Qs](https://www.colemercer.com/pmquestions)
 
    
-#Refs
+# Refs
 - [Cole Mercer: List of PM Qs](https://www.colemercer.com/pmquestions)
 - [Ken Norton Blog](https://www.bringthedonuts.com/blog/)
+- [PM Books to Read](https://www.bringthedonuts.com/essays/books-for-product-managers.html)
