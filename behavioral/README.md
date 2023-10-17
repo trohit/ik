@@ -1,3 +1,5 @@
+![image](https://github.com/trohit/ik/assets/466385/0db3e311-ded0-4280-9ff9-c9260d42ce45)
+
 # Prep
 - Read the job description, keeping it visible during the interview, and highlight your skills using the words used in the requirements.
 - Research the company briefly and get an understanding of the main products.
