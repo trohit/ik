@@ -15,7 +15,7 @@
 # System Design
 - Sys design Interviews Handbook - Alex Xu, Sahn Lam
 - designguru - grokking the system design
-- Designing Data intesive application handbook
+- [Designing Data intesive application handbook](https://www.academia.edu/41298363/Designing_Data_Intensive_Applications_THE_BIG_IDEAS_BEHIND_RELIABLE_SCALABLE_AND_MAINTAINABLE_SYSTEMS)
 
 # Behavioral interview
 - Tech interview handbook (github repo)
