@@ -14,3 +14,14 @@
 - Redirection 3xx
 - Client err 4xx
 - Server err 5xx
+
+## Significant return Codes
+- Rate limiting
+  - HTTP 429 too many requests : used in rate limiting /  throttling / QoS / DoS / too many logins
+  - response code from server that indicates that client is sending too many requests 
+- Tinyurl
+  - 301 Permanent Redirect
+    - Useful when we dont want too much load on the tinyurl server 
+  - 302 Temporary Redirection aka Moved Temporarily (see RFC 1945)
+    - Useful when we want to record stats 
+    
