@@ -17,7 +17,9 @@
   - Viral Video - Geo Hashing | Caching | CDN
 - Back-of the envelope calculations needs dev to know
   - powers of 2
-  - [availability](https://www.designgurus.io/blog/high-availability-system-design-basics) numbers : https://github.com/trohit/ik/blob/main/systemdesign/UPTIME.md
+  - [availability](https://www.designgurus.io/blog/high-availability-system-design-basics) numbers :
+    - https://www.enjoyalgorithms.com/blog/availability-system-design-concept
+    - https://github.com/trohit/ik/blob/main/systemdesign/UPTIME.md
   - [latency numbers](https://gist.github.com/hellerbarde/2843375)  
 
 # Approaches 
