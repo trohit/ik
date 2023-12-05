@@ -23,9 +23,15 @@ https://gist.github.com/jboner/2841832
 # Need to know
 
 
-- 1ns		      : access CPU registers / clock cycle of modern CPU
-- 1-10ns		  : L1/L2 cache access / few expensive CPU instructions (branch mispredict penalty)
-- 10-100ns	  : L3 cache access / DRAM access
+-       1 ns		  : access CPU registers / clock cycle of modern CPU / L1 cache access
+-      10 ns  	  : L2 cache access / few expensive CPU instructions (branch mispredict penalty) ; 10x slower than L1 access
+-    10^2 ns  	  : DRAM access ; 10x slower than L2 access
+- 25x10^4 ns      : 1MB read from DRAM [src](https://www.softwareyoga.com/latency-numbers-everyone-should-know/) : 2500x slower than single byte DRAM access
+-    10^6 ns      : 1MB seq read from SSD [src](https://www.softwareyoga.com/latency-numbers-everyone-should-know/) : ~100x slower than DRAM
+-  2x10^7 ns      : 1MB seq read from HDD : 20x slower than SSD
+- 15x10^7 ns      : RTT of network pkt from USA<>Europe : ~10x slower than 1MB HDD read
+
+## Other not so imp latencies
 - 100-1000ns	: cost of sys call  / md5(64bit num) 
 - 1-10us		  : context switching between threads / 64KB copy in DRAM
 - 10-100us	  : web server like NGINX processes an HTTP request / DRAM 1MB read / read 8K SSD 
