@@ -23,6 +23,10 @@
 # Design Mantras
 - FT-MLD
   - (F)unctional requirements
+  - (N)FR Non functional requirements : most frequently discussed
+    - Ease of use
+    - Avalability, consistency, reliability
+    - Scalability 
   - (T)echnical Reqs
     - design online system: is a blackbox + internally contain a collection of subsystems that may be geo	distributed + which interact with each other to expose an interface.
   - (M)icroservices
@@ -44,7 +48,7 @@
 - Correctness
 - Performance
   - Response Time : p99
-  - Availability : five 9s
+  - Availability : five 9s ... 5 mins
   - Throughput : 30k QPS
 
   - (D)eep Dive
@@ -161,16 +165,17 @@ Ref: https://www.lewis-lin.com/blog/pedals-method
 
 ## How many bytes make a ..?
 2^..
-- 20 Mill megs : 10^6
-- 30 Bill gigs : 10^9
-- 40 Trillion tubs : 10^12
-- 50 Quadrillion (1000 trill) pubs : 10^15
+- 2^10 Kilo kb                        : 10^3
+- 2^20 Mill megs                      : 10^6
+- 2^30 Bill gigs                      : 10^9
+- 2^40 Trillion tubs                  : 10^12
+- 2^50 Quadrillion (1000 trill) pubs  : 10^15
 
 ## alternate mnemonic to remember pow(2)
-- millionaire by 20
-- billionaire by 30
-- trillionaire by 40
-- quadrillionaire by 50
+- millionaire by 20    : 2^20 = 1 mill     = 1M
+- billionaire by 30    : 2^30 = 1 bill     = 1G
+- trillionaire by 40   : 2^40 = 1 trill    = 1T
+- quadrillionaire by 50: 2^50 = 1 quadrill = 1P
 
 ![image](https://user-images.githubusercontent.com/466385/209053239-372ddb85-40d6-488d-b0ed-a161569813c3.png)
 
