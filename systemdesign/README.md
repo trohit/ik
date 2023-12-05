@@ -463,7 +463,8 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
   - [ByteByteGo](https://bytebytego.com/buy?product=SystemDesignAnnualPass)
   - [Educative.io](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers)
   - [Udemy](https://www.udemy.com/course/system-design-interview-prep/)
-  - [Exponent](https://www.tryexponent.com/courses/system-design-interview)  
+  - [Exponent](https://www.tryexponent.com/courses/system-design-interview)
+- [Awesome system design on Github by madd86](https://github.com/madd86/awesome-system-design) 
 
 # Mock Interviews
 - https://interviewready.io/
