@@ -1,5 +1,11 @@
 ![image](https://user-images.githubusercontent.com/466385/211182371-c323c453-e27d-4cb3-93c3-25f005e91a80.png)
 
+# good questions to ask in any system design interview
+- What are the specific functional requirements of the system?
+- Can you elaborate on the non-functional requirements (e.g., scalability, availability, latency)?
+- Are there any constraints or limitations we should consider?
+- Can i assume that  / Is this a reasonable assumption
+
 # Case Studies
 Design
 - TinyURL
