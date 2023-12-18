@@ -52,6 +52,10 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 ![image](https://user-images.githubusercontent.com/466385/215309961-117777d0-14bd-4ca5-bf0e-9ddc21ff415d.png)
 
 
+# TradeOffs
+- Scaling reads in RDBMS is hard; scaling writes in RDBMS is impossible [src slide#68](https://www.slideshare.net/jboner/scalability-availability-stability-patterns)
+-  
+
 # Ref
 - https://www.codekarle.com/system-design/Database-system-design.html
 - https://towardsdatascience.com/choosing-the-right-database-in-a-system-design-interview-b8af9c6dc525
