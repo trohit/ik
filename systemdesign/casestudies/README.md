@@ -1,4 +1,11 @@
-![image](https://user-images.githubusercontent.com/466385/211182371-c323c453-e27d-4cb3-93c3-25f005e91a80.png)
+- Who is going to use it?
+- How are they going to use it?
+- How many users are there?
+- What does the system do?
+- What are the inputs and outputs of the system?
+- How much data do we expect to handle?
+- How many requests per second do we expect?
+- What is the expected read to write ratioimage](https://user-images.githubusercontent.com/466385/211182371-c323c453-e27d-4cb3-93c3-25f005e91a80.png)
 
 # Time Mgmt : Phdsw
 - Prob defn   :  5m 
@@ -8,6 +15,7 @@
 - Wrap-up     :  5m
 
 # good questions to ask in any system design interview
+
 - What are the specific functional requirements of the system? what is the main purpose ? What are the imp features ? multi-device support ?
 - Who are our clients or consumers ? / Do we need to talk to existing peices of the system ? / What are the existing pieces ? 
 - Can you elaborate on the non-functional requirements (e.g. performance, scalability, availability, consistency, latency, cost, security)?
