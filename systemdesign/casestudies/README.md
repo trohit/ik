@@ -52,5 +52,13 @@ Design
 - Video streaming
   - YoutTube|NetFlix|HotStar
 
+# Architectures
+- Microservice arch: where each component is an independent microservice and uses SOA (service oriented architecture)
+- Cmd Query responsibility segregation CQRS : separate read and write DBs
+- Layered (n-tier) architecture
+- Event Driven Architecture : uses production/detection and consumption | reaction to events
+  
+![image](https://github.com/trohit/ik/assets/466385/3a06273c-5dc9-415e-b2fe-0098ee893d70)
+
 # References
 - 
