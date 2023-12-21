@@ -2,6 +2,7 @@
 - How are they going to use it?
 - How many users are there?
 - What does the system do?
+- Are you looking for a hi-level overview or low level overview ?
 - What are the inputs and outputs of the system?
 - How much data do we expect to handle?
 - How many requests per second do we expect?
