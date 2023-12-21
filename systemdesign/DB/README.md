@@ -54,7 +54,20 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 
 # TradeOffs
 - Scaling reads in RDBMS is hard; scaling writes in RDBMS is impossible [src slide#68](https://www.slideshare.net/jboner/scalability-availability-stability-patterns)
--  
+
+# Qs to ask
+
+## Related to structure of data
+- Do you have tables with lots of columns, only a few of which are actually used by any particular row?
+- Do you have “attribute” tables where each row is a triple of (foreign key to row in another table, attribute name, attribute value) and you need ugly joins in your queries to deal with those tables?
+- Have you given up on using columns for structured data, instead just serialising it (to JSON, YAML, XML or whatever) and dumping the string into your database?
+- Does your schema have a large number of many-to-many join tables or tree-like structures (a foreign key that refers to a different row in the same table)?
+- Do you find yourself frequently needing to make schema changes so that you can properly represent incoming data?
+
+## relate to the scalability of your system:
+- Are you reaching the limit of the write capacity of a single database server? (If read capacity is your problem, you should set up master-slave replication. Also make sure that you have first given your database the fattest hardware you can afford, you have optimised your queries, and your schema cannot easily be split into shards.)
+- Is your amount of data greater than a single server can sensibly hold?
+- Are your page loads being slowed down unacceptably by background batch processes overwhelming the database?
 
 # Ref
 - https://www.codekarle.com/system-design/Database-system-design.html
