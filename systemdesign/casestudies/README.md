@@ -35,7 +35,7 @@
 
 # Case Studies
 Design
-- TinyURL
+- [TinyURL](https://docs.google.com/document/d/e/2PACX-1vTWxGs8gl4pCSBqzX75wfaOG4n87OytHOLDw7ttFVEBSaKtMN1CIiS-PwJAsh9dSTNLQpaKWNUDvokG/pub)
 - PasteBin
 - Yelp
 - NewsFeed
