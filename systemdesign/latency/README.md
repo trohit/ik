@@ -50,7 +50,17 @@ https://gist.github.com/jboner/2841832
 - Link latency between 2 sites across AWS regions        : [can vary widely](https://repost.aws/questions/QUl7IRSjpMQVe2mMOFojP6qA/a-question-about-inter-region-latency) [26ms(N.Virginia-Ohio) to 753ms(SPR-SaoPaolo)](https://www.concurrencylabs.com/blog/choose-your-aws-region-wisely/)
 - Ref
   - https://www.xkyle.com/Measuring-AWS-Region-and-AZ-Latency/
-  -  
+ 
+### Datacenter Latency
+- Within a datacenter:
+  - High bandwidth: 1-100Gbps interconnects
+  - Low latency: < 1ms within rack, 1-5ms across
+  - Little to no cost
+- Between datacenters
+  - Low bandwidth: 10Mbps-1Gbps
+  - High latency: 50-150ms
+  - $$$ for fiber
+
 # References
 - https://computers-are-fast.github.io/
 - https://www.youtube.com/watch?app=desktop&v=FqR5vESuKe0
