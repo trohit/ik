@@ -5,5 +5,12 @@
 - Vulnerability : when sys vulnerabilities like not updated software or APTs or 0-day attacks / phishing
 - Encryption theft : encryption leys compromised
 - Physical Theft : data is physically stolen
-  
+
+# How to ensure security in any system
+- policies
+- standards
+- procedures
+- decisions & reference arch
+- patterns
+- playbooks 
 ![image](https://github.com/trohit/ik/assets/466385/249cb20b-f764-4c58-8a32-bbf362caffdd)
