@@ -13,7 +13,7 @@
       - Replication for High Availability
       - Consistent and Serializable Transactions using (Raft consensus algo + gossip protocol + Quorums for Reads and Writes )
         - gossip protocol for (node discovery + failure detection + cluster metadata propagation + anti-entropy & convergence
-    - eg. TiDB aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
+    - eg. TiDB (Titanium DB) aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
  
 
 How to choose SQL | NoSQL?
