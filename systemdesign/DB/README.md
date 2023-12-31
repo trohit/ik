@@ -1,7 +1,20 @@
 ![image](https://user-images.githubusercontent.com/466385/209539804-77b9a653-8caa-4595-b6a0-617b9302b3ef.png)
 
 - BaSE : Basically available + Soft State + Eventual Consistency
-- ACID : Atomicity + Consistency + Isolation + Durability 
+  - Primarily used in: OLAP that needs high number of reads + maybe writes + scale
+- ACID : Atomicity + Consistency + Isolation + Durability
+  - Primarily used : OLTP + ACID
+- Hybrid DBs
+  - Where used: when you need some degree of OLTP/ACID + OLAP
+    - eg. CockroachDB aims to provide whatever Postgres does (except triggers and stored procedures)
+      - and also allow scaling while aiming for consistency and availability.
+      - CockroachDB is a distributed SQL database that is designed to provide both consistency and availability, along with partition tolerance—the three key properties of the CAP theorem. The CAP theorem states that in a distributed system, it is impossible to simultaneously achieve all three of these properties. Here's how CockroachDB achieves consistency and availability
+      - Scalability using Distributed Architecture + Consistent Hashing + Range Partitioning  + a form of Vector Clocks
+      - Replication for High Availability
+      - Consistent and Serializable Transactions using (Raft consensus algo + gossip protocol + Quorums for Reads and Writes )
+        - gossip protocol for (node discovery + failure detection + cluster metadata propagation + anti-entropy & convergence
+    - eg. TiDB aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
+ 
 
 How to choose SQL | NoSQL?
 - If you prioritize low latency|scalability|wriiting large amt of unstructured data at the cost of consitency|atomcity => NoSQL
