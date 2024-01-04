@@ -91,3 +91,6 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 
 # Distributed Databases
 - https://burcuku.github.io/cse2520-bigdata/dist-databases.html
+- https://www.youtube.com/watch?v=6OFeuNy39Qg
+- https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
+- https://www.slideshare.net/andreimoga/cockroachdb
