@@ -89,6 +89,9 @@ Time series DB: InfluxDB|RRDTool|Graphite|Prometheus
 - http://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/
 - https://stackoverflow.blog/2021/01/14/have-the-tables-turned-on-nosql/
 
+![image](https://github.com/trohit/ik/assets/466385/d485dc9a-0d01-415b-9b8a-0165c2842540)
+src: https://www.youtube.com/watch?v=SxsMgHFNvWg
+
 # Distributed Databases
 - https://burcuku.github.io/cse2520-bigdata/dist-databases.html
 - https://www.youtube.com/watch?v=6OFeuNy39Qg
