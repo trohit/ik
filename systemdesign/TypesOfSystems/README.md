@@ -16,3 +16,15 @@ online | batch | streaming | offline
   - metrics for a monitoring dashoard ( backend )  
 - offline
   - approval for a quora post | application
+
+# Distributed systems
+- All these systems can operate within a single system or in distributed manner
+- In distributed systems:
+  - All computers operate concurrently
+  - All computers fail independently
+  - All computers do not share a global clock
+
+## References
+- https://www.youtube.com/watch?v=Y6Ev8GIlbxc
+  
+    
