@@ -100,3 +100,5 @@ src: https://www.youtube.com/watch?v=SxsMgHFNvWg
 
 # Good Reading
 - https://www.uber.com/en-SG/blog/postgres-to-mysql-migration/
+- https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most
+
