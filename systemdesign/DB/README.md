@@ -97,3 +97,6 @@ src: https://www.youtube.com/watch?v=SxsMgHFNvWg
 - https://www.youtube.com/watch?v=6OFeuNy39Qg
 - https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
 - https://www.slideshare.net/andreimoga/cockroachdb
+
+# Good Reading
+- https://www.uber.com/en-SG/blog/postgres-to-mysql-migration/
