@@ -1,4 +1,5 @@
 # Just a bunch of wise sayings related to Comp Sci.
+- A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable. — Leslie Lamport 
 - Change is best when its small and frequent. (SRE Handbook Google)
 - Done is better than perfect. Start with what you know, add as you get more insights.
 - Ask your product users what their problems are, but dont expect them to define their own solutions. - https://medium.com/serious-scrum/the-3-questions-product-owner-should-never-ask-end-users-52ce956825e0 
