@@ -20,4 +20,35 @@
 - Logical diagram
 
 
+# Prob
+URL shortener
+
+# FR
+- given a url, return shortcode
+- 1:1 url:shortcode
+- stretch goals: stats, 
+- 10M urls shortening a day
+- 1:10x 100M reads a day
+
+# NFR
+- Scale
+- Uniqueness
+- Availability
+- Low Latency
+
+# API
+- POST /create_tinyurl
+  - params:longurl 
+  - response: shortcode
+- GET /shortcode
+  - response: url
+  - HTTP 301 perm redirect cached by browser
+  - HTTP 302: temp redirect not cached <<<<< good for stats
+
+# Design
+![image](https://github.com/trohit/ik/assets/466385/e3b5048e-ff5d-4bb2-9a41-5aeeee129823)
+
+
+# Scalability
+
 # References
