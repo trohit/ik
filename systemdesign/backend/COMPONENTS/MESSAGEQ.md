@@ -8,5 +8,15 @@
 - Both consumer and producer dont need to be alive at the same time
 - Allow lock free data structures by consumers in some cases (say tinyurl allocations can be done without the shortcode allocation service needing to lock its data structures)
 
-- # Examples
-- - RabbitMQ, Kafka, ActiveMQ
+# Usecases
+- To send notifications to a consumer who may be offline (say new tweets / msgs / nearby friends / mails) whenever user comes online.
+- Great for IoT and edge devices usecases that (may not be up all the time)
+- For loose coupling a fat producer with many lightweight consumers that can say process only one request at a time and do so in a lock free manner.
+
+# Examples
+- RabbitMQ, Kafka, ActiveMQ
+
+
+# References
+- https://www.youtube.com/watch?v=oVZtzZVe9Dg
+- Notes: https://notebook.zohopublic.in/public/notes/u3i1s522a981ed32d48bcbb0b940ee3d58f22
