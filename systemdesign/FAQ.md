@@ -1,3 +1,13 @@
+
+# Differences between
+## Diff between Redis vs Memcache
+## Diff between Kafka vs RabbitMQ
+- Kafka pull based means consumer responsible to keep asking Post Office "Do you have anything for me?"
+  - In Kafka, if consumer goes down| n/w partition, an offset is maintained in every (broker + topic + partition) and same | another consumer can pick up from last offset
+  - After some retries(need to clarify this bit), msg goes to dead letter q 
+- In RMQ, broker itself will take responsibility to deliver msg to consumer
+  - in RMQ, after few retries fail, msg goes to Dead letter Q.
+- https://www.youtube.com/watch?v=oVZtzZVe9Dg
 # Diff between socket|CPU|core
 - https://stackoverflow.com/questions/40163095/what-is-socket-core-threads-cpu
 - socket is the physical socket where CPU capsules are placed. A normal PC has just 1 socket.
@@ -18,5 +28,11 @@
     - person1 whose print request is processed first  sees latency= 0s + processing_time=10s : so response time=10s
     - person4 whose print request is processed second sees latency=30s + processing_time=10s : so response time=40s
 
+# Explain How your design will handle
+## Concurrency Control
+## Scalability
+## Lockfree transactions
+## Too many writes
+## Too many reads
 
       
