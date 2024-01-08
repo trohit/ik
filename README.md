@@ -1,6 +1,7 @@
 [Resources for Tech interviews](https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7125868902663745538-mTZO)
 ![resources_for tech_interviews](https://github.com/trohit/ik/assets/466385/966d451f-790b-4dee-8287-acda74fb980a)
 
+[https://docs.google.com/document/d/1LYiKGlLwTIH6aKw7Sb1AmKPzFhYwB65h8JYH5WxdS5g/edit]
 
 
 # ik
