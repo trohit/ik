@@ -15,20 +15,10 @@ Design a build & deploy system on the scale of a large org like Google.
 - Build logs should be viewable and state of the build; same for deploy
 - Highly available : five 9s (5 mins downtime/yr)
 
-# apis
-POST /build_and_deploy
-  param: build path and cmd/s to run
-  response: 201 accepted
-  json: build job id, build logs, deploy logs, url
-
-GET /get_status
-  response: build success| in_progress| failed
-
 # HLD
 
 # BOTE
 50x10^3 / 10^5 : QPS: 1 
-
 
 # Non-functional Reqs
 - High Scale
@@ -41,13 +31,22 @@ GET /get_status
 - Some SSO like LDAP / SAML to identify user in org
 
 # APIs
-## public endpoints
+## public endpoints : Will use REST
+- POST /build_and_deploy
+  - param: build path and cmd/s to run
+  - response: 201 accepted
+  - json: build job id, build logs, deploy logs, url
 
-## pvt endpoints
+- GET /get_status
+  - response: build success| in_progress| failed
+
+
+## pvt endpoints: Can use gRPC + protobufs / Apache Thrift 
 
 # Design
 ![image](https://github.com/trohit/ik/assets/466385/a1979445-ada2-4804-94d8-333df5f04d0c)
 
 # Qs
+## How will you ensure that the 1M-50M machines can access the build image and deploy within 30 mins? 
 
 # Wrap-up
