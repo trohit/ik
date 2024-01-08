@@ -28,6 +28,45 @@
     - person1 whose print request is processed first  sees latency= 0s + processing_time=10s : so response time=10s
     - person4 whose print request is processed second sees latency=30s + processing_time=10s : so response time=40s
 
+# Diff between Paxos vs Raft protocol
+
+# Diff between 2PC vs 3PC
+- Both are types of atomic committment protocols that work on distributed systems based on consensus used to commit transactions
+- Involves a node that plays the role of a coordinator
+- 2PC 2 phase committment protocol: different from 2PL (2 phase locking protocol : also called pessimistic concurrency control method)
+  - Assumptions
+    - stable storage at each node with a write-ahead log (WAL aka redo log) 
+    - no node crashes forever
+    - data in WAL is never lost|corrupted in a crash
+    - any 2 nodes can communicate with each other
+  - Workflow
+    - 1st Phase: Commit request OR Voting Phase
+      - "commit request" to all participants : blocking call that waits for reply or timeout
+      - each node makes entry to their undo and redo|WAL log & replies with Ack|Goahead|YesVote.
+      - in non-happy path, tx is aborted  
+    - 2nd Phase: Do commit or completion phase
+      - "do commit" request to all participants: blocking call that waits for reply|Ack from all participants
+      - Each participant completes the operation, and releases all the locks and resources held during the transaction.
+      - Each participant sends an acknowledgement to the coordinator.
+      - The coordinator completes the transaction when all acknowledgements have been received.
+      - In non-happy path (failure | timeout)
+        - The coordinator sends a rollback message to all the participants.
+        - Each participant undoes the transaction using the undo log, and releases the resources and locks held during the transaction.
+        - Each participant sends an acknowledgement to the coordinator.
+        - The coordinator undoes the transaction when all acknowledgements have been received. 
+  - Cons
+    - blocking protocol.
+    - If after participant acking commit request, the coordinator fails permanently , some participants will never resolve their transactions.
+      -  as participant will block until a commit or rollback is received
+      - During the commit phase, a two-phase commit protocol cannot dependably recover from a failure of both the coordinator and a cohort member.
+        -  If only the coordinator had failed, and no cohort members had received a commit message, it could safely be inferred that no commit had happened.
+        -  If, however, both the coordinator and a cohort member failed, it is possible that the failed cohort member was the first to be notified, and had actually done the commit.
+        -  Even if a new coordinator is selected, it cannot confidently proceed with the operation until it has received an agreement from all cohort members, and hence must block until all cohort members respond.
+       
+          
+# Diff between Gossip protocol vs other alternatives
+
+# Consistent Hashing vs other mechanisms
 # Explain How your design will handle
 ## Concurrency Control
 ## Scalability
