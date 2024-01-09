@@ -7,6 +7,7 @@
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
 - https://martinfowler.com/articles/patterns-of-distributed-systems/
+- https://liuzhenglaichn.gitbook.io/system-design/
 
 # Books
 - (PDF) https://github.com/euclid1990/google-sre-book/
