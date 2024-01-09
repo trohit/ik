@@ -1,4 +1,11 @@
+# References
+- http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
 
+# Nuances
+- Fan-out-on-read vs Fan-out-on-write
+  - For celebs like Elon, too many followers, not all active: so makes sense to pull based fan out / fan-out on read
+  - For small # followers, can easily do push based fan-out, so fan out on write
+      
 Reqs
 - timeline
 - search
@@ -40,3 +47,5 @@ https://excalidraw.com/#room=22c4259fb778680ceb3c,z5QAyk19NE7JlpN6eyOp6A
 Scalability
 
 Wrapup
+
+
