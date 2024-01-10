@@ -6,8 +6,24 @@
 `there are two hard things in computer science: naming things and cache invalidation.`
  
 # Types of Caches
-- Cache aside 
-- Read|Write through Cache
+- Cache aside : most widespread caching pattern
+  - examples:  
+  - pros:simplest to implement
+    - biggest advantage of using Cache-Aside is that anybody can read the code and understand its execution flow.
+    - minimal cache provider responsibility: it just needs to be able to get and set values
+    - straightforward migrations from a cache provider to another one if needed
+  - cons:
+    - code needs to handle the inconsistency gap between the cache and the datastore.
+      - eg. app successfully updated cache but fails to update the datastore. So app needs to implement retries.
+      - if retries fail, data inconsistency: b/w cache and datastore.
+    - puts load on app as it needs to make 2 writes: 1 to cache + 1 to datastore  
+- (Read|Write) (through|back aka behind) Cache: Write-Through & writeback moves the writing responsibility to the cache provider.
+  - diff b/w write-thru vs write-behind:
+    - in write thru cache->db is synchronous + blocking
+    - in write back cache->db is done in async non-blocking fashion 
+  - examples: most filesystems like WAFL, UFS(EMC) use write through  
+  - pros: app code is now free of failure handling and retry logic.
+  - cons: cache has additional responsibility and load to write to datastore. 
 - Write around Cache
 - Write Back|Behind Cache
 - Refresh Ahead
