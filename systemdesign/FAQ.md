@@ -1,6 +1,13 @@
 
 # Differences between
+## Differences between little endian(LSB) and Big Endian(MSB)
+- https://stackoverflow.com/questions/22030657/little-endian-vs-big-endian
+- https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
 ## Diff between Redis vs Memcache
+- Redis: in-mem key value store with a durable storage
+  - https://redis.io/docs/get-started/faq/
+  - needs just 3MB RAM to begin with
+  - https://adevait.com/redis/what-is-redis
 ## Diff between Kafka vs RabbitMQ
 - Kafka pull based means consumer responsible to keep asking Post Office "Do you have anything for me?"
   - In Kafka, if consumer goes down| n/w partition, an offset is maintained in every (broker + topic + partition) and same | another consumer can pick up from last offset
