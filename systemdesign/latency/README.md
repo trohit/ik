@@ -9,6 +9,7 @@ https://gist.github.com/jboner/2841832
   
 
 # Stats
+- [src](https://www.linkedin.com/posts/anubhav-dube-b02557236_latency-and-throughput-are-some-of-the-important-activity-7145373167509835776-Spmr)
 - Reading 1 MB from RAM: 250 μs (0.25 ms)
 - Reading 1 MB from SSD: 1,000 μs (1 ms)
 - Transfer 1 MB over Network: 10,000 μs (10 ms)
