@@ -8,6 +8,13 @@ https://gist.github.com/jboner/2841832
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   
 
+- Stats
+- Reading 1 MB from RAM: 250 μs (0.25 ms)
+- Reading 1 MB from SSD: 1,000 μs (1 ms)
+- Transfer 1 MB over Network: 10,000 μs (10 ms)
+- Reading 1MB from HDD: 20,000 μs (20 ms)
+- Inter-Continental Round Trip: 150,000 μs (150 ms)
+
 # How long is a nanosec ?
 - Grace Hopper explains 1 ns: https://www.youtube.com/watch?v=9eyFDBPk4Yw
   - 1ns ia billionth of a sec ...1/10^12secs or in 1ns, light travels 11.8inches in vacuum (or 0.3m)
