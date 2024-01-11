@@ -4,9 +4,12 @@
 
 # Complexity
 `there are two hard things in computer science: naming things and cache invalidation.`
- 
+
+# Diagrams
+
 # Types of Caches
 - Cache aside : most widespread caching pattern
+  - Diagram: ![image](https://github.com/trohit/ik/assets/466385/99499a97-08e0-480c-b841-199430bacd7d) 
   - examples:  
   - pros:simplest to implement
     - biggest advantage of using Cache-Aside is that anybody can read the code and understand its execution flow.
@@ -18,6 +21,8 @@
       - if retries fail, data inconsistency: b/w cache and datastore.
     - puts load on app as it needs to make 2 writes: 1 to cache + 1 to datastore  
 - (Read|Write) (through|back aka behind) Cache: Write-Through & writeback moves the writing responsibility to the cache provider.
+  - ![image](https://github.com/trohit/ik/assets/466385/f2d8b084-af36-4053-82bb-4caf6ed7817d)
+  - read thru cache: ![image](https://github.com/trohit/ik/assets/466385/819620ea-ff52-4a28-9d1d-04bb3c1f59d2)
   - diff b/w write-thru vs write-behind:
     - in write thru cache->db is synchronous + blocking
     - in write back cache->db is done in async non-blocking fashion 
@@ -26,6 +31,7 @@
   - cons: cache has additional responsibility and load to write to datastore. 
 - Write around Cache
 - Write Back|Behind Cache
+  - Diagram: ![image](https://github.com/trohit/ik/assets/466385/ca867f6b-e057-47c9-9c5f-531483b2423a)
 - Refresh Ahead
 
 # When to use what
