@@ -29,8 +29,13 @@
 - Refresh Ahead
 
 # When to use what
-https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
+- By default use, Read thru & Write Thru cache whenever possible.
+- If looking for a really simple solution to test perf improvements due to caching, start with Cache-Aside
+- If perf considerations outweigh cache vs db consistency, use Write-Back.
+- Refresh Ahead caching is useful if a large amount of freq accessed data gets updated frequently and consistency is imp. for the app usecase   
 
 # References
 - https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
 - https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
+- https://medium.com/@mmoshikoo/cache-strategies-996e91c80303
+- https://www.enjoyalgorithms.com/blog/refresh-ahead-caching-pattern
