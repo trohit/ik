@@ -22,6 +22,12 @@ https://gist.github.com/jboner/2841832
 - 100x for HDD transfer
 - 1000x for inter continental RTT
 
+## Cloud network latency
+- intra / within AZ latency:sub ms
+- inter AZ latency: single digit ms
+- inter region latency: varies
+- [AWS latency chart](
+https://www.cloudping.co/grid)
 
 # Latency vs Throughout
 Latency plays a pivotal role in determining the delay experienced by users when sending or receiving data across the network. On the other hand, throughput is instrumental in establishing the capacity for multiple users to simultaneously access the network.
