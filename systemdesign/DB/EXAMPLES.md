@@ -1,5 +1,5 @@
 # Redis
-- Renmote dictionary server, written in C circa 2009
+- [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
 - A fast open src, distributed, in-mem key-value DB, cache & msg broker with optional [persistence & durability](https://redis.io/docs/management/persistence/)
 - needs just 3MB to get started
 - Widely used in places like Twitter, AirBnB, Yahoo and Amazon
@@ -11,3 +11,6 @@
 - Often compared to Memcache which is only in-mem DB
 - Refs
   - [Redis Antipatterns](https://developer.redis.com/howtos/antipatterns/)
+
+# References
+- https://db-engines.com/en/ranking
