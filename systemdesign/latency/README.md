@@ -8,8 +8,13 @@ https://gist.github.com/jboner/2841832
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   
 
+
 # Stats
 - [src](https://www.linkedin.com/posts/anubhav-dube-b02557236_latency-and-throughput-are-some-of-the-important-activity-7145373167509835776-Spmr)
+- L1 cache ref: 1ns
+- L2 cache ref: 5ns
+- RAM ref: 100ns
+- ping RTT in same DC : 0.5ms or 500ns
 - Reading 1 MB from RAM: 250 μs (0.25 ms)
 - Reading 1 MB from SSD: 1,000 μs (1 ms)
 - Transfer 1 MB over Network: 10,000 μs (10 ms)
