@@ -20,6 +20,14 @@
 - Message queues
 - Network Protocols
 
+# cPHDSW
+- Look for (c)ues and feedback for where and when to pivot 
+- (Prob) or define the goal post
+- (H)LL: API+Model+BOTE or What is ?
+- (D)eep Dive: What Happens or number the arrows
+- (S)calability: Identify SPOF villains and bring in scalability heroes; discuss tradeoffs along the way 
+- (W)rap-up: Wrap up the story
+
 # Design Mantras
 - FT-MLD
   - (F)unctional requirements
@@ -53,7 +61,7 @@
 
   - (D)eep Dive
 - Non Func Requirements
-  - CRUMPSS: Consistency Reliability Usability Maintainability Performance Security Scalability
+  - CRAMPLESS: Consistency Reliability Availability Maintainability Performance Latency Elasticity Security Scalability
     - Performance
       - Func req describe SLO for correctness
       - Non Func req describe SLO for availability | thoughput | response_time
