@@ -1,6 +1,24 @@
 # References
 - http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
-
+- https://www.infoq.com/presentations/Twitter-Timeline-Scalability/
+  - Tweet service: handles scale
+  - Target SLA: latency 5 secs
+  - in-mem timeline clusters that incl. push notifications
+  - timeline types
+    - user timeline: all tweets certain user has sent 
+    - newsfeed : merge of all user timelines that user cares abt (followees + interests)
+      - but strips out ack replies and DMs
+    - Query Timeline aka search API
+    - Push infra: for paid users 100 ms latency) called Firehose
+    - 1 mill. socket concurrency
+    - can subscribe for interesting search terms
+    - Pull infra
+      - ingest rate QPS:400k
+      - TFE ..> fan out ..> massive replicated redis cluster key:user val:[list of tweets they posted]
+      - once tweet comes in, query fan out service 'flock' that knows all followers & followees
+      - workflow: user A tweets, fanout service pushes it to 20k followers user keys and adds them to their newsfeeds
+        - also tracks attribs like retweet, etc.
+        -  
 # Nuances
 - Fan-out-on-read vs Fan-out-on-write
   - For celebs like Elon, too many followers, not all active: so makes sense to pull based fan out / fan-out on read
