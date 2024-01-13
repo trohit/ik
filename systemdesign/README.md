@@ -47,6 +47,7 @@
     - [draw.chat](https://draw.chat/)
     - [whimiscal](https://whimsical.com/)
     - Figma (what is suggested)
+    - What [pramp.com](https://pramp.com) suggests :[sketchboard.me](https://sketchboard.me/new)
     - ![image](https://user-images.githubusercontent.com/466385/211135036-5b2e1ae5-5d52-4db7-8577-02c967b6426d.png)
   - Refs
     - https://gist.github.com/vasanthk/485d1c25737e8e72759f
