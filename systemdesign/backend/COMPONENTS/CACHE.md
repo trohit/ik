@@ -45,3 +45,5 @@
 - https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
 - https://medium.com/@mmoshikoo/cache-strategies-996e91c80303
 - https://www.enjoyalgorithms.com/blog/refresh-ahead-caching-pattern
+- https://mechanical-sympathy.blogspot.com/2013/02/cpu-cache-flushing-fallacy.html
+  
