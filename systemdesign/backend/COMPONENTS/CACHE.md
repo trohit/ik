@@ -6,6 +6,14 @@
 `there are two hard things in computer science: naming things and cache invalidation.`
 
 # Diagrams
+# Cache by position
+- Client Side
+- DNS Cache
+- CDN Cache
+- In-Mem Cache
+- FS Cache
+- DB Cache
+- CPU Caches: L1/L2/L3 of which L1 and L2 are CPU specific and L3 is usually a shared CPU cache
 
 # Types of Caches
 - Cache aside : most widespread caching pattern
