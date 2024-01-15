@@ -5,3 +5,6 @@
 # Scaling
 ## Sharding vs Consistent Hashing
 - https://medium.com/@mitnitesh1/sharding-vs-consistent-hashing-37c52d570851
+
+
+# Undo, Redo and WAL logs
