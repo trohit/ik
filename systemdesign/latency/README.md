@@ -7,6 +7,7 @@ https://gist.github.com/jboner/2841832
 - Reading
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   
+![image](https://github.com/trohit/ik/assets/466385/50d1c555-14a3-44c6-84c9-74a7b60d7e4d)
 
 
 # Stats
