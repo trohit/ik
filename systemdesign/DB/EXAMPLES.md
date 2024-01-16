@@ -1,7 +1,13 @@
-# Postgres
+# SQL RDBMS
+
+## Postgres
 - started out as a successor to Ingres, called postgres or PostgreSQL
 - SQL RDBMS
   
+
+# NoSQL 
+- not only SQL
+- also called [BASE|https://stackoverflow.com/questions/3342497/explanation-of-base-terminology] Basically Available, Soft state, Eventual consistency
 
 # Redis
 - [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
