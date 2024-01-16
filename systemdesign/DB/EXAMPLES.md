@@ -1,3 +1,8 @@
+# Postgres
+- started out as a successor to Ingres, called postgres or PostgreSQL
+- SQL RDBMS
+  
+
 # Redis
 - [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
 - A fast open src, distributed, in-mem key-value DB, cache & msg broker with optional [persistence & durability](https://redis.io/docs/management/persistence/)
