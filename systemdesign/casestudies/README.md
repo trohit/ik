@@ -63,3 +63,4 @@ Design
 
 # References
 - https://github.com/donnemartin/system-design-primer
+- https://github.com/gitgik/distributed-system-design/
