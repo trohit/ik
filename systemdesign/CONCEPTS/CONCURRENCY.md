@@ -13,6 +13,15 @@
   - Repeatable read : transaction holds read locks on all rows it references and writes locks on referenced rows for update and delete actions. Since other transactions cannot read, update or delete these rows, consequently it avoids non-repeatable read.
   - Serializable : highest isolation level. Defined to be an execution of operations in which concurrently executing transactions appears to be serially executing.
 
+# Terms
+## transaction isolation level metrics
+- Dirty Reads
+- Phantom reads
+- Non repeatable reads
+## other related terms 
+- Write skew
+- Lost Updates
+- 
 # References
 - https://herbsutter.com/2013/02/11/atomic-weapons-the-c-memory-model-and-modern-hardware/
 - https://www.youtube.com/watch?v=A8eCGOqgvH4
