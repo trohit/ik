@@ -14,7 +14,21 @@
    - Most NOSQL systems are PA/EL (available when partitioned, else choose latency)
    - except Mongo is PA/EC (availabile when partitioned, else choose consistency)
    - Most RDBMS are PC/EC
-      
+
+## Process vs Threads
+[Process vs Threads](https://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread)
+
+Per process items             | Per thread items
+------------------------------|-----------------
+Address space                 | Program counter
+Global variables              | Registers
+Open files                    | Stack
+Child processes               | State
+Pending alarms                |
+Signals and signal handlers   |
+Accounting information        |
+
+
 ## Differences between little endian(LSB) and Big Endian(MSB)
 - https://stackoverflow.com/questions/22030657/little-endian-vs-big-endian
 - https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
