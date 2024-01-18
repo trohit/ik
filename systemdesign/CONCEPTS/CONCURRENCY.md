@@ -1,7 +1,7 @@
 # Concurrency types
 
 # Transaction Isolation levels
-- In [ACID](https://en.wikipedia.org/wiki/ACID) DBs, different types of (isolation)[https://en.wikipedia.org/wiki/Isolation_%28database_systems%29] is allowed.
+- In [ACID](https://en.wikipedia.org/wiki/ACID) DBs, different types of [isolation](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29) is allowed.
 - Transaction is a logical set of ops to be executed on a DB, say txfer money from A to B
 - A transaction can span many ops with multiple stmts.
 - Isolation in ACID defines how a transaction is visible to other users.
