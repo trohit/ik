@@ -1,5 +1,20 @@
 
 # Differences between
+## CAP and PACELC
+- CAP: In a network partition(P), one has to choose between (C)onsistency and (A)vailability.
+- So in the presence of a network partition some systems, some designs choose CP (consistency-when-partitioned) or AP(availability-when-partitioned).
+- Examples
+  - CP: supports consistency and partition tolerance while sacrificing availability
+    - eg. Most RDBMS like MySQL and PostgreSQL, also banking aplications
+  - AP: supports availability and partition tolerance while sacrificing consistency
+    - eg. Most NoSQL DBs like Cassandra, Riak, used for social media sites like insta|fb
+ - PACLELC
+   - Most of the time, there isnt a network partition. PACELC extends CAP to talk about these situations.
+   - in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and loss of consistency (C).
+   - Most NOSQL systems are PA/EL (available when partitioned, else choose latency)
+   - except Mongo is PA/EC (availabile when partitioned, else choose consistency)
+   - Most RDBMS are PC/EC
+      
 ## Differences between little endian(LSB) and Big Endian(MSB)
 - https://stackoverflow.com/questions/22030657/little-endian-vs-big-endian
 - https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
