@@ -116,3 +116,11 @@ Accounting information        |
 - [HTTP Codes](https://www.restapitutorial.com/httpstatuscodes.html)
 - https://umbraco.com/knowledge-base/http-status-codes/
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- Imp HTTP codes
+  - 100 continue, 200 success, 201 created, 202 job accepted, 301 perm redirect, 302 temp redirect,
+  - 401 unauthorized, 404 not found, 405 method not allowed, 414 URI too long, 429 too many reqs,
+  - 500 internal server err, 509 bandwidth exceeded,
+ 
+# why cant I use 
+## kafka as a Database
+- kafka is meant for immutable writes so cant modify, cant do ACID transactions, cant index and search data, instead one should use a DB.
