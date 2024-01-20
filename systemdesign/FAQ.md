@@ -112,4 +112,5 @@ Accounting information        |
 ## Too many writes
 ## Too many reads
 
-      
+# HTTP
+- [HTTP Codes](https://www.restapitutorial.com/httpstatuscodes.html)
