@@ -114,3 +114,5 @@ Accounting information        |
 
 # HTTP
 - [HTTP Codes](https://www.restapitutorial.com/httpstatuscodes.html)
+- https://umbraco.com/knowledge-base/http-status-codes/
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
