@@ -15,6 +15,11 @@
 - Scalability : 10m
 - Wrap-up     :  5m
 
+# References
+- https://github.com/donnemartin/system-design-primer
+- https://github.com/gitgik/distributed-system-design/
+- https://github.com/arpitbbhayani/system-design-questions
+
 # good questions to ask in any system design interview
 
 - What are the specific functional requirements of the system? what is the main purpose ? What are the imp features ? multi-device support ?
@@ -61,6 +66,3 @@ Design
   
 ![image](https://github.com/trohit/ik/assets/466385/3a06273c-5dc9-415e-b2fe-0098ee893d70)
 
-# References
-- https://github.com/donnemartin/system-design-primer
-- https://github.com/gitgik/distributed-system-design/
