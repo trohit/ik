@@ -19,6 +19,7 @@
 - https://github.com/donnemartin/system-design-primer
 - https://github.com/gitgik/distributed-system-design/
 - https://github.com/arpitbbhayani/system-design-questions
+- https://github.com/karanpratapsingh/system-design
 
 # good questions to ask in any system design interview
 
