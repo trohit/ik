@@ -25,3 +25,6 @@
   - 302 Temporary Redirection aka Moved Temporarily (see RFC 1945)
     - Useful when we want to record stats 
     
+# References
+![image](https://github.com/trohit/ik/assets/466385/21563779-a204-44a6-8a08-c124751ea538)
+- https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/
