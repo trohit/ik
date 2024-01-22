@@ -28,6 +28,11 @@ https://gist.github.com/jboner/2841832
 - 100x for HDD transfer
 - 1000x for inter continental RTT
 
+## diagram
+![image](https://github.com/trohit/ik/assets/466385/863ffb64-6779-4688-b731-3b0b37c89916)
+src: https://www.youtube.com/watch?v=uHAfTty9UWY
+in 2024, 1TB RAM costs ~10K USD
+
 ## Cloud network latency
 - intra / within AZ latency:sub ms
 - inter AZ latency: single digit ms
