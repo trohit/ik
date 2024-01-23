@@ -139,6 +139,21 @@
       - app  :(x=1ms) : 30000rps
       - cache:(x=2ms) : 15000rps
       - DB   :(x=10ms):  3000rps
+## Handy conversion guide:
+- 2.5 million seconds per month
+- 1 request per second = 2.5 million requests per month
+- 40 requests per second = 100 million requests per month
+- 400 requests per second = 1 billion requests per month
+- 4000 QPS = 10 bill reqs per month
+
+  
+# Latency Nice to know
+- Reading 1 MB sequentially from
+  - memory takes about 250 microseconds, while
+  - reading from SSD takes 4x(1ms) and
+  - from disk takes 80x(20ms) longer
+
+# system design lego blocks for Non-Functional Requirements
 - when users grow use (SRLC) - sharding / replication / load balancing / caching 
   - for sharding, propose consistent hashing for almost all probs
   - for replication, consider workload nature and read-write replicas
