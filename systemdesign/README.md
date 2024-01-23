@@ -149,15 +149,17 @@
   
 # Latency Nice to know
 - Reading 1 MB sequentially from
-  - memory takes about 250 microseconds, while
-  - reading from SSD takes 4x(1ms) and
-  - from disk takes 80x(20ms) longer
+  - (  x)   250us from DRAM memory
+  - ( 4x)  1ms reading from SSD 
+  - (20x)  5ms for 1MB of transfer from VM nodes in same DC(RTT) - also depends on cloud + instance type
+  - (80x) 20ms from HDD 
 
 # system design lego blocks for Non-Functional Requirements
+## For scalability
 - when users grow use (SRLC) - sharding / replication / load balancing / caching 
   - for sharding, propose consistent hashing for almost all probs
   - for replication, consider workload nature and read-write replicas
-  - 
+  
 
 
 # PEDALS
