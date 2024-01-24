@@ -31,5 +31,8 @@
   - [Redis Antipatterns](https://developer.redis.com/howtos/antipatterns/)
   - Comparsion of [Redis vs DragonFly vs KeyTable vs SkyTable](https://news.ycombinator.com/item?id=31796311)
 
+# TSDB
+- Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
+- 
 # References
 - https://db-engines.com/en/ranking
