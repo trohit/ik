@@ -1,8 +1,11 @@
 - [draw.io](https://draw.io)
 - [Google draw](https://docs.google.com/drawings/)
   - If you prefer to use pen and paper, let your interviewer know at the beginning of the interview
+  - google draw tips
   - https://services.google.com/fh/files/misc/technical_virtual_interviews_candidate_resource.pdf
   - https://www.youtube.com/watch?v=UUhOzRz2eQY
+  - hold shift key to maintain aspect ratio
+  - can use shift and drag to move groups of shapes together
 - [Excalidraw](https://excalidraw.io/])
   - Sample Diagrams
     - [Sys diag1](https://excalidraw.com/#json=1ud7I5dCH65DQihyBey4j,kovkJn50IBj-Yp00fE8puw)
