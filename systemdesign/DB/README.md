@@ -106,6 +106,7 @@ src: https://www.youtube.com/watch?v=SxsMgHFNvWg
 - https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most
 
 # ACID Transaction Isolation anomalies
+- Of the four [ACID](https://en.wikipedia.org/wiki/ACID) properties in a DBMS (Database Management System), the [isolation](https://en.wikipedia.org/wiki/Isolation_(database_systems)) property is the one most often relaxed.
 - Dirty Read: tx1 reads data that tx2 has not yet committed
 - Non-repeatable read: tx1 reads same row twice but gets diff data each time cos tx2 does (UPDATE|DELETE + COMMIT). 
 - Phantom read: tx1 reads data say set1 that matches some condition. tx2 then does UPDATE|INSERT based on o/p of tx1. tx1 then rexecutes stmt and gets a diff set set2.
