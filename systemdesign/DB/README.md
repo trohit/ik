@@ -48,6 +48,9 @@ instead this data could be stored in a sigle document.
 they were called nosql. but now these nosql dbs (key value stores + doc stores)  	also support a query lang and are often called new query lang dbs.
 viz. cockroach db, google cloud spanner, yugabytedDB that support docs, sql + transactions.
 
+
+
+
 storage layer : DB
 Relational: MySQL|PostGres|sqlite
 NoSQL: Not-only relational DB
@@ -102,3 +105,11 @@ src: https://www.youtube.com/watch?v=SxsMgHFNvWg
 - https://www.uber.com/en-SG/blog/postgres-to-mysql-migration/
 - https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most
 
+# ACID Transaction Isolation anomalies
+- Dirty Read: tx1 reads data that tx2 has not yet committed
+- Non-repeatable read: tx1 reads same row twice but gets diff data each time cos tx2 does (UPDATE|DELETE + COMMIT). 
+- Phantom read: tx1 reads data say set1 that matches some condition. tx2 then does UPDATE|INSERT based on o/p of tx1. tx1 then rexecutes stmt and gets a diff set set2.
+- Refs
+  - https://learn.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver16
+  - https://stackoverflow.com/questions/43117231/non-repeatable-read-vs-phantom-read
+  - non-repeatable read due to UPDATE but phantom due to INSERT|DELETE 
