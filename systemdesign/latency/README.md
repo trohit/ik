@@ -1,5 +1,8 @@
 https://gist.github.com/jboner/2841832
 
+![image](https://github.com/trohit/ik/assets/466385/c5b65f7b-ddd9-4e61-b796-bbf6a9be710c)
+- src: [Alphasort:Case-sensitive parallel external sort](https://www.vldb.org/journal/VLDBJ4/P603.pdf)
+
 # Whats is latency ?
 - Latency is the time it takes for a packet to go from the sending endpoint to the receiving endpoint. 
 - Many factors may affect the latency of a service. viz. QoS|CoS, jitter, processing delay, routing states, ..
@@ -8,7 +11,12 @@ https://gist.github.com/jboner/2841832
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   
 ![image](https://github.com/trohit/ik/assets/466385/50d1c555-14a3-44c6-84c9-74a7b60d7e4d)
-
+# Things to Note
+- Register access is fastest (1x)
+- RAM is upto 1000 times slower than cache (1000x) 
+- SSD is 4-5 times slower than disk (5000x)
+- access from neighboring peer Nodes DRAM in same DC can be 10 times slower than local SSD (50,000x)
+- acesss from local HDD 20 times slower than local HDD (100,000x)
 
 # Stats
 - [src](https://www.linkedin.com/posts/anubhav-dube-b02557236_latency-and-throughput-are-some-of-the-important-activity-7145373167509835776-Spmr)
