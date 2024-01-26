@@ -8,6 +8,14 @@
 - Note that [GET|HEAD|PUT|DELETE should be idempodent](https://restfulapi.net/idempotent-rest-apis/)
 - POST should not be idempodent
 
+
+# CRUD using	HTTP
+See (https://en.wikipedia.org/wiki/HTTP)
+- Create	POST, PUT if we have `id` or `uuid`
+- Read	GET
+- Update	PUT to replace, PATCH to modify
+- Delete	DELETE
+
 # Return Codes
 - Informational 1xx
 - Successful 2xx
