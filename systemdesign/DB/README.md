@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/466385/209539804-77b9a653-8caa-4595-b6a0-617b9302b3ef.png)
 
 # Databases
-- In general, SQL DBs are optimized for more reads, not so much for writes. 
+- In general, SQL DBs are optimized for more reads, not so much for writes. When you know the schema + queries you would run on them beforehand, RDBMS is a good choice.
 - No SQL DBs are generally optimized for heavy writes, by default, do not work as well for a read heavy system.    
 - BaSE : Basically available + Soft State + Eventual Consistency
   - Primarily used in: OLAP that needs high number of reads + maybe writes + scale
