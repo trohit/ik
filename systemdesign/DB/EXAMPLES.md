@@ -9,6 +9,8 @@
 - not only SQL
 - also called [BASE|https://stackoverflow.com/questions/3342497/explanation-of-base-terminology] Basically Available, Soft state, Eventual consistency
 
+## RocksDB
+- 
 ## Redis
 - [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
 - A fast open src, distributed, in-mem key-value DB, cache & msg broker with optional [persistence & durability](https://redis.io/docs/management/persistence/)
