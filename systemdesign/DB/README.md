@@ -33,7 +33,7 @@ How to choose SQL | NoSQL?
 - Would you rather have the DB manage the schema contraints ? (yes=>sql) OR
 - Would you rather do many writes and have the application manage the consistency eventually ? (yes =>nosql)
 
-Analogy of SQL vs NoSQL
+# Analogy of SQL vs NoSQL
 - SQL is like auto transmission which automatically selects the gear|torque vs NoSQL is like manual transmission which allows you fine grained control over the gears but at the expense of more overhead.
 - if you are writing a recipe book and you want the ingredients and steps to be free flowing, (to be read by say a human) you'd  prefer NoSQL vs
 - if the same recipe book were written for a robot that also orders fixed  ingredients as well as preset stored cooking procedures, then you can use enums for ingredients and procedures viz. SQL 
@@ -59,7 +59,7 @@ Relational: MySQL|PostGres|sqlite
 NoSQL: Not-only relational DB
 Obj Store:S3
 Docbased: MongoDB|CouchDB|BerkleyDB|Cassandra
-Key-value: (in-mem)Redis|AWSDynamoDB
+Key-value: (in-mem)Redis|AWSDynamoDB|RocksDB
 GraphDB : 
  - Neo4j|Arango|Azure CosmosDB
 ColumnarDB: Amz RedShift| Apache Cassandra | Apache HBASE | Snowflake
