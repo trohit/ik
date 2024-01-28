@@ -1,5 +1,10 @@
 
 # Differences between
+## 2PL and 2PC
+- 2 phase locking - for serializable isolation within a single database instance
+- 2 phase commit - atomic commit across multiple nodes of a distributed database/datastores
+- https://stackoverflow.com/questions/68640301/difference-between-2pc-2-phase-commit-and-2-pl-2-phase-locking
+  
 ## CAP and PACELC
 - CAP: In a network partition(P), one has to choose between (C)onsistency and (A)vailability.
 - So in the presence of a network partition some systems, some designs choose CP (consistency-when-partitioned) or AP(availability-when-partitioned).
