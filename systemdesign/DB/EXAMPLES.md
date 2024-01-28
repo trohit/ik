@@ -3,6 +3,9 @@
 ## Postgres
 - started out as a successor to Ingres, called postgres or PostgreSQL
 - SQL RDBMS
+- Perf
+  - A stock Postgres Db can handle about 2000TPS(src:SystemDesignInterviews-2 Digital Wallet pg342), with tuning and connection pooling (like pgpool) usually [5k](https://www.ashnik.com/fine-tuning-postgres-to-achieve-5000-queries-per-second/) TPS.
+  - if the postgres instance is local, can do [14kTPS](https://www.reddit.com/r/PostgreSQL/comments/o4xrhg/postgres_runs_with_14k_transactionssecond_locally/?rdt=37997) but PGSQL instances in production are rarely local. 
   
 
 # NoSQL 
