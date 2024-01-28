@@ -1,5 +1,19 @@
 
 # Differences between
+
+## Monolith vs Microservices arch
+- in unix, there is a guiding rule that write a tool to do just one thing well and such that it can inter-operate or be invoked by other tool.
+  - like cat scores.txt | sort | uniq -c   
+- ### when to choose monolith
+- for most designs that do not need scale monoliths work fine.
+- Monolith also means you may need to pay the tech debt of refactoring later if you need large scale and a lerge number of independent components that interact with each other.
+
+### when to use microservices
+- guideline from a school of thought: a microservice should be deployable by not more than 2 devs working for a weeks worth of effort.  
+- for most designs that operate at scale, microservices may be the answer.
+- exceptions: maybe see amazon prime video
+- when many technologies, DBs and teams are involved
+  
 ## 2PL and 2PC
 - 2 phase locking - for serializable isolation within a single database instance
 - 2 phase commit - atomic commit across multiple nodes of a distributed database/datastores
