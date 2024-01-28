@@ -28,7 +28,8 @@
   -  By default, Redis writes data to a file system at least every 2 seconds, with more or less robust options available if needed. In the case of a complete system failure on default settings, only a few seconds of data would be lost.
   - Data from any Redis server can replicate to any number of replicas. A replica may be a master to another replica. This allows Redis to implement a single-rooted replication tree.
   - Perf: Redis operates as a single process and is single-threaded or double-threaded when it rewrites the AOF (append-only file).
-  - A Redis cluster can scale up to 1,000 nodes, achieve "acceptable" write safety and to continue operations when some nodes fail. 
+  - A Redis cluster can scale up to 1,000 nodes, achieve "acceptable" write safety and to continue operations when some nodes fail.
+  - A single redis node can do about [200k+ TPS](https://stackoverflow.com/questions/35229274/can-redis-do-hundreds-of-transactions-per-second-on-single-key-value-pair)
 - Refs
   - [Redis Antipatterns](https://developer.redis.com/howtos/antipatterns/)
   - Comparsion of [Redis vs DragonFly vs KeyTable vs SkyTable](https://news.ycombinator.com/item?id=31796311)
