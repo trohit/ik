@@ -4,6 +4,10 @@
 - https://www.artima.com/articles/orthogonality-and-the-dry-principle#part3
 - https://medium.com/@leenasn
 
+# System Design
+- https://github.com/arpitbbhayani/system-design-questions
+- https://github.com/donnemartin/system-design-primer
+   
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
 - https://martinfowler.com/articles/patterns-of-distributed-systems/
