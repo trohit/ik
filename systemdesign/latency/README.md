@@ -3,6 +3,8 @@ https://gist.github.com/jboner/2841832
 ![image](https://github.com/trohit/ik/assets/466385/c5b65f7b-ddd9-4e61-b796-bbf6a9be710c)
 - src: [Alphasort:Case-sensitive parallel external sort](https://www.vldb.org/journal/VLDBJ4/P603.pdf)
 - q : [SO:why-do-we-need-multiple-levels-of-cache-memory](https://superuser.com/questions/695632/why-do-we-need-multiple-levels-of-cache-memory)
+- q2: [SO:is-the-cache-size-or-number-of-cores-more-important](https://superuser.com/questions/317771/is-the-cache-size-or-number-of-cores-more-important-when-weighing-cpu-performanc)
+- q3: [SO:where-exactly-l1-l2-and-l3-caches-located](https://superuser.com/questions/196143/where-exactly-l1-l2-and-l3-caches-located-in-computer)
 
 # Whats is latency ?
 - Latency is the time it takes for a packet to go from the sending endpoint to the receiving endpoint. 
