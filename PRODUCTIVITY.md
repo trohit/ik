@@ -1,5 +1,7 @@
 # Impactful advice to be more productive
 
+## Pragmatic Programmer
+- https://dev.to/rajeshroyal/care-about-your-craft-pragmatic-programmer-series-1-3b84
 
 ## From Taha Hussain
 - https://tahahussain.substack.com/
