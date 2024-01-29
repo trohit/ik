@@ -7,6 +7,7 @@
 # System Design
 - https://github.com/arpitbbhayani/system-design-questions
 - https://github.com/donnemartin/system-design-primer
+- systemdesign.one
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
