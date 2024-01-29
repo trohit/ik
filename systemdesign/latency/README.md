@@ -2,6 +2,7 @@ https://gist.github.com/jboner/2841832
 
 ![image](https://github.com/trohit/ik/assets/466385/c5b65f7b-ddd9-4e61-b796-bbf6a9be710c)
 - src: [Alphasort:Case-sensitive parallel external sort](https://www.vldb.org/journal/VLDBJ4/P603.pdf)
+- q : [SO:why-do-we-need-multiple-levels-of-cache-memory](https://superuser.com/questions/695632/why-do-we-need-multiple-levels-of-cache-memory)
 
 # Whats is latency ?
 - Latency is the time it takes for a packet to go from the sending endpoint to the receiving endpoint. 
