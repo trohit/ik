@@ -9,5 +9,8 @@
 - https://martinfowler.com/articles/patterns-of-distributed-systems/
 - https://liuzhenglaichn.gitbook.io/system-design/
 
+# Scalability
+- https://highlyscalable.wordpress.com/ 
+
 # Books
 - (PDF) https://github.com/euclid1990/google-sre-book/
