@@ -1,3 +1,19 @@
+# Conceptual
+## Deadlocks
+- a situation where a system that has more than one resource and more than one process cannot make progress due to being stuck in a loop.
+- analogy: 2 vehicles on a narrow road
+- https://stackoverflow.com/questions/61768299/can-a-single-process-thread-ever-cause-deadlock
+  - try holding a semaphore twice in a recursive function
+- Conditions for a deadlock: sys prone to deadlock if it has all the 4 conditions: MHNC
+  - Mutual exclusion (exclusive access) 
+  - Hold and wait (wait while hold) 
+  - No pre-emption
+  - Circular Wait
+- Deadlock avoidance: https://www.geeksforgeeks.org/deadlock-prevention/
+  - just avoid at least one of these 4 conditions
+  - all processes to lock resources in a specific order aka give each resource a locking priority
+  - yield resources and control + wait on a taskq (with callback) if resources are not present
+   
 
 # Differences between
 
