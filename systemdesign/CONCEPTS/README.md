@@ -6,4 +6,10 @@
 - [LSM Trees](https://en.wikipedia.org/wiki/Log-structured_merge-tree)
   - data structure that came on the scene in 1996 as an alternative to B+Trees(1970)
   - LSM suitable for high insert volume such as audit logs, debug trails and write-intensive workloads.
-  - Refs 
+  - Refs
+- Operations
+  - commutative : if the ordering of events doesnt matter then its commutative.
+    - example addition and multiplication are commutative, whereas subtraction and division are not
+    - 3*9 is the same as 9*3 but 9/3 is not the same as 3/9
+  - idempodent: where if the opertaion runs once or multiple times, the end result is the same.
+    - eg. i = i+1 is not idempodent but i = 2 is idempodent  
