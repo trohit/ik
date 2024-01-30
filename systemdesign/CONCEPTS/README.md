@@ -12,4 +12,12 @@
     - example addition and multiplication are commutative, whereas subtraction and division are not
     - 3*9 is the same as 9*3 but 9/3 is not the same as 3/9
   - idempodent: where if the opertaion runs once or multiple times, the end result is the same.
-    - eg. i = i+1 is not idempodent but i = 2 is idempodent  
+    - eg. i = i+1 is not idempodent but i = 2 is idempodent
+- Fault tolerance
+  - Game days or storm days : should be done to simulate service failures like web|DNS|DB tier failures, node failures, AZ failures, Region failures every 3-6 months
+  - For Devops , should closely track SLI, SLO, are well within SLA limits in terns of uptime, latency, jitter and accuracy.
+    - Other patterns for fault management
+      - Circuit breaker : to allow open / close of a service when isolating faults, after repeated timeouts call ckt breaker, later open slowly to prevent thundering herd problems
+      - Runtime Knobs : the ability to rollback a new feature / behavior in production to RCA issues
+      - Dead letter Queue: when a msg in msgq cant be processed for some reason say due to exception, then push into a dead letter DB / mortician database.
+        - Once problem & fix is identified, republish the event.     
