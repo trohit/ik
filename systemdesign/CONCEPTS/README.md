@@ -3,6 +3,24 @@
 - [ACID](https://en.wikipedia.org/wiki/ACID)
 - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
 - [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table) :  distributed system that provides a lookup service similar to a hash table.
+- HTTP Versions
+  - HTTP 1.0
+    - 1996: each conn needs 3 way handshake
+  - HTTP 1.1
+    - 1997: introduced keepalive to reuse the same connection or persistent connections and
+    - saves 3 way handshake for subsequent connections and pipelines them
+    - but response must be received in the same order it is sent
+    - also suffers HOL blocking viz. all subsequent connections impacted.  
+  - HTTP 2.0
+    - 2015 : multiple independent streams can be sent to same server in a same TCP connection
+    - solved application HOL blocking but TCP HOL still remains
+    - also introduced compressed headers
+    - push capability from servers whenever new content needs to be sent to clients 
+  - HTTP 3.0
+    - 2022 : introduces QUIC over UDP: streams at TCP, no addl handshakes needed
+    - pkt loss on one stream doesnt affect another
+    - for mobile heavy net usage, phone users switch from one n/w to another
+    - QUIC (Quick UDP Internet Connections) has a connection id that allows devices to switch from one n/w to another.  
 - [LSM Trees](https://en.wikipedia.org/wiki/Log-structured_merge-tree)
   - data structure that came on the scene in 1996 as an alternative to B+Trees(1970)
   - LSM suitable for high insert volume such as audit logs, debug trails and write-intensive workloads.
