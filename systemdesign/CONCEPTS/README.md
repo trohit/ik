@@ -22,7 +22,7 @@
       - Runtime Knobs : the ability to rollback a new feature / behavior in production to RCA issues
       - Dead letter Queue: when a msg in msgq cant be processed for some reason say due to exception, then push into a dead letter DB / mortician database.
         - Once problem & fix is identified, republish the event.
-  - Sys design patterns
+  - Sys design patterns : https://www.youtube.com/watch?v=nH4qjmP2KEE 
     - Ambassador pattern: offloads tasks like logging monitoring, retries, enhances security. eg Envoy for k8s
     - Circuit Breaker pattern: prevents cascading failure
     - CQRS: separating reads from writes to allow each to scale independently
