@@ -13,6 +13,7 @@
     - 3*9 is the same as 9*3 but 9/3 is not the same as 3/9
   - idempodent: where if the opertaion runs once or multiple times, the end result is the same.
     - eg. i = i+1 is not idempodent but i = 2 is idempodent
+  - associativity: a associated with b means b is also associated with a
 - Fault tolerance
   - Game days or storm days : should be done to simulate service failures like web|DNS|DB tier failures, node failures, AZ failures, Region failures every 3-6 months
   - For Devops , should closely track SLI, SLO, are well within SLA limits in terns of uptime, latency, jitter and accuracy.
