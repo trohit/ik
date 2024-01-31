@@ -21,4 +21,15 @@
       - Circuit breaker : to allow open / close of a service when isolating faults, after repeated timeouts call ckt breaker, later open slowly to prevent thundering herd problems
       - Runtime Knobs : the ability to rollback a new feature / behavior in production to RCA issues
       - Dead letter Queue: when a msg in msgq cant be processed for some reason say due to exception, then push into a dead letter DB / mortician database.
-        - Once problem & fix is identified, republish the event.     
+        - Once problem & fix is identified, republish the event.
+  - Sys design patterns
+    - Ambassador pattern: offloads tasks like logging monitoring, retries, enhances security. eg Envoy for k8s
+    - Circuit Breaker pattern: prevents cascading failure
+    - CQRS: separating reads from writes to allow each to scale independently
+    - Event Sourcing: keeping journal of live events eg. git commit history, change data capture, Pravega
+    - Leader Election Pattern: Zookeeper, etc for distributed consistent config
+    - Pub/Sub: eg. msg qs, Google Cloud Pub/Sub
+    - Sharding pattern: distribute data across many nodes, reducing load eg. cassandra / Mongo
+    - Outboxer pattern: maintains consistency between different services in a distributed system. eg. payments need to go to ledger and balance, chat msgs need to go to notifications and chatDB
+  - Models
+    - Actor model: where an object has state and behavior. useful for scaling and high concurrence without race and deadlocks. eg. used by Erlang and Akka 
