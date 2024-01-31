@@ -31,5 +31,6 @@
     - Pub/Sub: eg. msg qs, Google Cloud Pub/Sub
     - Sharding pattern: distribute data across many nodes, reducing load eg. cassandra / Mongo
     - Outboxer pattern: maintains consistency between different services in a distributed system. eg. payments need to go to ledger and balance, chat msgs need to go to notifications and chatDB
+    - Strangler Fig Pattern: to slowly replace a legacy system with a modern system. eg, slowly changing backend of a banking application
   - Models
     - Actor model: where an object has state and behavior. useful for scaling and high concurrence without race and deadlocks. eg. used by Erlang and Akka 
