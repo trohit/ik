@@ -27,7 +27,9 @@ https://gist.github.com/jboner/2841832
 - L1 cache ref: 1ns
 - L2 cache ref: 5ns
 - RAM ref: 100ns
-- ping RTT in same DC : 0.5ms or 500ns
+- SSD ref: 100us (1000x slower than DRAM) [src](https://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html)
+- ping RTT in same DC : from 50us [src](https://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html)
+## Stats for ref in sys design
 - Reading 1 MB from RAM: 250 μs (0.25 ms)
 - Reading 1 MB from SSD: 1,000 μs (1 ms)
 - Transfer 1 MB over Network: 10,000 μs (10 ms)
