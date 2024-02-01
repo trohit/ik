@@ -27,3 +27,9 @@
 - Apache Cassandra:
   - Initially designed as a distributed NoSQL database, Cassandra also provides support for storing large amounts of data across a cluster.
   - Known for its high availability, fault tolerance, and linear scalability.
+
+# SQL query engines for analytics
+- Presto
+- Apache Hive
+  - Apache Hive is a data warehouse infrastructure built on top of Hadoop and designed for querying and analyzing large datasets stored in Hadoop Distributed File System (HDFS) or other compatible distributed storage systems.
+  - Hive provides a SQL-like query language called HiveQL, which allows users to express complex queries without needing to know Java or MapReduce.
