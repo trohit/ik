@@ -498,3 +498,5 @@ Just because you've determined your bandwidth can support 120/sec doesn't mean y
 # Mock Interviews
 - https://interviewready.io/
 - https://www.pramp.com/dashboard/
+- https://codemia.io/ AI powered sys design interviewer
+- https://interviewpen.com/
