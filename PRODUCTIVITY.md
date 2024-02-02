@@ -33,7 +33,8 @@
 - If you can’t see yourself working with someone for life, don’t work with them for a day.
 - Knowledge is a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.
 - If something is your number one priority then you will get it. That’s just the way life works. If you’ve got a fuzzy basket of 10 or 15 different priorities, you’re going to end up getting none of them.
-- 
+- My number one priority in life, above my happiness, above my family, above my work, is my own health. It starts with my physical health. Second, it’s my mental health. Third, it’s my spiritual health. Then it’s my family’s health. Then it’s my family’s wellbeing. After that, I can go out and do whatever I need to do with the rest of the world. 
+
 - References
   - https://noahmadden.medium.com/navalism-quotes-perceptions-by-naval-ravikant-a5fd60ac5788
   - Farnam Podcast with Naval:
