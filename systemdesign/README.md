@@ -1,6 +1,7 @@
 ![image](https://user-images.githubusercontent.com/466385/220079388-e525fb2d-b69d-415c-8f36-165e4b73652d.png)
 
 # Top Links
+- https://www.techinterviewhandbook.org/
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
 - [grokking-the-system-design-interview](https://www.designgurus.io/course/grokking-the-system-design-interview)
