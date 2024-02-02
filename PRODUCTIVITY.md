@@ -31,9 +31,13 @@
 - All the benefits in life come from compound interest — money, relationships, habits — anything of importance.
 - Who you do business with is just as important as what you choose to do.
 - If you can’t see yourself working with someone for life, don’t work with them for a day.
-- Knowledge is a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.\
+- Knowledge is a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.
+- If something is your number one priority then you will get it. That’s just the way life works. If you’ve got a fuzzy basket of 10 or 15 different priorities, you’re going to end up getting none of them.
+- 
 - References
-  - https://noahmadden.medium.com/navalism-quotes-perceptions-by-naval-ravikant-a5fd60ac5788 
+  - https://noahmadden.medium.com/navalism-quotes-perceptions-by-naval-ravikant-a5fd60ac5788
+  - Farnam Podcast with Naval:
+    - [mp3](https://podcasts.apple.com/us/podcast/naval-ravikant-on-reading-happiness-systems-for-decision/id990149481) [pdf](https://fs.blog/wp-content/uploads/2017/02/Naval-Ravikant-TKP.pdf)
   
 ## Pragmatic Programmer
 - https://dev.to/rajeshroyal/care-about-your-craft-pragmatic-programmer-series-1-3b84
