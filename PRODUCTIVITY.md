@@ -1,7 +1,7 @@
 # Impactful advice to be more productive
 ## Alamanac of Naval Ravikant
 - Whats more important than what you work on is who you work with.
-- Stay to the basics. Read and try to have a coherent view of others people point of view.
+- Stick to the basics. Read and try to have a coherent view of others people point of view.
 - Easy choice. Hard life. Hard choice. Easy life.
 - Best founder is a Long term thinker. Fix every little problem. Passion and vision is not enough. Luck matters. 
 - Learn to build, learn to sell. If you can do both, you will be unstoppable
@@ -22,6 +22,16 @@
 - The secret to public speaking is to speak as if you were alone.
 - Sophisticated foods are bittersweet (wine, beer, coffee, chocolate). Addictive relationships are cooperative and competitive. Work becomes flow at the limits of ability. The flavor of life is on the edge.
 - A personal metric: how much of the day is spent doing things out of obligation rather than out of interest?
+- All the real benefits of life come from compound interest.
+- Doctors won’t make you healthy. Nutritionists won’t make you slim. Teachers won’t make you smart. Gurus won’t make you calm. Mentors won’t make you rich. Trainers won’t make you fit. Ultimately, you have to take responsibility. Save yourself.
+- Escape competition through authenticity.
+- Someone who is using a lot of fancy words and big concepts probably doesn’t know what they’re talking about. The smartest people can explain things to a child; if you can’t do that, you don’t understand the concept.
+- You’re never going to get rich renting out your time. Earn with your mind, not your time.
+- Humans are basically habit machines… I think learning how to break habits is actually a very important meta skill and can serve you in life almost better than anything else.
+- All the benefits in life come from compound interest — money, relationships, habits — anything of importance.
+- Who you do business with is just as important as what you choose to do.
+- If you can’t see yourself working with someone for life, don’t work with them for a day.
+- Knowledge is a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.
   
 ## Pragmatic Programmer
 - https://dev.to/rajeshroyal/care-about-your-craft-pragmatic-programmer-series-1-3b84
