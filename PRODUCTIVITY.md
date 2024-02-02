@@ -1,5 +1,5 @@
 # Impactful advice to be more productive
-## Alamanac of Nava Ravikant
+## Alamanac of Naval Ravikant
 - Whats more important than what you work on is who you work with.
 - Stay to the basics. Read and try to have a coherent view of others people point of view.
 - Easy choice. Hard life. Hard choice. Easy life.
