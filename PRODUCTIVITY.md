@@ -95,3 +95,10 @@ As an Engineering Manager or Software Engineer, your brain is your greatest asse
 𝗜𝗻 𝗖𝗼𝗻𝗰𝗹𝘂𝘀𝗶𝗼𝗻:
 - The goal is not to be busy but to be impactful.
 - Redefine your routine, redefine your life.
+
+# TO LISTEN
+- https://tim.blog/podcast/
+- https://fs.blog/knowledge-project-podcast/
+
+# TO READ
+- https://meltingasphalt.com/  
