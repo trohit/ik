@@ -8,6 +8,9 @@
 - https://github.com/arpitbbhayani/system-design-questions
 - https://github.com/donnemartin/system-design-primer
 - systemdesign.one
+
+## TO-WATCH
+- https://www.youtube.com/@jordanhasnolife5163
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
@@ -23,3 +26,7 @@
 # Books
 - (PDF) https://github.com/euclid1990/google-sre-book/
 - https://github.com/ajitpal/BookBank/tree/master
+
+# Awesome Links
+- https://github.com/vkandola/Best-websites-a-programmer-should-visit
+- https://github.com/vkandola/awesome-courses
