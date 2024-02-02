@@ -1,6 +1,9 @@
 ![image](https://user-images.githubusercontent.com/466385/209539804-77b9a653-8caa-4595-b6a0-617b9302b3ef.png)
+# References
+1. [https://drive.google.com/drive/folders/1ChodcbMZ4KqS9WP9gin4sLVdCsgD3uoE] : [Jordanhasnolife](https://www.youtube.com/@jordanhasnolife5163/playlists)'s DB slide deck
 
-# Databases
+   
+# DB Concepts
 - In general, SQL DBs are optimized for more reads, not so much for writes. When you know the schema + queries you would run on them beforehand, RDBMS is a good choice.
 - No SQL DBs are generally optimized for heavy writes, by default, do not work as well for a read heavy system.    
 - BaSE : Basically available + Soft State + Eventual Consistency
@@ -19,7 +22,7 @@
     - eg. TiDB (Titanium DB) aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
  
 
-How to choose SQL | NoSQL?
+# How to choose SQL | NoSQL?
 - If you prioritize low latency|scalability|wriiting large amt of unstructured data at the cost of consitency|atomcity => NoSQL
 - If you prioritize consistency|atomicity|reading large amt of structured data => SQL
 - If you are ok with scale-up/ vert scaling (=> SQL) but if you really want scale-out / horiz. scale (NoSQL)
