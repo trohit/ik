@@ -20,6 +20,8 @@
       - Consistent and Serializable Transactions using (Raft consensus algo + gossip protocol + Quorums for Reads and Writes )
         - gossip protocol for (node discovery + failure detection + cluster metadata propagation + anti-entropy & convergence
     - eg. TiDB (Titanium DB) aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
+- How Databases store data
+   - Generally older 70s++ DBs use B+Trees. Others use LSM trees.    
  
 
 # How to choose SQL | NoSQL?
