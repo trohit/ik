@@ -21,7 +21,10 @@
         - gossip protocol for (node discovery + failure detection + cluster metadata propagation + anti-entropy & convergence
     - eg. TiDB (Titanium DB) aims to provide MySQL like features with scaling to meet both OLTP and OLAP needs
 - How Databases store data
-   - Generally older 70s++ DBs use B+Trees. Others use LSM trees.    
+   - Generally older (1970s) DBs use B+Trees. Newer DB generally use LSM trees(1990s).
+   - Thats not to say that LSM is bettter than the B+Trees. In general, B+Trees provide better read perf at the expense on write perf
+   - DB's that use LSM trees provide better write / insertion perf over but are not as good as B+tree DBs at read perf.
+      
  
 
 # How to choose SQL | NoSQL?
