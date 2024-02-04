@@ -13,6 +13,7 @@
 - also called [BASE|https://stackoverflow.com/questions/3342497/explanation-of-base-terminology] Basically Available, Soft state, Eventual consistency
 
 ## Dynamo
+- https://www.cs.cornell.edu/courses/cs5414/2017fa/papers/dynamo.pdf
 - Highly Available + Scalable + Decentralized + EVentually Consistent
 - Dynamo(Scalable distributed KV store) is different from DynamoDB(Scalable NoSQL DB)
 - Dynamo falls within the category of AP systems (i.e., available and partition tolerant) and is designed for high availability and partition tolerance at the expense of strong consistency.
