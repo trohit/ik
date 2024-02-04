@@ -14,6 +14,11 @@
   - all processes to lock resources in a specific order aka give each resource a locking priority
   - yield resources and control + wait on a taskq (with callback) if resources are not present
    
+# Whys
+## Hashing
+### Why do has functions use prime numbers ?
+- primes are un-divisible by any other numbers. This includes 2 and this makes it odd too but the real reason, is its primeness
+- https://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
 
 # Differences between
 
