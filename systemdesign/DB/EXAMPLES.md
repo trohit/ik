@@ -12,6 +12,11 @@
 - not only SQL
 - also called [BASE|https://stackoverflow.com/questions/3342497/explanation-of-base-terminology] Basically Available, Soft state, Eventual consistency
 
+## Dynamo
+- Highly Available + Scalable + Decentralized
+- Dynamo(Scalable distributed KV store) is different from DynamoDB(Scalable NoSQL DB)
+- Dynamo falls within the category of AP systems (i.e., available and partition tolerant) and is designed for high availability and partition tolerance at the expense of strong consistency.
+- 
 ## RocksDB
 - 
 ## Redis
