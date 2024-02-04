@@ -2,6 +2,15 @@
 # References
 1. [https://drive.google.com/drive/folders/1ChodcbMZ4KqS9WP9gin4sLVdCsgD3uoE] : [Jordanhasnolife](https://www.youtube.com/@jordanhasnolife5163/playlists)'s DB slide deck
 
+# DB System design patterns
+- Write ahead logging
+- Bloom filters
+- Heartbeat
+- Quorum
+- Checksum
+- Lease
+- Split Brain
+  
    
 # DB Concepts
 - In general, SQL DBs are optimized for more reads, not so much for writes. When you know the schema + queries you would run on them beforehand, RDBMS is a good choice.
