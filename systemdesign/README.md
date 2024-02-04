@@ -1,9 +1,10 @@
 ![image](https://user-images.githubusercontent.com/466385/220079388-e525fb2d-b69d-415c-8f36-165e4b73652d.png)
 
 # Top Links
-- https://www.techinterviewhandbook.org/
+- [https://www.techinterviewhandbook.org/](https://www.techinterviewhandbook.org/system-design/)
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
+- [Sys design Cheatsheet by Vasanth](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
 - [grokking-the-system-design-interview](https://www.designgurus.io/course/grokking-the-system-design-interview)
 - https://github.com/topics/system-design-interview
 - Blogs
