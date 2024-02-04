@@ -19,6 +19,7 @@
 ### Why do has functions use prime numbers ?
 - primes are un-divisible by any other numbers. This includes 2 and this makes it odd too but the real reason, is its primeness
 - https://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
+- In short: you can use nums like 17,31,397..
 
 # Differences between
 
