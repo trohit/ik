@@ -7,7 +7,8 @@
 # System Design
 - https://github.com/arpitbbhayani/system-design-questions
 - https://github.com/donnemartin/system-design-primer
-- systemdesign.one
+- [systemdesign.one](https://systemdesign.one/categories/)
+- https://www.techinterviewhandbook.org/system-design/
 
 ## TO-WATCH
 - https://www.youtube.com/@jordanhasnolife5163
@@ -16,6 +17,7 @@
 - Oceanstore : https://www.cs.cornell.edu/~hweather/Oceanstore/asplos00.pdf
 - Dynamo : https://www.cs.cornell.edu/courses/cs5414/2017fa/papers/dynamo.pdf
 - GFS : https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
+- BigTable : https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/68a74a85e1662fe02ff3967497f31fda7f32225c.pdf
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
