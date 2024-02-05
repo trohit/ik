@@ -21,6 +21,7 @@ https://gist.github.com/jboner/2841832
 - SSD is 4-5 times slower than disk (5000x)
 - access from neighboring peer Nodes DRAM in same DC can be 10 times slower than local SSD (50,000x)
 - acesss from local HDD 20 times slower than local HDD (100,000x)
+- In general there is an addl 1 ms round-trip delay time per 100 km (62 miles).
 - Ref : https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/
 
 # Stats
