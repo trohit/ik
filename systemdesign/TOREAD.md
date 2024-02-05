@@ -23,7 +23,8 @@
 - https://liuzhenglaichn.gitbook.io/system-design/
 
 # Scalability
-- https://highlyscalable.wordpress.com/ 
+- https://highlyscalable.wordpress.com/
+- http://highscalability.com/
 
 # Courses
 - https://fireship.io/courses/
