@@ -23,6 +23,14 @@ https://gist.github.com/jboner/2841832
 - acesss from local HDD 20 times slower than local HDD (100,000x)
 - In general there is an addl 1 ms round-trip delay time per 100 km (62 miles).
 - Ref : https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/
+  - L1: 1.3ns
+  - L2: 3.92ns (3x slower)
+  - L3: 11.11ns (8.5x slower)
+  - DDR4 RAM: 100ns (77x slower)
+  - NVMe SSD: 120,000ns (92,307x slower)
+  - SATA/SAS SSD: 400,000ns (307,692x slower)
+  - Rotational HDD: 2–6ms (1,538,461x slower)
+  - Microsoft Live Login: 12 redirects and 5s (3,846,153,846x slower, approximately)
 
 # Stats
 - [src](https://www.linkedin.com/posts/anubhav-dube-b02557236_latency-and-throughput-are-some-of-the-important-activity-7145373167509835776-Spmr)
