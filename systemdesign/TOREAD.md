@@ -11,6 +11,11 @@
 
 ## TO-WATCH
 - https://www.youtube.com/@jordanhasnolife5163
+
+## Papers
+- Oceanstore : https://www.cs.cornell.edu/~hweather/Oceanstore/asplos00.pdf
+- Dynamo : https://www.cs.cornell.edu/courses/cs5414/2017fa/papers/dynamo.pdf
+- GFS : https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
