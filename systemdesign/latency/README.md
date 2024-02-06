@@ -128,6 +128,7 @@ Latency plays a pivotal role in determining the delay experienced by users when 
 - https://www.youtube.com/watch?app=desktop&v=FqR5vESuKe0
 - https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
 - https://hpbn.co/primer-on-latency-and-bandwidth/
+- https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application
 
 # cheatsheet
 - L1 cache reference                           0.5 ns
