@@ -1,8 +1,44 @@
 # Interesting concepts
 - https://12factor.net/
-- [ACID](https://en.wikipedia.org/wiki/ACID)
 - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
+- Database Concepts
+  - [ACID](https://en.wikipedia.org/wiki/ACID)
+  - SQl vs NoSQL
+  - Consistency patterns
+  - Gossip Protocol 
+  - Hinted Handoff
+  - Sloppy Quorum
+  - Transaction isolation levels
+    - Read Uncommitted
+    - Read Committed
+    - Repeatable Read
+    - Serializable
+  - Isolation anomalies
+    - Dirty Read
+    - Non-Repeatable Read
+    - Phantom Reads
+  - Other anomalies
+    - Write skew
+      - Write skew happens when an update is made within a transaction based upon stale data.
+      - Stale data is a value read by a transaction that has become stale due to a subsequent committed write from a concurrent transaction.
+    - Lost Updates
+      - Lost updates happen when a committed value written by one transaction is overwritten by a subsequent committed write from a concurrent transaction.
+        - https://stackoverflow.com/questions/27826714/lost-update-vs-write-skew
+        - https://www.cockroachlabs.com/blog/what-write-skew-looks-like/
+  - Concurrency Control Mechanisms
+  - CRDTs vs Operational Transformations
+  - MVCC
+ 
+- Probabilistic Data Structures
+  - Quotient Filter : https://systemdesign.one/quotient-filter-explained/
+    - Types of quotient filters 
+      - Bloom Filter
+      - Cuckoo Filter  
 - [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table) :  distributed system that provides a lookup service similar to a hash table.
+  - Types of DHT
+    - Consistent Hashing
+    - Rendezvous Hashing / HRW (Highest Random Weight) / Jump Hashing
+    - CAN/ Chord/Pastry/Tapestry   
 - HTTP Versions
   - HTTP 1.0
     - 1996: each conn needs 3 way handshake
@@ -20,7 +56,16 @@
     - 2022 : introduces QUIC over UDP: streams at TCP, no addl handshakes needed
     - pkt loss on one stream doesnt affect another
     - for mobile heavy net usage, phone users switch from one n/w to another
-    - QUIC (Quick UDP Internet Connections) has a connection id that allows devices to switch from one n/w to another.  
+    - QUIC (Quick UDP Internet Connections) has a connection id that allows devices to switch from one n/w to another.
+  - See more at
+    - https://hpbn.co/brief-history-of-http/ : High Performance Browser networking
+    - https://medium.com/@sandeep4.verma/http-1-to-http-2-to-http-3-647e73df67a8
+  - Related
+    - SPDY
+    - QUIC
+    - SSE
+    - RTC
+    - WASM 
 - [LSM Trees](https://en.wikipedia.org/wiki/Log-structured_merge-tree)
   - data structure that came on the scene in 1996 as an alternative to B+Trees(1970)
   - LSM suitable for high insert volume such as audit logs, debug trails and write-intensive workloads.
