@@ -18,6 +18,8 @@
 - Dynamo : https://www.cs.cornell.edu/courses/cs5414/2017fa/papers/dynamo.pdf
 - GFS : https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
 - BigTable : https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/68a74a85e1662fe02ff3967497f31fda7f32225c.pdf
+- DB
+   - Serializable Snapshot /isolation in PgSQL: https://drkp.net/papers/ssi-vldb12.pdf 
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
