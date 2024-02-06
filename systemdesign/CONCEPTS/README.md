@@ -25,6 +25,7 @@
       - Lost updates happen when a committed value written by one transaction is overwritten by a subsequent committed write from a concurrent transaction.
         - https://stackoverflow.com/questions/27826714/lost-update-vs-write-skew
         - https://www.cockroachlabs.com/blog/what-write-skew-looks-like/
+        - https://www.codingblocks.net/podcast/lost-updates-and-write-skew/
   - Concurrency Control Mechanisms
   - CRDTs vs Operational Transformations
   - MVCC
