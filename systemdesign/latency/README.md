@@ -13,6 +13,7 @@ https://gist.github.com/jboner/2841832
 - Latency is not explicitly equal to half of RTT, because delay may be asymmetrical between any two given endpoints.
 - Reading
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
+  - unofficial rule of thumb in the web performance community: render pages, or at the very least provide visual feedback, in under [250 milliseconds](https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application) to keep the user engaged!
   
 ![image](https://github.com/trohit/ik/assets/466385/50d1c555-14a3-44c6-84c9-74a7b60d7e4d)
 # Things to Note
