@@ -54,4 +54,5 @@
 - https://medium.com/@mmoshikoo/cache-strategies-996e91c80303
 - https://www.enjoyalgorithms.com/blog/refresh-ahead-caching-pattern
 - https://mechanical-sympathy.blogspot.com/2013/02/cpu-cache-flushing-fallacy.html
+- https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/
   
