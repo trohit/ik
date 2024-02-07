@@ -15,6 +15,7 @@
 
 # Examples
 - RabbitMQ, Kafka, ActiveMQ
+- Redis Streams, Pub.Sub : https://redis.com/solutions/use-cases/messaging/
 
 
 # References
