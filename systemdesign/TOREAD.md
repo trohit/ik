@@ -20,7 +20,8 @@
 - GFS : https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
 - BigTable : https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/68a74a85e1662fe02ff3967497f31fda7f32225c.pdf
 - DB
-   - Serializable Snapshot /isolation in PgSQL: https://drkp.net/papers/ssi-vldb12.pdf 
+   - Serializable Snapshot /isolation in PgSQL: https://drkp.net/papers/ssi-vldb12.pdf
+   - Optimistic aka Lazy Replication : https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-60.pdf
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
