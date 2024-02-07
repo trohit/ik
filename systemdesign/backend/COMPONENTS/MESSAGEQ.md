@@ -21,3 +21,4 @@
 # References
 - https://www.youtube.com/watch?v=oVZtzZVe9Dg
 - Notes: https://notebook.zohopublic.in/public/notes/u3i1s522a981ed32d48bcbb0b940ee3d58f22
+- https://blog.scottlogic.com/2018/04/17/comparing-big-data-messaging.html
