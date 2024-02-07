@@ -12,6 +12,7 @@
 
 ## TO-WATCH
 - https://www.youtube.com/@jordanhasnolife5163
+- https://www.youtube.com/c/ArpitBhayani
 
 ## Papers
 - Oceanstore : https://www.cs.cornell.edu/~hweather/Oceanstore/asplos00.pdf
@@ -37,6 +38,9 @@
 - (PDF) https://github.com/euclid1990/google-sre-book/
 - https://github.com/ajitpal/BookBank/tree/master
 
+# Blogs
+- https://cellperformance.beyond3d.com/articles/index.html
+  
 # Awesome Links
 - https://github.com/vkandola/Best-websites-a-programmer-should-visit
 - https://github.com/vkandola/awesome-courses
