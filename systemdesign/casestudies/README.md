@@ -20,6 +20,7 @@
 - https://github.com/gitgik/distributed-system-design/
 - https://github.com/arpitbbhayani/system-design-questions
 - https://github.com/karanpratapsingh/system-design
+- https://leetcode.com/discuss/interview-question/system-design/4485980/Navigating-Recent-System-Design-Assessments%3A-A-Candid-Reflection
 
 # good questions to ask in any system design interview
 
