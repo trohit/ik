@@ -25,3 +25,4 @@
 # References
 - https://herbsutter.com/2013/02/11/atomic-weapons-the-c-memory-model-and-modern-hardware/
 - https://www.youtube.com/watch?v=A8eCGOqgvH4
+- Article explaining how to do banking tx + concurrency control in Redis: https://levelup.gitconnected.com/redis-introduction-caching-and-transactions-aa32d385aa2b
