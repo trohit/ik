@@ -71,8 +71,16 @@ Accounting information        |
 - why use threads ?
   - creating a new process that *actually does work* is fairly expensive(creating a process involves the fork call, which is COW).
   - so threads are a lightweight construct, many threads belongs to a process. all threads write to a common shared mem owned by the process.
-  - Threads may access and modify shared memory. Processes use inter-process communication instead.  
-
+  - Threads may access and modify shared memory. Processes use inter-process communication instead.
+- What are thread states
+  - Runnable: A thread which is ready to run
+  - Running: A thread which is executing is in running state.
+  - Blocked: A blocked thread is waiting for a monitor lock is in this state. This thing can also happen when a thread performs an I/O operation and moves to the next state.
+  - Waiting: It is a thread that is waiting for another thread to do the specific action.
+  - Timed_waiting: It is a thread that is waiting for another thread to perform.
+  - Terminated: A thread that has exited is in this state. 
+- References
+  - https://career.guru99.com/top-40-multithreading-interview-questions-and-answers/ 
 
 ## Differences between little endian(LSB) and Big Endian(MSB)
 - https://stackoverflow.com/questions/22030657/little-endian-vs-big-endian
