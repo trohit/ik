@@ -68,6 +68,10 @@ Child processes               | State
 Pending alarms                |
 Signals and signal handlers   |
 Accounting information        |
+- why use threads ?
+  - creating a new process that *actually does work* is fairly expensive(creating a process involves the fork call, which is COW).
+  - so threads are a lightweight construct, many threads belongs to a process. all threads write to a common shared mem owned by the process.
+  - Threads may access and modify shared memory. Processes use inter-process communication instead.  
 
 
 ## Differences between little endian(LSB) and Big Endian(MSB)
