@@ -1,6 +1,12 @@
 # Interesting concepts
-- https://12factor.net/
-- [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
+- Design principles
+  - https://12factor.net/
+  - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
+    - Single responsibility Principle: every class should have only one responsibility
+    - Open Closed Principle: Open for extension, but closed for modification
+    - Liskov substitution principle
+    - Interface segregation principle
+    - Dependency inversion principle 
 - Database Concepts
   - [ACID](https://en.wikipedia.org/wiki/ACID)
   - SQl vs NoSQL
