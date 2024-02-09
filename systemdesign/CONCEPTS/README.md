@@ -1,4 +1,22 @@
+]
 # Interesting concepts
+- Software Design patterns:
+  - https://softwaredevelopmentinsights.com/10-software-architecture-and-design-patterns-ultimate-guide/
+    - Layered Pattern
+    - Master Slave
+    - Client Slave
+    - Event Driven
+    - Broker
+    - Event bus
+    - MVC
+    - Pipe filter
+    - Blackboard
+    - P2P
+    - Interpreter
+  - Others that I think are also present
+    - Orchestrator
+    - Choregrapher
+    -*+     
 - Design principles
   - https://12factor.net/
   - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
