@@ -13,6 +13,7 @@
 ## TO-WATCH
 - https://www.youtube.com/@jordanhasnolife5163
 - https://www.youtube.com/c/ArpitBhayani
+- https://sysadmincasts.com/episodes
 
 ## Papers
 - Oceanstore : https://www.cs.cornell.edu/~hweather/Oceanstore/asplos00.pdf
