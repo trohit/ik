@@ -1,5 +1,13 @@
-]
 # Interesting concepts
+- Consistency and Availability
+  - CAP
+  - PACLELC : https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf
+    - Examples
+      - PA/EL systems: if a partition occurs, they give up consistency for availability, and under normal operation they still give up consistency for lower latency.
+        - default versions of Dynamo, Cassandra, and Riak
+      - PA/EC systems: MongODB
+      - PC/EL systems: PNUTS: In normal operation, it gives up consistency for latency; however, if a partition occurs, it trades availability for consistency.
+      - PC/EC systems: HBase/BigTable + Fully ACID systems refuse to give up consistency, and will pay the availability and latency costs to achieve it.     
 - Software Design patterns:
   - https://softwaredevelopmentinsights.com/10-software-architecture-and-design-patterns-ultimate-guide/
     - Layered Pattern
