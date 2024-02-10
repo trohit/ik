@@ -41,6 +41,15 @@
 - Cassandra Write path
   - Each write(create/update/delete) first appended to commit_log, then to in-mem memtable
   - Perodically, memtables flushed to SSTables which are in turn compacted periodically.
+- Cache types:
+  - Row cache: caches freq read rows
+  - Key Cache: stores map (recently read partition keys -> SSTable offsets)
+  - Chunk Cache: uncompressed chunks of data from SSTable thats read frequently
+- Each SStable has a Bloom filter associated with it, which tells if a particular key is present in it or not. Bloom filters are used to boost the performance of read operations. These filters are stored in mem and are a special kind of key cache.
+- Each SSTable has 2 files
+  - Partition Index file:  stores the sorted partition keys mapped to their SSTable offsets.
+  - Data file: stores actual data in sorted order.
+- 
     
 
 ## MongoDB
