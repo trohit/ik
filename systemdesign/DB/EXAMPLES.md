@@ -38,7 +38,10 @@
   - Snitch: The Snitch is an application that determines the proximity of nodes within the ring and also tells which nodes are faster. Cassandra nodes use this information to route read/write requests efficiently.
 - Generation number: In Cassandra, each node stores a generation number which is incremented every time a node restarts. This generation number is included in each gossip message.
 - The seed node designation has no purpose other than bootstrapping the gossip process for new nodes joining the cluster. Thus, seed nodes are not a single point of failure, nor do they have any other special purpose in cluster operations other than the bootstrapping of nodes.
-- 
+- Cassandra Write path
+  - Each write(create/update/delete) first appended to commit_log, then to in-mem memtable
+  - Perodically, memtables flushed to SSTables which are in turn compacted periodically.
+    
 
 ## MongoDB
 
