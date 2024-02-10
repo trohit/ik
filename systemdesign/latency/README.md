@@ -7,15 +7,16 @@ https://gist.github.com/jboner/2841832
 - q3: [SO:where-exactly-l1-l2-and-l3-caches-located](https://superuser.com/questions/196143/where-exactly-l1-l2-and-l3-caches-located-in-computer)
 - q4:[ssd-vs-ram-whats-the-cost-durability-difference](https://superuser.com/questions/1253125/ssd-vs-ram-whats-the-cost-durability-difference-and-limitation-to-using-ssd-as)
 
-# Whats is latency ?
+# Whats this latency ?
 - Latency is the time it takes for a packet to go from the sending endpoint to the receiving endpoint. 
 - Many factors may affect the latency of a service. viz. QoS|CoS, jitter, processing delay, routing states, ..
 - Latency is not explicitly equal to half of RTT, because delay may be asymmetrical between any two given endpoints.
 - Reading
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   - unofficial rule of thumb in the web performance community: render pages, or at the very least provide visual feedback, in under [250 milliseconds](https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application) to keep the user engaged!
-  
-![image](https://github.com/trohit/ik/assets/466385/50d1c555-14a3-44c6-84c9-74a7b60d7e4d)
+
+![image](https://github.com/trohit/ik/assets/466385/33f2fc8b-527c-4ac1-b71a-2028d4280363)
+
 # Things to Note
 - Register access is fastest (1x)
 - RAM is upto 1000 times slower than cache (1000x) 
