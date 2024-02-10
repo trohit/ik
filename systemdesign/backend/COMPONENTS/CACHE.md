@@ -59,12 +59,21 @@
 
 # Examples
 ## Redis
-- single threaded open-source, in-mem (KVstore that can act as a cache+ DB + msg broker). Supports scale-out by [Redis Cluster](https://redis.io/docs/management/scaling/) and Redis [Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/) 
+- Redis is a single threaded open-source, in-mem data structure (KVstore that can act as a cache+ DB + msg broker). Supports scale-out by [Redis Cluster](https://redis.io/docs/management/scaling/) and Redis [Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/) 
 - written in C
 - can have multiple instances of redis in the same server to leverage all the cores
-- Has basic data types like List, Set, SortedSets, HyperLogLog,
+- Has basic data types like Strings, Hash, List, Set, SortedSets(for range queries), bitmaps, HyperLogLog, geospatial indexes and streams.
+  - Strings
+`SET user:bob:email bob@example.com`
+`SET user:bob:age 31`
+  - Hash
+`HSET user:bob email bob@example.com`
+`HSET user:bob age 31
+  - List
+`
 - supports expiry of values
 - supports persistence thru RDB (RedisDB) and AOF(Append Only files)
+- suports multiple cache eviction policies [LRU|LFU|Random|no-eviction](https://docs.redis.com/latest/rs/databases/memory-performance/eviction-policy/)
 -   
 ## Memcached
 # References
