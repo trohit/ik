@@ -31,8 +31,15 @@
   - Replication strategy : which nodes will be responsible for the replicas
   - Each keyspace in Cassandra can have a different replication factor.
 - Write Consistency Levels: Any ..RF(Replication_factor).. All
-- Also can specifyquorum within a DC(Local_quorum) and across DCs(Across_quorum)
-- Supports Hinted handoff
+  - Also can specify quorum within a DC(Local_quorum) and across DCs(Across_quorum)
+  - Supports Hinted handoff
+- Read consistency:
+  - R+W>RF gives us strong consistency. In this equation R, W, RF are the read replica count, the write replica count, and the replication factor, respectively.
+  - Snitch: The Snitch is an application that determines the proximity of nodes within the ring and also tells which nodes are faster. Cassandra nodes use this information to route read/write requests efficiently.
+- Generation number: In Cassandra, each node stores a generation number which is incremented every time a node restarts. This generation number is included in each gossip message.
+- The seed node designation has no purpose other than bootstrapping the gossip process for new nodes joining the cluster. Thus, seed nodes are not a single point of failure, nor do they have any other special purpose in cluster operations other than the bootstrapping of nodes.
+- 
+
 ## MongoDB
 
 ## Dynamo
