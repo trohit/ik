@@ -48,6 +48,17 @@
 - If perf considerations outweigh cache vs db consistency, use Write-Back.
 - Refresh Ahead caching is useful if a large amount of freq accessed data gets updated frequently and consistency is imp. for the app usecase   
 
+
+# Examples
+## Redis
+- single threaded open-source, in-mem (KVstore that can act as a cache+ DB + msg broker). Supports scale-out by [Redis Cluster](https://redis.io/docs/management/scaling/) and Redis [Enterprise](https://redis.com/redis-enterprise/technology/linear-scaling-redis-enterprise/) 
+- written in C
+- can have multiple instances of redis in the same server to leverage all the cores
+- Has basic data types like List, Set, SortedSets, HyperLogLog,
+- supports expiry of values
+- supports persistence thru RDB (RedisDB) and AOF(Append Only files)
+-   
+## Memcached
 # References
 - https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
 - https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
