@@ -14,7 +14,25 @@
 
 ## Cassandra
 - [Facebook constructed Cassandra](https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to power its Inbox Search feature.
-- 
+-  Cassandra is a NoSQL database which means we cannot have joins between tables, there are no foreign keys, and while querying, we cannot add any column in the where clause other than the primary key. These constraints should be kept in mind before deciding to use Cassandra.
+- Cassandra has tables, multiple tables across nodes can be grouped in a keyspace, and ma group of keyspaces for a cluster.
+- Just like Dynamo, Cassandra uses consistent hashing for data partitioning. Cassandra uses Murmur3 as the consistent hashing function. 
+- In Cassandra, the primary key uniquely identifies every row in the table.
+  - A primary key is composed of:
+    - Primary_key = partition_key(decides how data is stored across nodes) + clustering_key(decides how data is stored within a node)
+    - eg. pin_code, cinema_hall_id OR country_id, state_id
+  -  We can have multiple clustering keys; all columns listed after the partition key are called clustering columns.
+    - Within a node data is orederd by clustering_key  (a clustering key can be made up of multiple columns)
+  - All Cassandra nodes learn about the token assignments of other nodes through gossip protcol.
+  - Any node can handle a request for any other node's range. The node receiving the request is called the coordinator, and any node can act in this role. If a key does not belong to the coordinator's range, it forwards the request to the replicas responsible for that range.
+  - A client may connect to any node in the cluster to initiate a read or write query. This node is known as the coordinator node. The coordinator identifies the nodes responsible for the data that is being written or read and forwards the queries to them.
+- Replication
+  - Replication factor: how many replicas the system will have
+  - Replication strategy : which nodes will be responsible for the replicas
+  - Each keyspace in Cassandra can have a different replication factor.
+- Write Consistency Levels: Any ..RF(Replication_factor).. All
+- Also can specifyquorum within a DC(Local_quorum) and across DCs(Across_quorum)
+- Supports Hinted handoff
 ## MongoDB
 
 ## Dynamo
