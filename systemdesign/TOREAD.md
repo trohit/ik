@@ -16,6 +16,8 @@
 - https://sysadmincasts.com/episodes
 
 ## Papers
+- Concurremcy
+   - PACELC: https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf 
 - Oceanstore : https://www.cs.cornell.edu/~hweather/Oceanstore/asplos00.pdf
 - Dynamo : https://www.cs.cornell.edu/courses/cs5414/2017fa/papers/dynamo.pdf
 - GFS : https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
@@ -42,6 +44,12 @@
 
 # Blogs
 - https://cellperformance.beyond3d.com/articles/index.html
+
+# Company Blogs
+- Shopify :https://shopify.engineering/building-resilient-payment-systems
+- Uber : https://www.uber.com/en-IN/blog/how-uber-optimized-cassandra-operations-at-scale/
+- Netflix: https://netflixtechblog.com/consistent-caching-mechanism-in-titus-gateway-6cb89b9ce296
+- 
   
 # Awesome Links
 - https://github.com/vkandola/Best-websites-a-programmer-should-visit
