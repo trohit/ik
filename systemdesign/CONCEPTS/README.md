@@ -14,9 +14,9 @@
     - P2P
     - Interpreter
   - Others that I think are also present
-    - Orchestrator
-    - Choregrapher
-    -*+     
+    - Orchestrator : used in saga where there is a central coordinator
+    - Choregrapher: used in saga where there is no central coordinator
+    - Circuit Breaker pattern: Used by [shopify](https://shopify.engineering/building-resilient-payment-systems) to stop overloading the unhealthy service by giving up after n retries 
 - Design principles
   - https://12factor.net/
   - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
