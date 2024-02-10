@@ -16,7 +16,7 @@
 - CPU Caches: L1/L2/L3 of which L1 and L2 are CPU specific and L3 is usually a shared CPU cache
 
 # Types of Caches
-- Cache aside : most widespread caching pattern
+## Cache aside : most widespread caching pattern
   - Diagram: ![image](https://github.com/trohit/ik/assets/466385/99499a97-08e0-480c-b841-199430bacd7d) 
   - examples:  
   - pros:simplest to implement
@@ -37,11 +37,19 @@
   - examples: most filesystems like WAFL, UFS(EMC) use write through  
   - pros: app code is now free of failure handling and retry logic.
   - cons: cache has additional responsibility and load to write to datastore. 
-- Write around Cache
-- Write Back|Behind Cache
+## Write around Cache
+## Write Back|Behind Cache
   - Diagram: ![image](https://github.com/trohit/ik/assets/466385/ca867f6b-e057-47c9-9c5f-531483b2423a)
-- Refresh Ahead
+## Refresh Ahead
 
+# Cache eviction policies
+- Random
+- FIFO
+- LRU
+- LFU
+- MFU
+- ARC
+  
 # When to use what
 - By default use, Read thru & Write Thru cache whenever possible.
 - If looking for a really simple solution to test perf improvements due to caching, start with Cache-Aside
