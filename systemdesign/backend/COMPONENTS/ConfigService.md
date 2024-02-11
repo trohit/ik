@@ -1,4 +1,5 @@
 # Examples
+- Zookeeper, etcd, Chubby(distributed locking mechanism to provide storagr and coordination services to GFS and BigTable )
 - Zookeeper
   - Distributed config and sync service
   - Used by Kafka prior to KIP-500 to store basic metadata about brokers, topics, partitions, partition leader/followers, consumer offsets, etc.
