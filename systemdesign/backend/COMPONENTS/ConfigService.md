@@ -9,15 +9,14 @@
 ## Chubby 
 - Chubby is a service that provides a distributed locking mechanism and also stores small files. Internally, it is implemented as a key/value store that also provides a locking mechanism on each object stored in it. It is extensively used in various systems inside Google to provide storage and coordination services for systems like GFS and BigTable. Apache ZooKeeper is the open-source alternative to Chubby.
 - Chubby was developed to provide a reliable locking service. Over time other usecases developed:
-  - Leader/master election
-    - whichever node gets the lock first becomes the leader.
-    - similarly to elect a leader among multiple replicas
-  - Naming service (like DNS)
-    - DNS updates are usually cached, so delay before a mapping is effective. For fast updates, Chubby replaced DNS inside Google as a quick mechanism to discover servers. 
-  - Storage (small objects that rarely change)
-    -  
+  - Leader/master election: whichever node gets the lock first becomes the leader. similarly to elect a leader among multiple replicas
+  - Naming service (like DNS):  DNS updates are usually cached, so delay before a mapping is effective. For fast updates, Chubby replaced DNS inside Google as a quick mechanism to discover servers. 
+  - Storage (small objects that rarely change): Chubby provides a Unix like interface to store small files that dont change frequently. so Chubby used by GFS and BigTable to store metadata like ACLs 
   - Distributed locking mechanism (orig usecase)
-- 
+    - Chubby provides coarse grained locks to sync activities in a distributed env.
+    - in simple words chubby provides mutuxes and semaphores that work in a distributed env across nodes.
+  - When not to use Chubby
+    - Bulk updates | High data upload rate | Lock & unlock done very frequently | pub sub model   
 
 
 
