@@ -1,6 +1,7 @@
 # Why MsgQs?
 
-- Allow Async | non-blocking
+- Allow loose coupling + buffering to an extent to deal with bursts as opposed to Rate limiting + allow independent scaling of producer and consumer
+- Async | non-blocking
 - retries to reach consumers,
 - Better than Point-to-Point as it allows multiple consumers(say one for giving shortcode to consumer and another consumer for analytics)
 - Pacing and independent scaling of producer and Consumer
