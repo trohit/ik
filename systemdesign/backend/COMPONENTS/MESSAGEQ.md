@@ -10,6 +10,16 @@
 - Allow lock free data structures by consumers in some cases (say tinyurl allocations can be done without the shortcode allocation service needing to lock its data structures)
 - All Msg qs use two common ways to handle messages: Queuing and Publish-Subscribe
 - All Msg qs expect Consumer to either Push(MQTT Mosquitto/ HiveMQ) or Pull(Kafka) or both Push and Pull eg. RabbitMQ/ActiveMQ/Redis/Resque as brokers support both pull models ("get" in AMQP) and push models.
+- To ensure data consistency, the leader broker never returns (or exposes) messages which have not been replicated to a minimum set of ISRs.
+- Brokers keep track of the high-water mark, which is the highest offset that all ISRs of a particular partition share. The leader exposes data only up to the high-water mark offset and propagates the high-water mark offset to all followers.
+- The num of consumers cant exceed the num of partitions for a topic. If it does, one or more consumers will be idle until an existing consumer unsubscribes from the partition.
+  - Number of consumers in a group = number of partitions: each consumer consumes one partition.
+  - Number of consumers in a group > number of partitions: some consumers will be idle.
+  - Number of consumers in a group < number of partitions: some consumers will consume more partitions than others.
+-  producer goes through the following steps before publishing a message:
+  -  The producer connects to any broker and asks for the leader of 'Partition 1'.
+  -  The broker responds with the identification of the leader broker responsible for 'Partition 1'.
+  -  The producer connects to the leader broker to publish the message.
   
 
 # Usecases
