@@ -41,7 +41,21 @@
    
   
 ## Kafka
-- distributed messaging system that can reliably transfer a high throughput of messages between different entities.
+- open src, pub-sub, durable, highly scalable distributed messaging system that can reliably transfer a high throughput of messages between different entities.
+- Kafka can also be thought of as a distributed append-only WAL OR Commit log OR Transaction log that can persistently store a seq of records.
+- written in Java, created at LinkedIn in 2010 for internal use
+- Records are always appended at the end(Right) and read by the consumer/s from L->R. Records once inserted, cannot be deleted or modified.
+- Kafka Usecases
+  - Metrics, Log aggregation, Stream Processing, Commit Log, Website activity tracking for analytics and eventual product suggestions
+- Kafka terminology
+  - Broker(single kafka server), record(A record is a message or an event that gets stored in Kafka) , Publisher(writes msgs), Subscriber(reads & processes msgs), topics, partitions,
+    - a record aka msg aka event aka alert contains : Timestamp + Key + Header/s + value
+    - topic: Topics are diff categories for messages to be published.
+      - A consumer can subscribe to many topics.
+      - A topic can have many subscribers.
+      - A topic can have multiple partitions
+  - Messages in a topic can be read as often as needed, unlike classic messaging systems, messages are not deleted after consumption. Instead, Kafka retains messages for a configurable amount of time or until a storage size is exceeded.
+-   
   
 # References
 - https://www.youtube.com/watch?v=oVZtzZVe9Dg
