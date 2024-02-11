@@ -97,7 +97,8 @@
       - Offset: Each msgs that enters a partition of a topic is assigned a uniq seq id called an offset.
         - Offset sequences are known only to each partition. To locate a msg, we need to know the Topic, partition and offset num. 
   - Messages in a topic can be read as often as needed, unlike classic messaging systems, messages are not deleted after consumption. Instead, Kafka retains messages for a configurable amount of time or until a storage size is exceeded.
--   
+- References
+  - https://www.confluent.io/blog/publishing-apache-kafka-new-york-times/ 
   
 # References
 - https://www.youtube.com/watch?v=oVZtzZVe9Dg
