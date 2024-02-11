@@ -21,6 +21,11 @@
 - https://computinglife.wordpress.com/2008/11/20/why-do-hash-functions-use-prime-numbers/
 - In short: you can use nums like 17,31,397..
 
+## Why is epoll faster than select ?
+- https://stackoverflow.com/questions/17355593/why-is-epoll-faster-than-select
+- select inserts a 'thunk' to each process's waitlist and needs to remove the 'thunk' once process wakes up with data.
+- in contrast epoll maintains the waitlist with itself.
+   
 # Differences between
 
 ## Monolith vs Microservices arch
