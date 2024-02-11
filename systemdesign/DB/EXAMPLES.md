@@ -13,6 +13,10 @@
 - also called [BASE|https://stackoverflow.com/questions/3342497/explanation-of-base-terminology] Basically Available, Soft state, Eventual consistency
 
 ## Cassandra
+- Cassandra is a distributed, scalable, decentralized, P2P, leaderless, eventually consistent(tunable consistency)  NOSQL database.
+- Cassandra uses SSTables and memtables(like BigTable) and consistent hashing, Partitioning and replication like Dynamo(KV DB).
+- Design patterns used in Cassandra
+  - Consistent hashing, quorum, WAL, segmented log, gossip, geneeration num, Phi accrual failure detector, Bllom filters, hinted handoff, read repair  
 - [Facebook constructed Cassandra](https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to power its Inbox Search feature.
 -  Cassandra is a NoSQL database which means we cannot have joins between tables, there are no foreign keys, and while querying, we cannot add any column in the where clause other than the primary key. These constraints should be kept in mind before deciding to use Cassandra.
 - Cassandra has tables, multiple tables across nodes can be grouped in a keyspace, and ma group of keyspaces for a cluster.
@@ -30,12 +34,13 @@
   - Replication factor: how many replicas the system will have
   - Replication strategy : which nodes will be responsible for the replicas
   - Each keyspace in Cassandra can have a different replication factor.
-- Write Consistency Levels: Any ..RF(Replication_factor).. All
+- Write Consistency Levels:  One, Two, Three, Quorum, Local_quoram, Each_quorum (majority of the replicas in each datacenter must respond), and Any and ALL.
   - Also can specify quorum within a DC(Local_quorum) and across DCs(Across_quorum)
-  - Supports Hinted handoff
-- Read consistency:
+  - For strong consistency in Cassandra: R + W > RF where R=Read replica count, W write replica count and RF is the replication factor 
+  - Coordinator node supports Hinted handoff when the node responsible for writes is down
+- Read consistency: For read requests, Cassandra has the same consistency levels as that of write operations except Each_quorum.
   - R+W>RF gives us strong consistency. In this equation R, W, RF are the read replica count, the write replica count, and the replication factor, respectively.
-  - Snitch: The Snitch is an application that determines the proximity of nodes within the ring and also tells which nodes are faster. Cassandra nodes use this information to route read/write requests efficiently.
+  - Snitch: The Snitch is an application that determines the proximity of nodes within the ring and also tells which nodes are faster. Cassandra nodes use this information to route read/write requests efficiently. Snithc is used to determine each node's rack and DC.
 - Generation number: In Cassandra, each node stores a generation number which is incremented every time a node restarts. This generation number is included in each gossip message.
 - The seed node designation has no purpose other than bootstrapping the gossip process for new nodes joining the cluster. Thus, seed nodes are not a single point of failure, nor do they have any other special purpose in cluster operations other than the bootstrapping of nodes.
 - Cassandra Write path
@@ -45,12 +50,16 @@
   - Row cache: caches freq read rows
   - Key Cache: stores map (recently read partition keys -> SSTable offsets)
   - Chunk Cache: uncompressed chunks of data from SSTable thats read frequently
-- Each SStable has a Bloom filter associated with it, which tells if a particular key is present in it or not. Bloom filters are used to boost the performance of read operations. These filters are stored in mem and are a special kind of key cache.
-- Each SSTable has 2 files
-  - Partition Index file:  stores the sorted partition keys mapped to their SSTable offsets.
+- Each SStable has a Bloom filter associated with it, which tells if a particular key is present in it or not. Bloom filters are used to boost the performance of read operations and stored in mem. These filters are stored in mem and are a special kind of key cache.
+- Each SSTable consist of mainly two files. Index file (Bloom filter & Key offset pairs) & Data file (actual columns data). 
+  - Partition Index file:  stores the sorted partition keys mapped to their SSTable offsets. is accessed from disk.
+  - Partition summary: in-mem data structure that stores the byte offsets in the Partition index for fast access.
   - Data file: stores actual data in sorted order.
-- 
+- Tombstones are used to manage deletions. Its a marker to indicate that data has been deleted. When we delete some data in Cassandra, for a node that is down or unreachable, that node could miss a delete. Default expriry time for a tombstone is 10 days, to give the unavailable node time to recover
+  - Tombstones make Cassandra writes efficient but take storage space instead of shrinking it. Tombstones are discarded during compaction except if the node resposible for the tombstone is unreachable(Check it?)
     
+  
+
 
 ## MongoDB
 
