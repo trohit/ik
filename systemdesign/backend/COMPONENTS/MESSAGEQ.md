@@ -45,15 +45,22 @@
 - Kafka can also be thought of as a distributed append-only WAL OR Commit log OR Transaction log that can persistently store a seq of records.
 - written in Java, created at LinkedIn in 2010 for internal use
 - Records are always appended at the end(Right) and read by the consumer/s from L->R. Records once inserted, cannot be deleted or modified.
+- Kafka follows the principle of dumb broker and smart consumer. Kafka doesnt track what consumers are read. Consumers are allowed to read from any offset and are expected to poll / pull msgs. This also allows the consumers to join / disconnect the cluster at any point in time.  
 - Kafka Usecases
   - Metrics, Log aggregation, Stream Processing, Commit Log, Website activity tracking for analytics and eventual product suggestions
 - Kafka terminology
-  - Broker(single kafka server), record(A record is a message or an event that gets stored in Kafka) , Publisher(writes msgs), Subscriber(reads & processes msgs), topics, partitions,
+  - Broker(single kafka server), record(A record is a message or an event that gets stored in Kafka) , Publisher(writes msgs), Subscriber(reads & processes msgs), topics, partitions, offset, Leader(responsible for R+W in a partition, every partition has a Kafka broker as a Leader ), Follower(
     - a record aka msg aka event aka alert contains : Timestamp + Key + Header/s + value
     - topic: Topics are diff categories for messages to be published.
       - A consumer can subscribe to many topics.
-      - A topic can have many subscribers.
-      - A topic can have multiple partitions
+      - A topic can have many subscribers. 
+      - A topic can have multiple partitions of smaller sizes for better perf and scalability
+        - A partition is just an ordered set of msgs. Placing each partition of a topic on a separate broker allows a topic to hold many more msgs than the capacity of a single server. 
+        - Ordering is maintained at a per-partition lvl, not across the topic.
+        - A topic can have multiple partitions in the same broker
+        - Producers / Publishers can publish to any partition for a topic. Usually a Round Robin strategy is used.
+      - Offset: Each msgs that enters a partition of a topic is assigned a uniq seq id called an offset.
+        - Offset sequences are known only to each partition. To locate a msg, we need to know the Topic, partition and offset num. 
   - Messages in a topic can be read as often as needed, unlike classic messaging systems, messages are not deleted after consumption. Instead, Kafka retains messages for a configurable amount of time or until a storage size is exceeded.
 -   
   
