@@ -20,6 +20,10 @@
   -  The producer connects to any broker and asks for the leader of 'Partition 1'.
   -  The broker responds with the identification of the leader broker responsible for 'Partition 1'.
   -  The producer connects to the leader broker to publish the message.
+-  A single broker in the Kafka Cluster is elected as the Cluster Controller. Its responsible for creating/deleting topic, adding partitions, assigning leaders to partitions and monitoring broker failures. CC also communicates partition leader election results to all brokers in the cluster.  
+  - If a Cluster Controller dies, a new one gets elected. If n/w controller cant talk to other nodes (due to n/w partition or Garbage collection), its considered to be dead. If it comes back online later, but another node has taken its role, its said to be a zombie controller. This can cause a Split Brain.
+  - Split brain is handled using a generation clock which is a a monotonically increasing number which indicates the election term. The old controller may have a epoch num of 1 whereas the new controller may have a epoch gen of 2. This epoch number is stored in ZooKeeper.
+  - 
   
 
 # Usecases
