@@ -23,7 +23,28 @@
 -  A single broker in the Kafka Cluster is elected as the Cluster Controller. Its responsible for creating/deleting topic, adding partitions, assigning leaders to partitions and monitoring broker failures. CC also communicates partition leader election results to all brokers in the cluster.  
   - If a Cluster Controller dies, a new one gets elected. If n/w controller cant talk to other nodes (due to n/w partition or Garbage collection), its considered to be dead. If it comes back online later, but another node has taken its role, its said to be a zombie controller. This can cause a Split Brain.
   - Split brain is handled using a generation clock which is a a monotonically increasing number which indicates the election term. The old controller may have a epoch num of 1 whereas the new controller may have a epoch gen of 2. This epoch number is stored in ZooKeeper.
-  - 
+  - Producer delivery semantics
+    - Async: Fire & Forget: producer doesnt wait for an ack from leader or any node. Can be used for usecases where its ok to drop some msgs like log collection.
+    - Committed to Leader: leader stores the msg but responds without waiting for commit success from followers. producer waits only for ack from leader
+    - Committed to Leader & Quorum : producer waits for ack from leader and quorum followers.
+  - Consumer delivery semantics
+    - At most once: msgs maybe lost but never redelivered. Can be used for usecases where its ok to drop some msgs like log collection
+    - At least once: msgs never lost but may get redelivered. Can be used for usecases where msgs are idempodent 
+    - Exactly once: msgs delivered exactly once. Can lead to decreased througput.
+  - Kafka can provide high perf due to zero-copy from page cache -> n/w and sequential append only immutable writes and due to ability to chunk msgs together to  deliver large linear chunks to the user.
+- Record retention: Kafka retains records till it runs out of disk space. Can set time-based limits(days, weeks, months) or size-based limits(M|G|T) or compaction (only keep the latest record).
+- To prevent Monopolization of n/w and kafka server resources, kafka implements byte-rate thresholds defined per client-ID. A client-ID logically identifies an appl making a request. Multiple producer and consumer instances can share the sma client-ID. once the threshold is breached, say(10MB/s), broker does not return an err but instead slows down client by holding the clients response long enough to keep the lcinet under the quota. the adv here that client does not need to implement special backoff and retry behavior.
+- Scalability
+  - Kafka cluster can expand (add more brokers) or shrink(remove brokers) while in operation and without and=y outage.
+  - Kafka topic can be expanded to include more partitions but is bounded by broker disk space.
+  - no limit to how much data can be stored by a topic as once can increase num of partitions by increasing the num of brokers.
+- Fault tolerance and reliability
+  - broker failure detecable by zookeeper and other brokers
+  - by using many consumer groups comsumption can have high throughput.
+- Low latency : 99.9% of time, data served from RAM and cache and rarely hits the disk.    
+    
+      
+    
   
 
 # Usecases
@@ -64,7 +85,7 @@
   - Metrics, Log aggregation, Stream Processing, Commit Log, Website activity tracking for analytics and eventual product suggestions
 - Kafka terminology
   - Broker(single kafka server), record(A record is a message or an event that gets stored in Kafka) , Publisher(writes msgs), Subscriber(reads & processes msgs), topics, partitions, offset, Leader(responsible for R+W in a partition, every partition has a Kafka broker as a Leader ), Follower(
-    - a record aka msg aka event aka alert contains : Timestamp + Key + Header/s + value
+    - a record aka msg aka event aka alert contains : Timestamp + Key(msgs with same key written to same partition) + Header + optional headers + value
     - topic: Topics are diff categories for messages to be published.
       - A consumer can subscribe to many topics.
       - A topic can have many subscribers. 
