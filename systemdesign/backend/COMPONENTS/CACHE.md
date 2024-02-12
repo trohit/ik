@@ -76,6 +76,9 @@
 - suports multiple cache eviction policies [LRU|LFU|Random|no-eviction](https://docs.redis.com/latest/rs/databases/memory-performance/eviction-policy/)
 -   
 ## Memcached
+- Refs
+  - https://distributed-computing-musings.com/2022/03/paper-notes-scaling-memcache-at-facebook/
+    
 # References
 - https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
 - https://hazelcast.com/blog/a-hitchhikers-guide-to-caching-patterns/
