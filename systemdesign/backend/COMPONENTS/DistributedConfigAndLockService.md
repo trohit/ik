@@ -8,7 +8,7 @@
   - Mutual exclusion
   - Deadlock
   - Fault Tolerance 
-#
+
 ## Zookeeper
   - Distributed config and sync service
   - Used by Kafka prior to KIP-500 to store basic metadata about brokers, topics, partitions, partition leader/followers, consumer offsets, etc.
@@ -47,7 +47,6 @@
 ![image](https://github.com/trohit/ik/assets/466385/9896b243-676c-4109-8514-248aeeb5429f)
 
 
-
-
-
-- etcd
+# etcd
+- etcd is a distributed key-value store that uses the Raft consensus algorithm for replication.
+- While its primary purpose is service discovery and configuration management, it can also be used for distributed locking by leveraging its transactional capabilities.
