@@ -25,6 +25,8 @@
 - DB
    - Serializable Snapshot /isolation in PgSQL: https://drkp.net/papers/ssi-vldb12.pdf
    - Optimistic aka Lazy Replication : https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-60.pdf
+- Analytics
+   - Trino/ Presto: https://trino.io/Presto_SQL_on_Everything.pdf 
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
