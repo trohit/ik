@@ -2,7 +2,7 @@
 - Designed to be Scalable + Fault Tolerant + Handle Large Files + Large seq & small rand reads + Seq writes + High concurrency + High Throughput
 - Usecases: Gmail OR YouTube, originally for crawling & indexing system, Also used by BigTable to store log & data files
 - Not POSIX level compliant suports create, read, write, delete, open, close 
-- Also supports Snapshots and Append ops
+- Also supports Snapshots(only made when client modifies data aka Copy-On-Write) and Append ops
 - GFS stores a big file in chunks of 64MB
 - Each chunk identified by 64 bit unique chunk handle
 - FR of GFS:
@@ -16,9 +16,18 @@
     - Name and path of each file
     - mapping files to chunk and chunk locations
     - chunks ACL
+    - making replica placement decisions (viz on different racks)
+    - making sure chunks are replicated as per replication factor
+    - Balancing load across all chunkservers
+    - acquire locals over a namespace region before applying reader writer locks on it.
+      - eg to make an op on /a/b/c, reader lock on /a and /a/b and r/w lock on /a/b/c
+        - so concurrent modfication on same dir allowed but same leaf entry not allowed
+      - GFS Master also maintains chunk version num for each chunk to distinguish between uptodate and stale replicas
   - GFS Master also manager chunk lease mgmt, GC of orphaned chunks and migration of chunks b.w chunkservers
   - GFS Master periodically communicates heartbeats with all the chunk servers
   - For perf & latency, all metadata stored on GFS Master. Incl whole FS namespace + file->chunk mappings
   - Master is a SPOF so the matadata is replicated to many remote machines
-  - Client is any node that reads / writes to GFS. Clients talk to Master for all metadata updates and modifications. Neither client nor chunkservers explicitly cache data apart from the linux buf cache.
+  - Client is any node that reads / writes to GFS. Clients talk to Master via RPC for all metadata updates and modifications. Neither client nor chunkservers explicitly cache data apart from the linux buf cache.
+  - Single master reaults in simple design. After clients query the master for chunk locations, they directly talk to chunk servers.
+  - GFS Master asks all chunk servers abt their chunks only on startup, subsequently Chunkservers are the ultimate src of truth. In a cluster with thousands of nodes, chunk nodes go down frequently, so no point striving for consistency.
   
