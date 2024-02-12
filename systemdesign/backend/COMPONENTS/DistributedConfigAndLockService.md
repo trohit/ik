@@ -8,7 +8,7 @@
   - Mutual exclusion
   - Deadlock
   - Fault Tolerance 
-
+#
 ## Zookeeper
   - Distributed config and sync service
   - Used by Kafka prior to KIP-500 to store basic metadata about brokers, topics, partitions, partition leader/followers, consumer offsets, etc.
