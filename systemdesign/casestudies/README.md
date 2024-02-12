@@ -15,6 +15,11 @@
 - Scalability : 10m
 - Wrap-up     :  5m
 
+# TipsNTricks
+- Scale: Caching, LoadBalancing and ScaleOut
+- ConcurrencyControl
+  - Optimistic Concurrency Control
+  - Pessimistic Concurrency Control: 2PL, [Serializable Snapshot Isolation](https://distributed-computing-musings.com/2022/02/transactions-serializable-snapshot-isolation/) 
 # References
 - https://github.com/donnemartin/system-design-primer
 - https://github.com/gitgik/distributed-system-design/
