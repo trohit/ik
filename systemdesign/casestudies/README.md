@@ -18,8 +18,8 @@
 # TipsNTricks
 - Scale: Caching, LoadBalancing and ScaleOut
 - ConcurrencyControl
-  - Optimistic Concurrency Control
-  - Pessimistic Concurrency Control: 2PL, [Serializable Snapshot Isolation](https://distributed-computing-musings.com/2022/02/transactions-serializable-snapshot-isolation/) 
+  - Optimistic Concurrency Control:  [Serializable Snapshot Isolation](https://distributed-computing-musings.com/2022/02/transactions-serializable-snapshot-isolation/) 
+  - Pessimistic Concurrency Control: 2PL
 # References
 - https://github.com/donnemartin/system-design-primer
 - https://github.com/gitgik/distributed-system-design/
