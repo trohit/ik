@@ -15,8 +15,15 @@
   - Distributed locking mechanism (orig usecase)
     - Chubby provides coarse grained locks to sync activities in a distributed env.
     - in simple words chubby provides mutuxes and semaphores that work in a distributed env across nodes.
+- Chubby uses Paxos as the distributed consensus protocol.
   - When not to use Chubby
-    - Bulk updates | High data upload rate | Lock & unlock done very frequently | pub sub model   
+    - Bulk updates | High data upload rate | Lock & unlock done very frequently | pub sub model
+- Chubby locks are advisory, meaning its up to the client to honor the lock.
+- Why chubby needs some storage ? for cliens to adverise the leader / secondary node, change  the binding of a name to IP. Not needing to have a separate set of servers for associated storage makes the workflow dependent on lesser discrete systems as well as little afster and easier to manage. As such Chubby only provides create, read,delete, and locking primitives.
+- Example chubby path : ls/x/y/z/ab/c where
+  - ls means lockservice
+  - x is the name of the chubby cell usually a set of chubby server/s resolved via DNS lookup
+  - a/b/c is a path within the Chuuby cell and is reolved locally within the cell itself
 
 
 
