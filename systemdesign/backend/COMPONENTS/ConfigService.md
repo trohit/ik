@@ -27,6 +27,15 @@
   - ls means lockservice
   - x is the name of the chubby cell usually a set of chubby server/s resolved via DNS lookup
   - a/b/c is a path within the Chuuby cell and is reolved locally within the cell itself
+- Chubby uses seq_no to deal with msgs being recvd out-of-order.
+- Each Chubby node can act as a Reader-writer lock by
+  - if exclusive write lock then only one client maye hold the node
+  - if shared read lock then any number of clients can hold the lock in read mode.
+- Chubby vs Zookeeper
+  - Similarities & Differences
+![image](https://github.com/trohit/ik/assets/466385/cd00becd-f0fc-4f24-aca4-463753ff91ef)
+![image](https://github.com/trohit/ik/assets/466385/9896b243-676c-4109-8514-248aeeb5429f)
+
 
 
 
