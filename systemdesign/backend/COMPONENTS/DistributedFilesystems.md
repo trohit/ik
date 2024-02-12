@@ -10,7 +10,8 @@
   - map file to chunks
   - support stad ops on files
 - All GFS clusters contain: A single Master server + many chunk servers + many clients
-- Chunk servers store chunks as regular linux files and can handles reads and writes for chunks at byte sized offsets
+- Chunk servers store chunks as regular linux files (with checksums) and can handles reads and writes for chunks at byte sized offsets
+  - while reading, reader gets chunk data from a chunk server and validates with checksums from the rest to validate integrity.  
 - GFS Master server is the coordinator of a GFS Cluster and responsible for
   - keeping track of cluster metadata. metadata includes:
     - Name and path of each file
