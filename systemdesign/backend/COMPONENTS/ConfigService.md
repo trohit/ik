@@ -19,6 +19,7 @@
     - Chubby provides coarse grained locks to sync activities in a distributed env.
     - in simple words chubby provides mutuxes and semaphores that work in a distributed env across nodes.
 - Chubby uses Paxos as the distributed consensus protocol.
+- Chubby also follows [TMR](https://en.wikipedia.org/wiki/Triple_modular_redundancy)
   - When not to use Chubby
     - Bulk updates | High data upload rate | Lock & unlock done very frequently | pub sub model
 - Chubby locks are advisory, meaning its up to the client to honor the lock.
