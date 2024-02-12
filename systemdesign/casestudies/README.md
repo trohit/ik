@@ -22,6 +22,7 @@
 - https://github.com/karanpratapsingh/system-design
 - https://github.com/checkcheckzz/system-design-interview
 - https://leetcode.com/discuss/interview-question/system-design/4485980/Navigating-Recent-System-Design-Assessments%3A-A-Candid-Reflection
+- https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction
 
 # good questions to ask in any system design interview
 
