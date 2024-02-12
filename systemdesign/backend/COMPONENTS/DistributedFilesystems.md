@@ -1,0 +1,24 @@
+# GFS
+- Designed to be Scalable + Fault Tolerant + Handle Large Files + Large seq & small rand reads + Seq writes + High concurrency + High Throughput
+- Usecases: Gmail OR YouTube, originally for crawling & indexing system, Also used by BigTable to store log & data files
+- Not POSIX level compliant suports create, read, write, delete, open, close 
+- Also supports Snapshots and Append ops
+- GFS stores a big file in chunks of 64MB
+- Each chunk identified by 64 bit unique chunk handle
+- FR of GFS:
+  - split file into chunks
+  - map file to chunks
+  - support stad ops on files
+- All GFS clusters contain: A single Master server + many chunk servers + many clients
+- Chunk servers store chunks as regular linux files and can handles reads and writes for chunks at byte sized offsets
+- GFS Master server is the coordinator of a GFS Cluster and responsible for
+  - keeping track of cluster metadata. metadata includes:
+    - Name and path of each file
+    - mapping files to chunk and chunk locations
+    - chunks ACL
+  - GFS Master also manager chunk lease mgmt, GC of orphaned chunks and migration of chunks b.w chunkservers
+  - GFS Master periodically communicates heartbeats with all the chunk servers
+  - For perf & latency, all metadata stored on GFS Master. Incl whole FS namespace + file->chunk mappings
+  - Master is a SPOF so the matadata is replicated to many remote machines
+  - Client is any node that reads / writes to GFS. Clients talk to Master for all metadata updates and modifications. Neither client nor chunkservers explicitly cache data apart from the linux buf cache.
+  
