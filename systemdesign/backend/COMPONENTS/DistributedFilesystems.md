@@ -30,4 +30,5 @@
   - Client is any node that reads / writes to GFS. Clients talk to Master via RPC for all metadata updates and modifications. Neither client nor chunkservers explicitly cache data apart from the linux buf cache.
   - Single master reaults in simple design. After clients query the master for chunk locations, they directly talk to chunk servers.
   - GFS Master asks all chunk servers abt their chunks only on startup, subsequently Chunkservers are the ultimate src of truth. In a cluster with thousands of nodes, chunk nodes go down frequently, so no point striving for consistency.
+  - GFS Shadow master are replicas of the primary and provide only read only acces to data when the GFS Master is down.
   
