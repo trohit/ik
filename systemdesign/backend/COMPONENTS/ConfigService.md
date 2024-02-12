@@ -1,5 +1,14 @@
 # Examples
-- Zookeeper, etcd, Chubby(distributed locking mechanism to provide storagr and coordination services to GFS and BigTable )
+- Zookeeper, etcd, Chubby(distributed locking mechanism to provide dustributed locking, config, and coordination services to GFS and BigTable )
+
+## Redis Distributed Lock Manager
+- One cool thing about using [distributed locks in Redis cluster](https://redis.io/docs/manual/patterns/distributed-locks/) is that it doesnt overload the DB by depending on DB transactions and serialization.
+- A good example is to [avoid double-booking in the TicketMaster example](https://www.hellointerview.com/learn/system-design/answer-keys/ticketmaster).
+- Distributed locks need to take care of
+  - Mutual exclusion
+  - Deadlock
+  - Fault Tolerance 
+
 ## Zookeeper
   - Distributed config and sync service
   - Used by Kafka prior to KIP-500 to store basic metadata about brokers, topics, partitions, partition leader/followers, consumer offsets, etc.
