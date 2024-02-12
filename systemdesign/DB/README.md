@@ -35,7 +35,7 @@
    - DB's that use LSM trees provide better write / insertion perf over but are not as good as B+tree DBs at read perf.
       
 ![image](https://github.com/trohit/ik/assets/466385/49d750b4-c4d4-4c4e-bae3-f1b412ce3f5a)
-
+src : [hellointerview:key tech](https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies)
 
 # How to choose SQL | NoSQL?
 - If you prioritize low latency|scalability|wriiting large amt of unstructured data at the cost of consitency|atomcity => NoSQL
