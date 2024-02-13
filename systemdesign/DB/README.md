@@ -4,7 +4,8 @@
 
 # DB System design patterns
 - Write ahead logging
-- Bloom filters
+- [Bloom filters](https://en.wikipedia.org/wiki/Bloom_filter)
+  -   
 - Heartbeat
 - Quorum
 - Checksum
