@@ -5,7 +5,17 @@
 # DB System design patterns
 - Write ahead logging
 - [Bloom filters](https://en.wikipedia.org/wiki/Bloom_filter)
-  -   
+  - APIs: Bloom filters have two operations:
+    - add(x), which marks item x as an element of the set
+    - is_member(x), which checks x’s membership in the set    
+  - params
+    - m total bits needed in bloom filter
+    - n total items to store
+    - k hash fns
+    - p total proabililty of err
+  - thumb rules
+    - at p=0.1 or 1% false +ve, one needs 9.8 bits per elem key
+    - at p=0.01 or 0.01% false +ve needs   
 - Heartbeat
 - Quorum
 - Checksum
