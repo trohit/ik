@@ -47,6 +47,68 @@
 - Will we support groups ? how long to store chat history ? should we support online presence ? 
 - Is there a max msg size limit ? Is there any kind of throttling that we need to implement ? 
 
+# What to use when and why
+## Core Database
+### Relational Databases : Joins, Indexes, 
+- PGSQL/MySQL
+
+### NoSQL 
+- Why ? flexible schema, scalability using consistent hashing + sharding
+- DynamoDB : austo scaling, active-active replication with single digit ms cross region read & write perf + 5 nines SLA + multi-region global DB, serverless 
+- MongoDB
+- ScyllaDB
+- Cassandra
+
+### Blob
+- Why? durability + near infinite scalability + cost + security encrypt-at-rest, suited for workloads with high reads + writes + no/few modify + chunking for multi-part upload
+- S3, Google Cloud Storage
+
+### Search Optimized DB:
+- Why ? inverted indexes + tokenization + stemming(storing words in root form : running can be stored as run) + fuzzy search + scaling(many nodes + sharding) 
+- ElasticSearch + Lucene / Solr
+
+## API Gateway 
+- Why ?auth + load balancing + rate limiting
+- nginx, HA Proxy
+
+## Queues
+- Why ?buffer for bursty traffic + decoupling + independent scaling + multiple consumers
+- msg ordering + built-in retries (max_retries + delay_bet_retries) + deadletter qs + partition based scaling + back pressure
+- Kafka
+- SQS
+
+## Streams
+- Why ? multiple consumers + pub/sub + large amounts of processing
+- Kafka, AWS Kinesis
+
+## Distributed Locking
+- Why ? transaction locks + ACID across distributed DB instances 
+- locking mechanisms (enusring liveliness 
+- Zookeeper, etcd, Redis Lock using RedLock
+
+## Distributed Cache
+- Why ? reduced latency + increased perf + reduced load on DB resulting in better scalability
+- Cache can be at various layers
+  - Client side: Browser, Buf cache
+  - In the network: DNS, CDN
+  - Server side: API gateway (nginx) , service (redis) + DB cache   
+- Redis, Memcached
+
+## CDN
+- Why ?
+- Akamai, Cloudfront, CloudFlare
+
+## VectorDB
+- Why? for usecases like searching similar voices, features, fingerprints, LLM
+- PineCone FAISS
+
+## Open src file formats
+- Why ? cos trad formats like csv, XML, JSON, YAMl are too verbose and duplicate data
+- Parquet
+- Thrift
+- Avro
+
+
 # Case Studies
 Design
 - [TinyURL](https://docs.google.com/document/d/e/2PACX-1vTWxGs8gl4pCSBqzX75wfaOG4n87OytHOLDw7ttFVEBSaKtMN1CIiS-PwJAsh9dSTNLQpaKWNUDvokG/pub)
@@ -74,4 +136,5 @@ Design
 - Event Driven Architecture : uses production/detection and consumption | reaction to events
   
 ![image](https://github.com/trohit/ik/assets/466385/3a06273c-5dc9-415e-b2fe-0098ee893d70)
+
 
