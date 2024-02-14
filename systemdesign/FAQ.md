@@ -158,7 +158,13 @@ Accounting information        |
         -  If only the coordinator had failed, and no cohort members had received a commit message, it could safely be inferred that no commit had happened.
         -  If, however, both the coordinator and a cohort member failed, it is possible that the failed cohort member was the first to be notified, and had actually done the commit.
         -  Even if a new coordinator is selected, it cannot confidently proceed with the operation until it has received an agreement from all cohort members, and hence must block until all cohort members respond.
-       
+
+# Diff between LSM trees vs Btrees
+- LSM trees offer faster writes but slower reads
+- B+ Trees offer slower writes but faster reads
+- So if you have a read heavy system, you could argue for using a B+Tree DB (like tinyurl/pastebin)
+- OTOH if you have a write heavy system you could argue for a LSM tree based DB
+- Ref: [Jordanhasnolife LSM vs B+trees](https://youtu.be/5V6Lam8GZo4?list=PLjTveVh7FakJOoY6GPZGWHHl4shhDT8iV&t=856)
           
 # Diff between Gossip protocol vs other alternatives
 
