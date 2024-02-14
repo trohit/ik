@@ -121,7 +121,9 @@
   - Sys design patterns : https://www.youtube.com/watch?v=nH4qjmP2KEE 
     - Ambassador pattern: offloads tasks like logging monitoring, retries, enhances security. eg Envoy for k8s
     - Circuit Breaker pattern: prevents cascading failure
-    - CQRS: separating reads from writes to allow each to scale independently
+    - [CQRS](https://martinfowler.com/bliki/CQRS.html): separating reads from writes to allow each to scale independently
+      - Useful where eventual consistency is needed and read load can impact writes
+      - Not good for the core of a banking system or where strict consistency is needed.
     - Event Sourcing: keeping journal of live events eg. git commit history, change data capture, Pravega
     - Leader Election Pattern: Zookeeper, etc for distributed consistent config
     - Pub/Sub: eg. msg qs, Google Cloud Pub/Sub
