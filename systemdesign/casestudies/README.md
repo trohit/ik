@@ -131,7 +131,7 @@ Design
 
 # Architectures
 - Microservice arch: where each component is an independent microservice and uses SOA (service oriented architecture)
-- Cmd Query responsibility segregation CQRS : separate read and write DBs
+- Cmd Query responsibility segregation [CQRS](https://martinfowler.com/bliki/CQRS.html) : separate read and write DBs
 - Layered (n-tier) architecture
 - Event Driven Architecture : uses production/detection and consumption | reaction to events
   
