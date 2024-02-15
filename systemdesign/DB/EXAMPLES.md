@@ -104,10 +104,12 @@
     - HSET key field value
     - HGET key field
     - HGETALL key
-  - List
+  - List: single list can hold 4 bill entries (4x10^9)
     - LPUSH key elem
     - LPOP key [count]
-    - RPUSH key elem   
+    - RPUSH key elem
+    - LRANGE key start stop
+    - queue RPUSH & LPOP stack RPUSH & RPOP
 
 # TSDB
 - Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
