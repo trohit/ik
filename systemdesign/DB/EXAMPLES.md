@@ -99,6 +99,15 @@
 - Refs
   - [Redis Antipatterns](https://developer.redis.com/howtos/antipatterns/)
   - Comparsion of [Redis vs DragonFly vs KeyTable vs SkyTable](https://news.ycombinator.com/item?id=31796311)
+- Commands
+  - Hash :
+    - HSET key field value
+    - HGET key field
+    - HGETALL key
+  - List
+    - LPUSH key elem
+    - LPOP key [count]
+    - RPUSH key elem   
 
 # TSDB
 - Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
