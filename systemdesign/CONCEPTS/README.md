@@ -90,6 +90,10 @@
     - pkt loss on one stream doesnt affect another
     - for mobile heavy net usage, phone users switch from one n/w to another
     - QUIC (Quick UDP Internet Connections) has a connection id that allows devices to switch from one n/w to another.
+      - reduces overhead on conn setup by sending connection data in the handshake itself
+      - uses UDP with multiple flows, so if one stream has errs the other flows continue independently,  helpful in err prone links
+      - each pkt encrypted individually, so no need to wait for partial pkts txfer to complete. Improves latency and throughput
+      - QUIC uses a connection identifier to uniquely identify the connection, so even if the conn moves from wifi to edge, the connection can be restablished by just sending a pkt with the same connection-id.
   - See more at
     - https://hpbn.co/brief-history-of-http/ : High Performance Browser networking
     - https://medium.com/@sandeep4.verma/http-1-to-http-2-to-http-3-647e73df67a8
