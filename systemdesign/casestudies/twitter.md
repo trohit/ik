@@ -2,6 +2,7 @@
 - http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html
 - https://www.infoq.com/presentations/Twitter-Timeline-Scalability/
 - https://www.infoq.com/presentations/twitter-notifications/
+- https://www.artima.com/articles/twitter-on-scala
 - https://www.youtube.com/watch?v=kIP8L-CSl2Y
   - Tweet service: handles scale
   - Target SLA: latency 5 secs
