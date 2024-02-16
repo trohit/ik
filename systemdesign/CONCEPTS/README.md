@@ -15,6 +15,7 @@
     - Client Slave
     - Event Driven
     - Broker
+      - Message Queues 
     - Event bus
     - MVC
     - Pipe filter
@@ -24,7 +25,14 @@
   - Others that I think are also present
     - Orchestrator : used in saga where there is a central coordinator
     - Choregrapher: used in saga where there is no central coordinator
-    - Circuit Breaker pattern: Used by [shopify](https://shopify.engineering/building-resilient-payment-systems) to stop overloading the unhealthy service by giving up after n retries 
+    - Circuit Breaker pattern: Used by [shopify](https://shopify.engineering/building-resilient-payment-systems) to stop overloading the unhealthy service by giving up after n retries
+    - [Actor Model](https://en.wikipedia.org/wiki/Actor_model)
+      - Used in [Akka](https://akka.io/), Erlang, Elixir, Scala, Go and many languages
+        - Akka has hi perf : Up to 200 million msg/sec on a single machine. Small memory footprint; ~2.5 million actors per GB of heap. 
+      - Relies on message passing with each actor being very lightweight on mem footprint and each actor having state & behavior.
+      - Each actor has its [own state](https://pykka.readthedocs.io/en/latest/quickstart/#rules-of-the-actor-model) and does not share its state with any other actor.
+      - actors can talk to each other only if they know each others 'mailing address'
+      - Msgs need not be delieverd in order
 - Design principles
   - https://12factor.net/
   - [SOLID](https://en.wikipedia.org/wiki/SOLID) : mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
