@@ -23,8 +23,13 @@
     - P2P
     - Interpreter
   - Others that I think are also present
-    - Orchestrator : used in saga where there is a central coordinator
-    - Choregrapher: used in saga where there is no central coordinator
+    - Sagas: A saga is a sequence of transactions that happen across microservices that work together to solve a biz workflow. In microservices arch, each microservice maintains its own internal DB. Consider a B2C application that involves Inventory, Cart, Order, Payment and Shipping service. When an order is paid for, then the items need to be decremented from Inventory and added to the Order fullfillment and Shipping.
+    - Inventory -> Cart -> Order -> Payment -> Update Inventory -> Shipping
+      - Orchestrator : used in saga where there is a central coordinator
+      - Choregrapher: used in saga where there is no central coordinator
+      - Saga Refs
+        - https://dzone.com/articles/saga-pattern-how-to-implement-business-transaction
+        -  
     - Circuit Breaker pattern: Used by [shopify](https://shopify.engineering/building-resilient-payment-systems) to stop overloading the unhealthy service by giving up after n retries
     - [Actor Model](https://en.wikipedia.org/wiki/Actor_model)
       - Used in [Akka](https://akka.io/), Erlang, Elixir, Scala, Go and many languages
