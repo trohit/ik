@@ -46,7 +46,8 @@ URL shortener
   - HTTP 302: temp redirect not cached <<<<< good for stats
 
 # Design
-![image](https://github.com/trohit/ik/assets/466385/e3b5048e-ff5d-4bb2-9a41-5aeeee129823)
+![image](https://github.com/trohit/ik/assets/466385/72386046-1979-434f-bea3-fabb1600bdd4)
+
 
 
 # Scalability
