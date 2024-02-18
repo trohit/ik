@@ -1,4 +1,14 @@
 # Interesting concepts
+- Microservices
+  - Microservices are small, autonomous services that work together. They do one small thing and do it well.
+  - Follow Single Responsibility Principle and follow the dictum "Gather together those things that change for the same reason, spearate those things that change for different reasons."
+  - Biz boundaries become service boundaries
+  - How small is small ?
+    - something that can be re-written in two weeks
+    - when things become smaller they become easier to manage. OTOH, too managing and tracking too many small things increase complexity.
+    - Best practices with microservices
+      - (in production), avoid packing too many different services in one machine
+    -   
 - Consistency and Availability
   - CAP
   - PACLELC : https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf
