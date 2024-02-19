@@ -1,3 +1,6 @@
+# Also applies to
+- AirBnB
+  
 # Diagram
 ![image](https://github.com/trohit/ik/assets/466385/bca4cb01-409c-4941-8dc1-c2aedb0d3886)
 
