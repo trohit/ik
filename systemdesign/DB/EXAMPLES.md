@@ -110,6 +110,8 @@
     - RPUSH key elem
     - LRANGE key start stop
     - queue RPUSH & LPOP stack RPUSH & RPOP
+  - Bits
+    - BIT([COUNT](https://redis.io/commands/bitcount)|[TOP](https://redis.io/commands/bitop)|[POS](https://redis.io/commands/bitpos)|[FIELD](https://redis.io/commands/bitfield)) 
 
 # TSDB
 - Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
