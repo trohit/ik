@@ -116,7 +116,16 @@
         - BITFIELD key [GET type offset] [SET type offset value] [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]
         - Examples
           - BITFIELD mykey INCRYBY i5 100 1
-          - 
+      - Pub/Sub
+        - Simple syndication
+          - PUBLISH channel msg
+          - SUBSCRIBE channel [channel...]
+          - UNSUBSCRIBE channel [channel...] 
+        - Patterned syndication
+          - PSUBSCRIBE pattern [pattern...]
+          - PUNSUBSCRIBE pattern [pattern...]
+        - Admin
+          - PUBSUB subcmd arg [arg...]
 
 # TSDB
 - Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
