@@ -16,7 +16,7 @@
 - Cassandra is a distributed, scalable, decentralized, P2P, leaderless, eventually consistent(tunable consistency)  NOSQL database.
 - Cassandra uses SSTables and memtables(like BigTable) and consistent hashing, Partitioning and replication like Dynamo(KV DB).
 - Design patterns used in Cassandra
-  - Consistent hashing, quorum, WAL, segmented log, gossip, geneeration num, Phi accrual failure detector, Bllom filters, hinted handoff, read repair  
+  - Consistent hashing, quorum, WAL, segmented log, gossip, generation num, Phi accrual failure detector, Bloom filters, hinted handoff, read repair  
 - [Facebook constructed Cassandra](https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to power its Inbox Search feature.
 -  Cassandra is a NoSQL database which means we cannot have joins between tables, there are no foreign keys, and while querying, we cannot add any column in the where clause other than the primary key. These constraints should be kept in mind before deciding to use Cassandra.
 - Cassandra has tables, multiple tables across nodes can be grouped in a keyspace, and ma group of keyspaces for a cluster.
@@ -115,7 +115,8 @@
       - BITFIELD : used to set and get bits by treating the redis str as an arr of bits Time Complexity : all ops O(1) 
         - BITFIELD key [GET type offset] [SET type offset value] [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]
         - Examples
-          - BITFIELD mykey INCRYBY i5 100 1 
+          - BITFIELD mykey INCRYBY i5 100 1
+          - 
 
 # TSDB
 - Examples: OpenTSDB, InfluxDB, Prometheus(SoundCloud), Gorilla(FB), VictoriaMetrics
