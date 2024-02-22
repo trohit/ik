@@ -77,7 +77,7 @@
 ## Redis
 - [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
 - A fast open src, distributed, in-mem key-value DB, cache & msg broker with optional [persistence & durability](https://redis.io/docs/management/persistence/)
-- needs just 3MB to get started
+- needs just 3MB to get started. Max value supported is 500MB In practice, redis works much better with smaller sized values.
 - Redis is more than a cache. It is an in-memory data structure server. Has support for serialized [Transactions](https://redis.io/docs/interact/transactions/) with cmds like [MULTI/WATCH/UNWATCH/EXEC](https://redis.io/commands/?group=transactions) and also Opportunistic Locking(using CAS|WATCH cmd) but does not support rollbacks for perf. 
 - Widely used in places like Twitter, AirBnB, Yahoo and Amazon
 - Supports many data types: [Bitmap](https://redis.io/commands/?group=bitmap), [List](https://redis.io/commands/?group=list), [set](https://redis.io/commands/?group=set), [sortedSets](https://redis.io/commands/?group=sorted-set), [Hash](https://redis.io/commands/?group=hash), [HyperLogLog](https://redis.io/commands/?group=hyperloglog), [PubSub](https://redis.io/commands/?group=pubsub) and [geohashing](https://redis.io/commands/?group=geo), PubSub
