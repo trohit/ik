@@ -1,0 +1,58 @@
+
+## Redis
+- [Redis](https://db-engines.com/en/system/Redis) Remote dictionary server, written in C circa 2009
+- A fast open src, distributed, in-mem key-value DB, cache & msg broker with optional [persistence & durability](https://redis.io/docs/management/persistence/)
+- needs just 3MB to get started. Max value supported is 500MB In practice, redis works much better with smaller sized values.
+- Redis is more than a cache. It is an in-memory data structure server. Has support for serialized [Transactions](https://redis.io/docs/interact/transactions/) with cmds like [MULTI/WATCH/UNWATCH/EXEC](https://redis.io/commands/?group=transactions) and also Opportunistic Locking(using CAS|WATCH cmd) but does not support rollbacks for perf. 
+- Widely used in places like Twitter, AirBnB, Yahoo and Amazon
+- Supports many data types: [Bitmap](https://redis.io/commands/?group=bitmap), [List](https://redis.io/commands/?group=list), [set](https://redis.io/commands/?group=set), [sortedSets](https://redis.io/commands/?group=sorted-set), [Hash](https://redis.io/commands/?group=hash), [HyperLogLog](https://redis.io/commands/?group=hyperloglog), [PubSub](https://redis.io/commands/?group=pubsub) and [geohashing](https://redis.io/commands/?group=geo), PubSub
+- Also supports JSON, XML, timeseries
+- Persistence achieved by using either RDB (snaps) or AOF(append only file)
+- Supports [master-replica](https://en.wikipedia.org/wiki/Replication_(computing)) (replication)[https://redis.io/docs/management/replication/]
+- Can be used as cache, msgq, leaderboard, counter
+- Often compared to Memcache which is only in-mem DB
+- Best practices
+  -  always recommended to keep shards to recommended sizes. General conservative rule of thumb is 25GB per process (or [50GB on Flash](https://redis.com/blog/redis-architecture-13-years-later/))  or 25K Ops/Second.
+  -  With a large number of clients, a reconnect flood will be able to simply overwhelm a single threaded Redis process and force a failover. Hence, it is recommended that you should use a tool that allows you to reduce the number of open connections to your Redis server. eg. Redis Enterprise DMC proxy OR Twemproxy allows you to reduce the number of connections to your cache server by acting as a proxy.
+  -  By default, Redis writes data to a file system at least every 2 seconds, with more or less robust options available if needed. In the case of a complete system failure on default settings, only a few seconds of data would be lost.
+  - Data from any Redis server can replicate to any number of replicas. A replica may be a master to another replica. This allows Redis to implement a single-rooted replication tree.
+  - Perf: Redis operates as a single process and is single-threaded or double-threaded when it rewrites the AOF (append-only file).
+    - A Redis cluster can scale up to 1,000 nodes, achieve "acceptable" write safety and to continue operations when some nodes fail.
+    - A single redis node can do about [200k+ TPS](https://stackoverflow.com/questions/35229274/can-redis-do-hundreds-of-transactions-per-second-on-single-key-value-pair) in production about 50K TPS(citation needed)
+  - Scaling
+    - [redis cluster can support upto 1000 nodes](https://medium.com/@inthujan/introduction-to-redis-redis-cluster-6c7760c8ebbc) supports in-built sharding and async replication   
+- Refs
+  - [Redis Antipatterns](https://developer.redis.com/howtos/antipatterns/)
+  - Comparsion of [Redis vs DragonFly vs KeyTable vs SkyTable](https://news.ycombinator.com/item?id=31796311)
+- Commands
+  - Hash :
+    - HSET key field value
+    - HGET key field
+    - HGETALL key
+  - List: single list can hold 4 bill entries (4x10^9)
+    - LPUSH key elem
+    - LPOP key [count]
+    - RPUSH key elem
+    - LRANGE key start stop
+    - queue RPUSH & LPOP stack RPUSH & RPOP
+  - Bits
+    - BIT([COUNT](https://redis.io/commands/bitcount)|[OP](https://redis.io/commands/bitop)|[POS](https://redis.io/commands/bitpos)|[FIELD](https://redis.io/commands/bitfield))
+      - BITFIELD : used to set and get bits by treating the redis str as an arr of bits Time Complexity : all ops O(1) 
+        - BITFIELD key [GET type offset] [SET type offset value] [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]
+        - Examples
+          - BITFIELD mykey INCRYBY i5 100 1
+      - Pub/Sub
+        - Simple syndication
+          - PUBLISH channel msg
+          - SUBSCRIBE channel [channel...]
+          - UNSUBSCRIBE channel [channel...] 
+        - Patterned syndication
+          - PSUBSCRIBE pattern [pattern...]
+          - PUNSUBSCRIBE pattern [pattern...]
+        - Admin
+          - PUBSUB subcmd arg [arg...]
+  - Geohash
+    - GEO[ADD|DIST|HASH|POS|RADIUS|RADIUS_RO|BYMEMBER|BYMEMBER_RO|SEARCH|SEARCHSTORE]
+      - Note that latitudes only upto 85 degrees are supported due to geohash algo militations but that works fpr almost all usecases.
+      - Also there is no GEODEL as all geohashes are stored in a sorted set. Instead ZREM is used to remove a key
+      - Each Geohash is 52 bits in length.   
