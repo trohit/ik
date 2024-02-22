@@ -2,6 +2,7 @@
 - A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable. — Leslie Lamport 
 - All happy families are alike; each unhappy family is unhappy in its own way. (Leo Tolstoy, Anna Karenina)
 - Ask your product users what their problems are, but dont expect them to define their own solutions. - https://medium.com/serious-scrum/the-3-questions-product-owner-should-never-ask-end-users-52ce956825e0 
+- Caveat Emptor: The cost of software maintenance increases with the square of the programmer’s creativity. (First Law of Programmer Creativity, Robert D. Bliss, 1992)
 - Change is best when its small and frequent. (SRE Handbook Google)
 - Done is better than perfect. Start with what you know, add as you get more insights.
 - Don't count the servers, make the servers count. alternative definition of scale-up. (Lisa Guo on Scaling Instagram Infrastructure)
