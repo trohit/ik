@@ -15,7 +15,7 @@ https://gist.github.com/jboner/2841832
   - https://www.callstats.io/blog/what-is-round-trip-time-and-how-does-it-relate-to-network-latency
   - unofficial rule of thumb in the web performance community: render pages, or at the very least provide visual feedback, in under [250 milliseconds](https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application) to keep the user engaged!
 
-![image](https://github.com/trohit/ik/assets/466385/ef1d1c0f-36ed-42e0-9762-97958701b48b)
+![image](https://github.com/trohit/ik/assets/466385/82ac1a2d-0a3f-4e40-b297-c4dee8c983e7)
 
 # Things to Note
 - Register access is fastest (1x)
