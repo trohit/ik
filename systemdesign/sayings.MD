@@ -4,6 +4,7 @@
 - Ask your product users what their problems are, but dont expect them to define their own solutions. - https://medium.com/serious-scrum/the-3-questions-product-owner-should-never-ask-end-users-52ce956825e0 
 - Caveat Emptor: The cost of software maintenance increases with the square of the programmer’s creativity. (First Law of Programmer Creativity, Robert D. Bliss, 1992)
 - Change is best when its small and frequent. (SRE Handbook Google)
+- Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.
 - Done is better than perfect. Start with what you know, add as you get more insights.
 - Don't count the servers, make the servers count. alternative definition of scale-up. (Lisa Guo on Scaling Instagram Infrastructure)
 - For a successful technology, reality must take precedence over public relations. (Richard Feynman, Rogers Commission Report, 1986)
