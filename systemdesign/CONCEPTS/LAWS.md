@@ -10,6 +10,7 @@
   
 # Organization
 - Organizations design systems that mirror their own communication structure. (Melvin Conway, 1967)
+- [Brooke's Law](https://en.wikipedia.org/wiki/Brooks%27s_law): Adding manpower to a late software project makes it later.
   
 # Release Management
 - Feature Branching is a poor man's modular architecture, instead of building systems with the ability to easy swap in and out features at runtime/deploytime they couple themselves to the source control providing this mechanism through manual merging.  (Dan Bodart)
