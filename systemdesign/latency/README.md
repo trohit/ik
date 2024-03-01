@@ -132,6 +132,8 @@ Latency plays a pivotal role in determining the delay experienced by users when 
 - https://hpbn.co/primer-on-latency-and-bandwidth/
 - https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application
 - https://eli.thegreenplace.net/2018/measuring-context-switching-and-memory-overheads-for-linux-threads/
+- [What every programmer should know about memory, Part 1
+](https://lwn.net/Articles/250967/)
 
 # cheatsheet
 - L1 cache reference                           0.5 ns
