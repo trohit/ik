@@ -22,7 +22,7 @@ https://gist.github.com/jboner/2841832
 - RAM is upto 1000 times slower than cache (1000x) 
 - SSD is 4-5 times slower than disk (5000x)
 - access from neighboring peer Nodes DRAM in same DC can be 10 times slower than local SSD (50,000x)
-- acesss from local HDD 20 times slower than local HDD (100,000x)
+- acesss from local HDD 20 times slower than local SSD (100,000x)
 - In general there is an addl 1 ms round-trip delay time per 100 km (62 miles).
 - Ref : https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/
   - L1: 1.3ns
@@ -131,6 +131,7 @@ Latency plays a pivotal role in determining the delay experienced by users when 
 - https://static.googleusercontent.com/media/sre.google/en//static/pdf/rule-of-thumb-latency-numbers-letter.pdf
 - https://hpbn.co/primer-on-latency-and-bandwidth/
 - https://hpbn.co/primer-on-web-performance/#anatomy-of-a-modern-web-application
+- https://eli.thegreenplace.net/2018/measuring-context-switching-and-memory-overheads-for-linux-threads/
 
 # cheatsheet
 - L1 cache reference                           0.5 ns
