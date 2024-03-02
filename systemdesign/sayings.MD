@@ -2,6 +2,7 @@
 - A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable. — Leslie Lamport 
 - A healthy man wants a thousand things, a sick man only wants one.
 - All happy families are alike; each unhappy family is unhappy in its own way. (Leo Tolstoy, Anna Karenina)
+- All the best games are easy to learn and difficult to master. [Bushnell's Law or Nolan's Law](https://en.wikipedia.org/wiki/Bushnell%27s_Law)
 - Ask your product users what their problems are, but dont expect them to define their own solutions. - https://medium.com/serious-scrum/the-3-questions-product-owner-should-never-ask-end-users-52ce956825e0 
 - Caveat Emptor: The cost of software maintenance increases with the square of the programmer’s creativity. (First Law of Programmer Creativity, Robert D. Bliss, 1992)
 - Change is best when its small and frequent. (SRE Handbook Google)
