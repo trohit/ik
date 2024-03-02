@@ -8,9 +8,14 @@
     - when things become smaller they become easier to manage. OTOH, too managing and tracking too many small things increase complexity.
     - Best practices with microservices
       - (in production), avoid packing too many different services in one machine
-  - Microservices vs Monolity analogy
-    - Think of a monolith as a 1000 kg stone slab. Think of a microservices as many small pebbles of different shapes and sizes but adding up top the same weight.  
-    -   
+  - Microservices vs Monolith analogy
+    - Think of a monolith as a 1000 kg stone slab. Think of a microservices as many small pebbles of different shapes and sizes but adding up top the same weight.
+  - What are the advantages of using Microservices?
+    - Biggest benefits of microservices is scalability. With the overall application becoming modular, each microservice can be scaled individually, either manually or automated through demand-based autoscaling.
+    - Seamless upgrades and patching processes are other benefits of microservices architecture. There is virtually no downtime and no service disruption to clients because upgrades are rolled out seamlessly - one service at a time, rather than having to recompile, rebuild and restart an entire monolithic application. As a result, businesses are able to develop and roll-out new features and updates a lot faster, in an agile approach, having separate teams focusing on separate features, thus being more productive and cost-effective.
+  - What are the disadvantages of using microservices ?
+    - Needing to ensure that all the microservices are compatible with one another and tracking which versions of the different systems are compatible. 
+  - Why shouldnt one use microsercies all the time ?   
 - Consistency and Availability
   - CAP
   - PACLELC : https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf
