@@ -11,4 +11,5 @@
   -  
 # Lessons learnt from running k8s
 - https://k8s.af/
+- k8s Case studies: https://kubernetes.io/case-studies/
   
