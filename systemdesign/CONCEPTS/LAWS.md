@@ -9,6 +9,7 @@
 - [Second system effect](https://en.wikipedia.org/wiki/Second-system_effect): The tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence.
 - [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law): Work expands to fill its available time
 - [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law):A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
+- [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle): for many outcomes, roughly 80% of consequences come from 20% of causes
 
 # Execution
 - [90-90 rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule): The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
