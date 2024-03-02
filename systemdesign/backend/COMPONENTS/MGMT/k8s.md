@@ -3,6 +3,7 @@
 
 # Courses
 - https://kode.wiki/kubernetes-labs
+- https://www.udemy.com/topic/kubernetes/free/
 
 # Tutorials
 - Videos
