@@ -8,6 +8,7 @@
 - [Brandolini's law](https://en.wikipedia.org/wiki/Brandolini%27s_law), aka bullshit asymmetry principle: The amount of energy needed to refute misinformation is an order of magnitude bigger than that needed to produce it.
 - [Second system effect](https://en.wikipedia.org/wiki/Second-system_effect): The tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence.
 - [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law): Work expands to fill its available time
+- [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law):A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
 
 
 
