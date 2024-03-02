@@ -1,6 +1,6 @@
 # Interesting concepts
 - Microservices
-  - Microservices are small, autonomous services that work together. They do one small thing and do it well.
+  - Microservices are small, autonomous services that work together. They do one small thing and do it well. src: [Building Microservices](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
   - Follow Single Responsibility Principle and follow the dictum "Gather together those things that change for the same reason, spearate those things that change for different reasons."
   - Biz boundaries become service boundaries
   - How small is small ?
@@ -8,6 +8,8 @@
     - when things become smaller they become easier to manage. OTOH, too managing and tracking too many small things increase complexity.
     - Best practices with microservices
       - (in production), avoid packing too many different services in one machine
+  - Microservices vs Monolity analogy
+    - Think of a monolith as a 1000 kg stone slab. Think of a microservices as many small pebbles of different shapes and sizes but adding up top the same weight.  
     -   
 - Consistency and Availability
   - CAP
