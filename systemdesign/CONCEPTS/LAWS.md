@@ -10,7 +10,8 @@
 - [Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law): Work expands to fill its available time
 - [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law):A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
 
-
+# Execution
+- [90-90 rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule): The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
 
   
 # Organization
