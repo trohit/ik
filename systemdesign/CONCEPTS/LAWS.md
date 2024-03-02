@@ -1,6 +1,7 @@
 # Adages and Laws
 - https://en.wikipedia.org/wiki/Category:Adages
 - https://en.wikipedia.org/wiki/List_of_eponymous_laws
+- https://en.wikipedia.org/wiki/Category:Programming_principles
 
 # Product Features and Design
 - [Worse is better](https://en.wikipedia.org/wiki/Worse_is_better): Software quality does not necessarily increase with functionality: that there is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability.
