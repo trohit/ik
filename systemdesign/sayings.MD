@@ -1,4 +1,4 @@
-# Just a bunch of wise sayings related to Comp Sci.
+# Just a bunch of wise sayings related to Comp Sci., Product management and entrepreneurship.
 - A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable. — Leslie Lamport 
 - A healthy man wants a thousand things, a sick man only wants one.
 - All happy families are alike; each unhappy family is unhappy in its own way. (Leo Tolstoy, Anna Karenina)
@@ -24,3 +24,5 @@
 - Simplicity is a prerequisite for reliability. - Edsger W. Dijkstra
 - Strive for progress, not perfection.
 - Simplicity is a quality that, once lost, can be extraordinarily difficult to recapture. - Site Reliability Engineering at Google
+- You get paid for being right first, and to be first, you can’t wait for consensus. ([Naval Ravikant on investing](https://www.navalmanack.com/secret-sections/investing))
+
