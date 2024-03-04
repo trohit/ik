@@ -74,7 +74,18 @@ A control plane node runs the following essential control plane components and a
   - ![image](https://github.com/trohit/ik/assets/466385/30ba3cb6-a519-40dd-9d9b-9511aee00f5f)
   - etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store configuration details such as subnets, ConfigMaps, Secrets, etc.
 
-
+# Data Plane
+## Worker Node Overview
+- A worker node provides a running environment for client applications. These applications are microservices running as application containers.
+- In Kubernetes the application containers are encapsulated in Pods, controlled by the cluster control plane agents running on the control plane node.
+- Pods are scheduled on worker nodes, where they find required compute, memory and storage resources to run, and networking to talk to each other and the outside world. A Pod is the smallest scheduling work unit in Kubernetes.
+- It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. 
+- Also, in a multi-worker Kubernetes cluster, the network traffic between client users and the containerized applications deployed in Pods is handled directly by the worker nodes, and is not routed through the control plane node.
+- A worker node has the following components:
+  - Container Runtime
+  - Node Agent - kubelet
+  - Proxy - kube-proxy
+  - Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
 
 
  
