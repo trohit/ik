@@ -104,7 +104,7 @@
 - Also, in a multi-worker Kubernetes cluster, the network traffic between client users and the containerized applications deployed in Pods is handled directly by the worker nodes, and is not routed through the control plane node.
 - A worker node has the following components:CNPA Container Runtime,Node Agent - kubelet,Proxy - kube-proxy, Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
   - Container Runtime : Although Kubernetes is described as a "container orchestration engine", it lacks the capability to directly handle and run containers. In order to manage a container's lifecycle, Kubernetes requires a container runtime on the node where a Pod and its containers are to be scheduled. Runtimes are required on all nodes of a Kubernetes cluster, both control plane and worker. Kubernetes supports several container runtimes:
-    - CRI-O:A lightweight container runtime for Kubernetes, supporting quay.io and Docker Hub image registries.
+    - [CRI-O](https://cri-o.io/):(Backed by RedHat): A lightweight container runtime for Kubernetes, supporting quay.io and Docker Hub image registries. New default
     - containerd: A simple, robust, and portable container runtime.
     - Docker Engine: A popular and complex container platform which uses containerd as a container runtime.
     - Mirantis Container Runtime: Formerly known as the Docker Enterprise Edition. 
@@ -151,7 +151,11 @@ In addition, the control plane node runs:
 # Tutorials
 - Videos
   - https://www.youtube.com/watch?v=XuSQU5Grv1g
-  -  
+
+# Learning k8s hands-on 
+- https://www.reddit.com/r/kubernetes/comments/be0415/k3s_minikube_or_microk8s/
+- https://microk8s.io/compare
+  
 # Lessons learnt from running k8s
 - https://k8s.af/
 - k8s Case studies: https://kubernetes.io/case-studies/
