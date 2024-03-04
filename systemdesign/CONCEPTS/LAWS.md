@@ -11,6 +11,7 @@
 - [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law):A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
 - [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle): for many outcomes, roughly 80% of consequences come from 20% of causes
 - [Hitchens Razor](https://en.wikipedia.org/wiki/Hitchens%27s_razor): what can be asserted without evidence can also be dismissed without evidence.
+- [Edholm's Law](https://en.wikipedia.org/wiki/Edholm%27s_law): bandwidth and data rates double every 18 months, which has proven to be true since the 1970s
 
 # Execution
 - [90-90 rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule): The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
