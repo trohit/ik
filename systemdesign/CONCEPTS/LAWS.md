@@ -4,6 +4,8 @@
 - https://en.wikipedia.org/wiki/Category:Programming_principles
 - https://en.wikipedia.org/wiki/List_of_laws#Technology
 
+- Rohit's Law: the easier it is to understand a law and to relate to, the more useful it becomes.
+
 # Product Features and Design and Anti-patterns
 - [Worse is better](https://en.wikipedia.org/wiki/Worse_is_better): Software quality does not necessarily increase with functionality: that there is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability.
 - [Brandolini's law](https://en.wikipedia.org/wiki/Brandolini%27s_law), aka bullshit asymmetry principle: The amount of energy needed to refute misinformation is an order of magnitude bigger than that needed to produce it.
@@ -14,6 +16,8 @@
 - [Hitchens Razor](https://en.wikipedia.org/wiki/Hitchens%27s_razor): what can be asserted without evidence can also be dismissed without evidence.
 - [Edholm's Law](https://en.wikipedia.org/wiki/Edholm%27s_law): bandwidth and data rates double every 18 months, which has proven to be true since the 1970s
 - [Moore's Law](https://en.wikipedia.org/wiki/Moore%27s_law): number of transistors in an integrated circuit (IC) doubles about every two years. No longer relevant since 2023 and is fatlining, being replaced by quantum computing.
+- 
+- [Metcalfe's Law](https://en.wikipedia.org/wiki/Metcalfe%27s_law): The financial value or influence of a telecommunications network is proportional to the square of the number of connected users of the system (n^2)
 - [Conways Law](https://en.wikipedia.org/wiki/Conway%27s_law): Orgs that produce systems are constrained to produce designs that are copies of communication structures of these orgs. Similar to Inner-platform effect.
 - [Inner-platform effect](https://en.wikipedia.org/wiki/Inner-platform_effect) :  tendency of software architects to create a system so customizable as to become a replica, and often a poor replica, of the software development platform they are using. Similar to Conways Law
 - [Zawinskys Law](https://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski's_Law): Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
