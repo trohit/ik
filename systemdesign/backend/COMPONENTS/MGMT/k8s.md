@@ -48,6 +48,10 @@
 A control plane node runs the following essential control plane components and agents:
 - API Server
 - Scheduler
+  - kube-scheduler is to assign new workload objects, such as pods encapsulating containers, to nodes - typically worker nodes. During the scheduling process, decisions are made based on current Kubernetes cluster state and new workload object's requirements. The scheduler obtains from the key-value store, via the API Server, resource usage data for each worker node in the cluster. The scheduler also receives from the API Server the new workload object's requirements which are part of its configuration data.
+  - The scheduler also takes into account Quality of Service (QoS) requirements, data locality, affinity, anti-affinity, taints, toleration, cluster topology, etc.
+  - The outcome of the decision process is communicated back to the API Server, which then delegates the workload deployment with other control plane agents.
+  - The scheduler is highly configurable and customizable through scheduling policies, plugins, and profiles. Additional custom schedulers are also supported, then the object's configuration data should include the name of the custom scheduler expected to make the scheduling decision for that particular object; if no such data is included, the default scheduler is selected instead. 
 - Controller Managers
 - Key-Value Data Store.
 In addition, the control plane node runs:
