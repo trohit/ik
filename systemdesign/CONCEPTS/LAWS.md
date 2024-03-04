@@ -18,6 +18,7 @@
 - [Inner-platform effect](https://en.wikipedia.org/wiki/Inner-platform_effect) :  tendency of software architects to create a system so customizable as to become a replica, and often a poor replica, of the software development platform they are using. Similar to Conways Law
 - [Zawinskys Law](https://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski's_Law): Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
 - [Osborne effect](https://en.wikipedia.org/wiki/Osborne_effect):  social phenomenon of customers canceling or deferring orders for the current, soon-to-be-obsolete product as an unexpected drawback of a company's announcing a future product prematurely.
+- [Software Peter Principle](https://en.wikipedia.org/wiki/Software_Peter_principle): a dying project which has become too complex to be understood even by its own developers.
 
   
 
