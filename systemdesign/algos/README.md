@@ -16,6 +16,7 @@
 # Consistent Hashing
 - Distributed systems use Consistent Hashing to distribute data across servers.
 ![image](https://user-images.githubusercontent.com/466385/209658291-73ee8b2a-b06e-4bdb-a759-8b809b68d696.png)
+- Alternatives includes HRW aka  Rendezvous hashing and [Hash Slots](https://severalnines.com/blog/hash-slot-vs-consistent-hashing-redis/) as used by [Redis Cluster](https://redis.io/docs/management/scaling/) 
 
 # Read Repair
 - Read Repair is used to push the latest version of data to servers with older version.
