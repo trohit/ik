@@ -44,7 +44,18 @@
     -  Manage and optimize resource usage.
     -  Allow for implementation of policies to secure access to applications running inside containers.
   - Container orchestrators can be deployed on the infrastructure of our choice - on bare metal, Virtual Machines, on-premises, on public and hybrid clouds. Kubernetes, for example, can be deployed on a workstation, with or without an isolation layer such as a local hypervisor or container runtime, inside a company's data center, in the cloud on AWS Elastic Compute Cloud (EC2) instances, Google Compute Engine (GCE) VMs, DigitalOcean Droplets, OpenStack, etc.       
-
+## Control Plane
+A control plane node runs the following essential control plane components and agents:
+- API Server
+- Scheduler
+- Controller Managers
+- Key-Value Data Store.
+In addition, the control plane node runs:
+- Container Runtime
+- Node Agent
+- Proxy
+- Optional add-ons for cluster-level monitoring and logging.
+  
 # Courses
 - https://kode.wiki/kubernetes-labs
 - https://www.udemy.com/topic/kubernetes/free/
