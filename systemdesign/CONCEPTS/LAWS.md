@@ -7,6 +7,7 @@
 - Rohit's Law: the easier it is to understand a law and to relate to, the more useful it becomes.
 
 # Product Features and Design and Anti-patterns
+- A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away. (Antoine de Saint-Exupery)
 - [Liebigs Law](https://en.wikipedia.org/wiki/Liebig%27s_law_of_the_minimum): growth is dictated not by total resources available, but by the scarcest resource. Aka A chain is only as strong as its weakest link.
 - [Worse is better](https://en.wikipedia.org/wiki/Worse_is_better): Software quality does not necessarily increase with functionality: that there is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability.
 - [Brandolini's law](https://en.wikipedia.org/wiki/Brandolini%27s_law), aka bullshit asymmetry principle: The amount of energy needed to refute misinformation is an order of magnitude bigger than that needed to produce it.
