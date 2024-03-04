@@ -49,6 +49,7 @@
 
 # Terminology
 - A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work.
+- The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane. It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod. It also monitors the health and resources of Pods running containers.
   
 # K8s Architecture
 
@@ -108,6 +109,27 @@
     - Docker Engine: A popular and complex container platform which uses containerd as a container runtime.
     - Mirantis Container Runtime: Formerly known as the Docker Enterprise Edition. 
   - Node Agent - kubelet
+    - The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane. It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod. It also monitors the health and resources of Pods running containers.
+    - The kubelet connects to container runtimes through a plugin based interface - the Container Runtime Interface (CRI). The CRI consists of protocol buffers, gRPC API, libraries, and additional specifications and tools. In order to connect to interchangeable container runtimes, kubelet uses a CRI shim, an application which provides a clear abstraction layer between kubelet and the container runtime.
+    - ![image](https://github.com/trohit/ik/assets/466385/0dfae30a-c5aa-46c3-a6c6-809991c66209)
+    - the kubelet acting as grpc client connects to the CRI shim acting as grpc server to perform container and image operations. The CRI implements two services: ImageService and RuntimeService. The ImageService is responsible for all the image-related operations, while the RuntimeService is responsible for all the Pod and container-related operations.
+      - kubelet - CRI shims : Originally the kubelet agent supported only a couple of container runtimes, first the Docker Engine followed by rkt, through a unique interface model integrated directly in the kubelet source code. However, this approach was not intended to last forever even though it was especially beneficial for Docker. In time, Kubernetes started migrating towards a standardized approach to container runtime integration by introducing the CRI. Kubernetes adopted a decoupled and flexible method to integrate with various container runtimes without the need to recompile its source code. Any container runtime that implements the CRI could be used by Kubernetes to manage containers.
+      - Shims are Container Runtime Interface (CRI) implementations, interfaces or adapters, specific to each container runtime supported by Kubernetes. Below we present some examples of CRI shims:
+        - cri-containerd: cri-containerd allows containers to be directly created and managed with containerd at kubelet's request
+          - ![image](https://github.com/trohit/ik/assets/466385/52add489-e169-4876-bde0-7c31523d0d44)
+        - CRI-O: CRI-O enables the use of any Open Container Initiative (OCI) compatible runtime with Kubernetes, such as runC
+          - ![image](https://github.com/trohit/ik/assets/466385/766e174a-86ce-4f7a-b131-f0e8cac80971)
+        - dockershim and cri-dockerd: Before Kubernetes release v1.24 the dockershim allowed containers to be created and managed by invoking the Docker Engine and its internal runtime containerd. Due to Docker Engine's popularity, this shim has been the default interface used by kubelet. However, starting with Kubernetes release v1.24, the [dockershim is no longer being maintained by the Kubernetes project](https://kubernetes.io/blog/2022/02/17/dockershim-faq/), its specific code is removed from kubelet source code, thus will no longer be supported by the kubelet node agent of Kubernetes. As a result, Docker, Inc., and Mirantis have agreed to introduce and maintain a replacement adapter, cri-dockerd that would ensure that the Docker Engine will continue to be a container runtime option for Kubernetes, in addition to the Mirantis Container Runtime (MCR). The introduction of cri-dockerd also ensures that both Docker Engine and MCR follow the same standardized integration method as the CRI-compatible runtimes.
+          - ![image](https://github.com/trohit/ik/assets/466385/475b2484-0123-4f80-8126-d24a6cc83c7e)
+ 
+
+
+
+
+ 
+
+
+ 
   - Proxy - kube-proxy
   - Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
 
