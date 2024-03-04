@@ -1,12 +1,11 @@
 # Intro
-- store details related to k8s
 - Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
 - Kubernetes comes from Greek, and means helmsman or ship pilot. With this analogy in mind, we can think of Kubernetes as the pilot on a ship of containers.
 - Kubernetes is also referred to as k8s (pronounced Kate's), as there are 8 characters between k and s.
 - Kubernetes is highly inspired by the Google Borg system, a container and workload orchestrator for its global operations for more than a decade. It is an open source project written in the Go language and licensed under the Apache License, Version 2.0.
 - Kubernetes was started by Google and, with its v1.0 release in July 2015, Google donated it to the Cloud Native Computing Foundation (CNCF), one of the largest sub-foundations of the Linux Foundation.
 - New Kubernetes versions are released in 4 month cycles.
-- At a hi level, Kubernetes is a cluster of compute systems categorized by their distinct roles:
+- At a hi-level, Kubernetes is a cluster of compute systems categorized by their distinct roles:
   - One or more control plane nodes
   - One or more worker nodes (optional, but recommended).
 
@@ -48,6 +47,9 @@
     -  Allow for implementation of policies to secure access to applications running inside containers.
   - Container orchestrators can be deployed on the infrastructure of our choice - on bare metal, Virtual Machines, on-premises, on public and hybrid clouds. Kubernetes, for example, can be deployed on a workstation, with or without an isolation layer such as a local hypervisor or container runtime, inside a company's data center, in the cloud on AWS Elastic Compute Cloud (EC2) instances, Google Compute Engine (GCE) VMs, DigitalOcean Droplets, OpenStack, etc.       
 
+# Terminology
+- A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work.
+  
 # K8s Architecture
 
 ## Control Plane
@@ -59,6 +61,12 @@
 - In addition, the control plane node runs: CNPO Container Runtime, Node Agent, Proxy, Optional add-ons for cluster-level monitoring and logging.
 - CP components in detail
   - API Server
+    - All the administrative tasks are coordinated by the kube-apiserver, a central control plane component running on the control plane node.
+    - The API Server intercepts RESTful calls from users, administrators, developers, operators and external agents, then validates and processes them.
+    - During processing the API Server reads the Kubernetes cluster's current state from the key-value store, and after a call's execution, the resulting state of the Kubernetes cluster is saved in the key-value store for persistence.
+    - The API Server is the only control plane component to talk to the key-value store, both to read from and to save Kubernetes cluster state information - acting as a middle interface for any other control plane agent inquiring about the cluster's state.
+    - The API Server is highly configurable and customizable. It can scale horizontally, but it also supports the addition of custom secondary API Servers, a configuration that transforms the primary API Server into a proxy to all secondary, custom API Servers, routing all incoming RESTful calls to them based on custom defined rules.
+ 
   - Scheduler
     - kube-scheduler is to assign new workload objects, such as pods encapsulating containers, to nodes - typically worker nodes. During the scheduling process, decisions are made based on current Kubernetes cluster state and new workload object's requirements. The scheduler obtains from the key-value store, via the API Server, resource usage data for each worker node in the cluster. The scheduler also receives from the API Server the new workload object's requirements which are part of its configuration data.
     - The scheduler also takes into account Quality of Service (QoS) requirements, data locality, affinity, anti-affinity, taints, toleration, cluster topology, etc.
@@ -93,8 +101,12 @@
 - Pods are scheduled on worker nodes, where they find required compute, memory and storage resources to run, and networking to talk to each other and the outside world. A Pod is the smallest scheduling work unit in Kubernetes.
 - It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. 
 - Also, in a multi-worker Kubernetes cluster, the network traffic between client users and the containerized applications deployed in Pods is handled directly by the worker nodes, and is not routed through the control plane node.
-- A worker node has the following components:
-  - Container Runtime
+- A worker node has the following components:CNPA Container Runtime,Node Agent - kubelet,Proxy - kube-proxy, Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
+  - Container Runtime : Although Kubernetes is described as a "container orchestration engine", it lacks the capability to directly handle and run containers. In order to manage a container's lifecycle, Kubernetes requires a container runtime on the node where a Pod and its containers are to be scheduled. Runtimes are required on all nodes of a Kubernetes cluster, both control plane and worker. Kubernetes supports several container runtimes:
+    - CRI-O:A lightweight container runtime for Kubernetes, supporting quay.io and Docker Hub image registries.
+    - containerd: A simple, robust, and portable container runtime.
+    - Docker Engine: A popular and complex container platform which uses containerd as a container runtime.
+    - Mirantis Container Runtime: Formerly known as the Docker Enterprise Edition. 
   - Node Agent - kubelet
   - Proxy - kube-proxy
   - Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
