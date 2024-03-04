@@ -16,7 +16,7 @@
 - [Hitchens Razor](https://en.wikipedia.org/wiki/Hitchens%27s_razor): what can be asserted without evidence can also be dismissed without evidence.
 - [Edholm's Law](https://en.wikipedia.org/wiki/Edholm%27s_law): bandwidth and data rates double every 18 months, which has proven to be true since the 1970s
 - [Moore's Law](https://en.wikipedia.org/wiki/Moore%27s_law): number of transistors in an integrated circuit (IC) doubles about every two years. No longer relevant since 2023 and is fatlining, being replaced by quantum computing.
-- 
+- [Amdahl's Law](https://en.wikipedia.org/wiki/Amdahl%27s_law):the overall performance improvement gained by optimizing a single part of a system is limited by the fraction of time that the improved part is actually used.
 - [Metcalfe's Law](https://en.wikipedia.org/wiki/Metcalfe%27s_law): The financial value or influence of a telecommunications network is proportional to the square of the number of connected users of the system (n^2)
 - [Conways Law](https://en.wikipedia.org/wiki/Conway%27s_law): Orgs that produce systems are constrained to produce designs that are copies of communication structures of these orgs. Similar to Inner-platform effect.
 - [Inner-platform effect](https://en.wikipedia.org/wiki/Inner-platform_effect) :  tendency of software architects to create a system so customizable as to become a replica, and often a poor replica, of the software development platform they are using. Similar to Conways Law
