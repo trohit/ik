@@ -146,12 +146,18 @@ In addition, the control plane node runs:
 - https://kode.wiki/kubernetes-labs
 - https://www.udemy.com/topic/kubernetes/free/
 - https://medium.com/geekculture/top-5-free-kubernetes-certifications-8c86b2c5b590
+
 ## Paid
 - [Intro to K8S](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2022/block-v1:LinuxFoundationX+LFS158x+1T2022+type@sequential+block@e10a62dcf641474c997eabd0602111cb/block-v1:LinuxFoundationX+LFS158x)
-
+## Github
+- https://petermd.github.io/kubernetes-the-hard-way/
+- https://github.com/kodekloudhub/certified-kubernetes-administrator-course
+- https://github.com/alifiroozi80/CKA
+- https://github.com/leandrocostam/cks-preparation-guide
 # Tutorials
 - Videos
   - https://www.youtube.com/watch?v=XuSQU5Grv1g
+  - https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/?couponCode=ST12MT030524
 
 # Learning k8s hands-on 
 - https://www.reddit.com/r/kubernetes/comments/be0415/k3s_minikube_or_microk8s/
