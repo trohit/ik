@@ -173,6 +173,26 @@ In addition, the control plane node runs:
 - MicroK8s :Local and cloud Kubernetes cluster for developers and production, from Canonical.
 - K3S :Lightweight Kubernetes cluster for local, cloud, edge, IoT deployments, originally from Rancher, currently a CNCF project.
 
+#### K8S Production cluster deployment options
+- See https://github.com/kelseyhightower/kubernetes-the-hard-way
+- production deployment options
+  - kubeadm is a first-class citizen of the Kubernetes ecosystem. It is a secure and recommended method to bootstrap a multi-node production ready Highly Available Kubernetes cluster, on-premises or in the cloud. kubeadm can also bootstrap a single-node cluster for learning. It has a set of building blocks to set up the cluster, but it is easily extendable to add more features. Please note that kubeadm does not support the provisioning of hosts - they should be provisioned separately with a tool of our choice.
+  - kubespray (formerly known as kargo) allows us to install Highly Available production ready Kubernetes clusters on AWS, GCP, Azure, OpenStack, vSphere, or bare metal. kubespray is based on Ansible, and is available on most Linux distributions. It is a Kubernetes Incubator project.
+  - [kops](https://github.com/kubernetes/kops/) enables us to create, upgrade, and maintain production-grade, Highly Available Kubernetes clusters from the command line. It can provision the required infrastructure as well. Currently, AWS is officially supported. Support for DigitalOcean and OpenStack is in beta, Azure and GCE is in alpha support, and other platforms are planned for the future.
+
+ ##### K8s hosted solutions
+- Hosted Solutions providers fully manage the provided software stack, while the user pays hosting and management charges. Popular vendors providing hosted solutions for Kubernetes are (listed in alphabetical order):
+- Alibaba Cloud Container Service for Kubernetes (ACK)
+- Amazon Elastic Kubernetes Service (EKS)
+- Azure Kubernetes Service (AKS)
+- DigitalOcean Kubernetes
+- Google Kubernetes Engine (GKE)
+- IBM Cloud Kubernetes Service
+- Oracle Container Engine for Kubernetes (OKE)
+- Platform9 Managed Kubernetes (PMK)
+- Red Hat OpenShift
+- VMware Tanzu Kubernetes Grid 
+
 # Certification
 - https://www.cncf.io/training/certification/cka/
   
