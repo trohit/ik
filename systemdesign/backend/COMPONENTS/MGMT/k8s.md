@@ -140,26 +140,31 @@
     - Let's not forget about containers though. They share the Pod's network namespace and must coordinate ports assignment inside the Pod just as applications would on a VM, all while being able to communicate with each other on localhost - inside the Pod. However, containers are integrated with the overall Kubernetes networking model through the use of the Container Network Interface (CNI) supported by CNI plugins. CNI is a set of specifications and libraries which allow plugins to configure the networking for containers. While there are a few core plugins, most CNI plugins are 3rd-party Software Defined Networking (SDN) solutions implementing the Kubernetes networking model. In addition to addressing the fundamental requirement of the networking model, some networking solutions offer support for Network Policies. Flannel, Weave, Calico are only a few of the SDN solutions available for Kubernetes clusters.
     - The container runtime offloads the IP assignment to CNI, which connects to the underlying configured plugin, such as Bridge or MACvlan, to get the IP address. Once the IP address is given by the respective plugin, CNI forwards it back to the requested container runtime.
     - ![image](https://github.com/trohit/ik/assets/466385/d2f02df6-803b-48a5-918b-258b554ac967)
-
-
-
-
-
-
-
-
-
+  - External-to-Pod communication: A successfully deployed containerized application running in Pods inside a Kubernetes cluster may require accessibility from the outside world. Kubernetes enables external accessibility through Services, complex encapsulations of network routing rule definitions stored in iptables on cluster nodes and implemented by kube-proxy agents. By exposing services to the external world with the aid of kube-proxy, applications become accessible from outside the cluster over a virtual IP address and a dedicated port number.
  
   - Service-to-Pod communication within the same namespace and across cluster namespaces
   - External-to-Service communication for clients to access applications in a cluster 
-
-
  
 In addition, the control plane node runs:
 - Container Runtime
 - Node Agent
 - Proxy
 - Optional add-ons for cluster-level monitoring and logging.
+
+## K8S deployment config options
+- Kubernetes can be installed using different cluster configurations. K8S best practices recommend multi-host environments that support High-Availability control plane setups and multiple worker nodes for client workload for production purposes. The major installation types are described below:
+  - All-in-One Single-Node Installation: In this setup, all the control plane and worker components are installed and running on a single-node. While it is useful for learning, development, and testing, it is not recommended for production purposes.
+  - Single-Control Plane and Multi-Worker Installation: In this setup, we have a single-control plane node running a stacked etcd instance. Multiple worker nodes can be managed by the control plane node.
+  - Single-Control Plane with Single-Node etcd, and Multi-Worker Installation: In this setup, we have a single-control plane node with an external etcd instance. Multiple worker nodes can be managed by the control plane node.
+  - Multi-Control Plane and Multi-Worker Installation: In this setup, we have multiple control plane nodes configured for High-Availability (HA), with each control plane node running a stacked etcd instance. The etcd instances are also configured in an HA etcd cluster and multiple worker nodes can be managed by the HA control plane.
+  - Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation: In this setup, we have multiple control plane nodes configured in HA mode, with each control plane node paired with an external etcd instance. The external etcd instances are also configured in an HA etcd cluster, and multiple worker nodes can be managed by the HA control plane. This is the most advanced cluster configuration recommended for production environments. 
+
+### K8S infra for install
+- Once installation type is chosen, we need to decide on the infrastructure. Infrastructure related decisions are typically guided by the desired environment type, either learning or production environment. For infrastructure, we need to decide on the following:
+- Should we set up Kubernetes on bare metal, public cloud, private, or hybrid cloud?
+- Which underlying OS should we use? Should we choose a Linux distribution - Red Hat-based or Debian-based, or Windows?
+- Which networking solution (CNI) should we use?
+- See [k8s setup](https://kubernetes.io/docs/setup/) for details.
 
 # Certification
 - https://www.cncf.io/training/certification/cka/
