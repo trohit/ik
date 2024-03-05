@@ -166,6 +166,13 @@ In addition, the control plane node runs:
 - Which networking solution (CNI) should we use?
 - See [k8s setup](https://kubernetes.io/docs/setup/) for details.
 
+#### K8S Local learning clusters
+- Minikube :Single- and multi-node local Kubernetes cluster, recommended for a learning environment deployed on a single host.
+- Kind :Multi-node Kubernetes cluster deployed in Docker containers acting as Kubernetes nodes, recommended for a learning environment.
+- Docker Desktop:Including a local Kubernetes cluster for Docker users. 
+- MicroK8s :Local and cloud Kubernetes cluster for developers and production, from Canonical.
+- K3S :Lightweight Kubernetes cluster for local, cloud, edge, IoT deployments, originally from Rancher, currently a CNCF project.
+
 # Certification
 - https://www.cncf.io/training/certification/cka/
   
