@@ -120,18 +120,21 @@
         - CRI-O: CRI-O enables the use of any Open Container Initiative (OCI) compatible runtime with Kubernetes, such as runC
           - ![image](https://github.com/trohit/ik/assets/466385/766e174a-86ce-4f7a-b131-f0e8cac80971)
         - dockershim and cri-dockerd: Before Kubernetes release v1.24 the dockershim allowed containers to be created and managed by invoking the Docker Engine and its internal runtime containerd. Due to Docker Engine's popularity, this shim has been the default interface used by kubelet. However, starting with Kubernetes release v1.24, the [dockershim is no longer being maintained by the Kubernetes project](https://kubernetes.io/blog/2022/02/17/dockershim-faq/), its specific code is removed from kubelet source code, thus will no longer be supported by the kubelet node agent of Kubernetes. As a result, Docker, Inc., and Mirantis have agreed to introduce and maintain a replacement adapter, cri-dockerd that would ensure that the Docker Engine will continue to be a container runtime option for Kubernetes, in addition to the Mirantis Container Runtime (MCR). The introduction of cri-dockerd also ensures that both Docker Engine and MCR follow the same standardized integration method as the CRI-compatible runtimes.
-          - ![image](https://github.com/trohit/ik/assets/466385/475b2484-0123-4f80-8126-d24a6cc83c7e)
- 
-
-
-
-
- 
-
-
- 
+          - ![image](https://github.com/trohit/ik/assets/466385/475b2484-0123-4f80-8126-d24a6cc83c7e) 
   - Proxy - kube-proxy
-  - Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging.
+    -  kube-proxy is the network agent which runs on each node, control plane and workers, responsible for dynamic updates and maintenance of all networking rules on the node. It abstracts the details of Pods networking and forwards connection requests to the containers in the Pods.
+    - The kube-proxy is responsible for TCP, UDP, and SCTP stream forwarding or random forwarding across a set of Pod backends of an application, and it implements forwarding rules defined by users through Service API objects. 
+  - Add-ons for DNS, Dashboard user interface, cluster-level monitoring and logging. (DDML)
+    - Add-ons are cluster features and functionality not yet available in Kubernetes, therefore implemented through 3rd-party pods and services.
+      - DNS: Cluster DNS is a DNS server required to assign DNS records to Kubernetes objects and resources.
+      - Dashboard: A general purpose web-based user interface for cluster management.
+      - Monitoring: Collects cluster-level container metrics and saves them to a central data store.
+      - Logging: Collects cluster-level container logs and saves them to a central log store for analysis.
+- Networking challenges : Decoupled microservices based applications rely heavily on networking in order to mimic the tight-coupling once available in the monolithic era. 
+  - Container-to-Container communication inside Pods
+  - Pod-to-Pod communication on the same node and across cluster nodes
+  - Service-to-Pod communication within the same namespace and across cluster namespaces
+  - External-to-Service communication for clients to access applications in a cluster 
 
 
  
