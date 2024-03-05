@@ -15,6 +15,7 @@
 - Neither comprehension nor learning can take place in an atmosphere of anxiety. (Rose Kennedy)
 - The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something man-made. When was the last time that a technology with a scale like that was so error-free ? (Alan Kay, Dr Dobbs Journal, 2012)
 - The limits of my language mean the limits of my world. (Ludwig Wittgenstein, Tracatus Logico-Philosophicus, 1922)
+- The best programming language is the one you know how to use. (Kelsey HighTower)
 - There are only two hard things in Computer Science: cache invalidation and naming things. - Phil Karlton
 - There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.
 - There are only two hard problems in distributed systems:  2. Exactly-once delivery 1. Guaranteed order of messages 2. Exactly-once delivery
