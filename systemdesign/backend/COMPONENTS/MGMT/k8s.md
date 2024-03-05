@@ -142,6 +142,7 @@ In addition, the control plane node runs:
 - Optional add-ons for cluster-level monitoring and logging.
   
 # Courses
+- https://kubernetes.io/docs/home/
 - https://kode.wiki/kubernetes-labs
 - https://www.udemy.com/topic/kubernetes/free/
 - https://medium.com/geekculture/top-5-free-kubernetes-certifications-8c86b2c5b590
