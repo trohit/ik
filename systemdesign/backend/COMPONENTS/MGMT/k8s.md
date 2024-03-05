@@ -130,7 +130,7 @@
       - Dashboard: A general purpose web-based user interface for cluster management.
       - Monitoring: Collects cluster-level container metrics and saves them to a central data store.
       - Logging: Collects cluster-level container logs and saves them to a central log store for analysis.
-- Networking challenges : Decoupled microservices based applications rely heavily on networking in order to mimic the tight-coupling once available in the monolithic era. 
+- Networking challenges : Decoupled microservices based applications rely heavily on [networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/) in order to mimic the tight-coupling once available in the monolithic era. 
   - Container-to-Container communication inside Pods
     - Making use of the underlying host operating system's kernel virtualization features, a container runtime creates an isolated network space for each container it starts. On Linux, this isolated network space is referred to as a network namespace. A network namespace can be shared across containers, or with the host operating system.
     - When a grouping of containers defined by a Pod is started, a special infrastructure Pause container is initialized by the Container Runtime for the sole purpose of creating a network namespace for the Pod. All additional containers, created through user requests, running inside the Pod will share the Pause container's network namespace so that they can all talk to each other via localhost.
