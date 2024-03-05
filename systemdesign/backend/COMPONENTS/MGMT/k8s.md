@@ -158,6 +158,7 @@ In addition, the control plane node runs:
 - https://github.com/kodekloudhub/certified-kubernetes-administrator-course
 - https://github.com/alifiroozi80/CKA
 - https://github.com/leandrocostam/cks-preparation-guide
+- https://github.com/AdilKhan1117/CKA-Exam-Study-Walkthrough/tree/main
 # Tutorials
 - Videos
   - https://www.youtube.com/watch?v=XuSQU5Grv1g
