@@ -140,6 +140,9 @@ In addition, the control plane node runs:
 - Node Agent
 - Proxy
 - Optional add-ons for cluster-level monitoring and logging.
+
+# Certification
+- https://www.cncf.io/training/certification/cka/
   
 # Courses
 - https://kubernetes.io/docs/home/
@@ -150,6 +153,7 @@ In addition, the control plane node runs:
 ## Paid
 - [Intro to K8S](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2022/block-v1:LinuxFoundationX+LFS158x+1T2022+type@sequential+block@e10a62dcf641474c997eabd0602111cb/block-v1:LinuxFoundationX+LFS158x)
 ## Github
+- https://github.com/alijahnas/CKA-practice-exercises
 - https://petermd.github.io/kubernetes-the-hard-way/
 - https://github.com/kodekloudhub/certified-kubernetes-administrator-course
 - https://github.com/alifiroozi80/CKA
