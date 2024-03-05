@@ -9,6 +9,10 @@
   - One or more control plane nodes
   - One or more worker nodes (optional, but recommended).
 
+ ## K8s Cmds
+-  https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+
+
 # History and Current Status
 - K8s evolved from Borg, Google's own distributed workload manager.
 - Currently k8s maintained by  Cloud Native Computing Foundation (CNCF), which currently hosts the Kubernetes project, along with other popular cloud-native projects, such as Prometheus, Fluentd, cri-o, containerd, Helm, Envoy, and Contour, just to name a few.
