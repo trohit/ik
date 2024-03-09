@@ -2,6 +2,7 @@
 
 # Top Links
 - [https://www.techinterviewhandbook.org/](https://www.techinterviewhandbook.org/system-design/)
+- https://systemdesign.one/categories/
 - https://leetcode.com/discuss/interview-question/system-design
 - [Blueprint Video on Sys Design](https://www.youtube.com/watch?v=o-k7h2G3Gco)
 - [system-design-primer](https://github.com/donnemartin/system-design-primer)
