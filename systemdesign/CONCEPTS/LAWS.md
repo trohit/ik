@@ -30,6 +30,9 @@
 
 # Execution
 - [90-90 rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule): The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+- [90-9-1 rule or Zipfs curve](https://www.nngroup.com/articles/participation-inequality/): 90% of users are lurkers who never contribute, 9% of users contribute a little, and 1% of users account for almost all the action.
+- [Sturgeon's Law](): 90% of everything is crud(crap).
+- [Price's law]:  half of the publications come from the square root of all authors.
 
   
 # Organization
