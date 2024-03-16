@@ -9,8 +9,8 @@
 - get to that's right more than yesterday or you are right.
 - avoid starting with a number. when asked but if pushed always and instead allude with a high ask and offer an odd number as though carefully calculated.
 - when lowballed instead of anger
-  - which asked passion and conviction but reduces resources for other cognitive activity.
-  - respond with a deep breath and channel it at the proposal but saying: i don't see how that would ever work.
+  - which indicates passion and conviction but reduces resources for other cognitive activity.
+  - respond with a deep breath and channel it at the proposal but saying: am sorry, i don't see how that would ever work.
 - use calibrated qs like what, how and sometimes why (sometimes it can back fire)
   - how does this look to you ?
   - what caused you to do it ?
@@ -50,5 +50,6 @@
   - prospect theory: 
   - 7 38 55 rule
   - chris discount : use your name to humanise yourself
+  - [ackermen theory](https://jvieker.com/ackerman-bargaining/)
 
  
