@@ -14,6 +14,7 @@
   - how can I make this better for us?
   - how would you like me to proceed?
   - what can you accomplish by leaving?
+  - what happens when...
 
 - acknowledge and label the other side's fears
 - mirror the sentence
