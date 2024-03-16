@@ -19,5 +19,8 @@
 - mirror the sentence
 - am sorry. how am I supposed to do X when Y?
 - use the fair word.
-- if faced with the f word, ask at what point had they been treated unfairly?
+- if faced with the 'f'air word, ask at what point had they been treated unfairly?
+- executing
+  - how onboard is the rest of your team?
+
  
