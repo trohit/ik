@@ -19,7 +19,11 @@
 
 - acknowledge and label the other side's fears
 - mirror the sentence
-- am sorry. how am I supposed to do X when Y?
+- how to say no without saying no
+  - am sorry. how am I supposed to do X when Y?
+  - am sorry, that just doesn't work for me
+  - your offer is very generous. that just doesn't work for my.
+  - am sorry but am afraid I cannot do that
 - use the fair word.
 - if faced with the 'f'air word, ask at what point had they been treated unfairly?
 - executing
