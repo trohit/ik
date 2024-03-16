@@ -1,5 +1,9 @@
 
 - talk slowly and cheerfully and deferentially
+- types of negotiators
+  - accomodating
+  - assertive
+  - data driven analysts
 - establish rapport : humour and humanity are the best way to avoid roadblocks
 - Avoid words like 'can is or do does'
 - get to that's right more than yesterday or you are right.
