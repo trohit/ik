@@ -33,5 +33,6 @@
     - what we will do if we get offtrack or 
     - what's the most difficult thing to get around
 - 7 38 55 rule
+- chris discount : use your name to humanise yourself
 
  
