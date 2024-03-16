@@ -23,5 +23,6 @@
 - if faced with the 'f'air word, ask at what point had they been treated unfairly?
 - executing
   - how onboard is the rest of your team?
+  - I heard you say yes but I felt a hesitation in your voice.
 
  
