@@ -7,6 +7,7 @@
 - establish rapport : humour and humanity are the best way to avoid roadblocks
 - Avoid words like 'can is or do does'
 - get to that's right more than yesterday or you are right.
+- avoid starting with a numbe. when asked but if pushed always and instead allude with a high ask and offer an odd number as though carefully calculated.
 - use calibrated qs like what, how and sometimes why (sometimes it can back fire)
   - how does this look to you ?
   - what caused you to do it ?
