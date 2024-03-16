@@ -2,6 +2,7 @@
 - talk slowly and cheerfully and deferentially
 - establish rapport 
 - Avoid words like 'can is or do does'
+- get to that's right more than yesterday or you are right.
 - use calibrated qs like what, how and sometimes why (sometimes it can back fire)
   - how does this look to you ?
   - what caused you to do it ?
@@ -24,5 +25,13 @@
 - executing
   - how onboard is the rest of your team?
   - I heard you say yes but I felt a hesitation in your voice.
+- rule of three: getting yes 3 times
+  - first time they say yes or give commitment
+  - repeat what you heard and get a that's right
+  - ask them to explain 
+    - what constitutes success or 
+    - what we will do if we get offtrack or 
+    - what's the most difficult thing to get around
+- 7 38 55 rule
 
  
