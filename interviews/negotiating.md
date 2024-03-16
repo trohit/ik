@@ -1,6 +1,6 @@
 
 - talk slowly and cheerfully and deferentially
-- establish rapport 
+- establish rapport : humour and humanity are the best way to avoid roadblocks
 - Avoid words like 'can is or do does'
 - get to that's right more than yesterday or you are right.
 - use calibrated qs like what, how and sometimes why (sometimes it can back fire)
@@ -27,6 +27,7 @@
 - use the fair word.
 - if faced with the 'f'air word, ask at what point had they been treated unfairly?
 - executing
+  - yes is nothing without the how
   - how onboard is the rest of your team?
   - I heard you say yes but I felt a hesitation in your voice.
 - rule of three: getting yes 3 times
@@ -36,7 +37,10 @@
     - what constitutes success or 
     - what we will do if we get offtrack or 
     - what's the most difficult thing to get around
-- 7 38 55 rule
-- chris discount : use your name to humanise yourself
+- use of pronouns: I me and my are used by persons without authority. We they them means a decision maker who is keeping his options open
+- theories
+  - prospect theory: 
+  - 7 38 55 rule
+  - chris discount : use your name to humanise yourself
 
  
