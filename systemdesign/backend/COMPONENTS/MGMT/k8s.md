@@ -204,6 +204,9 @@ In addition, the control plane node runs:
 # Courses
 - https://kubernetes.io/docs/home/
 - https://kode.wiki/kubernetes-labs
+- https://kubernetes.io/docs/
+- https://github.com/kubernetes
+- https://kubernetes.io/blog/
 - https://www.udemy.com/topic/kubernetes/free/
 - https://medium.com/geekculture/top-5-free-kubernetes-certifications-8c86b2c5b590
 
