@@ -65,6 +65,8 @@
   
 # K8s Architecture
 
+- Control Plane: Control Manager + Scheduler + API Server + etcd
+
 ## Control Plane
 - The control plane node provides a running environment for the control plane agents responsible for managing the state of a Kubernetes cluster, and it is the brain behind all operations inside the cluster.
 - The control plane components are agents with very distinct roles in the cluster's management. In order to communicate with the Kubernetes cluster, users send requests to the control plane via a Command Line Interface (CLI) tool, a Web User-Interface (Web UI) Dashboard, or an Application Programming Interface (API).
