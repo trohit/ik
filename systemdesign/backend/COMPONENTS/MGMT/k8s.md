@@ -1,5 +1,5 @@
 # Intro
-- Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
+- Kubernetes is an open-source "Container orchestration engine" for automating deployment, scaling, and management of containerized applications.
 - Kubernetes comes from Greek, and means helmsman or ship pilot. With this analogy in mind, we can think of Kubernetes as the pilot on a ship of containers.
 - Kubernetes is also referred to as k8s (pronounced Kate's), as there are 8 characters between k and s.
 - Kubernetes is highly inspired by the Google Borg system, a container and workload orchestrator for its global operations for more than a decade. It is an open source project written in the Go language and licensed under the Apache License, Version 2.0.
