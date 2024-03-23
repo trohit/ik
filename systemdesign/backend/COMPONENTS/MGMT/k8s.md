@@ -119,6 +119,11 @@
     - etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store configuration details such as subnets, ConfigMaps, Secrets, etc.
 
 # Data Plane
+- Importnant components in a worker node
+  - kubelet : node agent that runs on each worker node and ensures that containers adhere to the pod-spec and are healthy
+  - kube-proxy: responsible for entire network config and for netwrking across all containers, pods and even outside the k8s cluster
+  - Pods: that contain containers
+  - Containers : can be based on docker or rkt
 ## Worker Node Overview
 - A worker node provides a running environment for client applications. These applications are microservices running as application containers.
 - In Kubernetes the application containers are encapsulated in Pods, controlled by the cluster control plane agents running on the control plane node.
