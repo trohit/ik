@@ -65,7 +65,16 @@
   
 # K8s Architecture
 
-- Control Plane: Control Manager + Scheduler + API Server + etcd
+- Control Plane Components:
+  - kubectl which is go wrapper cmd to the k8s API 
+  - Control Manager
+    - Node Controller
+    - Replication
+    - Endpoint
+    - Service endpoint  
+  - Scheduler
+  - API Server
+  - etcd
 
 ## Control Plane
 - The control plane node provides a running environment for the control plane agents responsible for managing the state of a Kubernetes cluster, and it is the brain behind all operations inside the cluster.
