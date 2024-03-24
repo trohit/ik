@@ -118,7 +118,13 @@
     - Both stacked and external etcd topologies support HA configurations. etcd is based on the Raft Consensus Algorithm which allows a collection of machines to work as a coherent group that can survive the failures of some of its members. At any given time, one of the nodes in the group will be the leader, and the rest of them will be the followers. etcd gracefully handles leader elections and can tolerate node failure, including leader node failures. Any node can be treated as a leader.
     - ![image](https://github.com/trohit/ik/assets/466385/30ba3cb6-a519-40dd-9d9b-9511aee00f5f)
     - etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store configuration details such as subnets, ConfigMaps, Secrets, etc.
-
+## Pods
+- States. that can be broken down into Phases, Conditions and ContainerStates
+  - Phases : Pending, Running, Failed, Suceeded
+    - ![image](https://github.com/trohit/ik/assets/466385/97d6f614-ab78-4f42-ac72-362ea6aea851)
+  - Conditions: current conditions of the pod : PodScheduled, Initialized, Ready, or ContainersReady.
+  - ContainerStatuses: the state of each container within the pod, such as Waiting, Running, or Terminated. Each state has a specific meaning and additional information.
+ 
 # Data Plane
 - Importnant components in a worker node
   - kubelet : node agent that runs on each worker node and ensures that containers adhere to the pod-spec and are healthy
