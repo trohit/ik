@@ -120,10 +120,10 @@
     - etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store configuration details such as subnets, ConfigMaps, Secrets, etc.
 ## Pods
 - States. that can be broken down into Phases, Conditions and ContainerStates
-  - Phases : Pending, Running, Failed, Suceeded
+  - [Phases](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase) : Pending, Running, Failed, Suceeded, Unknown
     - ![image](https://github.com/trohit/ik/assets/466385/97d6f614-ab78-4f42-ac72-362ea6aea851)
-  - Conditions: current conditions of the pod : PodScheduled, Initialized, Ready, or ContainersReady.
-  - ContainerStatuses: the state of each container within the pod, such as Waiting, Running, or Terminated. Each state has a specific meaning and additional information.
+  - [Conditions](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-conditions): current conditions of the pod : PodScheduled, Initialized, Ready, or ContainersReady.
+  - [ContainerStatuses](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-states): the state of each container within the pod, such as Waiting, Running, or Terminated. Each state has a specific meaning and additional information.
  
 # Data Plane
 - Importnant components in a worker node
