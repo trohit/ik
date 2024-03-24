@@ -251,6 +251,7 @@ In addition, the control plane node runs:
 # Learning k8s hands-on 
 - https://www.reddit.com/r/kubernetes/comments/be0415/k3s_minikube_or_microk8s/
 - https://microk8s.io/compare
+- https://labs.play-with-k8s.com/
   
 # Lessons learnt from running k8s
 - https://k8s.af/
