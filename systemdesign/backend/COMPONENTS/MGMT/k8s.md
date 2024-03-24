@@ -63,6 +63,10 @@
 # Terminology
 - A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work.
 - The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane. It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod. It also monitors the health and resources of Pods running containers.
+- scheduling refers to making sure that Pods are matched to Nodes so that the kubelet can run them.
+- Preemption is the process of terminating Pods with lower Priority so that Pods with higher Priority can schedule on Nodes.
+- Eviction is the process of terminating one or more Pods on Nodes.
+- Pod disruption is the process by which Pods on Nodes are terminated either voluntarily or involuntarily.
   
 # K8s Architecture
 
