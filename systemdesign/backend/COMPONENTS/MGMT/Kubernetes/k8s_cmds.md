@@ -1,10 +1,41 @@
+# Kickstart
+```
+To start using your cluster, you need to run the following as a regular user:
 
-kubectl get pods --namespace=default --no-headers
-kubectl create pod nginx-pod --image=nginx --dry-run=client -o yaml
-kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > nginx-pod.yaml
-kubectl apply -f nginx-pod.yaml
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+  
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+```
+
+# Cmds
+- kubectl get pods --namespace=default --no-headers
+- kubectl create pod nginx-pod --image=nginx --dry-run=client -o yaml
+- kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > nginx-pod.yaml
+- kubectl apply -f nginx-pod.yaml
 OR
-kubectl run nginx --image=nginx
+- kubectl run nginx --image=nginx
 
 # whats the image used to create the new pods
 for i in `kubectl get pods --no-headers | awk {'print$1'}` ; do   kubectl describe pod $i | grep -i image; done
