@@ -1,7 +1,7 @@
 # Intro
 ![K8S](https://kubernetes.io/images/docs/components-of-kubernetes.svg)
 - Kubernetes is an open-source "Container orchestration engine" for automating deployment, scaling, and management of containerized applications.
-  - Other cometing Container orchestration engines are Docker swarm and mesos.
+  - Other competing Container orchestration engines are Docker swarm and mesos.
   - Container orchestration engines are responsible for (CSSLFD):
     - Clustering 
     - Scheduling
