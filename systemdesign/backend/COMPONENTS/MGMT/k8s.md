@@ -268,4 +268,11 @@ In addition, the control plane node runs:
 # Lessons learnt from running k8s
 - https://k8s.af/
 - k8s Case studies: https://kubernetes.io/case-studies/
+
+# Differences between
+## Replica Controller vs ReplicaSet
+- ReplicaSet (rs) replaces ReplicaController (rc)
+- ReplicaSet supports more complex ops OTOH ReplicaController is easy to understand.
+- ![image](https://github.com/trohit/ik/assets/466385/41343a16-4eae-4455-9d03-adca84015d25)
+ 
   
