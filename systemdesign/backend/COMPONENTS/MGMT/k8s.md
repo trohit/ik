@@ -274,5 +274,7 @@ In addition, the control plane node runs:
 - ReplicaSet (rs) replaces ReplicaController (rc)
 - ReplicaSet supports more complex ops OTOH ReplicaController is easy to understand.
 - ![image](https://github.com/trohit/ik/assets/466385/41343a16-4eae-4455-9d03-adca84015d25)
+- ![image](https://github.com/trohit/ik/assets/466385/0b11498e-306f-4866-972c-8999fb78f46c)
+
  
   
