@@ -13,7 +13,20 @@
   - just avoid at least one of these 4 conditions
   - all processes to lock resources in a specific order aka give each resource a locking priority
   - yield resources and control + wait on a taskq (with callback) if resources are not present
-   
+
+## Event sourcing
+- Event sourcing is an approach for maintaining the state of business entities by recording each change of state as an event.
+- Whether a customer buys an item in a shop, or updates a profile online, both actions can be seen as an event. In its most basic form, an event captures a fact.
+- Why event sourcing?
+  - Event sourcing provides certain benefits of :
+    - atomcity: each event is a single operation and can be easily recorded. storing each state change as an event avoids the need to deal with distributed tx's between a DB and its msg broker.
+    - decoupling: a producer app doesnt need to know about the apps that need to consume the event
+    - event immutability: useful for audit, replayabiluty or for ML ready ingestion.
+ -  all of which make event sourcing conducive for ingestion by streaming platforms.
+- Concerns when using event sourcing
+  - As things eveolve, new events may get added. and it may result in a need that as schame of events change, consuming apps may need to re-process all events.   
+ 
+  
 # Whys
 ## Hashing
 ### Why do has functions use prime numbers ?
