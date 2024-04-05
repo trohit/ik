@@ -38,7 +38,7 @@ See (https://en.wikipedia.org/wiki/HTTP)
 - https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/
 
 # Alternatives
-- [rsocket](https://rsocket.io/) : reactive sockets, a binary, p2p protocol, developed by Netflix for bi-directional communication
+- [rsocket](https://rsocket.io/) : reactive sockets, a binary, p2p protocol, developed by Netflix in 2015, for bi-directional communication and to replace HTTP with a more efficient protocol for comms between microservices.
 - SSE
 - websockets
 - GraphQL
