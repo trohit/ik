@@ -2,11 +2,11 @@
 - SEP: starburst enterprise platform
 - Presto/ Trino/Starburst
 - Stages of a Modern Data Warehouse
-  - Ingest
-  - Store
-  - Transform
-  - Model
-  - Visualize / ML 
+  - Ingest : the data 
+  - Store : the data quickly in native forat
+  - Transform : clean the data (databricks, Synapse serverless, Azure Data factory)
+  - Model : copy the data into a format that more native to the end-user to use(like relational, start schema)
+  - Visualize / ML : for the PowerBI user to create reports
 
 # Data warehouse
 - What: 
@@ -30,9 +30,13 @@
 - Why
   - inexpensive to store data in native format
   - store data with no modeling
-  - 
+
+# Data fabric
+- Like a data Warehouse but adds more features 
+- 
  # Comparison
  ## Data Warehouse and Data Lakehouse
+ - https://www.youtube.com/watch?v=VYmjJe2gR1A
  - Warehouse uses a Top-Down approach (what do I want and how do I get it ?)
    - Top Down
      - Understand corporate strategy
