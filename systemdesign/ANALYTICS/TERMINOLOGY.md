@@ -1,6 +1,12 @@
 # Some frequently used terms
 - SEP: starburst enterprise platform
 - Presto/ Trino/Starburst
+- Stages of a Modern Data Warehouse
+  - Ingest
+  - Store
+  - Transform
+  - Model
+  - Visualize / ML 
 
 # Data warehouse
 - What: 
