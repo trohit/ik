@@ -25,5 +25,6 @@
 - Simplicity is a prerequisite for reliability. - Edsger W. Dijkstra
 - Strive for progress, not perfection.
 - Simplicity is a quality that, once lost, can be extraordinarily difficult to recapture. - Site Reliability Engineering at Google
+- The best way to predict the future is to create it. (Alan Kay, born 1940, Computer scientist)
 - You get paid for being right first, and to be first, you can’t wait for consensus. ([Naval Ravikant on investing](https://www.navalmanack.com/secret-sections/investing))
 
