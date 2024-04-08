@@ -50,7 +50,14 @@
       - col wise queries need not fetch entire column
       - bit packing, RLE
       - supports the big-data-processing frameworks including Apache Hive, Apache Drill, Apache Impala, Apache Crunch, Apache Pig, Cascading, Presto and Apache Spark. It is one of external data formats used by pandas Python data manipulation and analysis library
-  - [Apache Thrift](https://en.wikipedia.org/wiki/Apache_Thrift) :  interface definition language and binary communication protocol[2] used for defining and creating services for programming languages.[3] It was developed by Facebook.
+  - [Apache Thrift](https://en.wikipedia.org/wiki/Apache_Thrift) :  interface definition language and binary communication protocol used for defining and creating services for programming languages.
+    - Developed by Facebook around 2007.
+    - uses RPC + code gen to build cross-platform services.
+    - includes complete stack for building clients and servers
+    - has protocol and transport layers
+    - Supported Protocols: Thrift supports a number of protocols : Binary | CompactBinary | JSON | SimpleJSON
+    - Supported Transports: (SimpleFile | Framed | Memory | Socket | Zlib
+    - Thrift also provides a # of servers: NonBlocking | Simple | Threaded | ThreadPool
   - gRPC
   - Apache Avro
 
