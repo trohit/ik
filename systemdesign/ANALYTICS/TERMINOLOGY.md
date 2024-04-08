@@ -1,12 +1,16 @@
 # Some frequently used terms
 - SEP: starburst enterprise platform
 - Presto/ Trino/Starburst
-- Stages of a Modern Data Warehouse
+- 5 Stages of a Modern Data Warehouse (ISTMV)
   - Ingest : the data 
   - Store : the data quickly in native forat
   - Transform : clean the data (databricks, Synapse serverless, Azure Data factory)
   - Model : copy the data into a format that more native to the end-user to use(like relational, start schema)
   - Visualize / ML : for the PowerBI user to create reports
+ 
+# Reference Diagrams
+![image](https://github.com/trohit/ik/assets/466385/7f7d17ed-ea28-498f-9aca-17098db193d4)
+src: https://www.ibm.com/topics/data-warehouse
 
 # Data warehouse
 - What:
@@ -24,6 +28,7 @@
   - Not affected by production system upgrades
   - Easy to create BI solns on top of it
   - can be used for anaytics without impacting production
+- Used for : Data warehouse used for OLAP | Data Mining and Reporting
 - Constraints: limited by cost as the data grows over time
 
 # Data lake
