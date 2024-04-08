@@ -38,11 +38,13 @@
 - Why ?
   - 'cos trad formats like csv, XML, JSON, YAMl are too verbose and duplicate data
 - Types of Formats
-  - ORC
+  - [ORC](https://en.wikipedia.org/wiki/Apache_ORC): Apache optimized row columnar format
+    - Made in 2013 by FB and Hortonworks
+    - used by most of the data processing frameworks Apache Spark, Apache Hive, Apache Flink and Apache Hadoop.
   - [Apache Parquet](https://en.wikipedia.org/wiki/Apache_Parquet):  free and open-source column-oriented data storage format in the Apache Hadoop ecosystem.
+    - 2013: began as a joint effort between Twitter and Cloudera. Parquet was designed as an improvement on the Trevni columnar storage format created by Doug Cutting, the creator of Hadoop.
     - It is similar to RCFile and ORC, the other columnar-storage file formats in Hadoop, and is compatible with most of the data processing frameworks around Hadoop.
     - It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
-    - began as a joint effort between Twitter and Cloudera. Parquet was designed as an improvement on the Trevni columnar storage format created by Doug Cutting, the creator of Hadoop.
     - Features
       - Col wise compression, encoding and compression techniques
       - col wise queries need not fetch entire column
