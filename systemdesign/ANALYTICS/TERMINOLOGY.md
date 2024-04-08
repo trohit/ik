@@ -37,6 +37,7 @@
 - What
   - combines benefits of low cost storage and vast storage capacity of a data lake + the data structure and management capabilities of a data warehouse.
   - Think Apache Hadoop
+  - See more on [data lakehouse](https://www.ibm.com/topics/data-lakehouse)
 # Data fabric
 - Like a data Warehouse but adds more features 
 
