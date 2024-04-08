@@ -1,3 +1,7 @@
+![image](https://github.com/trohit/ik/assets/466385/043e4de2-a9bd-41ba-9bc1-c281c2d55216)
+src: https://mattturck.com/bigdata2018/
+latest:https://mattturck.com/mad2023/
+
 # Distributed Filesystems for analytics
 - Hadoop Distributed File System (HDFS):
   - Developed as part of the Apache Hadoop project.
