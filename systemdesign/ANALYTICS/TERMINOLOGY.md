@@ -28,7 +28,7 @@ src: https://www.ibm.com/topics/data-warehouse
   - Not affected by production system upgrades
   - Easy to create BI solns on top of it
   - can be used for anaytics without impacting production
-- Used for : Data warehouse used for OLAP | Data Mining and Reporting
+- Used for : Data warehouse used for OLAP (ROLAP|MOLAP|HOLAP) | Data Mining and Reporting
 - Constraints: limited by cost as the data grows over time
 
 # Data lake
