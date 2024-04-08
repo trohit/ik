@@ -70,18 +70,35 @@
 
 # Data integration methods
 - Types of data integration methods
+- When to use what: ETL recommended for smaller data repos whereas ETL | CDC | DV |SDI  preferred for larger volumes of data 
  - ETL:
-   - Extract: 
-   - Transform
+   - Extract: from a variety of sources such as:
+     - SQL or NOSQL servers
+     - CRM and ERP systems
+     - Flat files
+     - Email
+     - Web pages
+   - Transform : can involve
+     - filtering | cleaning | de-duping | validating | authenticating | performing calculations | converting col names & currencies or other units of memsurement
+     - auditing data for quality & compliance
+     - removing or enctypting confidential data
+     - formatting data into joined tables to meet the needs of the taget data warehouse. 
    - Load
+     - mv staging_area/data target_data_warehouse/data
+     - can involve full regresh or incremental data changes
+     - usually for lerge orgs this load process is well-defined, batch-oriented and automated and takes place during off hours.
  - ELT :
    - diff bet ELT and ETL is that ELT directly copies or exports data from source to target without needing to load the extracted data into a staging location
    - ELT useful for hi-vol unstructured datasets
    - ELT ideal for big data mgmt since it doesnt need much upfront planning for data extraction and storage.
- - CDC : 
- - Data replication
- - Data virtualization
+ - CDC
+   - identifies and captures only the data thats xhnaged on the src to the target system.
+   - can be used to reduce the E(extract) in ETL 
+ - Data replication: useful for creating backups in data recovery
+ - Data virtualization: uses s/w abstraction layer to create a unified, fully usable view of data, seen as an alternative to ETL, can also be used alongside ETL.
  - Stream data integration
+   - continuously consumes streaming data in realtime for consumption and analysis by the target system.
+   - SDI enables a data store for powering analytics, ML and realtime apps such as fraud detection, imprving cust UX,..
 
 # Comparison
 ## Data Warehouse and Data Lakehouse
