@@ -33,7 +33,25 @@
 
 # Data fabric
 - Like a data Warehouse but adds more features 
-- 
+
+# Storage Formats
+- Why ?
+  - 'cos trad formats like csv, XML, JSON, YAMl are too verbose and duplicate data
+- Types of Formats
+  - ORC
+  - [Apache Parquet](https://en.wikipedia.org/wiki/Apache_Parquet):  free and open-source column-oriented data storage format in the Apache Hadoop ecosystem.
+    - It is similar to RCFile and ORC, the other columnar-storage file formats in Hadoop, and is compatible with most of the data processing frameworks around Hadoop.
+    - It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
+    - began as a joint effort between Twitter and Cloudera. Parquet was designed as an improvement on the Trevni columnar storage format created by Doug Cutting, the creator of Hadoop.
+    - Features
+      - Col wise compression, encoding and compression techniques
+      - col wise queries need not fetch entire column
+      - bit packing, RLE
+      - supports the big-data-processing frameworks including Apache Hive, Apache Drill, Apache Impala, Apache Crunch, Apache Pig, Cascading, Presto and Apache Spark. It is one of external data formats used by pandas Python data manipulation and analysis library
+  - [Apache Thrift](https://en.wikipedia.org/wiki/Apache_Thrift) :  interface definition language and binary communication protocol[2] used for defining and creating services for programming languages.[3] It was developed by Facebook.
+  - gRPC
+  - Apache Avro
+
  # Comparison
  ## Data Warehouse and Data Lakehouse
  - https://www.youtube.com/watch?v=VYmjJe2gR1A
