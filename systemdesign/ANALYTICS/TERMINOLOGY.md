@@ -68,19 +68,34 @@
   - gRPC
   - Apache Avro
 
- # Comparison
- ## Data Warehouse and Data Lakehouse
- - https://www.youtube.com/watch?v=VYmjJe2gR1A
- - Warehouse uses a Top-Down approach (what do I want and how do I get it ?)
-   - Top Down
-     - Understand corporate strategy
-     - gather reqs (biz + tech)
-     - impl. data warehouse (infra + ETL + Dimension model + reporting)
-     - Create data sourced + Do analytics + BI 
- - Lakehouse uses a Bottom-up approach (what do I have and what can I make of it ?)
-   - Bottom up
-     - Ingest all data regardless of reqs
-     - Store all data in native format without any schema defn
-     - Do analysis and analytics (batch / interactive/ realtime/ machine learning / Data warehouse)
-  ## Data warehouse and EDW (Enterprise Data warehouse)
-  - EDW is a single repo for all of the org's data providing holistic understanding, consolidated data and easier data compliance.
+# Data integration methods
+- Types of data integration methods
+ - ETL:
+   - Extract: 
+   - Transform
+   - Load
+ - ELT :
+   - diff bet ELT and ETL is that ELT directly copies or exports data from source to target without needing to load the extracted data into a staging location
+   - ELT useful for hi-vol unstructured datasets
+   - ELT ideal for big data mgmt since it doesnt need much upfront planning for data extraction and storage.
+ - CDC : 
+ - Data replication
+ - Data virtualization
+ - Stream data integration
+
+# Comparison
+## Data Warehouse and Data Lakehouse
+- https://www.youtube.com/watch?v=VYmjJe2gR1A
+  - Warehouse uses a Top-Down approach (what do I want and how do I get it ?)
+  - Top Down
+    - Understand corporate strategy
+    - gather reqs (biz + tech)
+    - impl. data warehouse (infra + ETL + Dimension model + reporting)
+    - Create data sourced + Do analytics + BI 
+- Lakehouse uses a Bottom-up approach (what do I have and what can I make of it ?)
+  - Bottom up
+    - Ingest all data regardless of reqs
+    - Store all data in native format without any schema defn
+    - Do analysis and analytics (batch / interactive/ realtime/ machine learning / Data warehouse)
+## Data warehouse and EDW (Enterprise Data warehouse)
+- EDW is a single repo for all of the org's data providing holistic understanding, consolidated data and easier data compliance.
