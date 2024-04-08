@@ -1,0 +1,5 @@
+- ORC
+- Parquet
+- [Apache Thrift](https://en.wikipedia.org/wiki/Apache_Thrift) :  interface definition language and binary communication protocol[2] used for defining and creating services for programming languages.[3] It was developed by Facebook.
+- gRPC
+- Apache Avro
