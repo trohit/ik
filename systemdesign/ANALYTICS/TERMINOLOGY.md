@@ -24,13 +24,17 @@
   - Easy to create BI solns on top of it
   - can be used for anaytics without impacting production
 
-# Data lakehouse
+# Data lake
 - What 
   - schema on read repo that holds vast amt of raw data in native format until its needed
 - Why
   - inexpensive to store data in native format
   - store data with no modeling
-
+    
+# Data Lakehouse 
+- What
+  - combines benefits of low cost storage and vast storage capacity of a data lake + the data structure and management capabilities of a data warehouse.
+  - Think Apache Hadoop
 # Data fabric
 - Like a data Warehouse but adds more features 
 
