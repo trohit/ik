@@ -9,10 +9,11 @@
   - Visualize / ML : for the PowerBI user to create reports
 
 # Data warehouse
-- What: 
-	- store data from multiple sources to act as a single src of truth. 
-	- to be used for historical trend analysis and reporting
-	- Not to be used by production apps
+- What:
+   - store data from multiple sources to act as a single src of truth. 
+   - to be used for historical trend analysis and reporting
+   - Not to be used by production apps
+   - Uses ETL to extract, load and transform data to its destination 
  - sometimes also called EDW (Enterprise Data Warehouse)
 - Why
   - reduce stress on production system
@@ -23,6 +24,7 @@
   - Not affected by production system upgrades
   - Easy to create BI solns on top of it
   - can be used for anaytics without impacting production
+- Constraints: limited by cost as the data grows over time
 
 # Data lake
 - What 
