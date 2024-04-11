@@ -235,6 +235,7 @@ In addition, the control plane node runs:
 
 # Certification
 - https://www.cncf.io/training/certification/cka/
+- [CKA Cert tips reddit](https://www.reddit.com/r/kubernetes/comments/rzpu5i/i_just_passed_the_cka_here_are_some_tips_2022/)
   
 # Courses
 - https://kubernetes.io/docs/home/
