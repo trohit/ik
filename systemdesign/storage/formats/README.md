@@ -1,4 +1,10 @@
-- ORC
+# Intro
+- https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats
+- Also called data storage format.
+
+# Examples
+- ORC(Optimized Row Columnar) format
+  - developed in 2013 by FB and Hortonworks 
 - [Apache Parquet](https://en.wikipedia.org/wiki/Apache_Parquet):  free and open-source column-oriented data storage format in the Apache Hadoop ecosystem.
   - It is similar to RCFile and ORC, the other columnar-storage file formats in Hadoop, and is compatible with most of the data processing frameworks around Hadoop.
   - It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk.
