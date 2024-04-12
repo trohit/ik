@@ -6,3 +6,4 @@
 
 # Data Sources
 - Quilt : https://open.quiltdata.com/
+- Google Open images dataset: https://storage.googleapis.com/openimages/
