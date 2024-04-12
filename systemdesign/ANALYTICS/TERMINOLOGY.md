@@ -7,6 +7,20 @@
   - Transform : clean the data (databricks, Synapse serverless, Azure Data factory)
   - Model : copy the data into a format that more native to the end-user to use(like relational, start schema)
   - Visualize / ML : for the PowerBI user to create reports
+- Medallion Arch:tiers of enterprise data mgmt, pioneered by DataBricks, adopted by Microsoft for its new data platform 
+  - bronze:  
+  - silver:
+  - gold:
+- data lake: centralized repository that allows you to store all your structured and unstructured data at any scale.
+  - data lakes are designed to store data in its raw format (the same format when the data comes from its source),
+    - whether it’s structured data like relational databases
+    - semi-structured data like JSON or XML files
+    - or unstructured data like text documents, images, videos, and log files.
+  - Pros: Flexibility and Scalability 
+  - Cons: Generally lack the consistency and integrity needed for business reporting purposes.  
+- Data lakehouse
+  - Combines data lake and data warehouse together
+  - Has both the scalability and flexibility provided by data lake, and analytical capability and integrity provided by data warehouse. 
  
 # Reference Diagrams
 ![image](https://github.com/trohit/ik/assets/466385/7f7d17ed-ea28-498f-9aca-17098db193d4)
@@ -121,3 +135,7 @@ src: https://www.ibm.com/topics/data-warehouse
     - Do analysis and analytics (batch / interactive/ realtime/ machine learning / Data warehouse)
 ## Data warehouse and EDW (Enterprise Data warehouse)
 - EDW is a single repo for all of the org's data providing holistic understanding, consolidated data and easier data compliance.
+## ETL vs ELT
+- ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform).
+- ETL: data is transformed into a predefined format, then gets loaded into target storage
+- ELT:data is loaded into the destination, and gets transformed only when requested
