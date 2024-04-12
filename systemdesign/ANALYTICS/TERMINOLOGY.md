@@ -7,10 +7,13 @@
   - Transform : clean the data (databricks, Synapse serverless, Azure Data factory)
   - Model : copy the data into a format that more native to the end-user to use(like relational, start schema)
   - Visualize / ML : for the PowerBI user to create reports
-- Medallion Arch:tiers of enterprise data mgmt, pioneered by DataBricks, adopted by Microsoft for its new data platform 
-  - bronze:  
-  - silver:
-  - gold:
+- [Medallion Arch](https://blog.bismart.com/en/medallion-architecture):tiers of enterprise data mgmt, pioneered by DataBricks, adopted by Microsoft for its new data platform
+  - sometimes also called multi-hop achitecture 
+  - describes quality of data in a data lakehouse
+  - Types
+    - bronze: raw data thats gets ingested. Data is stored as it is collected, usually from a variety of sources and in formats such as CSV or JSON.
+    - silver: filtered, cleaned and transformed data. Tasks such as filtering, validation and normalisation of the data are carried out and stored in efficient formats. This phase may include defined schemas and additional metadata.
+    - gold: Business level data : Structured data already prepared for analysis and business use. Data is structured, optimised for fast queries and can be enriched with additional information or merged with other data sources for deeper insights.
 - data lake: centralized repository that allows you to store all your structured and unstructured data at any scale.
   - data lakes are designed to store data in its raw format (the same format when the data comes from its source),
     - whether it’s structured data like relational databases
@@ -139,3 +142,4 @@ src: https://www.ibm.com/topics/data-warehouse
 - ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform).
 - ETL: data is transformed into a predefined format, then gets loaded into target storage
 - ELT:data is loaded into the destination, and gets transformed only when requested
+- ![image](https://github.com/trohit/ik/assets/466385/665907aa-f768-4e54-823f-b826bfd44141)
