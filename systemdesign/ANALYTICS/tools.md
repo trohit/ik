@@ -1,6 +1,7 @@
 - Automated validation of data quality: [GX]() or [Great_expectations](https://legacy.docs.greatexpectations.io/en/latest/intro.html)
 - Data Versioning: [DVC](https://dvc.org/), [Quilt](https://github.com/quiltdata/quilt) : versioned data portal for s3 on AWS
-- Distributed SQL execution engine : ( Presto | Trino | Starburst ), ( Dremel | Drill | Impala | Dremio ) 
+- Distributed SQL execution engine : ( Presto | Trino | Starburst ), ( Dremel | Drill | Impala | Dremio )
+- Workflow management platform : Apache Airflow, Apache Oozie, Azkaban(batch workflow job scheduler created at LinkedIn to run Hadoop jobs.)
 
 
 ## Apache
