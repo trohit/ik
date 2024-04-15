@@ -12,7 +12,8 @@
   - The Arrow memory format also supports zero-copy reads for lightning-fast data access without serialization overhead.
   - Arrow's libraries implement the format and provide building blocks for a range of use cases, including high performance analytics.
 - Apache Airavata : software framework for executing and managing computational jobs on distributed computing resources including local clusters, supercomputers, national grids, academic and commercial clouds.
-- Apache Superset : open-source software application for data exploration and data visualization able to handle data at petabyte scale (big data). 
+- Apache Superset : open-source software application for data exploration and data visualization able to handle data at petabyte scale (big data).
+- Apache Derby: Embeddable RDBMS for OLTP written in Java (with just 3.5MB mem footprint). Used as defacto DB engine by HMS(Hive Meta store)
 
 # Data Sources
 - Quilt : https://open.quiltdata.com/
