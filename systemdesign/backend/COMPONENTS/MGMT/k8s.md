@@ -245,6 +245,8 @@ In addition, the control plane node runs:
 - https://kubernetes.io/blog/
 - https://www.udemy.com/topic/kubernetes/free/
 - https://medium.com/geekculture/top-5-free-kubernetes-certifications-8c86b2c5b590
+- Work related free courses
+  - https://www.rancher.academy/collections (see rancher and k8s ones towards the bottom of the page) 
 
 ## Paid
 - [Intro to K8S](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2022/block-v1:LinuxFoundationX+LFS158x+1T2022+type@sequential+block@e10a62dcf641474c997eabd0602111cb/block-v1:LinuxFoundationX+LFS158x)
