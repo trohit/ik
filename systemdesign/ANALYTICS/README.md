@@ -52,3 +52,8 @@ latest:https://mattturck.com/mad2023/
 - Apache Hive
   - Apache Hive is a data warehouse infrastructure built on top of Hadoop and designed for querying and analyzing large datasets stored in Hadoop Distributed File System (HDFS) or other compatible distributed storage systems.
   - Hive provides a SQL-like query language called HiveQL, which allows users to express complex queries without needing to know Java or MapReduce.
+
+# To learn
+- https://brilliant.org/courses/data-analysis-fundamentals/
+- https://www.udemy.com/topic/sql/free/
+- https://www.coursera.org/professional-certificates/google-data-analytics
