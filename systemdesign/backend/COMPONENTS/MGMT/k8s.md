@@ -1,3 +1,6 @@
+# Concepts
+- https://kubernetes.io/docs/concepts/
+  
 # Intro
 ![K8S](https://kubernetes.io/images/docs/components-of-kubernetes.svg)
 - Kubernetes is an open-source "Container orchestration engine" for automating deployment, scaling, and management of containerized applications.
