@@ -250,6 +250,7 @@ In addition, the control plane node runs:
 - https://medium.com/geekculture/top-5-free-kubernetes-certifications-8c86b2c5b590
 - Work related free courses
   - https://www.rancher.academy/collections (see rancher and k8s ones towards the bottom of the page)
+    - https://www.rancher.academy/courses/take/kubernetes-basics/presentations/48365689-introduction 
   - https://app.pluralsight.com/paths/certificate/certified-kubernetes-administrator (CKA course)
 
 ## Paid
