@@ -267,6 +267,7 @@ In addition, the control plane node runs:
 - https://microk8s.io/compare
 - https://labs.play-with-k8s.com/
 - https://training.play-with-kubernetes.com/kubernetes-workshop/
+- https://killercoda.com/playgrounds/scenario/kubernetes
   
 # Lessons learnt from running k8s
 - https://k8s.af/
