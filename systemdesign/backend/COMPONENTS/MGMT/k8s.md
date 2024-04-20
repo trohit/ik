@@ -64,8 +64,19 @@
   - Container orchestrators can be deployed on the infrastructure of our choice - on bare metal, Virtual Machines, on-premises, on public and hybrid clouds. Kubernetes, for example, can be deployed on a workstation, with or without an isolation layer such as a local hypervisor or container runtime, inside a company's data center, in the cloud on AWS Elastic Compute Cloud (EC2) instances, Google Compute Engine (GCE) VMs, DigitalOcean Droplets, OpenStack, etc.       
 
 # Terminology
-- A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work.
-- The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane. It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod. It also monitors the health and resources of Pods running containers.
+- Podman : an open src Rehat flavor thats an alternative to using dockers
+- A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. Pods have a defined lifecycle composed of different states:
+  - Pending
+  - Running(at least 1 container of its primary containers started OK)
+  - Suceeded: if all containers started
+  - Failed: if any container in the pod terminated on failure.
+- 
+- A workload is an application running on k8s. A workload can run inside one or several pods. k8s provides different kinds of [workloads]().
+  - [Deployment]()
+  - 
+- The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane.
+  - It receives Pod definitions, primarily from the API Server, and interacts with the container runtime on the node to run containers associated with the Pod.
+  - It also monitors the health and resources of Pods running containers.
 - scheduling refers to making sure that Pods are matched to Nodes so that the kubelet can run them.
 - Preemption is the process of terminating Pods with lower Priority so that Pods with higher Priority can schedule on Nodes.
 - Eviction is the process of terminating one or more Pods on Nodes.
