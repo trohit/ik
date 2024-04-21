@@ -34,6 +34,7 @@
 # Concepts
 - Containers are an application-centric method to deliver high-performing, scalable applications on any infrastructure of your choice. Containers are best suited to deliver microservices by providing portable, isolated virtual environments for applications to run without interference from other running applications.
   -  container runtimes like runC, containerd, or cri-o can use pre-packaged images as a source to create and run one or more containers. These runtimes are capable of running containers on a single host, however, in practice, we would like to have a fault-tolerant and scalable solution, achieved by building a single controller/management unit, a collection of multiple hosts connected together. This controller/management unit is generally referred to as a container orchestrator.
+    - A Controller is a control loop that watches the shared state of the cluster through apiserver and makes changes, attempting to move the current state to the desired state.
   -  Containers encapsulate microservices and their dependencies but do not run them directly. Containers run container images.
   -  A container image bundles the application along with its runtime, libraries, and dependencies, and it represents the source of a container deployed to offer an isolated executable environment for the application. Containers can be deployed from a specific image on many platforms, such as workstations, Virtual Machines, public cloud, etc
 -  Microservices are lightweight applications written in various modern programming languages, with specific dependencies, libraries and environmental requirements. To ensure that an application has everything it needs to run successfully it is packaged together with its dependencies.
@@ -65,11 +66,13 @@
 
 # Terminology
 - Podman : an open src Rehat flavor thats an alternative to using dockers
-- A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. Pods have a defined lifecycle composed of different states:
-  - Pending
+- A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. Pods have a defined lifecycle composed of different phases(a hi-level summary of where the pod is in its lifecycle):
+  - Pending: pod has been accepted by k8s  but one or more container images are not yet created or downloaded. 
   - Running(at least 1 container of its primary containers started OK)
   - Suceeded: if all containers started
   - Failed: if any container in the pod terminated on failure.
+  - Unknown: For some reason state of the pod cannot be obtained. viz. err in communicating with the node where the pod should be running
+  - 
 - 
 - A workload is an application running on k8s. A workload can run inside one or several pods. k8s provides different kinds of [workloads]().
   - [Deployment]()
