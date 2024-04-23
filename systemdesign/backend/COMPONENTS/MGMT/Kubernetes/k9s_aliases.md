@@ -1,0 +1,15 @@
+alias k='kubectl'
+alias kcc='kubectl config current-context'
+alias kgp='kubectl get pods --all-namespaces'
+alias kgi='kubectl get ingresses --all-namespaces'
+
+alias hl='helm ls --all'
+alias hv='helm version'
+alias hdp='helm ls -qa | xargs helm delete --purge --no-hooks'
+
+alias kgn='kubectl get ns'
+alias kwa='watch -n 10 "kubectl get pods --all-namespaces"'
+alias kv='kubectl version --short'
+alias kgs='kubectl get service --all-namespaces'
+alias kn='kubectl get nodes'
+alias kdp='kubectl run -it --rm --image infoblox/dnstools dnst'
