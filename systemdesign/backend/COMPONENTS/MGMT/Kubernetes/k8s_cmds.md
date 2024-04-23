@@ -65,6 +65,18 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 - kubectl apply -f nginx-pod.yaml
 ## OR
 - kubectl run nginx --image=nginx
+- List all kind of workloads
+  - k get deployment,replicasets,statefulsets,daemonset,job,cronjob -A
+- get list of namespaces
+  - k get ns
+- get pods from all namespaces
+  - k get pods -A
+  - k get pods --all-namespaces
+- get a pods yaml
+  - k get pod $podname -o yaml -n $namespace
+- get pvc list
+  - k get pvc -A  
+
 
 # whats the image used to create the new pods
 for i in `kubectl get pods --no-headers | awk {'print$1'}` ; do   kubectl describe pod $i | grep -i image; done
