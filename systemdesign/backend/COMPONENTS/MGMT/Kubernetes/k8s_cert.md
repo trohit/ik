@@ -7,3 +7,5 @@
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
 - https://kodekloud.com/pages/community
+
+![image](https://github.com/trohit/ik/assets/466385/880a52f5-d8cc-4e09-862a-5fd4538c6d5a)
