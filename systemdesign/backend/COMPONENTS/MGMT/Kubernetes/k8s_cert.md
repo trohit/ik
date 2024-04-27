@@ -5,7 +5,8 @@
 - Exam Tips: http://training.linuxfoundation.org/go//Important-Tips-CKA-CKAD
 - https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/
 - Tests
-  - https://beta.kodekloud.com/courses/udemy-labs-certified-kubernetes-administrator-with-practice-tests 
+  - https://beta.kodekloud.com/courses/udemy-labs-certified-kubernetes-administrator-with-practice-tests
+  - https://uklabs.kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
 - https://kodekloud.com/pages/community
