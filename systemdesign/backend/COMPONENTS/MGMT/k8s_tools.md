@@ -15,3 +15,5 @@
 ## YAML Generators
 - https://static.brandonpotter.com/kubernetes/DeploymentBuilder.html
 - https://k8syaml.com/
+- https://gimlet.io/k8s-yaml-generator
+- https://syshunt.com/kubernetes-yaml-generator/
