@@ -1,0 +1,13 @@
+# this yaml file can also be created by doing
+# kubectl run nginx-container --image=nginx --dry-run=client -o yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    type: loadbalancer
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
