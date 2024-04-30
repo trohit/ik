@@ -9,7 +9,7 @@
 - Hive HMS  metastore can be shared by Impala, Spark, Hive, and other services.
 
 # Companies
-- Data analytics vendors
+- Data analytics vendors that offer in-situ analysis of data across data sources
   - Open source: trino, presto, dremio
   - Commercial: Starburst, Dremio, DataBricks, data virtuality, IBM, ahana, denodo, TIBCO, Atscale
 - DB
