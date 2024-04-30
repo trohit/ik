@@ -9,11 +9,15 @@
 - Hive HMS  metastore can be shared by Impala, Spark, Hive, and other services.
 
 # Companies
+- Data analytics vendors
+  - Open source: trino, presto, dremio
+  - Commercial: Starburst, Dremio, DataBricks, data virtuality, IBM, ahana, denodo, TIBCO, Atscale
+- DB
+  - Teradata 
 - [Cloudera](https://en.wikipedia.org/wiki/Cloudera):  American data lake software company
   - started in 2008 by G!, Y!, FB and Haddop engineer Doug Cutting.
   - initially offered free Hadoop and charged for consulting. later offered commercial hadoop.
   - 2018: Cloudera merged with Hortonworks
-  -  
 ## Apache
 - Apache Arrow
   - development platform for in-memory analytics. It contains a set of technologies that enable big data systems to process and move data fast. 
