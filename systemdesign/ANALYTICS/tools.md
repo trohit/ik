@@ -43,3 +43,7 @@
 - NSE stock data: https://github.com/debaonline4u/NSE-Data
 - https://github.com/awesomedata/apd-core/
 - Covid data https://github.com/IBM/covid19-india-data
+- https://hackernoon.com/10-best-stock-market-datasets-for-machine-learning-e71437qm
+
+# Data modeling
+- https://dbdiagram.io/home
