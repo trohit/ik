@@ -38,3 +38,8 @@
 # Data Sources
 - Quilt : https://open.quiltdata.com/
 - Google Open images dataset: https://storage.googleapis.com/openimages/
+- Kaggle Data sets: https://www.kaggle.com/datasets
+- awesome datasets github : https://github.com/datasets/awesome-data
+- NSE stock data: https://github.com/debaonline4u/NSE-Data
+- https://github.com/awesomedata/apd-core/
+- Covid data https://github.com/IBM/covid19-india-data
