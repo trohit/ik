@@ -1,4 +1,13 @@
 # Some frequently used terms
+- [Data Normalization](https://en.wikipedia.org/wiki/Database_normalization):
+  - 1NF
+  - 2NF
+  - 3NF
+  - EKNF
+  - BCNF
+  - 4NF
+  - DKNF
+  - 6NF
 - SEP: starburst enterprise platform
 - Presto/ Trino/Starburst
 - 5 Stages of a Modern Data Warehouse (ISTMV)
