@@ -44,6 +44,7 @@
 - https://github.com/awesomedata/apd-core/
 - Covid data https://github.com/IBM/covid19-india-data
 - https://hackernoon.com/10-best-stock-market-datasets-for-machine-learning-e71437qm
+- TPC DS SQL 99 dataset: http://www.openkb.info/2021/02/how-to-generate-tpc-ds-data-and-run-tpc.html
 
 # Data modeling
 - https://dbdiagram.io/home
