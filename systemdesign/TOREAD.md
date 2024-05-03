@@ -3,6 +3,7 @@
 - Julia Evans: https://jvns.ca/
 - https://www.artima.com/articles/orthogonality-and-the-dry-principle#part3
 - https://medium.com/@leenasn
+- https://read.highgrowthengineer.com/
 
 # System Design
 - https://github.com/arpitbbhayani/system-design-questions
@@ -27,7 +28,19 @@
    - Optimistic aka Lazy Replication : https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-60.pdf
 - Analytics
    - Trino/ Presto: https://trino.io/Presto_SQL_on_Everything.pdf
-- Whitepapers as seen on LinkedIn
+- GenAI
+   - [Attention is all you need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
+- Whitepapers
+  - [Google File System (GFS)](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+  - [Google Spanner (Globally Distributed Database)](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
+  - [Google Chubby Locking Service](https://static.googleusercontent.com/media/research.google.com/en//archive/chubby-osdi06.pdf)
+  - [Meta XFaaS: Hyperscale and Low-cost serverless functions](https://www.cs.cmu.edu/~dskarlat/publications/xfaas_sosp23.pdf)
+  - [Facebook Cassandra (Distributed NoSQL DB)](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf)
+  - [Facebook Memcache (KV store)](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf)
+  - [LinkedIn Kafka (PubSub)](https://notes.stephenholiday.com/Kafka.pdf)
+  - [Amazon DynamoDB](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+  - [Bitcoin](https://bitcoin.org/bitcoin.pdf)
+- Whitepapers as seen on [LinkedIn]()
    1. Google File System (GFS): https://lnkd.in/eVyZpQ98
    2. Google Chubby Locking Service: https://lnkd.in/eEXa6WYH
    3. Meta XFaaS: Hyperscale and Low-cost serverless functions: https://lnkd.in/eHqbPXpH
@@ -36,6 +49,7 @@
    6. LinkedIn Kafka (PubSub): https://lnkd.in/eGcagdRA
    7. Amazon DynamoDB: https://lnkd.in/eQxJXgMs
    8. Bitcoin: https://lnkd.in/e2dmcCQF
+
    
 # DISTRUBTED SYSTEMS CONCEPTS
 - https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/
