@@ -40,15 +40,6 @@
   - [LinkedIn Kafka (PubSub)](https://notes.stephenholiday.com/Kafka.pdf)
   - [Amazon DynamoDB](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
   - [Bitcoin](https://bitcoin.org/bitcoin.pdf)
-- Whitepapers as seen on [LinkedIn]()
-   1. Google File System (GFS): https://lnkd.in/eVyZpQ98
-   2. Google Chubby Locking Service: https://lnkd.in/eEXa6WYH
-   3. Meta XFaaS: Hyperscale and Low-cost serverless functions: https://lnkd.in/eHqbPXpH
-   4. Facebook Cassandra (Distributed NoSQL DB): https://lnkd.in/eD9erCNu
-   5. Facebook Memcache (KV store): https://lnkd.in/eYZM5SPb
-   6. LinkedIn Kafka (PubSub): https://lnkd.in/eGcagdRA
-   7. Amazon DynamoDB: https://lnkd.in/eQxJXgMs
-   8. Bitcoin: https://lnkd.in/e2dmcCQF
 
    
 # DISTRUBTED SYSTEMS CONCEPTS
