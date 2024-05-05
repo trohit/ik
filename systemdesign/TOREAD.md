@@ -4,6 +4,8 @@
 - https://www.artima.com/articles/orthogonality-and-the-dry-principle#part3
 - https://medium.com/@leenasn
 - https://read.highgrowthengineer.com/
+- https://newsletter.micahlerner.com/archive
+- Farnam Street : https://fs.blog/
 
 # System Design
 - https://github.com/arpitbbhayani/system-design-questions
