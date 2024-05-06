@@ -1,12 +1,20 @@
 # this yaml file can also be created by doing
 # kubectl run nginx-container --image=nginx --dry-run=client -o yaml
+
+# https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#resources
 apiVersion: v1
+
+# https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#types-kinds
 kind: Pod
+
+# https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata
 metadata:
   name: nginx
   labels:
     app: nginx
     type: loadbalancer
+    
+# https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 spec:
   containers:
   - name: nginx-container
