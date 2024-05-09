@@ -17,6 +17,7 @@
 - https://www.youtube.com/@jordanhasnolife5163
 - https://www.youtube.com/c/ArpitBhayani
 - https://sysadmincasts.com/episodes
+- https://www.brighttalk.com/mybrighttalk/my-feed
 
 ## Papers
 - Concurremcy
