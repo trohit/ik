@@ -1,5 +1,7 @@
 # this yaml file can also be created by doing
 # see other templates at : https://github.com/kubernetes/website/blob/main/content/en/examples/pods/simple-pod.yaml
+# Other templates at:
+#  https://github.com/kubernetes/website/tree/main/content/en/examples/pods
 # kubectl run nginx-container --image=nginx --dry-run=client -o yaml
 
 # https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#resources
