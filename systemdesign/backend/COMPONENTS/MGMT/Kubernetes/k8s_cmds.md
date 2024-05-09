@@ -1,6 +1,7 @@
 # Ref
 - https://kubernetes.io/docs/reference/kubectl/
 - https://kubernetes.io/docs/reference/kubectl/conventions/
+- https://kubectl.docs.kubernetes.io/guides/
 
 ## Create an NGINX Pod
 kubectl run nginx --image=nginx
