@@ -7,7 +7,8 @@
 - Tests
   - https://beta.kodekloud.com/courses/udemy-labs-certified-kubernetes-administrator-with-practice-tests
   - https://uklabs.kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/
-    - https://uklabs.kodekloud.com/topic/practice-test-replicasets-2/ 
+    - https://uklabs.kodekloud.com/topic/practice-test-replicasets-2/
+  - https://uklabs.kodekloud.com/topic/practice-tests-deployments-2/
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
 - https://kodekloud.com/pages/community
