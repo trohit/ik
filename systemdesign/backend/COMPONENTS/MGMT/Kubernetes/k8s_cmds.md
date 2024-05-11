@@ -21,7 +21,19 @@ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-d
 ## Make necessary changes to the file (for example, adding more replicas) and then create the deployment.
 kubectl create -f nginx-deployment.yaml
 
+## Ways to create a namespace
 
+k create namespace mynamespace
+
+OR
+```
+cat > namespace-definition.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mynamespace
+k create -f namespace-definition.yaml
+```
 ## Help
 ```
 kubectl controls the Kubernetes cluster manager.
