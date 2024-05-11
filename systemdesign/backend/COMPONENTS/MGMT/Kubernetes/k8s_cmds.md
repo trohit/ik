@@ -25,6 +25,10 @@ kubectl create -f nginx-deployment.yaml
 
 k create namespace mynamespace
 
+## To set a persistent namespace context
+k config set-config $(kubectl config current-context) --namespace=dev
+
+
 OR
 ```
 cat > namespace-definition.yaml
