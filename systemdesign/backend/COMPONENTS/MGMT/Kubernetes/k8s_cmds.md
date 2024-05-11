@@ -21,6 +21,18 @@ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-d
 ## Make necessary changes to the file (for example, adding more replicas) and then create the deployment.
 kubectl create -f nginx-deployment.yaml
 
+## Expose a port
+kubectl expose deployment nginx --port 80
+
+## Edit a deployment
+kubectl edit deployment nginx
+
+## Scale a deployment
+kubectl scale deployment nginx --replicas=5
+
+## set image for deplyoment
+kubectl set image deployment nginx mycontainer=nginx:latest
+
 ## Ways to create a namespace
 
 k create namespace mynamespace
