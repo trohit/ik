@@ -30,8 +30,15 @@ kubectl edit deployment nginx
 ## Scale a deployment
 kubectl scale deployment nginx --replicas=5
 
-## set image for deplyoment
+## set image for deployment
 kubectl set image deployment nginx mycontainer=nginx:latest
+
+## update a pod
+kubectl replace -f nginx.yaml
+
+## delete a pod
+kubectl delete -f nginx.yaml
+
 
 ## Ways to create a namespace
 
