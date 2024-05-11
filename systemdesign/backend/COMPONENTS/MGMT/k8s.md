@@ -77,7 +77,7 @@
   - [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/): provides a way to do a declarative update for Pods and ReplicaSets. Good fit for stateless app workloads where any pod is interchangeable and replaceable if needed.
   - [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/): lets you run one or more related Pods that do track state somehow. can run a StatefulSet that matches each Pod with a [PersistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 - [Networking Model](https://kubernetes.io/docs/concepts/services-networking/)
-  - Services : enable comms between verious components within and outside the application.
+  - [Service](https://kubernetes.io/docs/concepts/services-networking/service/) : Service is a method for exposing a network application that is running as one or more Pods in your cluster. Services enable comms between verious components within and outside the application.
   - [Load balancing](https://kubernetes.io/docs/concepts/services-networking/ingress/#load-balancing) : 
   - Networking:
 - The kubelet is an agent running on each node, control plane and workers, and communicates with the control plane.
