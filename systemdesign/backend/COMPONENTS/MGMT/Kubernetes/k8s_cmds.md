@@ -9,6 +9,12 @@ kubectl run nginx-pod --image=nginx:alpine
 ## Deploy a redis pod using the redis:alpine image with the labels set to tier=db.
 kubectl run pod redis --image=redis:alpine -l tier=db
 
+OR
+
+kubectl run redis -l tier=db --image=redis:alpine --dry-run=client -o yaml > redis-pod.yaml
+
+kubectl create -f redis-pod.yaml
+
 ## Generate POD Manifest YAML file (-o yaml). Don't create it(--dry-run)
 kubectl run nginx --image=nginx --dry-run=client -o yaml
 
