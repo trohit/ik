@@ -44,13 +44,23 @@ vim deployment-definition.yaml
 
 kubectl replace -f deployment-definition.yaml
 
-#\ willcomplete;y delete and recreate object
+\# will completely delete and recreate object
 
 kubectl replace --force -f deployment-definition.yaml
 
 Or
 
+\# declarative way, will always work
+
 kubectl apply --edit -f <resource_file.yaml>
+
+kubectl apply -f <resource_file.yaml>
+
+\# will apply all files in the dir at once
+
+kubectl apply -f /path/to/config-files
+
+
 
 ## Scale a deployment
 kubectl scale deployment nginx --replicas=5
