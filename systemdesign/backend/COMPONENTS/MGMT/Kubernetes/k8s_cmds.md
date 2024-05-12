@@ -40,6 +40,8 @@ vim deployment-definition.yaml
 
 \# will open the specified YAML file in your default editor, and any changes you make will be applied to the live object.
 
+\# also any changes will be recorded as part of change review process
+
 kubectl replace -f deployment-definition.yaml
 
 Or
