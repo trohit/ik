@@ -11,6 +11,7 @@
   - https://uklabs.kodekloud.com/topic/practice-tests-deployments-2/
   - https://uklabs.kodekloud.com/topic/practice-test-services-2/
   - https://uklabs.kodekloud.com/topic/practice-test-namespaces-2/
+  -  https://uklabs.kodekloud.com/topic/practice-test-imperative-commands-3/
 
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
