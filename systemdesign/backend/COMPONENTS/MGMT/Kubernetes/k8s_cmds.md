@@ -25,8 +25,11 @@ kubectl create -f nginx-deployment.yaml
 kubectl expose deployment nginx --port 80
 
 ## Edit a deployment
+### non-persistent live obj edit
 kubectl edit deployment nginx
-
+### persistent edit
+vim deployment-definition.yaml
+kubectl replace -f deployment-definition.yaml
 ## Scale a deployment
 kubectl scale deployment nginx --replicas=5
 
