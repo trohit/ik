@@ -44,6 +44,10 @@ vim deployment-definition.yaml
 
 kubectl replace -f deployment-definition.yaml
 
+#\ willcomplete;y delete and recreate object
+
+kubectl replace --force -f deployment-definition.yaml
+
 Or
 
 kubectl apply --edit -f <resource_file.yaml>
