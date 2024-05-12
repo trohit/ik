@@ -27,9 +27,25 @@ kubectl expose deployment nginx --port 80
 ## Edit a deployment
 ### non-persistent live obj edit
 kubectl edit deployment nginx
+
+\# changes will only apply on live object
+
+kubectl scale --replicas=3 <object_type> <object_name>
+OR
+
+kubectl patch <object_type> <object_name> --patch '{"spec": {"replicas": 3}}'
+
 ### persistent edit
 vim deployment-definition.yaml
+
+\# will open the specified YAML file in your default editor, and any changes you make will be applied to the live object.
+
 kubectl replace -f deployment-definition.yaml
+
+Or
+
+kubectl apply --edit -f <resource_file.yaml>
+
 ## Scale a deployment
 kubectl scale deployment nginx --replicas=5
 
