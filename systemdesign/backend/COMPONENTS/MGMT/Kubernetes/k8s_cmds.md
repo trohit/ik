@@ -4,7 +4,7 @@
 - https://kubectl.docs.kubernetes.io/guides/
 
 ## Create an NGINX Pod
-kubectl run nginx --image=nginx
+kubectl run nginx-pod --image=nginx:alpine
 
 ## Generate POD Manifest YAML file (-o yaml). Don't create it(--dry-run)
 kubectl run nginx --image=nginx --dry-run=client -o yaml
