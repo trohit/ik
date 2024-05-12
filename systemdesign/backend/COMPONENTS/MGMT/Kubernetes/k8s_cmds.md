@@ -259,7 +259,6 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 # Cmds
 - kubectl get pods --namespace=default --no-headers
-- kubectl create pod nginx-pod --image=nginx --dry-run=client -o yaml
 - kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > nginx-pod.yaml
 - kubectl apply -f nginx-pod.yaml
 ## OR
