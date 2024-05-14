@@ -2,6 +2,7 @@
 - https://kubernetes.io/docs/reference/kubectl/
 - https://kubernetes.io/docs/reference/kubectl/conventions/
 - https://kubectl.docs.kubernetes.io/guides/
+- https://helm.sh/docs/intro/cheatsheet/
 
 ## Create an NGINX Pod
 kubectl run nginx-pod --image=nginx:alpine
