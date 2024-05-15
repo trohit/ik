@@ -210,6 +210,42 @@ In addition, the control plane node runs:
 - Proxy
 - Optional add-ons for cluster-level monitoring and logging.
 
+# Scheduling
+
+## Taints and Tolerations
+- used to set restrictions on what pods can be schecduled on a node
+- taints are set on nodes, tolerations are applied to pods
+- by default, pods have no tolerations. 
+- to sched a pod on a node, a pod p1 needs to be applied with the same taint t1 thats applied on node say n1.
+- 'taint effects' specifies what happens if a pod cannot tolerate a taint
+- three types of taint-effects : NoSchedule | PreferNoSchedule | NoExecute
+  - NoSchedule : pod cannot be scheduled on the node
+  - PreferNoSchedule : scheduler will try not to sched this pod on this node
+  - NoExecute : new pods will not be sched on this node and any existing pods on the node will be evicted
+- Remember
+  - taints and tolerations only prevent nodes from accepting certain pods. They dont guarantee placement of a pod on any node.
+  - if req to restrict a pod to certain nodes, need to look at node affinity.
+  - scheduler does not schedule any pods on the master node
+  
+k taint nodes node-name key=value:<taint-effect> 
+```
+cat > pod-with-taint-definition.yaml
+--
+apiVersion: v1
+kind: Pod
+metadata:
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+	
+  tolerations:
+  - key: "app"
+    operator: "Equal"
+	value: "blue"
+	effect: "NoSchedule"
+```
+
 ## K8S deployment config options
 - Kubernetes can be installed using different cluster configurations. K8S best practices recommend multi-host environments that support High-Availability control plane setups and multiple worker nodes for client workload for production purposes. The major installation types are described below:
   - All-in-One Single-Node Installation: In this setup, all the control plane and worker components are installed and running on a single-node. While it is useful for learning, development, and testing, it is not recommended for production purposes.
