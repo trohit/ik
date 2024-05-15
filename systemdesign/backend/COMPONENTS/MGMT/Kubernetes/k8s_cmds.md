@@ -400,6 +400,30 @@ k replace --force -f nginx.yaml
 # get k8s pods status periodically
 k get pods --watch
 
+# Taints and Tolerations
+## Taint a node with a taint effect
+_<taint-effect> can have 3 possible values: NoSchedule | PreferNoSchedule | NoExecute_ 
+
+k taint nodes node-name key=value:<taint-effect> 
+
+```
+cat > pod-with-taint-definition.yaml
+--
+apiVersion: v1
+kind: Pod
+metadata:
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+	
+  tolerations:
+  - key: "app"
+    operator: "Equal"
+	value: "blue"
+	effect: "NoSchedule"
+```
+
 # Network
 ## get a list of all ips and posrt being used in k8s
 k get svc -A -o wide
