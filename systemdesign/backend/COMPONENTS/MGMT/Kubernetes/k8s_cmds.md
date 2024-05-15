@@ -84,6 +84,11 @@ kubectl replace -f nginx.yaml
 ## delete a pod
 kubectl delete -f nginx.yaml
 
+## see all the labels of all the pods in Kubernetes
+k get pod --show-labels
+
+## delete all pods that have a label starting with "app-"
+k delete pods -l app-
 
 ## Ways to create a namespace
 
@@ -129,6 +134,10 @@ Or
 kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
 
 \# (This will not use the pods labels as selectors)
+
+## patch a running deployment with a different image
+kubectl patch deployment <deployment-name> -p '{"spec":{"template":{"spec":{"containers":[{"name":"<container-name>","image":"<new-image>"}]}}}}'
+
 
 # Ref
 - https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
