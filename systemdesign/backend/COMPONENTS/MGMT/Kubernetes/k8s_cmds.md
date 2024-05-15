@@ -81,8 +81,8 @@ k get pod --show-labels
 ## see all pods that match a selector 'env=dev'
 k get pods --selector env=dev
 
-## count the number of pods that match bu=finance, so dont display the header
-k get pods --selector bu=finance --no-headers | wc -l
+## count the number of pods that match env=prod,bu=finance and tier=frontend so dont display the header
+k get pods --selector env=prod,bu=finance,tier=frontend --no-headers | wc -l
 
 ## delete all pods that have a label starting with "app-"
 k delete pods -l app-
