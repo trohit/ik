@@ -38,8 +38,7 @@ kubectl expose deployment nginx --port 80
 ### non-persistent live obj edit
 kubectl edit deployment nginx
 
-\# changes will only apply on live object
-
+_changes will only apply on live object_<br>
 kubectl scale --replicas=3 <object_type> <object_name>
 OR
 
@@ -48,29 +47,17 @@ kubectl patch <object_type> <object_name> --patch '{"spec": {"replicas": 3}}'
 ### persistent edit
 vim deployment-definition.yaml
 
-\# will open the specified YAML file in your default editor, and any changes you make will be applied to the live object.
+_will open the specified YAML file in your default editor, and any changes you make will be applied to the live object._<br>_also any changes will be recorded as part of change review process_<br>kubectl replace -f deployment-definition.yaml
 
-\# also any changes will be recorded as part of change review process
-
-kubectl replace -f deployment-definition.yaml
-
-\# will completely delete and recreate object
-
-kubectl replace --force -f deployment-definition.yaml
+_will completely delete and recreate object_<br>kubectl replace --force -f deployment-definition.yaml
 
 Or
 
-\# declarative way, will always work
-
-kubectl apply --edit -f <resource_file.yaml>
+_declarative way, will always work_<br>kubectl apply --edit -f <resource_file.yaml>
 
 kubectl apply -f <resource_file.yaml>
 
-\# will apply all files in the dir at once
-
-kubectl apply -f /path/to/config-files
-
-
+_will apply all files in the dir at once_<br>kubectl apply -f /path/to/config-files
 
 ## Scale a deployment
 kubectl scale deployment nginx --replicas=5
@@ -97,7 +84,6 @@ k create namespace mynamespace
 ## To set a persistent namespace context
 k config set-config $(kubectl config current-context) --namespace=dev
 
-
 OR
 ```
 cat > namespace-definition.yaml
@@ -111,29 +97,15 @@ k create -f namespace-definition.yaml
 # Service
 ## Create a Service named redis-service of type ClusterIP to expose pod redis on port 6379
 
-\# (This will automatically use the pod's labels as selectors)
+_(This will **automatically** use the pod's labels as selectors)_<br>kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
 
-kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
-
-\# (This will not use the pods labels as selectors, instead it will assume selectors as app=redis. 
-
-\# You cannot pass in selectors as an option. So it does not work very well if your pod has a different label set. 
-
-\# So generate the file and modify the selectors before creating the service)
-
-kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml 
+_(This will **not use** the pods labels as selectors, instead it will assume selectors as app=redis._<br>_You cannot pass in selectors as an option. So it does not work very well if your pod has a different label set._<br>_So generate the file and modify the selectors before creating the service)_<br>kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml 
 
 ## Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:
-
-kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
-
-\# (This will automatically use the pod's labels as selectors, but you cannot specify the node port. You have to generate a definition file and then add the node port in manually before creating the service with the pod.)
+_(This will **automatically** use the pod's labels as selectors, but you cannot specify the node port. You have to generate a definition file and then add the node port in manually before creating the service with the pod.)_<br>kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
 
 Or
-
-kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
-
-\# (This will not use the pods labels as selectors)
+_(This will **not use** the pods labels as selectors)_<br>kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
 
 ## patch a running deployment with a different image
 kubectl patch deployment <deployment-name> -p '{"spec":{"template":{"spec":{"containers":[{"name":"<container-name>","image":"<new-image>"}]}}}}'
