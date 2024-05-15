@@ -399,3 +399,8 @@ k replace --force -f nginx.yaml
 
 # get k8s pods status periodically
 k get pods --watch
+
+# Network
+## get a list of all ips and posrt being used in k8s
+k get svc -A -o wide
+k get endpoints -A
