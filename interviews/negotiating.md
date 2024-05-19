@@ -45,7 +45,7 @@
     - what constitutes success or 
     - what we will do if we get offtrack or 
     - what's the most difficult thing to get around
-- use of pronouns: I me and my are used by persons without authority. We they them means a decision maker who is keeping his options open
+- use of pronouns: "I me and my" are used by persons without authority. "We they them" means a decision maker who is keeping his options open
 - theories
   - prospect theory: 
   - 7 38 55 rule
