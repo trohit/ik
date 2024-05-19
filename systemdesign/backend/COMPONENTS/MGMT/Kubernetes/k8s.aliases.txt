@@ -1,3 +1,5 @@
+# https://kubernetes.io/docs/reference/kubectl/quick-reference/
+# https://github.com/ahmetb/kubectl-aliases
 alias k='kubectl'
 alias kcc='kubectl config current-context'
 alias kgp='kubectl get pods --all-namespaces'
@@ -13,3 +15,6 @@ alias kv='kubectl version --short'
 alias kgs='kubectl get service --all-namespaces'
 alias kn='kubectl get nodes'
 alias kdp='kubectl run -it --rm --image infoblox/dnstools dnst'
+
+# print the full cmd before running it 
+function kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
