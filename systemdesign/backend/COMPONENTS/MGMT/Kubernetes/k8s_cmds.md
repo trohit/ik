@@ -1,4 +1,4 @@
-# Ref
+![image](https://github.com/trohit/ik/assets/466385/bb806ae4-2eac-455d-8448-600b5664600f)# Ref
 - https://kubernetes.io/docs/reference/kubectl/
 - https://kubernetes.io/docs/reference/kubectl/conventions/
 - https://kubectl.docs.kubernetes.io/guides/
@@ -425,7 +425,33 @@ spec:
 ```
 
 # Network
-## get a list of all ips and posrt being used in k8s
+## get a list of all ips and ports being used in k8s
 k get svc -A -o wide
 
 k get endpoints -A
+
+kubectl get endpointslices -l kubernetes.io/service-name=my-nginx
+
+# Custom k8s cmds
+## podname, status, node
+
+kubectl get pod -o=custom-columns=NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces
+
+## list podname, poduid
+kubectl getpods -n kube-system-o custom-columns=PodName:.metadata.name,PodUID:.metadata.uid
+
+## nodename, podname, svc_account
+kubectl getpods -n kube-system -o custom-columns=NodeName:.spec.nodeName,PodName:.metadata.name,ServiceAccount:spec.serviceAccountName
+
+## PodName,PodIP,NodeName,hostIp
+
+kubectl get pods - all-namespaces -o custom-columns=PodName:.metadata.name,PodIP:.status.podIP,NodeName:.spec.nodeName,hostIp:.status.hostIP
+
+## get custom headers
+```
+$ cat pods.fmt
+NAMESPACE NAME
+metadata.namespace metadata.name
+
+kubectl get pods -A -o custom-columns-file=pods.fmt
+```
