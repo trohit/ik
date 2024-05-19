@@ -49,6 +49,9 @@
 - theories
   - prospect theory: 
   - 7 38 55 rule
+    - verbal 7
+    - vocal 38
+    - visual 55
   - chris discount : use your name to humanise yourself
   - [ackermen theory](https://jvieker.com/ackerman-bargaining/)
 
