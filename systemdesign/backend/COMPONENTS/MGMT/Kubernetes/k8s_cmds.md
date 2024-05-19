@@ -83,7 +83,8 @@
 - https://helm.sh/docs/intro/cheatsheet/
 
 ## Create an NGINX Pod
-kubectl run nginx-pod --image=nginx:alpine
+
+    kubectl run nginx-pod --image=nginx:alpine
 
 ## Deploy a redis pod using the redis:alpine image with the labels set to tier=db.
 kubectl run pod redis --image=redis:alpine -l tier=db
