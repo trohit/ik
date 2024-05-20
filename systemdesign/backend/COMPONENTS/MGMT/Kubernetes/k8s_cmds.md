@@ -537,3 +537,69 @@ metadata.namespace metadata.name
 
 kubectl get pods -A -o custom-columns-file=pods.fmt
 ```
+
+# Taints and tolerations
+## Create a taint on node01 with key of spray, value of mortein and effect of NoSchedule
+    k taint nodes node01 spray=mortein:NoSchedule
+
+## Create a new pod with the nginx image and pod name as mosquito.
+    k run mosquito --image=nginx
+    
+```
+option2 :
+cat > mosquito-pod-definition.yaml<EOF
+api: v1
+kind: Pod
+metadata:
+  name: mosquito
+spec:
+  containers:
+  - name: mosquito
+    image: nginx
+EOF
+k apply -f mosquito-pod-definition.yaml
+```
+
+## get all taints on node node01 
+    k describe node node01 | grep -i taint
+
+## track status of a pod
+    k get pod --watch
+
+## determine why a pod called 'mosquito' isnt running
+    k describe pods/mosquito
+
+## Create another pod named bee with the nginx image, which has a toleration set to the taint mortein.
+```
+cat > bee-pod-definition.yaml<<EOF
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bee
+spec:
+  containers:
+  - name: bee
+    image: nginx
+
+  tolerations:
+  - key: "spray"
+    operator: "Equal"
+    value: "mortein"
+    effect: "NoSchedule"
+EOF	  
+```
+## get taints on controlplane node
+k describe node controlplane | grep -i taint
+
+## Remove the taint on controlplane, which currently has the taint effect of NoSchedule.
+
+### first get the taint on node controlplane1
+   k describe node controlplane | grep -i taint | awk {'print $2'}
+   node-role.kubernetes.io/control-plane:NoSchedule
+
+   k taint nodes controlplane node-role.kubernetes.io/control-plane::NoSchedule-
+
+
+
+
