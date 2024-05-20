@@ -14,6 +14,7 @@
   - https://uklabs.kodekloud.com/topic/practice-test-imperative-commands-3/
   - https://uklabs.kodekloud.com/topic/practice-test-manual-scheduling-2/
   - https://uklabs.kodekloud.com/topic/practice-test-labels-and-selectors-2/
+  - https://uklabs.kodekloud.com/topic/practice-test-taints-and-tolerations-2/
 
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
