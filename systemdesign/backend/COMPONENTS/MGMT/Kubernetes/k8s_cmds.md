@@ -524,7 +524,10 @@ kubectl getpods -n kube-system -o custom-columns=NodeName:.spec.nodeName,PodName
 
 ## PodName,PodIP,NodeName,hostIp
 
-kubectl get pods - all-namespaces -o custom-columns=PodName:.metadata.name,PodIP:.status.podIP,NodeName:.spec.nodeName,hostIp:.status.hostIP
+kubectl get pods --all-namespaces -o custom-columns=PodName:.metadata.name,PodIP:.status.podIP,NodeName:.spec.nodeName,hostIp:.status.hostIP
+
+## NodeName, PodName
+    kubectl get pods --all-namespaces -o custom-columns=NodeName:.spec.nodeName,PodName:.metadata.name
 
 ## get custom headers
 ```
