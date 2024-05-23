@@ -148,6 +148,26 @@
     - ![image](https://github.com/trohit/ik/assets/466385/97d6f614-ab78-4f42-ac72-362ea6aea851)
   - [Conditions](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-conditions): current conditions of the pod : PodScheduled, Initialized, Ready, or ContainersReady.
   - [ContainerStatuses](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-states): the state of each container within the pod, such as Waiting, Running, or Terminated. Each state has a specific meaning and additional information.
+  - Editing Pods and Deployments
+    - Note, you CANNOT edit specifications of an existing POD other than the below.
+      - spec.containers[*].image
+      - spec.initContainers[*].image
+      - spec.activeDeadlineSeconds
+      - spec.tolerations
+  - You cannot edit env vars, svc accounts, resource limits of a running pod.
+  - But if you are desperate, here are options:
+    - Option A: edit pod in temp defn file 
+      - run 'k edit pod podname'
+      - when you try to save changes, k8s will deny it but show you a temp copy of the file in a temp location like /tmp/nginx-edit-abcd.yaml.
+      - you can del the existing pod 'k delete pod nginx' and create a new pod 'k create -f /tmp/nginx-edit-abcd.yaml'
+    - Option B : EXtract pod yaml and dele and recreate new pod with new definition
+      - k get pod nginx -o yaml > new-nginx.yaml
+      - vi new-nginx.yaml
+      - k delete pod nginx
+      - k create -f new-nginx.yaml
+    - Option C: edit deployment
+      - As pod template is a child of deployment spec, with every deploy file change, old pod will be deleted and new pod will be created.
+      - k edit deployment nginx-deployment.yaml
  
 # Data Plane
 - Importnant components in a worker node
