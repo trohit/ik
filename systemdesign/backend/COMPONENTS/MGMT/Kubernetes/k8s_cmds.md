@@ -600,6 +600,19 @@ k describe node controlplane | grep -i taint
 
    k taint nodes controlplane node-role.kubernetes.io/control-plane::NoSchedule-
 
+# Limits and Requests
+## A pod called rabbit is deployed. Identify the CPU requirements set on the Pod
+    k describe pod rabbit | grep -E "Limit|CPU|Request" -A1
+
+## Delete the rabbit Pod. Once deleted, wait for the pod to fully terminate.
+    k delete pod rabbit --wait=true
+
+## The elephant pod runs a process that consumes 15Mi of memory. Increase the limit of the elephant pod to 20Mi.
+    k get pod elephant -o yaml > elephant.yaml
+    k replace -f elephant.yaml --force
+
+## Delete the elephant Pod. Once deleted, wait for the pod to fully terminate.
+    k delete pod elephant --wait=true
 
 
 
