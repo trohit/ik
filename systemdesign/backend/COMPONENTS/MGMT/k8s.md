@@ -357,6 +357,15 @@ spec:
 - ReplicaSet supports more complex ops OTOH ReplicaController is easy to understand.
 - ![image](https://github.com/trohit/ik/assets/466385/41343a16-4eae-4455-9d03-adca84015d25)
 - ![image](https://github.com/trohit/ik/assets/466385/0b11498e-306f-4866-972c-8999fb78f46c)
+## Deployment vs Replicaset
+- [Kubernetes Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#when-to-use-a-replicaset)
+  - When to use a ReplicaSet
+  - A ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+  - However, Deployment is a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features.
+  - Therefore, we recommend using Deployments instead of directly using ReplicaSets, unless you require custom update orchestration or don't require updates at all.
+- https://stackoverflow.com/questions/69448131/kubernetes-whats-the-difference-between-deployment-and-replica-set
+- https://stackoverflow.com/questions/55437390/k8s-why-we-need-replicaset-when-we-have-deployments
+- https://stackoverflow.com/questions/63592124/in-kubernetes-k8s-why-do-deployments-supports-replicas?rq=3
 
  
   
