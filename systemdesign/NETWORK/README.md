@@ -108,10 +108,21 @@ https://www.youtube.com/watch?v=j_UUnlVC2Ss&t=434s
 
 ![image](https://github.com/trohit/ik/assets/466385/80484202-c5dc-4690-a015-e7e55d92abcc)
 
-## for reaching the external n/w using NAT and ip forwarding
+## for reaching the external n/w using NAT and ip forwarding, enable this on host gateway
 
     iptables -t NAT -A POSTROUTING -s 192.168.15.0/24 -j MASQUERADE
     sysctl -w net.ipv4.ip_forward=1
+
+## to allow hosting http server from within the container namespace to external world use NAT on host gateway
+    iptable -t NAT -A PREROUTING --dport 80 --to-destination 192.168.15.2:80 -j DNAT
+
+
+# Iptables cmds
+
+## to list iptables
+
+## to flush iptables
+
 
     
 ## 
