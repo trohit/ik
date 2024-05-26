@@ -1,4 +1,12 @@
 # Terminology
+# Basic IP cmds
+    # ip addr in brief
+    ip -br a
+
+    # show ipv4 addrs in one line
+    ip -4 -o a
+   
+
 # Network Namespaces
 ## List network namespace
     ip netns
