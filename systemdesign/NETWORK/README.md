@@ -8,6 +8,9 @@
     
     # show ipv4 addrs in one line
     ip -4 -o a
+
+    # show routes nicely
+    ip -c r | column -t
    
 # Network Namespaces
 ## List network namespace
