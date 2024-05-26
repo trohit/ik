@@ -22,6 +22,74 @@
     arp
     ip netns exec red arp
     ip -n red arp
+
+    # route
+    ip netns exec red route
+
+## connect 2 namespaces by adding veth pair
+![image](https://github.com/trohit/ik/assets/466385/b584ab2e-11b8-4ec6-9225-de2a6b7b1d5e)
+https://www.youtube.com/watch?v=j_UUnlVC2Ss&t=434s
+
+    # create veth pair
+    ip link add veth-red type veth peer name veth-blue
+
+    # connect veth-pair to namespaces
+    ip link set veth-red  netns red
+    ip link set veth-blue netns blue
+
+    # assign addresses
+    ip -n red  addr add 192.168.15.1 dev veth-red
+    ip -n blue addr add 192.168.15.2 dev veth-blue
+
+    # bring veth-pair up
+    ip -n red  link set veth-red  up
+    ip -n blue link set veth-blue up
+
+    # test connectivity of veth-pair
+    ip netns exec red ping 192.168.15.2 
+
+    # check namespace arp entries
+    ip netns exec red  arp
+    ip netns exec blue arp
+
+    # connect network namespaces to exeternal world : using either linux bridge or OpenVSwitch
+    
+    # Linux bridge way to connect namespaces to external/ host network
+
+    ## first create a bridge
+    ip link add vnet0 type bridge
+    ip link
+    ip link set dev vnet0 up
+
+    # delete the veth pair, deleting any one endpoint automatically deletes the other endpoint
+    ip -n red link del veth-red
+
+    # create veth pairs that will connect netns to bridge
+    ip link add veth-red type veth peer name veth-red-br
+    ip link add veth-blue type veth peer name veth-blue-br
+
+    # connect veth pair endpoints one to ns and other end to bridge if
+    ip link set veth-red    netns red
+    ip link set veth-red-br master vnet0
+
+    ip link set veth-blue   netns blue
+    ip link set veth-blue-br master vnet0
+
+    # assign ip addrs to veth pairs and the vnet bridge
+    ip -n red addr add 192.168.15.1/24 dev veth-red
+    ip -n red addr add 192.168.15.2/24 dev veth-red
+    ip addr add 192.168.15.5/24 dev vnet0
+    
+    # bring up the veth-pair
+    ip -n red  link set veth-red  up
+    ip -n blue link set veth-blue up
+
+![image](https://github.com/trohit/ik/assets/466385/68c68d38-7694-48e3-b83f-00fac2cd0626)
+
+![image](https://github.com/trohit/ik/assets/466385/30fc1948-a472-48ce-9c09-9ffd971ec19d)
+
+
+    
 ## 
 # [Zero conf networking](https://en.wikipedia.org/wiki/Zero-configuration_networking)
 ## APIPA vs SLAAC
