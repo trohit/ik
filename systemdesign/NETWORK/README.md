@@ -11,6 +11,9 @@
 
     # show routes nicely
     ip -c r | column -t
+
+    # del default route
+    ip r delete default
    
 # Network Namespaces
 ## List network namespace
