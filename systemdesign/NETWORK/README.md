@@ -67,6 +67,8 @@ https://www.youtube.com/watch?v=j_UUnlVC2Ss&t=434s
     # create veth pairs that will connect netns to bridge
     ip link add veth-red type veth peer name veth-red-br
     ip link add veth-blue type veth peer name veth-blue-br
+    ip link set veth-red-br  up
+    ip link set veth-blue-br up
 
     # connect veth pair endpoints one to ns and other end to bridge if
     ip link set veth-red    netns red
