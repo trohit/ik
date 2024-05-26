@@ -3,10 +3,12 @@
     # ip addr in brief
     ip -br a
 
+    # show IPV4 addrs in color 'c'
+    ip -4 -br -c a
+    
     # show ipv4 addrs in one line
     ip -4 -o a
    
-
 # Network Namespaces
 ## List network namespace
     ip netns
