@@ -1,4 +1,28 @@
 # Terminology
+# Network Namespaces
+## List network namespace
+    ip netns
+
+## Create a network namespace
+    ip netns add red
+    ip netns add blue
+
+## Execute a cmd in network namespace
+
+    # Normal execution of a cmd
+    ip link
+    
+    # Execution of same cmd in n/w ns
+    ip netns exec red ip link
+    
+    # Another Alternative
+    ip -n red link
+
+    # arp
+    arp
+    ip netns exec red arp
+    ip -n red arp
+## 
 # [Zero conf networking](https://en.wikipedia.org/wiki/Zero-configuration_networking)
 ## APIPA vs SLAAC
 - Usually DHCP server helps auto configure Ip on a node. but if DHCP fails node can remain without an IP.
