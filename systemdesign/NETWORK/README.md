@@ -88,6 +88,16 @@ https://www.youtube.com/watch?v=j_UUnlVC2Ss&t=434s
 
 ![image](https://github.com/trohit/ik/assets/466385/30fc1948-a472-48ce-9c09-9ffd971ec19d)
 
+## pinging from within n/w ns to external n/w
+
+   ip netns exec blue ping 192.168.1.3
+   ip netns exec blue route
+   ip netns exec blue route add 192.168.1.0/24 via 192.168.15.5
+
+![image](https://github.com/trohit/ik/assets/466385/80484202-c5dc-4690-a015-e7e55d92abcc)
+
+   iptables -t NAT -A POSTROUTING -s 192.168.15.0/24 -j MASQUERADE
+
 
     
 ## 
