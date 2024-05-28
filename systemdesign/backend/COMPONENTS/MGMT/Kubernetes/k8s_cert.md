@@ -19,6 +19,7 @@
   - https://uklabs.kodekloud.com/topic/practice-test-resource-limits-2/
   - https://uklabs.kodekloud.com/topic/practice-test-daemonsets-2/
   - https://uklabs.kodekloud.com/topic/practice-test-static-pods-2/
+  - https://uklabs.kodekloud.com/topic/practice-test-managing-application-logs-2/
 
 ## Useful Links
 - CLA FAQ : https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
