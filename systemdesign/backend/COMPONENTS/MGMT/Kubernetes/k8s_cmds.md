@@ -689,4 +689,36 @@ Image: busybox
      k logs my-custom-scheduler --name-space=kube-system
 
 
+#  Managing Application Logs
+## A user - USER5 - has expressed concerns accessing the application. Identify the cause of the issue. - Inspect the logs of the POD
+k logs webapp-1
+
+## We have deployed a new POD - webapp-2 - hosting an application. Inspect it. Wait for it to start.
+
+## when a pod has multiple containers to determine containers just type
+     k get po pod_name
+- k8s lets you know which containers are running say 
+  - err: container must be specified for pod pod1, choose one of :[webapp, db]
+- we can do:
+     k logs pod1 -c webapp
+
+
+# app lifecycle mgmt: upgrade  rollouts and rollbacks
+![image](https://github.com/trohit/ik/assets/466385/7005e570-e185-4b7f-bfc3-7a62e728c343)
+- rollout:1st time deploy triggers a rollout
+    k rollout status deployment/myapp-deployment
+	
+- revision:  subsequent rollout trigger a revision.
+    k rollout history deployment/myapp-deployment
+	
+- deploy strategies:
+   - recreate: down all v1 and up all v2 : simple but disruptive
+   - rolling update: default deployment strategy : bring down and bringup one-by-one
+      k apply -f deployment/myapp-deployment (not persistent) 
+      k set image deployment/myapp-deployment nginx-container=nginx:1.9.1 (persistent)
+   - undo/ rollback:
+      k rollout undo deployment/myapp-deployment   
+
+
+
 
