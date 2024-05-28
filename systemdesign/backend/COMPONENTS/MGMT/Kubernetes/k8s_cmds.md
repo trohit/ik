@@ -82,6 +82,11 @@
 - https://kubectl.docs.kubernetes.io/guides/
 - https://helm.sh/docs/intro/cheatsheet/
 
+## imp k8s files
+- /var/lib/kubelet/config.yaml
+- /etc/kubernetes/manifests
+  - each kubelet monitors this path for new or changed yamls and applies the reconcile loop accordingly 
+
 ## Create an NGINX Pod
 
     kubectl run nginx-pod --image=nginx:alpine
@@ -613,6 +618,75 @@ k describe node controlplane | grep -i taint
 
 ## Delete the elephant Pod. Once deleted, wait for the pod to fully terminate.
     k delete pod elephant --wait=true
+
+# Monitoring
+
+## equivalent of docker stats --no-stream
+- needs k8s metrics to be enabled
+    k top pod
+    k top node
+    
+## track status of a pod
+    k get pod --watch
+
+# DaemonSets
+## list all DaemonSets
+    k get ds -A
+
+## On how many nodes are the pods scheduled by the DaemonSet kube-proxy?
+    kubectl describe daemonset kube-proxy --namespace=kube-system | grep -i nodes
+
+## What is the image used by the POD deployed by the kube-flannel-ds DaemonSet?
+     k describe ds kube-flannel-ds -n kube-flannel | grep -i image
+
+## Deploy a DaemonSet for FluentD Logging.
+```
+Name: elasticsearch
+Namespace: kube-system
+Image: registry.k8s.io/fluentd-elasticsearch:1.20
+```
+    k create deployment elasticsearch --image=registry.k8s.io/fluentd-elasticsearch:1.20 -n kube-system --dry-run=client -o yaml > elastic-ds.yaml
+
+- Next, remove the replicas, strategy and status fields from the YAML file using a text editor. Also, change the kind from Deployment to DaemonSet.
+- Finally, create the Daemonset by running 
+    k create -f fluentd.yaml
+
+# Static pods
+## How many static pods exist in this cluster in all namespaces?
+    k get po -A | grep '\-controlplane'
+
+## On which nodes are the static pods created currently?
+    k get po -A -o wide | grep '\-controlplane'
+
+## What is the docker image used to deploy the kube-api server as a static pod?
+    TODO
+
+## Create a static pod named static-busybox that uses the busybox image and the command sleep 1000
+```
+Name: static-busybox
+Image: busybox
+```
+    kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+
+## Edit the image on the static pod to use busybox:1.28.4
+    kubectl run --restart=Never --image=busybox:1.28.4 static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+
+## We just created a new static pod named static-greenbox. Find it and delete it.
+
+- first determine which node this pod runs on by 
+   k get po -A -o wide
+- then ssh to that node and 
+   ps -ef | grep kubelet
+- cd to the config filepath and  cat it. this replaces /etc/kubernetes/manifests path
+- cd to the config dir
+   grep static /var/lib/kubelet/config.yaml
+- then delete the greenbox.yaml there.
+
+# Scheduling
+- can deploy your own custom scheduler alongside the default kube scheduler, so that it only applies to certian pods
+-  to use the custom sceduler in the pod yaml, set key:value as schedulerName:your-custom-sched-name
+- to see sched logs use cmd
+     k logs my-custom-scheduler --name-space=kube-system
 
 
 
