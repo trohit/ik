@@ -12,6 +12,23 @@ EOF
 # reload settings
 source ~/.bashrc 
 ```
+
+- [helm auto complete](https://helm.sh/docs/helm/helm_completion_bash/)
+
+```
+# update settings
+cat <<'EOF' >> ~/.bashrc
+source <(helm completion bash)
+alias h=helm
+EOF
+
+helm completion bash > /etc/bash_completion.d/helm
+
+# reload settings
+source ~/.bashrc 
+```
+
+
 - [Flux](https://fluxcd.io/): an open src tool that works with k8s for CD (continuous deployment). Alternatives inckude [ArgoCD](https://argoproj.github.io/)
 - Helm 
   - Helm is a package manager for Kubernetes that uses a packaging format called Charts123.
