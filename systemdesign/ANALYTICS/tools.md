@@ -8,6 +8,12 @@
 - Hive HMS: (HMS) is a service that stores metadata related to Apache Hive and other services, in a backend RDBMS, such as Derby, MySQL or PostgreSQL.
 - Hive HMS  metastore can be shared by Impala, Spark, Hive, and other services.
 
+## Filesystem
+- [Alluxio](https://docs.alluxio.io/os/user/stable/en/Overview.html): open src virt distributed FS
+
+# Federated SQL tools
+- Starburst
+  - connectors: Delta Lake, Hudi, and Iceberg
 # Companies
 - Data analytics vendors that offer in-situ analysis of data across data sources
   - Open source: trino, presto, dremio
