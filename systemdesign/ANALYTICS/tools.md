@@ -13,7 +13,15 @@
 
 # Federated SQL tools
 - Starburst
-  - connectors: Delta Lake, Hudi, and Iceberg
+  - connectors: Delta Lake, [Hudi](https://trino.io/episodes/41.html), and Iceberg :
+    - [Comparison1](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
+    - [Comparison2](https://databeans-blogs.medium.com/delta-vs-iceberg-vs-hudi-reassessing-performance-cb8157005eb0)
+    - [Comparison3](https://medium.com/starschema-blog/open-table-formats-for-efficient-data-processing-delta-lake-vs-iceberg-vs-hudi-b1107141e9a6)
+  - Cache: https://trino.io/blog/2024/03/08/cache-refresh
+    - [rubix](https://www.qubole.com/rubix): https://github.com/qubole/rubix, warpspeed,
+- [One house](https://www.onehouse.ai/): universal data lakehouse
+- [Velox](https://engineering.fb.com/2023/03/09/open-source/velox-open-source-execution-engine/)
+- 
 # Companies
 - Data analytics vendors that offer in-situ analysis of data across data sources
   - Open source: trino, presto, dremio
@@ -54,3 +62,6 @@
 
 # Data modeling
 - https://dbdiagram.io/home
+
+# Misc
+- [Dune](https://dune.com/home):crypto data mining data analysis
