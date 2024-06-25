@@ -84,8 +84,11 @@
 
 ## imp k8s files
 - /var/lib/kubelet/config.yaml
+- if RKE2 config file in :
+  - /etc/rancher/rke2/rke2.yaml 	
 - /etc/kubernetes/manifests
-  - each kubelet monitors this path for new or changed yamls and applies the reconcile loop accordingly 
+  - each kubelet monitors this path for new or changed yamls and applies the reconcile loop accordingly
+- for k9s config file referenced is : ~/.kube/config
 
 ## Create an NGINX Pod
 
