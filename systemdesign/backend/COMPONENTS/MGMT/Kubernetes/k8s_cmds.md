@@ -81,6 +81,7 @@
 - https://kubernetes.io/docs/reference/kubectl/conventions/
 - https://kubectl.docs.kubernetes.io/guides/
 - https://helm.sh/docs/intro/cheatsheet/
+- https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources
 
 ## imp k8s files
 - /var/lib/kubelet/config.yaml
