@@ -30,3 +30,5 @@ kubectl delete ns dummyns
 
 NOTE: if namespace isnt specified, default namespace is used.
 ```
+
+## Option B : Use StatefulSet / Deployment / Job
