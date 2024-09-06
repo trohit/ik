@@ -23,8 +23,10 @@ spec:
       done
 EOF
 
-
+kubectl create namespace dummyns
 kubectl apply -f pod.yaml
-kubectl get pods 
+kubectl get pods -n dummyns
+kubectl delete ns dummyns
 
+NOTE: if namespace isnt specified, default namespace is used.
 ```
