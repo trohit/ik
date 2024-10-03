@@ -10,9 +10,12 @@
 - Done is better than perfect. Start with what you know, add as you get more insights.
 - Don't count the servers, make the servers count. alternative definition of scale-up. (Lisa Guo on Scaling Instagram Infrastructure)
 - For a successful technology, reality must take precedence over public relations. (Richard Feynman, Rogers Commission Report, 1986)
+- Hire the smartest people you can find they will make you look smart as well
 - Hope is not a strategy - Traditional SRE saying
+- Hope is not a plan of action. 
 - If it hurts, do it more often. aka Frequency reduces Difficulty - Martin Fowler and the Mantra of Continuous Delivery  
 - Neither comprehension nor learning can take place in an atmosphere of anxiety. (Rose Kennedy)
+- Pooled ignorance will never create brilliance.
 - The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something man-made. When was the last time that a technology with a scale like that was so error-free ? (Alan Kay, Dr Dobbs Journal, 2012)
 - The limits of my language mean the limits of my world. (Ludwig Wittgenstein, Tracatus Logico-Philosophicus, 1922)
 - The best programming language is the one you know how to use. (Kelsey HighTower)
@@ -27,4 +30,5 @@
 - Simplicity is a quality that, once lost, can be extraordinarily difficult to recapture. - Site Reliability Engineering at Google
 - The best way to predict the future is to create it. (Alan Kay, born 1940, Computer scientist)
 - You get paid for being right first, and to be first, you can’t wait for consensus. ([Naval Ravikant on investing](https://www.navalmanack.com/secret-sections/investing))
+- What got you here – Won’t keep you here – Continue to Evolve 
 
