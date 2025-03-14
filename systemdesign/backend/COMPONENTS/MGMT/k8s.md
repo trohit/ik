@@ -296,6 +296,7 @@ spec:
   - [kops](https://github.com/kubernetes/kops/) enables us to create, upgrade, and maintain production-grade, Highly Available Kubernetes clusters from the command line. It can provision the required infrastructure as well. Currently, AWS is officially supported. Support for DigitalOcean and OpenStack is in beta, Azure and GCE is in alpha support, and other platforms are planned for the future.
 - Win: Since Kubernetes v1.14, Windows was successfully introduced as a supported production ready operating system only for worker nodes of a Kubernetes cluster. 
 
+
  ##### K8s hosted solutions
 - Hosted Solutions providers fully manage the provided software stack, while the user pays hosting and management charges. Popular vendors providing hosted solutions for Kubernetes are (listed in alphabetical order):
 - Alibaba Cloud Container Service for Kubernetes (ACK)
@@ -368,4 +369,17 @@ spec:
 - https://stackoverflow.com/questions/63592124/in-kubernetes-k8s-why-do-deployments-supports-replicas?rq=3
 
  
-  
+# FAQ
+- How does kubectl find its config file
+ - 1. Explicitly Set via --kubeconfig Flag
+   - kubectl --kubeconfig /path/to/kubeconfig.yaml get nodes
+ - 2. Environment Variable: $KUBECONFIG
+   - export KUBECONFIG=/path/to/kubeconfig.yaml
+ - 3. Default Config Path ($HOME/.kube/config)
+   - If no explicit kubeconfig is provided, kubectl looks at:
+   - ~/.kube/config
+ - How to Verify Which Config is Being Used?
+   - kubectl config view --minify --flatten
+
+ 
+
