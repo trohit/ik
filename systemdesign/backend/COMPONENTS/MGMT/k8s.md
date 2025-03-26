@@ -143,6 +143,21 @@
     - ![image](https://github.com/trohit/ik/assets/466385/30ba3cb6-a519-40dd-9d9b-9511aee00f5f)
     - etcd is written in the Go programming language. In Kubernetes, besides storing the cluster state, etcd is also used to store configuration details such as subnets, ConfigMaps, Secrets, etc.
 ## Pods
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: counter-job
+  namespace: nsfoo
+spec:
+  template:
+    spec:
+      containers:
+      - name: counter
+        image: busybox
+        command: ["sh", "-c", "for i in $(seq 1 600); do echo $i; sleep 1; done"]
+      restartPolicy: Never
+```
 - States. that can be broken down into Phases, Conditions and ContainerStates
   - [Phases](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase) : Pending, Running, Failed, Suceeded, Unknown
     - ![image](https://github.com/trohit/ik/assets/466385/97d6f614-ab78-4f42-ac72-362ea6aea851)
