@@ -158,6 +158,8 @@ spec:
         command: ["sh", "-c", "for i in $(seq 1 600); do echo $i; sleep 1; done"]
       restartPolicy: Never
 ```
+![image](https://github.com/user-attachments/assets/d4b32bfd-3584-478c-8a1b-97ca93ab5bbd)
+
 - States. that can be broken down into Phases, Conditions and ContainerStates
   - [Phases](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase) : Pending, Running, Failed, Suceeded, Unknown
     - ![image](https://github.com/trohit/ik/assets/466385/97d6f614-ab78-4f42-ac72-362ea6aea851)
