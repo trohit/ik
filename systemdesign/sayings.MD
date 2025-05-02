@@ -26,8 +26,9 @@
 - Most people take DRY (Don't Repeat Yourself) to mean you shouldn't duplicate code. The idea behind DRY is far grander than that. DRY says that every piece of system knowledge should have one authoritative, unambiguous representation. - https://www.artima.com/articles/orthogonality-and-the-dry-principle#part3
 - Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway. (Andrew Tanenbaum)
 - Simplicity is a prerequisite for reliability. - Edsger W. Dijkstra
-- Strive for progress, not perfection.
 - Simplicity is a quality that, once lost, can be extraordinarily difficult to recapture. - Site Reliability Engineering at Google
+- Successful businesses solve real problems.
+- Strive for progress, not perfection.
 - The best way to predict the future is to create it. (Alan Kay, born 1940, Computer scientist)
 - You get paid for being right first, and to be first, you can’t wait for consensus. ([Naval Ravikant on investing](https://www.navalmanack.com/secret-sections/investing))
 - What got you here – Won’t keep you here – Continue to Evolve 
