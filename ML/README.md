@@ -9,7 +9,10 @@
 - GPT(Generative pretrained transformer): GPT models utilize a txformer model architecture to process tokens in a sequence and predict the next token.
   - much better than previous NLP models that needed large labeled datasets.
 - Hallucinations: phenomenon where LLms provide data that is factually incorrect
-- RAG(Retrieval Augmented Generation): 
+- RAG(Retrieval Augmented Generation):
+- Features: Imagine features as the details or attributes that describe something. Just like the features of a smartphone (screen size, battery life, etc.), features in ML describe the data.
+- Labels: Think of labels as the tags or names you assign to the data. Just like labeling a file with its contents, labels in ML are the outcomes you want to predict.
+  - mnemonic: **F**eatures are **F**acts about the data. **L**abels are the **L**ast thing you predict.
 # Courses
 - Intel : https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/training/course-machine-learning.html
 - Udemy 6hrs Rs 1799: http://www.udemy.com/course/step-by-step-guide-to-machine-learning-course
