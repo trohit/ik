@@ -28,6 +28,27 @@
   - Reqs + Esti + Stor + HLD + API + Details + Eval + Distinct feature
   - https://www.educative.io/blog/use-reshaded-for-system-design-interviews
 
+## System design Wheel
+- Federation
+- Cross Product Integration
+- Multi Tenancy
+- Tools Integration
+- Security
+- Observability
+- Upgrade
+- Performance
+- Packaging
+- Installation
+- Licensing
+- Configuration
+- Platform
+- HA
+- System Management
+- User Interface
+- Data Path
+- Data Services
+- Serviceability
+
 # Refs 
 - https://blog.bytebytego.com/archive
   - lots of them in https://www.linkedin.com/in/alexxubyte/recent-activity/images/ 
